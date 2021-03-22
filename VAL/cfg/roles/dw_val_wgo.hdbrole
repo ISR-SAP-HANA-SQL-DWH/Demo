@@ -1,0 +1,17 @@
+{ 
+  "role": { 
+    "name": "DW_VAL_WGO#", 
+    "schema_privileges": [ 
+      { 
+        "privileges_with_grant_option": ["SELECT METADATA", 
+                                              "SELECT CDS METADATA", 
+                                              "SELECT", 
+                                              "INSERT", 
+                                              "EXECUTE", 
+                                              "DELETE", 
+                                              "UPDATE", 
+                                              "CREATE TEMPORARY TABLE"] 
+      } 
+    ] 
+  } 
+} 

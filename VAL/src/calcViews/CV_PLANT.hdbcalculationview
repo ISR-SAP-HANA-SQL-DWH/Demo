@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_PLANT" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_PLANT"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SY_S_R_T001W">
+    <resourceUri>SY_S_R_T001W</resourceUri>
+  </DataSource>
+  <DataSource id="SY_L_R_PLAN_REGN">
+    <resourceUri>SY_L_R_PLAN_REGN</resourceUri>
+  </DataSource>
+  <DataSource id="S_R_T001W$$$$SY_S_R_T001W$$">
+    <resourceUri>SY_S_R_T001W</resourceUri>
+  </DataSource>
+  <DataSource id="L_R_PLAN_REGN$$$$SY_L_R_PLAN_REGN$$">
+    <resourceUri>SY_L_R_PLAN_REGN</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_SPLAN_LD">
+    <viewAttributes>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="SPLAN_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_S_R_T001W"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_LPLRE_LD">
+    <viewAttributes>
+      <viewAttribute id="LPLRE_HK"/>
+      <viewAttribute id="LPLRE_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_L_R_PLAN_REGN"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="S_R_T001W" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="PLANT_ID"/>
+      <viewAttribute id="PLANT_NAME"/>
+      <viewAttribute id="PLANT_STREET"/>
+      <viewAttribute id="PLANT_POSTCODE"/>
+      <viewAttribute id="PLANT_LOCATION"/>
+      <viewAttribute id="PLANT_REGION"/>
+      <viewAttribute id="PLANT_COUNTRY"/>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="SPLAN_LD"/>
+      <viewAttribute id="SPLAN_SRC"/>
+      <viewAttribute hidden="true" id="JOIN$HPLAN_HK$HPLAN_HK"/>
+      <viewAttribute hidden="true" id="JOIN$SPLAN_LD$SPLAN_LD"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Max_SPLAN_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$HPLAN_HK$HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SPLAN_LD$SPLAN_LD" source="SPLAN_LD"/>
+    </input>
+    <input node="S_R_T001W$$$$SY_S_R_T001W$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_ID" source="WERKS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_NAME" source="NAME1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_STREET" source="STRAS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_POSTCODE" source="PSTLZ"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_LOCATION" source="ORT01"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_REGION" source="REGIO"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_COUNTRY" source="LAND1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPLAN_LD" source="SPLAN_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPLAN_SRC" source="SPLAN_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$HPLAN_HK$HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SPLAN_LD$SPLAN_LD" source="SPLAN_LD"/>
+    </input>
+    <joinAttribute name="JOIN$HPLAN_HK$HPLAN_HK"/>
+    <joinAttribute name="JOIN$SPLAN_LD$SPLAN_LD"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="L_R_PLAN_REGN" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="HREGN_HK"/>
+      <viewAttribute id="LPLRE_HK"/>
+      <viewAttribute id="LPLRE_LD"/>
+      <viewAttribute id="LPLRE_SRC"/>
+      <viewAttribute hidden="true" id="JOIN$LPLRE_LD$LPLRE_LD"/>
+      <viewAttribute hidden="true" id="JOIN$LPLRE_HK$LPLRE_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Max_LPLRE_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LPLRE_LD$LPLRE_LD" source="LPLRE_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LPLRE_HK$LPLRE_HK" source="LPLRE_HK"/>
+    </input>
+    <input node="L_R_PLAN_REGN$$$$SY_L_R_PLAN_REGN$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HREGN_HK" source="HREGN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LPLRE_HK" source="LPLRE_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LPLRE_LD" source="LPLRE_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LPLRE_SRC" source="LPLRE_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LPLRE_LD$LPLRE_LD" source="LPLRE_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LPLRE_HK$LPLRE_HK" source="LPLRE_HK"/>
+    </input>
+    <joinAttribute name="JOIN$LPLRE_LD$LPLRE_LD"/>
+    <joinAttribute name="JOIN$LPLRE_HK$LPLRE_HK"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="PLANT_ID"/>
+      <viewAttribute id="PLANT_NAME"/>
+      <viewAttribute id="PLANT_STREET"/>
+      <viewAttribute id="PLANT_POSTCODE"/>
+      <viewAttribute id="PLANT_LOCATION"/>
+      <viewAttribute id="PLANT_REGION"/>
+      <viewAttribute id="PLANT_COUNTRY"/>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="SPLAN_LD"/>
+      <viewAttribute id="SPLAN_SRC"/>
+      <viewAttribute id="HREGN_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="S_R_T001W">
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_ID" source="PLANT_ID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_NAME" source="PLANT_NAME"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_STREET" source="PLANT_STREET"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_POSTCODE" source="PLANT_POSTCODE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_LOCATION" source="PLANT_LOCATION"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_REGION" source="PLANT_REGION"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PLANT_COUNTRY" source="PLANT_COUNTRY"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPLAN_LD" source="SPLAN_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPLAN_SRC" source="SPLAN_SRC"/>
+    </input>
+    <input node="L_R_PLAN_REGN">
+      <mapping xsi:type="Calculation:AttributeMapping" target="HREGN_HK" source="HREGN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+    </input>
+    <joinAttribute name="HPLAN_HK"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="PLANT_ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT_ID"/>
+      <keyMapping columnObjectName="Join_1" columnName="PLANT_ID"/>
+    </attribute>
+    <attribute id="PLANT_NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT_NAME"/>
+      <keyMapping columnObjectName="Join_1" columnName="PLANT_NAME"/>
+    </attribute>
+    <attribute id="PLANT_STREET" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT_STREET"/>
+      <keyMapping columnObjectName="Join_1" columnName="PLANT_STREET"/>
+    </attribute>
+    <attribute id="PLANT_POSTCODE" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT_POSTCODE"/>
+      <keyMapping columnObjectName="Join_1" columnName="PLANT_POSTCODE"/>
+    </attribute>
+    <attribute id="PLANT_LOCATION" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT_LOCATION"/>
+      <keyMapping columnObjectName="Join_1" columnName="PLANT_LOCATION"/>
+    </attribute>
+    <attribute id="PLANT_REGION" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT_REGION"/>
+      <keyMapping columnObjectName="Join_1" columnName="PLANT_REGION"/>
+    </attribute>
+    <attribute id="PLANT_COUNTRY" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PLANT_COUNTRY"/>
+      <keyMapping columnObjectName="Join_1" columnName="PLANT_COUNTRY"/>
+    </attribute>
+    <attribute id="HPLAN_HK" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HPLAN_HK"/>
+      <keyMapping columnObjectName="Join_1" columnName="HPLAN_HK"/>
+    </attribute>
+    <attribute id="HREGN_HK" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HREGN_HK"/>
+      <keyMapping columnObjectName="Join_1" columnName="HREGN_HK"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="263" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Max_SPLAN_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="105" y="516"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Max_LPLRE_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="334" y="516"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="S_R_T001W" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="356"/>
+      <rectangleSize height="30" width="188"/>
+    </shape>
+    <shape modelObjectName="Max_SPLAN_LD" modelObjectNameSpace="S_R_T001W" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="SY_S_R_T001W" modelObjectNameSpace="S_R_T001W" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="156"/>
+    </shape>
+    <shape expanded="true" modelObjectName="L_R_PLAN_REGN" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="330" y="356"/>
+      <rectangleSize height="30" width="182"/>
+    </shape>
+    <shape modelObjectName="Max_LPLRE_LD" modelObjectNameSpace="L_R_PLAN_REGN" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="147"/>
+    </shape>
+    <shape modelObjectName="SY_L_R_PLAN_REGN" modelObjectNameSpace="L_R_PLAN_REGN" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="184"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="263" y="217"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="S_R_T001W" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="L_R_PLAN_REGN" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

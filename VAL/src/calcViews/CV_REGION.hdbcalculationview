@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_REGION" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_REGION"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SY_S_R_T005U">
+    <resourceUri>SY_S_R_T005U</resourceUri>
+  </DataSource>
+  <DataSource id="S_R_T005U$$$$SY_S_R_T005U$$">
+    <resourceUri>SY_S_R_T005U</resourceUri>
+  </DataSource>
+  <DataSource id="SY_L_R_CNTR_REGN">
+    <resourceUri>SY_L_R_CNTR_REGN</resourceUri>
+  </DataSource>
+  <DataSource id="L_R_CNTR_REGN$$$$SY_L_R_CNTR_REGN$$">
+    <resourceUri>SY_L_R_CNTR_REGN</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_SRGTU_LD">
+    <viewAttributes>
+      <viewAttribute id="HREGN_HK"/>
+      <viewAttribute id="SRGTU_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_S_R_T005U"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="S_R_T005U" cardinality="CN_N" joinType="inner" filterExpressionLanguage="SQL">
+    <viewAttributes>
+      <viewAttribute id="BLAND"/>
+      <viewAttribute id="BEZEI"/>
+      <viewAttribute id="LAND1"/>
+      <viewAttribute id="SPRAS"/>
+      <viewAttribute id="HREGN_HK"/>
+      <viewAttribute hidden="true" id="JOIN$HREGN_HK$HREGN_HK"/>
+      <viewAttribute hidden="true" id="JOIN$SRGTU_LD$SRGTU_LD"/>
+    </viewAttributes>
+    <calculatedViewAttributes>
+      <calculatedViewAttribute id="REGION_ID" datatype="NVARCHAR" length="20" expressionLanguage="SQL">
+        <formula>CONCAT(&quot;LAND1&quot;,&quot;BLAND&quot;)</formula>
+      </calculatedViewAttribute>
+    </calculatedViewAttributes>
+    <input node="Max_SRGTU_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$HREGN_HK$HREGN_HK" source="HREGN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SRGTU_LD$SRGTU_LD" source="SRGTU_LD"/>
+    </input>
+    <input node="S_R_T005U$$$$SY_S_R_T005U$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="BLAND" source="BLAND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="BEZEI" source="BEZEI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LAND1" source="LAND1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPRAS" source="SPRAS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HREGN_HK" source="HREGN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$HREGN_HK$HREGN_HK" source="HREGN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SRGTU_LD$SRGTU_LD" source="SRGTU_LD"/>
+    </input>
+    <filter>&quot;SPRAS&quot; = 'EN'</filter>
+    <joinAttribute name="JOIN$HREGN_HK$HREGN_HK"/>
+    <joinAttribute name="JOIN$SRGTU_LD$SRGTU_LD"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_LCTRE_LD">
+    <viewAttributes>
+      <viewAttribute id="LCTRE_HK"/>
+      <viewAttribute id="LCTRE_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_L_R_CNTR_REGN"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="L_R_CNTR_REGN" cardinality="C1_1" joinType="referential" filterExpressionLanguage="SQL">
+    <viewAttributes>
+      <viewAttribute id="LCTRE_HK"/>
+      <viewAttribute id="HCNTR_HK"/>
+      <viewAttribute id="HREGN_HK"/>
+      <viewAttribute id="LCTRE_LD"/>
+      <viewAttribute id="LCTRE_SRC"/>
+      <viewAttribute hidden="true" id="JOIN$LCTRE_HK$LCTRE_HK"/>
+      <viewAttribute hidden="true" id="JOIN$LCTRE_LD$LCTRE_LD"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Max_LCTRE_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LCTRE_HK$LCTRE_HK" source="LCTRE_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LCTRE_LD$LCTRE_LD" source="LCTRE_LD"/>
+    </input>
+    <input node="L_R_CNTR_REGN$$$$SY_L_R_CNTR_REGN$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="LCTRE_HK" source="LCTRE_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCNTR_HK" source="HCNTR_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HREGN_HK" source="HREGN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LCTRE_LD" source="LCTRE_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LCTRE_SRC" source="LCTRE_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LCTRE_HK$LCTRE_HK" source="LCTRE_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LCTRE_LD$LCTRE_LD" source="LCTRE_LD"/>
+    </input>
+    <joinAttribute name="JOIN$LCTRE_HK$LCTRE_HK"/>
+    <joinAttribute name="JOIN$LCTRE_LD$LCTRE_LD"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="REGION_ID"/>
+      <viewAttribute id="REGION_CODE"/>
+      <viewAttribute id="REGION_NAME"/>
+      <viewAttribute id="HREGN_HK"/>
+      <viewAttribute id="HCNTR_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="S_R_T005U">
+      <mapping xsi:type="Calculation:AttributeMapping" target="REGION_ID" source="REGION_ID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REGION_CODE" source="BLAND"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REGION_NAME" source="BEZEI"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HREGN_HK" source="HREGN_HK"/>
+    </input>
+    <input node="L_R_CNTR_REGN">
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCNTR_HK" source="HCNTR_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HREGN_HK" source="HREGN_HK"/>
+    </input>
+    <joinAttribute name="HREGN_HK"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="REGION_ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="REGION_ID"/>
+      <keyMapping columnObjectName="Join_1" columnName="REGION_ID"/>
+    </attribute>
+    <attribute id="REGION_CODE" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BLAND"/>
+      <keyMapping columnObjectName="Join_1" columnName="REGION_CODE"/>
+    </attribute>
+    <attribute id="REGION_NAME" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BEZEI"/>
+      <keyMapping columnObjectName="Join_1" columnName="REGION_NAME"/>
+    </attribute>
+    <attribute id="HREGN_HK" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HREGN_HK"/>
+      <keyMapping columnObjectName="Join_1" columnName="HREGN_HK"/>
+    </attribute>
+    <attribute id="HCNTR_HK" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HCNTR_HK"/>
+      <keyMapping columnObjectName="Join_1" columnName="HCNTR_HK"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="239" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Max_SRGTU_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="91" y="536"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="S_R_T005U" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="376"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Max_SRGTU_LD" modelObjectNameSpace="S_R_T005U" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="156"/>
+    </shape>
+    <shape modelObjectName="SY_S_R_T005U" modelObjectNameSpace="S_R_T005U" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="152"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Max_LCTRE_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="302" y="536"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="L_R_CNTR_REGN" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="308" y="376"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Max_LCTRE_LD" modelObjectNameSpace="L_R_CNTR_REGN" modelObjectType="JoinNodeInput" multiJoinViewNodeName="L_R_CNTR_REGN">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="154"/>
+    </shape>
+    <shape modelObjectName="SY_L_R_CNTR_REGN" modelObjectNameSpace="L_R_CNTR_REGN" modelObjectType="JoinNodeInput" multiJoinViewNodeName="L_R_CNTR_REGN">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="184"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="239" y="217"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="S_R_T005U" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="141"/>
+    </shape>
+    <shape modelObjectName="L_R_CNTR_REGN" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="162"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

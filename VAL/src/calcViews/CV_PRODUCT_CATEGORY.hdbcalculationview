@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_PRODUCT_CATEGORY" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_PRODUCT_CATEGORY"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SY_S_R_T179">
+    <resourceUri>SY_S_R_T179</resourceUri>
+  </DataSource>
+  <DataSource id="S_R_T179$$$$SY_S_R_T179$$">
+    <resourceUri>SY_S_R_T179</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_SPRCT_LD">
+    <viewAttributes>
+      <viewAttribute id="HPRCT_HK"/>
+      <viewAttribute id="SPRCT_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_S_R_T179"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="S_R_T179" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="PRODUCT_HIERARCHY_NUMBER"/>
+      <viewAttribute id="PRODUCT_HIERARCHY_LEVEL"/>
+      <viewAttribute id="PRODUCT_HIERARCHY_DESCRIPTION"/>
+      <viewAttribute id="HPRCT_HK"/>
+      <viewAttribute id="SPRCT_LD"/>
+      <viewAttribute id="SPRCT_SRC"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="S_R_T179$$$$SY_S_R_T179$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODUCT_HIERARCHY_NUMBER" source="PRODH"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODUCT_HIERARCHY_LEVEL" source="STUFE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODUCT_HIERARCHY_DESCRIPTION" source="VTEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPRCT_HK" source="HPRCT_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPRCT_LD" source="SPRCT_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPRCT_SRC" source="SPRCT_SRC"/>
+    </input>
+    <input node="Max_SPRCT_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPRCT_LD" source="SPRCT_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPRCT_HK" source="HPRCT_HK"/>
+    </input>
+    <joinAttribute name="SPRCT_LD"/>
+    <joinAttribute name="HPRCT_HK"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="S_R_T179">
+  <attributes>
+    <attribute id="PRODUCT_HIERARCHY_NUMBER" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRODH"/>
+      <keyMapping columnObjectName="S_R_T179" columnName="PRODUCT_HIERARCHY_NUMBER"/>
+    </attribute>
+    <attribute id="PRODUCT_HIERARCHY_LEVEL" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="STUFE"/>
+      <keyMapping columnObjectName="S_R_T179" columnName="PRODUCT_HIERARCHY_LEVEL"/>
+    </attribute>
+    <attribute id="PRODUCT_HIERARCHY_DESCRIPTION" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VTEXT"/>
+      <keyMapping columnObjectName="S_R_T179" columnName="PRODUCT_HIERARCHY_DESCRIPTION"/>
+    </attribute>
+    <attribute id="HPRCT_HK" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HPRCT_HK"/>
+      <keyMapping columnObjectName="S_R_T179" columnName="HPRCT_HK"/>
+    </attribute></attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="92" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Max_SPRCT_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="357"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="S_R_T179" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="217"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="SY_S_R_T179" modelObjectNameSpace="S_R_T179" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="146"/>
+    </shape>
+    <shape modelObjectName="Max_SPRCT_LD" modelObjectNameSpace="S_R_T179" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="156"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

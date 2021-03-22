@@ -1,0 +1,1500 @@
+﻿MANDT;SPRAS;MATKL;WGBEZ;WGBEZ60
+100;ZH;01;物料组1;
+100;ZH;02;物料组 2;
+100;ZH;A001;账面已开票;账面待开票物料组
+100;ZH;A002;账面已使用;账面待使用物料组
+100;ZH;B001;一次性信用;物料组一次性信用
+100;ZH;B002;云收入;物料组云收入
+100;ZH;E001;住宿;物料组服务 - 住宿
+100;ZH;E002;机票;物料组 - 机票
+100;ZH;E003;陆地运输;物料组 - 差旅成本
+100;ZH;E004;差旅费用杂项;物料组 - 差旅费用杂项
+100;ZH;L001;贸易商品;物料组 - 贸易商品
+100;ZH;L002;原材料;物料组原材料
+100;ZH;L003;半成品;物料组半成品
+100;ZH;L004;成品;物料组成品
+100;ZH;L005;未评估物料;物料组未评估物料
+100;ZH;L006;可回收包装;物料组可回收包装物料
+100;ZH;L007;许可证;物料组许可证
+100;ZH;L008;硬件;硬件物料组
+100;ZH;P000;合同类型;物料组 - 合同类型
+100;ZH;P001;服务;物料组 - 服务
+100;ZH;P002;费用;物料组 - 费用
+100;ZH;P003;定期服务;物料组定期服务
+100;ZH;YBFA01;不动产（土地）;物料组不动产（土地）
+100;ZH;YBFA02;建筑物;物料组建筑物
+100;ZH;YBFA03;土地改良;物料组土地改良
+100;ZH;YBFA04;租赁权改进;物料组租赁权改进
+100;ZH;YBFA05;机器设备;物料组机器设备
+100;ZH;YBFA06;固定设备和装置;物料组固定设备和装置
+100;ZH;YBFA07;车辆;物料组车辆
+100;ZH;YBFA08;计算机硬件;物料组计算机硬件
+100;ZH;YBFA09;计算机软件;物料组计算机软件
+100;ZH;YBFA10;低值资产;物料组低值资产
+100;ZH;YBFA11;其他无形资产;物料组其他无形资产
+100;ZH;YBFA12;办公设备;物料组办公设备
+100;ZH;YBMM00;无标识的非库存物料;无标识的非库存物料
+100;ZH;YBMM01;有标识的非库存物料;有标识的非库存物料
+100;ZH;YBPM01;备件;备件物料组
+100;ZH;YBPM02;备件服务;备件服务物料组
+100;TH;01;กลุ่มวัสดุ 1;
+100;TH;02;กลุ่มวัสดุ 2;
+100;TH;A001;วางบิลในบัญชี;กลุ่มวัสดุในบัญชีที่จะวางบิล
+100;TH;A002;ใช้ในบัญชี;กลุ่มวัสดุในบัญชีที่จะใช้
+100;TH;B001;One Time Credit;กลุ่มวัสดุ - สินเชื่อที่ใช้ได้ครั้งเดียว
+100;TH;B002;Cloud - รายได้;กลุ่มวัสดุ - รายได้ของ Cloud
+100;TH;E001;ที่พัก;กลุ่มวัสดุ - ที่พัก
+100;TH;E002;ค่าโดยสารเครื่องบิน;กลุ่มวัสดุ - ค่าโดยสารเครื่องบิน
+100;TH;E003;การขนส่งภาคพื้นดิน;กลุ่มวัสดุ - การขนส่งภาคพื้นดิน
+100;TH;E004;Travel Expenses misc;กลุ่มวัสดุ - ค่าใช้จ่ายการเดินทางเบ็ดเตล็ด
+100;TH;L001;วัสดุเพื่อการค้า;กลุ่มวัสดุ - วัสดุเพื่อการค้า
+100;TH;L002;วัตถุดิบ;กลุ่มวัสดุ - วัตถุดิบ
+100;TH;L003;สินค้ากึ่งสำเร็จรูป;กลุ่มวัสดุ - สินค้ากึ่งสำเร็จรูป
+100;TH;L004;สินค้าสำเร็จรูป;กลุ่มวัสดุ - สินค้าสำเร็จรูป
+100;TH;L005;Unvaluated Materials;กลุ่มวัสดุ - วัสดุที่ไม่ประเมินราคา
+100;TH;L006;บรรจุภัณฑ์ที่คืนได้;กลุ่มวัสดุ - วัสดุบรรจุภัณฑ์ที่คืนได้
+100;TH;L007;ใบอนุญาต;กลุ่มวัสดุ - ใบอนุญาต
+100;TH;L008;ฮาร์ดแวร์;กลุ่มวัสดุสำหรับฮาร์ดแวร์
+100;TH;P000;ประเภทสัญญา;กลุ่มวัสดุ - ประเภทสัญญา
+100;TH;P001;การบริการ;กลุ่มวัสดุ - การบริการ
+100;TH;P002;ค่าใช้จ่าย;กลุ่มวัสดุ - ค่าใช้จ่าย
+100;TH;P003;การบริการเป็นระยะ;กลุ่มวัสดุ - การบริการเป็นระยะ
+100;TH;YBFA01;อสังหาฯ (ที่ดิน);กลุ่มวัสดุ - อสังหาริมทรัพย์ (ที่ดิน)
+100;TH;YBFA02;อาคาร;กลุ่มวัสดุ - อาคาร
+100;TH;YBFA03;การปรับปรุงที่ดิน;กลุ่มวัสดุ - การปรับปรุงที่ดิน
+100;TH;YBFA04;Leasehold Improvemen;กลุ่มวัสดุ - การปรับปรุงสินทรัพย์ตามสิทธิการเช่า
+100;TH;YBFA05;เครื่องจักร&อุปกรณ์;กลุ่มวัสดุ - เครื่องจักรและอุปกรณ์
+100;TH;YBFA06;Fixtures Fittings;กลุ่มวัสดุ - อุปกรณ์ตกแต่งและติดตั้ง
+100;TH;YBFA07;ยานพาหนะ;กลุ่มวัสดุ - ยานพาหนะ
+100;TH;YBFA08;ฮาร์ดแวร์คอมพิวเตอร์;กลุ่มวัสดุ - ฮาร์ดแวร์คอมพิวเตอร์
+100;TH;YBFA09;ซอฟต์แวร์คอมพิวเตอร์;กลุ่มวัสดุ - ซอฟต์แวร์คอมพิวเตอร์
+100;TH;YBFA10;สินทรัพย์มูลค่าต่ำ;กลุ่มวัสดุ - สินทรัพย์มูลค่าต่ำ
+100;TH;YBFA11;ส/ทอื่นที่ไม่มีตัวตน;กลุ่มวัสดุ - สินทรัพย์อื่นที่ไม่มีตัวตน
+100;TH;YBFA12;อุปกรณ์สำนักงาน;กลุ่มวัสดุ - อุปกรณ์สำนักงาน
+100;TH;YBMM00;Non-Sto Mat. w.o ID;วัสดุแบบไม่เก็บสต็อคที่ไม่มี ID
+100;TH;YBMM01;Non-Sto Mat. w. ID;วัสดุแบบไม่เก็บสต็อคที่มี ID
+100;TH;YBPM01;อะไหล่;กลุ่มวัสดุสำหรับอะไหล่
+100;TH;YBPM02;การบริการอะไหล่;กลุ่มวัสดุสำหรับการบริการอะไหล่
+100;KO;01;자재그룹 1;
+100;KO;02;자재그룹 2;
+100;KO;A001;청구된 계정 입금;자재 그룹 - 청구할 계정 입금
+100;KO;A002;이용된 계정 입금;자재 그룹 - 이용할 계정 입금
+100;KO;B001;일회성 여신;자재 그룹 일회성 여신
+100;KO;B002;클라우드 수익;자재 그룹 클라우드 수익
+100;KO;E001;숙박;자재 그룹 - 숙박
+100;KO;E002;항공 요금;자재 그룹 - 항공 요금
+100;KO;E003;육상 운송;자재 그룹 - 육상 운송
+100;KO;E004;기타 출장비;자재 그룹 - 기타 출장비
+100;KO;L001;거래 자재;자재 그룹 - 거래 자재
+100;KO;L002;원자재;자재 그룹 - 원자재
+100;KO;L003;반제품;자재 그룹 - 반제품
+100;KO;L004;완제품;자재 그룹 - 완제품
+100;KO;L005;비평가 자재;자재 그룹 - 비평가 자재
+100;KO;L006;반환용 포장재;자재 그룹 - 반환용 포장재
+100;KO;L007;라이센스;자재 그룹 라이센스
+100;KO;L008;하드웨어;하드웨어의 자재 그룹
+100;KO;P000;계약 유형;자재 그룹 - 계약 유형
+100;KO;P001;서비스;자재 그룹 - 서비스
+100;KO;P002;비용;자재 그룹 - 비용
+100;KO;P003;정기 서비스;자재 그룹 정기 서비스
+100;KO;YBFA01;부동산(토지);자재 그룹 부동산(토지)
+100;KO;YBFA02;건물;자재 그룹 건물
+100;KO;YBFA03;토지 개량;자재 그룹 토지 개량
+100;KO;YBFA04;임차지 개량;자재 그룹 임차지 개량
+100;KO;YBFA05;기계 설비;자재 그룹 기계 설비
+100;KO;YBFA06;공기구비품;자재 그룹 공기구비품
+100;KO;YBFA07;차량;자재 그룹 차량
+100;KO;YBFA08;컴퓨터 하드웨어;자재 그룹 컴퓨터 하드웨어
+100;KO;YBFA09;컴퓨터 소프트웨어;자재 그룹 컴퓨터 소프트웨어
+100;KO;YBFA10;소액 자산;자재 그룹 소액 자산
+100;KO;YBFA11;기타 무형 자산;자재 그룹 기타 무형 자산
+100;KO;YBFA12;사무용 기기;자재 그룹 사무용 기기
+100;KO;YBMM00;비재고 자재(ID 없음);비재고 자재(ID 없음)
+100;KO;YBMM01;비재고 자재(ID 있음);비재고 자재(ID 있음)
+100;KO;YBPM01;예비 부품;예비 부품에 대한 자재 그룹
+100;KO;YBPM02;예비 부품 서비스;예비 부품 서비스에 대한 자재 그룹
+100;RO;01;Grup materiale 1;
+100;RO;02;Grup materiale 2;
+100;RO;A001;În cont facturat;Grup de materiale în cont de facturat
+100;RO;A002;În cont utilizat;Grup de materiale în cont de utilizat
+100;RO;B001;Credit cu utlz.unică;Grup materiale credit cu utilizare unică
+100;RO;B002;Venit cloud;Grup materiale venit cloud
+100;RO;E001;Cazare;Grup de materiale cazare
+100;RO;E002;Tarif de zbor;Grup de materiale tarif de zbor
+100;RO;E003;Transport terestru;Grup de materiale transport terestru
+100;RO;E004;Chelt.deplas.diverse;Grup de material cheltuieli de deplasare diverse
+100;RO;L001;Produse comerciale;Grup de materiale produse comerciale
+100;RO;L002;Materii prime;Grup de materiale materii prime
+100;RO;L003;Bunuri semifabricate;Grup de materiale bunuri semifabricate
+100;RO;L004;Bunuri finite;Grup de materiale bunuri finite
+100;RO;L005;Materiale neevaluate;Grup de materiale pt.materiale neevaluate
+100;RO;L006;Ambalaje returnabile;Grup de materiale pt.materiale ambalaj returnabil
+100;RO;L007;Licenţe;Licenţe grup de materiale
+100;RO;L008;Hardware;Grup de materiale pt.hardware
+100;RO;P000;Tip contract;Grup de materiale tip de contract
+100;RO;P001;Servicii;Grup de materiale servicii
+100;RO;P002;Cheltuieli;Grup de materiale cheltuieli
+100;RO;P003;Serviciu periodic;Seriviciu periodic grup de materiale
+100;RO;YBFA01;Propr.imob.(teren);Grup de materiale proprietăţi imobiliare (teren)
+100;RO;YBFA02;Clădiri;Grup de materiale clădiri
+100;RO;YBFA03;Îmbunătăţiri teren;Grup de materiale îmbunătăţiri teren
+100;RO;YBFA04;Îmbunătăţ.închiriere;Grup de materiale îmbunătăţiri închiriere
+100;RO;YBFA05;Echipament maşini;Grup de materiale echipament maşini
+100;RO;YBFA06;AcceslŞiObUzCurent;Grup de materiale accesorii şi obiecte de uz curent
+100;RO;YBFA07;Vehicule;Grup de materiale vehicule
+100;RO;YBFA08;Hardware computer;Grup de materiale hardware computer
+100;RO;YBFA09;Software computer;Grup de materiale software computer
+100;RO;YBFA10;Mijl.fixe val.mici;Grup de materiale mijloace fixe cu valoare mică
+100;RO;YBFA11;Alte imb.necorporale;Grup de materiale alte imobilizări necorporale
+100;RO;YBFA12;Echipamente de birou;Echipament birou grup materiale
+100;RO;YBMM00;MatNegestStocFărăID;Materiale negestionate în stoc fără ID
+100;RO;YBMM01;MatNegestionStocCuID;Materiale negestionate în stoc cu ID
+100;RO;YBPM01;Piese de schimb;Grup de materiale pt.piese de schimb
+100;RO;YBPM02;ServiciiPieseSchimb;Grup de materiale pt.servicii piese de schimb
+100;SL;01;Blagovna skupina 1;
+100;SL;02;Blagovna skupina 2;
+100;SL;A001;Na konto za obračun;Blagovna skupina na konto za obračun
+100;SL;A002;Na konto za uporabo;Blagovna skupina na konto za uporabo
+100;SL;B001;Enkratni kredit;Blagovna skupina enkratni kredit
+100;SL;B002;Oblak prihodek;Blagovna skupina oblak prihodek
+100;SL;E001;Nastanitev;Blagovna skupina nastanitev
+100;SL;E002;Cena leta;Blagovna skupina cena leta
+100;SL;E003;Transport po kopnem;Blagovna skupina transport po kopnem
+100;SL;E004;Potni stroški razni;Blagovna skupina potni stroški razni
+100;SL;L001;Trgovsko blago;Blagovna skupina trgovsko blago
+100;SL;L002;Surovine;Blagovna skupina surovine
+100;SL;L003;Polizdelki;Blagovna skupina polizdelki
+100;SL;L004;Končni izdelki;Blagovna skupina končni izdelki
+100;SL;L005;Neovrednotni mater.;Blagovna skupina neovrednoteni materiali
+100;SL;L006;Povratna embalaža;Blagovna skupina materiali povratne embalaže
+100;SL;L007;Licence;Blagovna skupina licence
+100;SL;L008;Strojna oprema;Blagovna skupina za strojno opremo
+100;SL;P000;Vrsta pogodbe;Skupina blaga tip pogodbe
+100;SL;P001;Storitve;Blagovna skupina storitve
+100;SL;P002;Izdatki;Blagovna skupina stroški
+100;SL;P003;Periodična storitev;Blagovna skupina periodična storitev
+100;SL;YBFA01;Nepremičnine (zeml.);Blagovna skupina nepremičnine (zemljišče)
+100;SL;YBFA02;Stavbe;Blagovna skupina stavbe
+100;SL;YBFA03;Izboljšave zemljišča;Blagovna skupina izboljšave zakupa
+100;SL;YBFA04;Izboljšava zakupa;Blagovna skupina izboljšava zakupa
+100;SL;YBFA05;Tehn.oprema in str.;Blagovna skupina tehnična oprema in stroji
+100;SL;YBFA06;Opr.obr. in pos.opr.;Blagovna skupina oprema obrata in poslovna oprema
+100;SL;YBFA07;Vozila;Blagovna skupina vozila
+100;SL;YBFA08;Računalniška SO;Blagovna skupina računalniška strojna oprema
+100;SL;YBFA09;Računalniška PO;Blagovna skupina računalniška programska oprema
+100;SL;YBFA10;Gospod. dobrine NV;Blagovna skupina gospodarske dobrine nizke vrednosti
+100;SL;YBFA11;Druga nemater.sred.;Blagovna skupina druga nematerialna sredstva
+100;SL;YBFA12;Pisarniška oprema;Blagovna skupina pisarniška oprema
+100;SL;YBMM00;NeskladMateriaBrezID;Neskladiščni material brez ID
+100;SL;YBMM01;NeskladMateriaZID;Neskladiščni material z ID
+100;SL;YBPM01;Nadomestni deli;Skupina materiala za nadomestne dele
+100;SL;YBPM02;Storitve nadom.delov;Skupina materiala za storitve nadomestnih delov
+100;HR;01;Grupa materijala 1;
+100;HR;02;Grupa materijala 2;
+100;HR;A001;Fakturirano na konto;Grupa materijala na konto za fakturiranje
+100;HR;A002;Iskorišteno na konto;Grupa materijala na konto za korištenje
+100;HR;B001;Jednokratni kredit;Grupa materijala jednokratni kredit
+100;HR;B002;Cloud prihod;Grupa materijala Cloud prihod
+100;HR;E001;Smještaj;Grupa materijala smještaj
+100;HR;E002;Cijena leta;Grupa materijala cijena leta
+100;HR;E003;Putni troškovi;Grupa materijala putni troškovi
+100;HR;E004;Putni troškovi razno;Grupa materijala putni troškovi razno
+100;HR;L001;Trgovački materijali;Grupa materijala trgovački materijali
+100;HR;L002;Sirovine;Grupa materijala sirovine
+100;HR;L003;Poluproizvodi;Grupa materijala - poluproizvodi
+100;HR;L004;Gotova roba;Grupa materijala gotovi proizvodi
+100;HR;L005;Nevrednovani mater.;Grupa materijala nevrednovani materijali
+100;HR;L006;Povratna ambalaža;Grupa materijala materijali povratne ambalaže
+100;HR;L007;Dozvole;Grupa materijala licence
+100;HR;L008;Hardver;Grupa materijala za hardver
+100;HR;P000;Tip ugovora;Tip ugovora grupe materijala
+100;HR;P001;Usluge;Usluge grupe materijala
+100;HR;P002;Troškovi;Troškovi grupe materijala
+100;HR;P003;Periodička usluga;Grupa materijala periodična usluga
+100;HR;YBFA01;Nekretnine (zemlj.);Grupa materijala - nekretnine (zemljište)
+100;HR;YBFA02;Zgrade;Grupa materijala - zgrade
+100;HR;YBFA03;Poboljšanja zemljiš.;Grupa materijala - poboljšanja zemljišta
+100;HR;YBFA04;Poboljšanje zakupa;Grupa materijala - poboljšanje zakupa
+100;HR;YBFA05;Strojevi i uređaji;Grupa materijala - strojevi i uređaji
+100;HR;YBFA06;Uređaji i oprema;Grupa materijala - uređaji i oprema
+100;HR;YBFA07;Vozila;Grupa materijala - vozila
+100;HR;YBFA08;Računalni hardver;Grupa materijala - računalni hardver
+100;HR;YBFA09;Računalni softver;Grupa materijala - računalni softver
+100;HR;YBFA10;Imovina niske vrd;Grupa materijala - imovina niske vrijednosti
+100;HR;YBFA11;Druga NematerijImov;Grupa materijala - druga nematerijalna imovina
+100;HR;YBFA12;Uredska oprema;Grupa materijala - uredska oprema
+100;HR;YBMM00;Neskladiš.mat.bez ID;Neskladišteni materijal bez IDa
+100;HR;YBMM01;Nesklad. mater.s ID;Neskladišteni materijal s IDom
+100;HR;YBPM01;Rezervni dijelovi;Grupa materijala za rezervne dijelove
+100;HR;YBPM02;Usluge rez.dijelova;Grupa materijala za usluge rezervnih dijelova
+100;MS;01;Kumpulan bahan 1;
+100;MS;02;Kumpulan bahan 2;
+100;MS;A001;Pmbyr Kred Dibil;Kumpulan Bahan Pembayaran Kredit Dibilkan
+100;MS;A002;Pmbyrn Krdt Digunakn;Kumpulan Bahan Pembayaran Kredit Digunakan
+100;MS;B001;Kredit Sekali;Kredit Sekali kumpulan bahan
+100;MS;B002;Hasil Awan;Hasil Awan kumpulan bahan
+100;MS;E001;Penginapan;Penginapan kumpulan Bahan
+100;MS;E002;Tambang Penerbangan;Tambang kumpulan Bahan
+100;MS;E003;Pengangkutan Darat;Pengangkutan Darat kumpulan bahan
+100;MS;E004;Pelbgai Blanja Prjln;Pelbagai Belanja Perjalanan Kumpulan Bahan
+100;MS;L001;Bahan Perdagangan;Bahan Perdagangan kumpulan bahan
+100;MS;L002;Bahan Mentah;Bahan Mentah kumpulan Bahan
+100;MS;L003;Barangan Separh Siap;Barangan Separuh Siap kumpulan Bahan
+100;MS;L004;Barangan Siap;Barangan Siap kumpulan bahan
+100;MS;L005;Bahan Tidak Ternilai;Bahan Tidak Ternilai kumpulan bahan
+100;MS;L006;Pmbgksn Boleh Pulang;Pembungkusan Boleh Pulang kumpulan Bahan
+100;MS;L007;Lesen;Lesen kumpulan bahan
+100;MS;L008;Perkakasan;Kumpulan Bahan untuk Perkakasan
+100;MS;P000;Jenis Kontrak;Jenis Kontrak kumpulan bahan
+100;MS;P001;Perkhidmatan;Perkhidmatan kumpulan Bahan
+100;MS;P002;Perbelanjaan;Belanja kumpulan Bahan
+100;MS;P003;Perkhidmatan Berkala;Perkhidmatan Berkala kumpulan bahan
+100;MS;YBFA01;Harta Tanah (Tanah);Harta Tanah Kumpulan Bahan (Tanah)
+100;MS;YBFA02;Bangunan;Bangunan Kumpulan Bahan
+100;MS;YBFA03;Pembaikan Tanah;Peningkatan Tanah Kumpulan Bahan
+100;MS;YBFA04;Pngktn Pgangn Pajakn;Peningkatan Pegangan Pajakan Kumpulan Bahan
+100;MS;YBFA05;Peralatan Mesin;Peralatan Mesin Kumpulan Bahan
+100;MS;YBFA06;Lengkapan Lekapan;Lengkapan Lekapan Kumpulan Bahan
+100;MS;YBFA07;Kenderaan;Kenderaan Kumpulan Bahan
+100;MS;YBFA08;Perkakasan Komputer;Perkakasan Komputer Kumpulan Bahan
+100;MS;YBFA09;Perisian Komputer;Perisian Komputer Kumpulan Bahan
+100;MS;YBFA10;Aset Nilai Rendah;Aset Nilai Terendah Kumpulan Bahan
+100;MS;YBFA11;Aset Tak Ketara Lain;Aset Tak Ketara Lain Kumpulan Bahan
+100;MS;YBFA12;Peralatan Pejabat;Peralatan Pejabat Kumpulan Bahan
+100;MS;YBMM00;Bhn Bkn Stok tnp ID;Bahan Bukan Stok tanpa ID
+100;MS;YBMM01;Bhn Bkn Stok dgn ID;Bahan Bukan Stok dengan ID
+100;MS;YBPM01;Alat ganti;Kumpulan bahan untuk alat ganti
+100;MS;YBPM02;Perkhid. alat ganti;Kumpulan bahan untuk perkhidmatan alat ganti
+100;UK;01;Група матеріалів 1;
+100;UK;02;Група матеріалів 2;
+100;UK;A001;На рахунок розрах.;Група матеріалів на рахунок до розрахунку
+100;UK;A002;На рахунок використ.;Група матеріалів на рахунок до використання
+100;UK;B001;Разовий кредит;Група матеріалів: разовий кредит
+100;UK;B002;Виручка хмари;Група матеріалів: виручка хмари
+100;UK;E001;Проживання;Група матеріалів: проживання
+100;UK;E002;Ціна авіарейсу;Група матеріалів: ціна авіарейсу
+100;UK;E003;Перевез.назем.транс.;Група матеріалів: перевезення наземним транспортом
+100;UK;E004;Інші відрядні витр.;Група матеріалів: інші відрядні витрати
+100;UK;L001;Промислові матеріали;Група матеріалів: промислові матеріали
+100;UK;L002;Сировина;Група матеріалів: сировина
+100;UK;L003;Напівфабрикати;Група матеріалів: напівфабрикати
+100;UK;L004;Готові вироби;Група матеріалів: готові вироби
+100;UK;L005;Неоцінені матеріали;Група матеріалів: неоцінені матеріали
+100;UK;L006;Зворотна тара;Група матеріалів: матеріали зворотної тари
+100;UK;L007;Ліцензії;Група матеріалів: ліцензії
+100;UK;L008;Апаратні засоби;Група матеріалів для апаратних засобів
+100;UK;P000;Тип контракту;Група матеріалів: тип контракту
+100;UK;P001;Послуги;Група матеріалів: послуги
+100;UK;P002;Витрати;Група матеріалів: витрати
+100;UK;P003;Періодична послуга;Група матеріалів: періодична послуга
+100;UK;YBFA01;Нерухомість (зем.д.);Група матеріалів: нерухомість (земельні ділянки)
+100;UK;YBFA02;Будівлі;Група матеріалів: будівлі
+100;UK;YBFA03;Меліорація;Група матеріалів: меліорація
+100;UK;YBFA04;Удоскон.оренд.влас.;Група матеріалів: удосконалення орендованої властивості
+100;UK;YBFA05;Машини та обладнання;Група матеріалів: машини та обладнання
+100;UK;YBFA06;Устаткування;Група матеріалів: устаткування
+100;UK;YBFA07;Транспортні засоби;Група матеріалів: транспортні засоби
+100;UK;YBFA08;Апар.засоби комп.;Група матеріалів: апаратні засоби комп'ютера
+100;UK;YBFA09;ПЗ комп'ютера;Група матеріалів: ПЗ комп'ютера
+100;UK;YBFA10;Малоцін.осн.зас.;Група матеріалів: малоцінні основні засоби
+100;UK;YBFA11;Інші нематер.активи;Група матеріалів: інші нематеріальні активи
+100;UK;YBFA12;Офісне обладнання;Офісне обладнання групи матеріалів
+100;UK;YBMM00;Несклад.матер.без ІД;Нескладські матеріали без ІД
+100;UK;YBMM01;Несклад.матер.з ІД;Нескладські матеріали з ІД
+100;UK;YBPM01;Запасні частини;Група матеріалів для запасних частин
+100;UK;YBPM02;Обслугов.зап.частин;Група матеріалів для обслуговування запасних частин
+100;ET;01;Materjaligrupp 1;
+100;ET;02;Materjaligrupp 2;
+100;ET;A001;Arveldatud kontol;Materjaligrupp: arveldataval kontol
+100;ET;A002;Kasutatud kontol;Materjaligrupp: kasutataval kontol
+100;ET;B001;Ühekordne krediit;Materjaligrupp - ühekordne krediit
+100;ET;B002;Pilveteenus - tulu;Materjaligrupp - pilveteenus - tulu
+100;ET;E001;Majutus;Materjaligrupp: majutus
+100;ET;E002;Lennukulud;Materjaligrupp: lennukulud
+100;ET;E003;Maismaatransport;Materjaligrupp: maismaatransport
+100;ET;E004;Muud reisikulud;Materjaligrupp: muud reisikulud
+100;ET;L001;Kaubeldavad materj-d;Materjaligrupp: kaubeldavad materjalid
+100;ET;L002;Toorained;Materjaligrupp: toorained
+100;ET;L003;Pooltooted;Materjaligrupp: pooltooted
+100;ET;L004;Valmistooted;Materjaligrupp: valmistooted
+100;ET;L005;Mittehinn. materj-d;Materjaligrupp: mittehinnatavad materjalid
+100;ET;L006;Tagastatav pakend;Materjaligrupp: tagastatava pakendi materjalid
+100;ET;L007;Litsentsid;Materjaligrupp: litsentsid
+100;ET;L008;Riistvara;Riistvara materjaligrupp
+100;ET;P000;Lepingu tüüp;Materjaligrupp: lepingu tüüp
+100;ET;P001;Teenused;Materjaligrupp: teenused
+100;ET;P002;Kulud;Materjaligrupp: kulud
+100;ET;P003;Perioodiline teenus;Materjaligrupp: perioodiline teenus
+100;ET;YBFA01;Kinnisvara (maaüks.);Materjaligrupp Kinnisvara (maaüksused)
+100;ET;YBFA02;Ehitised;Materjalidgrupp Ehitised
+100;ET;YBFA03;Maa-arendused;Materjaligrupp Maa-arendused
+100;ET;YBFA04;Rendiomandi arendam.;Materjaligrupp Rendiomandi arendamine
+100;ET;YBFA05;Masinad, seadmed;Materjaligrupp Masinad, seadmed
+100;ET;YBFA06;Toot-sead., inventar;Materjaligrupp Tootmisseadmed, inventar
+100;ET;YBFA07;Sõidukid;Materjaligrupp Sõidukid
+100;ET;YBFA08;Arvuti riistvara;Materjaligrupp Arvutiriistvara
+100;ET;YBFA09;Arvutitarkvara;Materjaligrupp Arvutitarkvara
+100;ET;YBFA10;Väikevahendid;Materjaigrupp Väikevahendid
+100;ET;YBFA11;Muud immater. põhiv.;Materjaligrupp Muud immateriaalsed põhivarad
+100;ET;YBFA12;Kontoriseadmed;Materjaligrupi kontoriseadmed
+100;ET;YBMM00;Laos m.hoit.mat.IDta;ID-ta laos mittehoitavad materjalid
+100;ET;YBMM01;Laos m.hoit.mat.IDga;ID-ga laos mittehoitavad materjalid
+100;ET;YBPM01;Varuosad;Varuosade materjaligrupp
+100;ET;YBPM02;Varuosateenused;Varuosateenuste materjaligrupp
+100;AR;01;مجموعة المواد 1;
+100;AR;02;مجموعة المواد 2;
+100;AR;A001;على الحساب - مفوتر;مجموعة المواد على الحساب مطلوب فوترتها
+100;AR;A002;على الحساب - مستخدمة;مجموعة المواد على الحساب مطلوب استخدامها
+100;AR;B001;ائتمان لمرة واحدة;مجموعة المواد - ائتمان لمرة واحدة
+100;AR;B002;إيراد شبكة سحابية;مجموعة المواد - إيرادات أعمال الشبكة السحابية
+100;AR;E001;الإقامة;مجموعة المواد - الإقامة
+100;AR;E002;أجرة الطيران;ممجموعة المواد - أجرة الطيران
+100;AR;E003;النقل البري;النقل البري لمجموعة المواد
+100;AR;E004;مصاريف سفر متنوعة;مجموعة المواد - مصاريف سفر متنوعة
+100;AR;L001;مواد التجارة;مواد تجارة مجموعة المواد
+100;AR;L002;مواد خام;مواد خام - مجموعة المواد
+100;AR;L003;بضائع شبه نهائية;مجموعة المواد - بضائع شبه نهائية
+100;AR;L004;البضائع النهائية;مجموعة المواد - بضائع نهائية
+100;AR;L005;مواد غير مقيَّمة;مجموعة المواد - مواد غير مقيَّمة
+100;AR;L006;تعبئة قابلة للإرجاع;مجموعة المواد - مواد تعبئة قابلة للإرجاع
+100;AR;L007;تراخيص;تراخيص مجموعة المواد
+100;AR;L008;أجهزة;مجموعة المواد للأجهزة
+100;AR;P000;نوع العقد;نوع عقد مجموعة المواد
+100;AR;P001;الخدمات;خدمات مجموعة المواد
+100;AR;P002;المصاريف;مصاريف مجموعة المواد
+100;AR;P003;خدمة دورية;خدمة دورية لمجموعة المواد
+100;AR;YBFA01;عقارات (أراضي);مجموعة المواد - عقارات (أراضي)
+100;AR;YBFA02;المباني;مجموعة المواد - المباني
+100;AR;YBFA03;تحسينات الأراضي;مجموعة المواد - تحسينات في العقارات
+100;AR;YBFA04;تحسين مكان مستأجر;مجموعة المواد - تحسينات في الأماكن المستأجرة
+100;AR;YBFA05;آلات/معدات;مجموعة المواد - آلات/معدات
+100;AR;YBFA06;تجهيزات/لوازم;مجموعة المواد - تجهيزات/لوازم
+100;AR;YBFA07;مركبات;مجموعة المواد - مركبات
+100;AR;YBFA08;أجهزة الكمبيوتر;مجموعة المواد - أجهزة كمبيوتر
+100;AR;YBFA09;برامج كمبيوتر;مجموعة المواد - برامج كمبيوتر
+100;AR;YBFA10;أصول منخفضة القيمة;مجموعة المواد - أصول منخفضة القيمة
+100;AR;YBFA11;عناصر غير مادية أخرى;مجموعة المواد - أصول غير مادية أخرى
+100;AR;YBFA12;معدات مكتبية;مجموعة المواد - معدات مكتبية
+100;AR;YBMM00;موادغيرمخزونةبلامعرف;مواد غير مخزونة دون معرف
+100;AR;YBMM01;موادغير مخزونة بمعرف;مواد غير مخزونة بمعرف
+100;AR;YBPM01;قطع الغيار;مجموعة مواد قطع الغيار
+100;AR;YBPM02;خدمات قطع الغيار;مجموعة مواد خدمات قطع الغيار
+100;HE;01;קבוצת חומר 1;
+100;HE;02;קבוצת חומר 2;
+100;HE;A001;בחשבון לחיוב;קבוצת חומרים בחשבון לחיוב
+100;HE;A002;בחשבון לניצול;קבוצת חומרים בחשבון לניצול
+100;HE;B001;אשראי חד-פעמי;אשראי חד-פעמי של קבוצת חומרים
+100;HE;B002;הכנסה של ענן;הכנסה של ענן לקבוצת חומרים
+100;HE;E001;לינה;אחסון של קבוצת חומרים
+100;HE;E002;מחיר טיסה;מחיר טיסה של קבוצת חומרים
+100;HE;E003;הובלה על הקרקע;הובלה על הקרקע של קבוצת חומרים
+100;HE;E004;שונות ש.הוצאות הובלה;שונות של הוצאות הובלה של קבוצת חומרים
+100;HE;L001;מסחר בחומרים;מסחר בחומרים של קבוצת מחומרים
+100;HE;L002;חומרי גלם;חומרי גלם של קבוצת חומרים
+100;HE;L003;טובין גמורים למחצה;טובין גמורים למחצה של קבוצת חומרים
+100;HE;L004;תוצרת גמורה;תוצרת גמורה של קבוצת חומרים
+100;HE;L005;חומרים לא מוערכים;חומרים לא מוערכים של קבוצת חומרים
+100;HE;L006;אריזה ניתנת להחזרה;חומרים של אריזה ניתנת להחזרה של קבוצת חומרים
+100;HE;L007;רישיונות;רישיונות של קבוצת מוצרים
+100;HE;L008;חומרה;קבוצת חומרים עבור חומרה
+100;HE;P000;סוג חוזה;סוג חוזה של קבוצת חומרים
+100;HE;P001;שירותים;שירותים של קבוצת חומרים
+100;HE;P002;הוצאות;הוצאות של קבוצת חומרימ
+100;HE;P003;שירות תקופתי;שירות תקופתי לקבוצת מוצרים
+100;HE;YBFA01;"נדל""ן (קרקע)";"נדל""ן בקבוצת חומרים (קרקע)"
+100;HE;YBFA02;בניינים;בניינים בקבוצת חומרים
+100;HE;YBFA03;השבחות קרקע;השבחות קרקע בקבוצת חומרים
+100;HE;YBFA04;השבחת נכס מוחכר;השבחת נכס מוחכר בקבוצת חומרים
+100;HE;YBFA05;ציוד מכונות;ציוד מכונות בקבוצת חומרים
+100;HE;YBFA06;מתקנים וריהוט;מתקנים וריהוט בקבוצת חומרים
+100;HE;YBFA07;כלי רכב;כלי רכב בקבוצת חומרים
+100;HE;YBFA08;חומרת מחשב;חומרת מחשב בקבוצת חומרים
+100;HE;YBFA09;תוכנת מחשב;תוכנת מחשב בקבוצת חומרים
+100;HE;YBFA10;נכסים בעלי ערך נמוך;נכסים בעלי ערך נמוך בקבוצת חומרים
+100;HE;YBFA11;לא מוחשיים אחרים;לא מוחשיים אחרים בקבוצת חומרים
+100;HE;YBFA12;ציוד משרדי;קבוצת חומרים - ציוד משרדי
+100;HE;YBMM00;ח.לא באחסון ללא ז.;חומרים לא למלאי בלי זיהוי
+100;HE;YBMM01;ח.לא באחסון עם זיהוי;חומרים לא למלאי עם זיהוי
+100;HE;YBPM01;חלקי חילוף;קבוצת חומרים עבור חלקי חילוף
+100;HE;YBPM02;שירות של חלקי חילוף;קבוצת חומרים עבור שירות של חלקי חילוף
+100;CS;01;Skup.mater. 1;
+100;CS;02;Skup.mater. 2;
+100;CS;A001;Na účet k fakturaci;Skupina materiálů na účet k fakturaci
+100;CS;A002;Na účet k využití;Skupina materiálů na účet k využití
+100;CS;B001;Jednorázový úvěr;Skupina materiálů - jednorázový úvěr
+100;CS;B002;Výnos z cloudu;Skupina materiálů - cloudový výnos
+100;CS;E001;Ubytování;Skupina materiálů - ubytování
+100;CS;E002;Let;Skupina materiálů - letecká přeprava
+100;CS;E003;Pozemní přeprava;Skupina materiálů - pozemní přeprava
+100;CS;E004;Cestovní výdaje-ost.;Skupina materiálů - cestovní výdaje - různé
+100;CS;L001;Obchodní materiály;Skupina materiálů - obchodní materiály
+100;CS;L002;Suroviny;Skupina materiálů - suroviny
+100;CS;L003;Polotovary;Skupina materiálů - polotovary
+100;CS;L004;Hotové výrobky;Skupina materiálů - hotové výrobky
+100;CS;L005;Neoceněné materiály;Skupina materiálů - neoceněné materiály
+100;CS;L006;Vratné obaly;Skupina materiálů - vratné obalové materiály
+100;CS;L007;Licence;Skupina materiálů - licence
+100;CS;L008;Hardware;Skupina materiálů pro hardware
+100;CS;P000;Typ smlouvy;Skupina materiálů - typ smlouvy
+100;CS;P001;Služby;Skupina materiálů - služby
+100;CS;P002;Výdaje;Skupina materiálů - výdaje
+100;CS;P003;Pravidelná služba;Skupina materiálů - pravidelná služba
+100;CS;YBFA01;Nemovitosti-pozemky;Skupina materiálů - nemovitosti (pozemky)
+100;CS;YBFA02;Budovy;Skupina materiálů - budovy
+100;CS;YBFA03;Zúrodňování půdy;Skupina materiálů - úprava pozemku
+100;CS;YBFA04;Vylepš.naj.nemovit.;Skupina mateirálů - vylepšování najaté nemovitosti
+100;CS;YBFA05;Stroje a vybavení;Skupina materiálů - strojní vybavení
+100;CS;YBFA06;Provoz/kanc.vybavení;Skupina materiálů - provozní / kancelářské vybavení
+100;CS;YBFA07;Vozidla;Skupina materiálů - vozidla
+100;CS;YBFA08;Počítačový hardware;Skupina materiálů - počítačový hardware
+100;CS;YBFA09;Počítačový software;Skupina materiálů - počítačový software
+100;CS;YBFA10;Drobný inves.majetek;Skupina materiálů - majetek s nízkou hodnotou
+100;CS;YBFA11;Jiný dlouh.nehm.maj.;Skupina materiálů - jiný dlouhodobý nehmotný majetek
+100;CS;YBFA12;Kancelářské vybavení;Skupina materiálů - kancelářské vybavení
+100;CS;YBMM00;Neskl. mater. bez ID;Neskladové materiály - bez ID
+100;CS;YBMM01;Nesklad. mater. s ID;Neskladové materiály s ID
+100;CS;YBPM01;Náhradní díly;Skupina materiálů pro náhradní díly
+100;CS;YBPM02;Služby k náhr. dílům;Skupina materiálů pro služby k náhradním dílům
+100;DE;01;Warengruppe 1;
+100;DE;02;Warengruppe 2;
+100;DE;A001;Zu faktur. Akonto;Warengruppe - Zu fakturierendes Akonto
+100;DE;A002;Zu verwend. Akonto;Warengruppe - Zu verwendendes Akonto
+100;DE;B001;Einmalkredit;Einmalkredit Materialgruppe
+100;DE;B002;Cloud-Erlös;Cloud-Erlös Materialgruppe
+100;DE;E001;Unterbringung;Warengruppe Unterbringung
+100;DE;E002;Flugkosten;Warengruppe Flugkosten
+100;DE;E003;Fahrtkosten;Warengruppe Fahrtkosten
+100;DE;E004;Sonstige Reisekosten;Warengruppe - sonstige Reisekosten
+100;DE;L001;Handelswaren;Warengruppe Handelswaren
+100;DE;L002;Rohstoffe;Materialgruppe Rohstoffe
+100;DE;L003;Halbfabrikate;Materialgruppe Halbfabrikate
+100;DE;L004;Fertigerzeugnisse;Materialgruppe Fertigerzeugnisse
+100;DE;L005;Unbewertete Mat.;Materialgruppe unbewertete Materialien
+100;DE;L006;Leihgut;Materialgruppe Leihgüter
+100;DE;L007;Lizenzen;Materialgruppe Lizenzen
+100;DE;L008;Hardware;Materialgruppe für Hardware
+100;DE;P000;Vertragsart;Warengruppe Vertragsart
+100;DE;P001;Dienstleistungen;Warengruppe Dienstleistungen
+100;DE;P002;Aufwendungen;Warengruppe Aufwendungen
+100;DE;P003;Periodischer Service;Materialgruppe periodischer Service
+100;DE;YBFA01;Immobilien (Grundst);Warengruppe - Immobilien (Grundstück)
+100;DE;YBFA02;Gebäude;Warengruppe - Gebäude
+100;DE;YBFA03;Bodenerschließungen;Warengruppe - Bodenerschließungen
+100;DE;YBFA04;Pachterschließungen;Warengruppe - Pachterschließungen
+100;DE;YBFA05;Anlagen u. Maschinen;Warengruppe - Anlagen und Maschinen
+100;DE;YBFA06;Ausstattungen;Warengruppe - Ausstattungen
+100;DE;YBFA07;Fahrzeuge;Warengruppe - Fahrzeuge
+100;DE;YBFA08;Computer-Hardware;Warengruppe - Computer-Hardware
+100;DE;YBFA09;Computer-Software;Warengruppe - Computer-Software
+100;DE;YBFA10;Geringw. WirtGüter;Warengruppe - Geringwertige Wirtschaftsgüter
+100;DE;YBFA11;Sons. immat. Vermög.;Warengruppe - Sonstige immaterielle Vermögensgegenstände
+100;DE;YBFA12;Bet.- u. GeschAusst.;Warengruppe Betriebs- und Geschäftsausstattung
+100;DE;YBMM00;NichtlagMat. ohne ID;Nichtlagermaterialien ohne ID
+100;DE;YBMM01;NichtlagMat. mit ID;Nichtlagermaterialien mit ID
+100;DE;YBPM01;Ersatzteile;Warengruppe für Ersatzteile
+100;DE;YBPM02;Ersatzteileservices;Warengruppe für Ersatzteileservices
+100;EN;01;Material group 1;
+100;EN;02;Material group 2;
+100;EN;211502;Screws;Screws
+100;EN;A001;On Account Billed;Material Group On Account to be Billed
+100;EN;A002;On Account Utilized;Material Group On Account to be Utilized
+100;EN;B001;One Time Credit;Material group One Time Credit
+100;EN;B002;Cloud Revenue;Material group Cloud Revenue
+100;EN;E001;Accommodation;Material group Accommodation
+100;EN;E002;Airfare;Material group Airfare
+100;EN;E003;Ground Transp.;Material group Ground Transportation
+100;EN;E004;Travel Expenses misc;Material group Travel Expenses misc
+100;EN;FL80;Equipment forklift;Material group equipment forklift
+100;EN;L001;Trading Materials;Material group Trading Materials
+100;EN;L002;Raw Materials;Material group Raw Materials
+100;EN;L003;Semi-Finished Goods;Material group Semi-Finished Goods
+100;EN;L004;Finished Goods;Material group Finished Goods
+100;EN;L005;Unvaluated Materials;Material group Non-valuated Materials
+100;EN;L006;Returnable Packaging;Material group Returnable Packaging Materials
+100;EN;L007;Licenses;Material group Licenses
+100;EN;L008;Hardware;Material Group for Hardware
+100;EN;P000;Contract Type;Material group Contract type
+100;EN;P001;Services;Material group Services
+100;EN;P002;Expenses;Material group Expenses
+100;EN;P003;Periodic Service;Material group Periodic Service
+100;EN;YBFA01;Real Estate (Land);Material Group Real Estate (Land)
+100;EN;YBFA02;Buildings;Material Group Buildings
+100;EN;YBFA03;Land Improvements;Material Group Land Improvements
+100;EN;YBFA04;Leasehold Improvemen;Material Group Leasehold Improvemen
+100;EN;YBFA05;Machinery Equipment;Material Group Machinery Equipment
+100;EN;YBFA06;Fixtures Fittings;Material Group Fixtures Fittings
+100;EN;YBFA07;Vehicles;Material Group Vehicles
+100;EN;YBFA08;Computer Hardware;Material Group Computer Hardware
+100;EN;YBFA09;Computer Software;Material Group Computer Software
+100;EN;YBFA10;Low Value Assets;Material Group Low Value Assets
+100;EN;YBFA11;Other Intangibles;Material Group Other Intangibles
+100;EN;YBFA12;Office Equipment;Material Group Office Equipment
+100;EN;YBMM00;Non-Sto Mat. w.o ID;Non-Stock Materials without ID
+100;EN;YBMM01;Non-Sto Mat. w. ID;Non-Stock Materials with ID
+100;EN;YBPM01;Spare parts;Material group for spare parts
+100;EN;YBPM02;Spare parts services;Material group for spare parts services
+100;EN;Z991;E-Bike;Material group E-Bike
+100;EN;Z992;E-Bike;Material group E-Bike Components
+100;EN;ZBRAKES;Brakes;
+100;EN;ZCRUISE;Cruise;
+100;EN;ZFORK;Forks;
+100;EN;ZFRAME;Frame;
+100;EN;ZGEARS;Derailleur Gears;
+100;EN;ZHANDLE;Handle Bars;
+100;EN;ZMTN;Mountain;
+100;EN;ZPEDAL;Pedal Kit;
+100;EN;ZRACING;Racing;
+100;EN;ZSEAT;Seat;
+100;EN;ZSERV;Services;
+100;EN;ZSHOCK;Shock Kit;
+100;EN;ZTRAIN;Drive Train;
+100;EN;ZWHEEL;Wheels;
+100;EN;ZYOUTH;Youth;
+100;FR;01;Groupe marchand. 1;
+100;FR;02;Groupe marchand. 2;
+100;FR;A001;Acompte facturé;Groupe de marchandises - Acompte à facturer
+100;FR;A002;Acompte utilisé;Groupe de marchandises - Acompte à utiliser
+100;FR;B001;Crédit unique;Groupe d'articles crédit unique
+100;FR;B002;Produit Cloud;Groupe d'articles produit Cloud
+100;FR;E001;Logement;Groupe de marchandises - Logement
+100;FR;E002;Prix du vol;Groupe de marchandises - Prix du vol
+100;FR;E003;Transport terrestre;Groupe de marchandises - Transport terrestre
+100;FR;E004;Frais déplac. divers;Groupe de marchandises - Frais de déplacement divers
+100;FR;L001;Prod. commercial.;Groupe de marchandises - Matières itinérantes
+100;FR;L002;Matières premières;Groupe d'articles matières premières
+100;FR;L003;Produits semi-finis;Groupe d'articles produits semi-finis
+100;FR;L004;Produits finis;Groupe d'articles produits finis
+100;FR;L005;Articles non valor.;Groupe d'articles - Articles non valorisés
+100;FR;L006;Emballage consigné;Groupe d'articles - Emballages d'expédition consignés
+100;FR;L007;Licences;Groupe d'articles - licences
+100;FR;L008;Matériel;Groupe d'articles pour matériel
+100;FR;P000;Type de contrat;Groupe de marchandises - Type de contrat
+100;FR;P001;Services;Groupe de marchandises - Services
+100;FR;P002;Dépenses;Groupe de marchandises - Frais
+100;FR;P003;Service périodique;Groupe d'articles - service périodique
+100;FR;YBFA01;Immobilier (terrain);Groupe de marchandises - Immobilier (terrain)
+100;FR;YBFA02;Bâtiments;Groupe de marchandises - Bâtiments
+100;FR;YBFA03;Amélior. terrain;Groupe de marchandises - Améliorations du terrain
+100;FR;YBFA04;Amélior. propriété;Groupe de marchandises - Améliorations de la propriété
+100;FR;YBFA05;Matériel outillage;Groupe de marchandises - Matériel outillage
+100;FR;YBFA06;Équipement;Groupe de marchandises - Équipement
+100;FR;YBFA07;Véhicules;Groupe de marchandises - Véhicules
+100;FR;YBFA08;Mat. informatique;Groupe de marchandises - Matériel informatique
+100;FR;YBFA09;Logiciels info.;Groupe de marchandises - Logiciels informatiques
+100;FR;YBFA10;Immob. moindre val.;Groupe de marchandises - Immobilisations de moindre valeur
+100;FR;YBFA11;Autres immob.incorp.;Groupe marchandises - Autres immobilisations incorporelles
+100;FR;YBFA12;Équipement de bureau;Groupe de marchandises équipement de bureau
+100;FR;YBMM00;Art.non stock sansID;Articles non gérés en stock sans ID
+100;FR;YBMM01;Art.non stock av. ID;Articles non gérés en stock avec ID
+100;FR;YBPM01;Pièces de rechange;Groupe de marchandises pour pièces de rechange
+100;FR;YBPM02;Services pces rech.;Groupe de marchandises pour services des pièces de rechange
+100;EL;01;Ομάδα υλικών  1;
+100;EL;02;Ομάδα υλικών 2;
+100;EL;A001;Τιμολ.σε Λογαριασμό;Ομάδα Υλικών σε Λογαριασμό προς Τιμολόγηση
+100;EL;A002;Χρήση Σε Λογαριασμό;Ομάδα Υλικών σε Λογαριασμό προς Χρήση
+100;EL;B001;Πίστωση Μίας Φοράς;Ομάδα υλικών για Πίστωση Μίας Φοράς
+100;EL;B002;Εσοδα Cloud;Εσοδα Cloud από ομάδα υλικών
+100;EL;E001;Διαμονή;Αποθήκευση ομάδας προϊόντων
+100;EL;E002;Αεροπ.Εισιτήριο;Αεροπ.ναύλος για ομάδα προϊόντων
+100;EL;E003;Μεταφορά Εδάφους;Μεταφορά Εδάφους για ομάδα προϊόντων
+100;EL;E004;Διάφ.Εξοδα Ταξιδίου;Διαφορά Εξοδα Ταξιδίου για ομάδα προϊόντων
+100;EL;L001;Προϊόντα Εμπορίου;Ομάδα προϊόντων για Προϊόντα Εμπορίου
+100;EL;L002;Πρώτες Υλες;Πρώτες Υλες Ομάδας Προϊόντων
+100;EL;L003;Ημιτελή Προϊόντα;Ημιτελή Προϊόντα της ομάδας προϊόντων
+100;EL;L004;Ετοιμα Προϊόντα;Ομάδα προϊόντων για Ημιτελή Προϊόντα
+100;EL;L005;Μη Αποτιμημ.Προϊόντα;Ομάδα προϊόντων για Μη Αποτιμημ.Προϊόντα
+100;EL;L006;Επιστρέψ.Συσκευασία;Ομάδα προϊόντων για Επιστρέψιμα Υλικά Συσκευασίας
+100;EL;L007;Αδειες;Ομάδα υλικών για Αδειες
+100;EL;L008;Τεχν.Εξοπλ.;Ομάδα Υλικών για Υλικοτεχνικό Εξοπλισμό
+100;EL;P000;Τύπος Σύμβασης;Τύπος Σύμβασης για ομάδα προϊόντων
+100;EL;P001;Υπηρεσίες;Υπηρεσίες ομάδας προϊόντων
+100;EL;P002;Δαπάνες;Εξοδα ομάδας προϊόντων
+100;EL;P003;Περιοδική Υπηρεσία;Ομάδα Υλικών για Περιοδική Υπηρεσία
+100;EL;YBFA01;Ακίνητη Περιουσία;Ομάδα Υλικών για Ακίνητη Περιουσία (Οικόπεδα)
+100;EL;YBFA02;Κτίρια;Κτίρια για Ομάδα Υλικών
+100;EL;YBFA03;Εγγειες Βελτιώσεις;Βελτιώσεις Οικοπέδων για Ομάδα Υλικών
+100;EL;YBFA04;Βελτίωση μίσθωσης;Βελτίωση Μίσθωσης Ομάδας Υλικού
+100;EL;YBFA05;Μηχανολογ.Εξοπλισμός;Ομάδα Υλικών-Εξοπλισμός Μηχανημάτων
+100;EL;YBFA06;Εγκατ.και Εξοπλισμός;Ομάδα Υλικών-Εγκαταστάσεις και Εξοπλισμός
+100;EL;YBFA07;Οχήματα;Ομάδα Υλικών-Οχήματα
+100;EL;YBFA08;Λογισμ.Υλικ.Εξοπλ;Ομάδα Υλικών-Τεχνολογικός Εξοπλισμός Υπολογιστών
+100;EL;YBFA09;Λογισμικό Υπολογιστή;Ομάδα Υλικών-Λογισμικό Υπολογιστών
+100;EL;YBFA10;Πάγια Χαμηλής Αξίας;Ομάδα Υλικών-Πάγια Χαμηλής Αξίας
+100;EL;YBFA11;Λοιπά Αϋλα Πάγια;Ομάδα Υλικών-Αλλα Αϋλα Στοιχεία
+100;EL;YBFA12;Εξοπλισμός Γραφείου;Ομάδα Υλικών για Εξοπλισμό Γραφείου
+100;EL;YBMM00;Υλ.Εκτ.Αποθ.χωρίς ΙD;Υλικά εκτός Αποθέματος χωρίς ID
+100;EL;YBMM01;Υλ.Εκτ.Αποθ.με ID;Υλικά εκτός Αποθέματος με ID
+100;EL;YBPM01;Ανταλλακτικά;Ομάδα υλικού για ανταλλακτικά
+100;EL;YBPM02;Υπηρεσ.ανταλλακτικών;Ομάδα υλικού για υπηρεσίες ανταλλακτικών
+100;HU;01;1. anyagcsoport;
+100;HU;02;2. anyagcsoport;
+100;HU;A001;Számlázott a-conto;Anyagcsoport - számlázandó a-conto
+100;HU;A002;Felhaszn. a-conto;Anyagcsoport - felhasználandó a-conto
+100;HU;B001;Egyszeri jóváírás;Anyagcsoport - egyszeri hitel
+100;HU;B002;Felhő árbevétele;Anyagcsoport - felhő árbevétele
+100;HU;E001;Szállás;Anyagcsoport - szállás
+100;HU;E002;Repülőjegy;Anyagcsoport - repülőjegy
+100;HU;E003;Földfelsz. útiktg.;Anyagcsoport - földfelszíni útiköltség
+100;HU;E004;Egyéb útiköltségek;Anyagcsoport - egyéb útiköltségek
+100;HU;L001;Kereskedelmi áruk;Anyagcsoport - kereskedelmi áruk
+100;HU;L002;Nyersanyagok;Anyagcsoport - nyersanyagok
+100;HU;L003;Félkész termékek;Anyagcsoport - félkész termékek
+100;HU;L004;Késztermékek;Anyagcsoport - késztermékek
+100;HU;L005;Nem értékelt anyagok;Anyagcsoport - nem értékelt anyagok
+100;HU;L006;Göngyöleg;Anyagcsoport - göngyölegek
+100;HU;L007;Licencek;Anyagcsoport licencei
+100;HU;L008;Hardver;Anyagcsoport - hardver
+100;HU;P000;Szerződésfajta;Anyagcsoport - szerződésfajta
+100;HU;P001;Szolgáltatások;Anyagcsoport - szolgáltatások
+100;HU;P002;Kiadások;Anyagcsoport - kiadások
+100;HU;P003;Periodikus szolg.;Anyagcsoport periodikus szolgáltatásai
+100;HU;YBFA01;Ingatlan (telek);Anyagcsoport - ingatlan (telek)
+100;HU;YBFA02;Épületek;Anyagcsoport - épületek
+100;HU;YBFA03;Területfejlesztések;Anyagcsoport - területfejlesztések
+100;HU;YBFA04;Bérlet felújítása;Anyagcsoport - bérlet felújítása
+100;HU;YBFA05;Műsz.berend.és gépek;Anyagcsoport - műszaki berendezések és gépek
+100;HU;YBFA06;Irodai berendezések;Anyagcsoport - irodai berendezések
+100;HU;YBFA07;Járművek;Anyagcsoport - járművek
+100;HU;YBFA08;Számítógéphardver;Anyagcsoport - számítógéphardver
+100;HU;YBFA09;Számítógépszoftver;Anyagcsoport - számítógépszoftver
+100;HU;YBFA10;Csekély é. vagyone.;Anyagcsoport - csekély értékű vagyoneszközök
+100;HU;YBFA11;Egyéb immat. javak;Anyagcsoport - - egyéb immateriális javak
+100;HU;YBFA12;Irodai berendezések;Anyagcsoport - irodai berendezések
+100;HU;YBMM00;N.rakt. anyag ID nlk;Nem raktári anyagok azonosító nélkül
+100;HU;YBMM01;N.rakt. anyag ID-vel;Nem raktári anyagok azonosítóval
+100;HU;YBPM01;Pótalkatrészek;Anyagcsoport pótalkatrészekhez
+100;HU;YBPM02;Pótalkatrész-szolg.;Anyagcsoport pótalkatrész-szolgáltatásokhoz
+100;IT;01;Gruppo merci 1;
+100;IT;02;Gruppo merci 2;
+100;IT;A001;Acconto fatturato;Gruppo materiali su conto da fatturare
+100;IT;A002;Acconto utilizzato;Gruppo materiali su conto da utilizzare
+100;IT;B001;Credito unico;Gruppo materiale credito unico
+100;IT;B002;Ricavi cloud;Gruppo materiale ricavi cloud
+100;IT;E001;Alloggio;Gruppo materiali sistemazione
+100;IT;E002;Tariffa aerea;Gruppo materiali tariffa aerea
+100;IT;E003;Trasporto via terra;Gruppo materiali trasporto via terra
+100;IT;E004;Sp. trasf. varie;Gruppo materiali - spese di trasferta varie
+100;IT;L001;Materiali trading;Gruppo materiali - materiali trading
+100;IT;L002;Materie prime;Gruppo materiali materie prime
+100;IT;L003;Prodotti semi-finiti;Gruppo materiali prodotti semi-finiti
+100;IT;L004;Prodotti finiti;Gruppo materiali prodotti finiti
+100;IT;L005;Materiali non valut.;Gruppo materiali materiali non valutati
+100;IT;L006;Vuoto a rendere;Gruppo materiali vuoti a rendere
+100;IT;L007;Licenze;Gruppo materiali licenze
+100;IT;L008;Hardware;Gruppo merci per hardware
+100;IT;P000;Tipo di contratto;Gruppo materiali - tipo di contratto
+100;IT;P001;Servizi;Gruppo materiali - servizi
+100;IT;P002;Spese;Gruppo materiali - spese
+100;IT;P003;Servizio periodico;Gruppo materiali servizio periodico
+100;IT;YBFA01;Beni immobil.(terr.);Gruppo merci - beni immobiliari (terreno)
+100;IT;YBFA02;Edifici;Gruppo merci - edifici
+100;IT;YBFA03;Miglior. fondiari;Gruppo merci - miglioramenti fondiari
+100;IT;YBFA04;Migl.su beni di trz.;Gruppo merci - migliorie su beni di terzi
+100;IT;YBFA05;Impianti e macchine;Gruppo merci - impianti e macchine
+100;IT;YBFA06;Dotazioni;Gruppo merci - dotazioni
+100;IT;YBFA07;Veicoli;Gruppo merci - veicoli
+100;IT;YBFA08;Hardware di computer;Gruppo merci - hardware di computer
+100;IT;YBFA09;Software di computer;Gruppo merci - software di computer
+100;IT;YBFA10;Cesp. valore esiguo;Gruppo merci - cespiti di valore esiguo
+100;IT;YBFA11;Altri beni immater.;Gruppo merci - altri beni immateriali
+100;IT;YBFA12;Attrezz. da ufficio;Gruppo di materiali - attrezzatura da ufficio
+100;IT;YBMM00;MatNGestMag sz. ID;Materiali non gestiti a magazzino senza ID
+100;IT;YBMM01;MatNGestMag con ID;Materiali non gestiti a magazzino con ID
+100;IT;YBPM01;Pezzi di ricambio;Gruppo merci per pezzi di ricambio
+100;IT;YBPM02;Serv. pezzi ricambio;Gruppo merci per servizi relativi a pezzi di ricambio
+100;JA;01;品目グループ 1;
+100;JA;02;品目グループ 2;
+100;JA;A001;請求対象勘定;品目グループ請求対象勘定
+100;JA;A002;利用対象勘定;品目グループ利用対象勘定
+100;JA;B001;ワンタイムクレジット;品目グループワンタイムクレジット
+100;JA;B002;クラウド収益;品目グループクラウド収益
+100;JA;E001;宿泊;品目グループ宿泊
+100;JA;E002;航空運賃;品目グループ航空運賃
+100;JA;E003;出張経費;品目グループ陸上輸送
+100;JA;E004;旅費その他;品目グループ旅費その他
+100;JA;L001;取引品目;品目グループ取引品目
+100;JA;L002;原材料;品目グループ原材料
+100;JA;L003;半製品;品目グループ半製品
+100;JA;L004;完成品;品目グループ完成品
+100;JA;L005;非評価品目;品目グループ非評価品目
+100;JA;L006;要返却梱包材;品目グループ要返却梱包材
+100;JA;L007;ライセンス;品目グループライセンス
+100;JA;L008;ハードウェア;ハードウェアの品目グループ
+100;JA;P000;契約タイプ;品目グループ契約タイプ
+100;JA;P001;サービス;品目グループサービス
+100;JA;P002;経費;品目グループ経費
+100;JA;P003;定期サービス;品目グループ定期サービス
+100;JA;YBFA01;不動産 (土地);品目グループ不動産 (土地)
+100;JA;YBFA02;建物;品目グループ建物
+100;JA;YBFA03;土地改良;品目グループ土地改良
+100;JA;YBFA04;賃貸借物件改善;品目グループ賃貸借物件改善
+100;JA;YBFA05;機械および装置;品目グループ機械および装置
+100;JA;YBFA06;器具備品;品目グループ器具備品
+100;JA;YBFA07;自動車;品目グループ自動車
+100;JA;YBFA08;コンピュータ HW;品目グループコンピュータハードウェア
+100;JA;YBFA09;コンピュータ SW;品目グループコンピュータソフトウェア
+100;JA;YBFA10;少額資産;品目グループ少額資産
+100;JA;YBFA11;その他無形資産;品目グループその他無形資産
+100;JA;YBFA12;事務設備;品目グループ事務設備
+100;JA;YBMM00;ID なしの非在庫品目;ID なしの非在庫品目
+100;JA;YBMM01;ID ありの非在庫品目;ID ありの非在庫品目
+100;JA;YBPM01;予備部品;予備部品の品目グループ
+100;JA;YBPM02;予備部品サービス;予備部品サービスの品目グループ
+100;DA;01;Varegruppe 1;
+100;DA;02;Varegruppe 2;
+100;DA;A001;Aconto faktureret;Varegruppe aconto, som skal faktureres
+100;DA;A002;Aconto udnyttet;Varegruppe aconto, som skal anvendes
+100;DA;B001;Engangskredit;Varegruppe engangskredit
+100;DA;B002;Cloud-indtægt;Varegruppe Cloud-indtægt
+100;DA;E001;Logi;Varegruppe logi
+100;DA;E002;Flyrejsepris;Varegruppe flyrejsepris
+100;DA;E003;Landtransport;Varegruppe landtransport
+100;DA;E004;Andre rejseomkostn.;Varegruppe andre rejseomkostninger
+100;DA;L001;Handelsvarer;Varegruppe handelsvarer
+100;DA;L002;Råstoffer;Varegruppe råstoffer
+100;DA;L003;Halvfabrikata;Varegruppe halvfabrikata
+100;DA;L004;Færdigvarer;Varegruppe færdigvare
+100;DA;L005;Ikkevurd. materialer;Varegruppe ikkevurderede materialer
+100;DA;L006;Returemballage;Varegruppe returemballagematerialer
+100;DA;L007;Licenser;Varegruppelicenser
+100;DA;L008;Hardware;Materialegruppe for hardware
+100;DA;P000;Kontraktart;Varegruppe kontraktart
+100;DA;P001;Services;Varegruppe services
+100;DA;P002;Udgifter;Varegruppe udgifter
+100;DA;P003;Periodisk service;Periodisk service for varegruppe
+100;DA;YBFA01;Grundstykker (land);Varegruppe - grundstykker (land)
+100;DA;YBFA02;Bygninger;Varegruppe - bygninger
+100;DA;YBFA03;Grundforbedringer;Varegruppe - grundforbedringer
+100;DA;YBFA04;Indret. af lej. lok.;Varegruppe - indretning af lejede lokaler
+100;DA;YBFA05;TAM;Varegruppe - tekniske anlæg og maskiner
+100;DA;YBFA06;Facilitet;Varegruppe - facilitet
+100;DA;YBFA07;Køretøjer;Varegruppe - køretøjer
+100;DA;YBFA08;Computerhardware;Varegruppe - computerhardware
+100;DA;YBFA09;Computersoftware;Varegruppe - computersoftware
+100;DA;YBFA10;Småanskaffelser;Varegruppe - småanskaffelser
+100;DA;YBFA11;Andre immater. goder;Varegruppe - andre immaterielle goder
+100;DA;YBFA12;Kontorinventar;Varegruppe kontorinventar
+100;DA;YBMM00;Ikkelager. mat. u/ID;Ikkelagerførte materialer uden ID
+100;DA;YBMM01;Ikkelager. mat. m/ID;Ikkelagerførte materialer med ID
+100;DA;YBPM01;Reservedele;Varegruppe for reservedele
+100;DA;YBPM02;Reservedelsservices;Varegruppe for reservedelsservices
+100;PL;01;Grupa materiałowa 1;
+100;PL;02;Grupa materiałowa 2;
+100;PL;A001;Zafaktur. na koncie;Grupa materiałowa - na koncie do zafakturowania
+100;PL;A002;Wykorz. na koncie;Grupa materiałowa - na koncie do wykorzystania
+100;PL;B001;Kredyt jednorazowy;Grupa materiałowa - kredyt jednorazowy
+100;PL;B002;Chmura - przychód;Grupa materiałowa - przychód z chmury
+100;PL;E001;Nocleg;Grupa materiałowa - nocleg
+100;PL;E002;Koszty przelotu;Grupa materiałowa - koszty przelotu
+100;PL;E003;Transport naziemny;Grupa materiałowa - transport naziemny
+100;PL;E004;Inne koszty podróży;Grupa materiałowa - inne koszty podróży
+100;PL;L001;Materiały handlowe;Grupa materiałowa - materiały handlowe
+100;PL;L002;Surowce;Grupa materiałów - surowce
+100;PL;L003;Półprodukty;Grupa materiałów - półprodukty
+100;PL;L004;Produkty gotowe;Grupa materiałów - produkty gotowe
+100;PL;L005;Mater. niewycenione;Grupa materiałów - materiały niewycenione
+100;PL;L006;Opakowania zwrotne;Grupa materiałów - opakowania zwrotne
+100;PL;L007;Licencje;Grupa materiałowa - licencje
+100;PL;L008;Sprzęt;Grupa materiałowa dla sprzętu
+100;PL;P000;Rodzaj umowy;Grupa materiałowa - rodzaj umowy
+100;PL;P001;Usługi;Grupa materiałowa - usługi
+100;PL;P002;Wydatki;Grupa materiałowa - wydatki
+100;PL;P003;Usługa okresowa;Grupa materiałowa - konserwacja
+100;PL;YBFA01;Nieruchom. (grunty);Grupa materiałowa: Nieruchomości (grunty)
+100;PL;YBFA02;Budynki;Grupa materiałowa: Budynki
+100;PL;YBFA03;Udoskonal. gruntów;Grupa materiałowa: Udoskonalenia gruntów
+100;PL;YBFA04;Inw. w obce śr. trw.;Grupa materiałowa: Inwestycje w obce środki trwałe
+100;PL;YBFA05;Maszyny i urządzenia;Grupa materiałowa: Maszyny i urządzenia
+100;PL;YBFA06;Wyposażenie zakładu;Grupa materiałowa: Wyposażenie zakładu
+100;PL;YBFA07;Środki transportu;Grupa materiałowa: Pojazdy
+100;PL;YBFA08;Sprzęt komputerowy;Grupa materiałowa: Sprzęt komputerowy
+100;PL;YBFA09;Oprogramowanie komp.;Grupa materiałowa: Oprogramowanie komputerowe
+100;PL;YBFA10;Niskocenne AT;Grupa materiałowa: Niskocenne aktywa trwałe
+100;PL;YBFA11;In.wart.niem.i praw.;Grupa materiałowa: Inne wartości niematerialne i prawne
+100;PL;YBFA12;Wyposażenie biura;Grupa materiałowa: Wyposażenie biura
+100;PL;YBMM00;Mat. niemag. bez ID;Materiały niemagazynowane bez ID
+100;PL;YBMM01;Mat. niemag. z ID;Materiały niemagazynowane z ID
+100;PL;YBPM01;Części zamienne;Grupa mat. dla części zamiennych
+100;PL;YBPM02;Usł. z częśc. zam.;Grupa mat. dla usług z częściami zaminnymi
+100;ZF;01;物料群組 1;
+100;ZF;02;物料群組 2;
+100;ZF;A001;請款帳戶;待請款的物料群組科目
+100;ZF;A002;運用帳戶;待運用帳戶的物料群組
+100;ZF;B001;一次性信用;物料群組一次性信用
+100;ZF;B002;雲端收入;物料群組雲端收入
+100;ZF;E001;住宿;物料群組住宿
+100;ZF;E002;機票費;物料群組機票費
+100;ZF;E003;陸地運輸;物料群組陸地運輸
+100;ZF;E004;差旅費用雜項;物料群組差旅費用雜項
+100;ZF;L001;買賣物料;物料群組買賣物料
+100;ZF;L002;原料;物料群組原料
+100;ZF;L003;半成品;物料群組半成品
+100;ZF;L004;成品;物料群組成品
+100;ZF;L005;未評價物料;物料群組未評價物料
+100;ZF;L006;可退包裝;物料群組可退包裝物料
+100;ZF;L007;許可證;物料群組許可證
+100;ZF;L008;硬體;硬體物料群組
+100;ZF;P000;契約類型;物料群組契約類型
+100;ZF;P001;服務;物料群組服務
+100;ZF;P002;費用;物料群組費用
+100;ZF;P003;定期服務;物料群組定期服務
+100;ZF;YBFA01;不動產〈土地〉;物料群組不動產〈土地〉
+100;ZF;YBFA02;建築物;物料群組建築物
+100;ZF;YBFA03;土地改善;物料群組租賃改善
+100;ZF;YBFA04;租賃改善;物料群組租賃改善
+100;ZF;YBFA05;機器設備;物料群組機器設備
+100;ZF;YBFA06;家具設備與裝置;物料群組家具設備與裝置
+100;ZF;YBFA07;交通工具;物料群組交通工具
+100;ZF;YBFA08;電腦硬體;物料群組電腦硬體
+100;ZF;YBFA09;電腦軟體;物料群組電腦軟體
+100;ZF;YBFA10;低值資產;物料群組低值資產
+100;ZF;YBFA11;其他無形資產;物料群組其他無形資產
+100;ZF;YBFA12;辦公室設備;物料群組辦公室設備
+100;ZF;YBMM00;非庫存物料〈無 ID〉;無 ID 的無庫存物料
+100;ZF;YBMM01;非庫存物料〈含 ID〉;非庫存物料〈含 ID〉
+100;ZF;YBPM01;備用零件;備用零件物料群組
+100;ZF;YBPM02;備用零件服務;備用零件服務物料群組
+100;NL;01;Goederengroep 1;
+100;NL;02;Goederengroep 2;
+100;NL;A001;Op facturatierek.;Artikelgroep op facturatierekening
+100;NL;A002;Op bestedingsrek.;Goederengroep op bestedingsrekening
+100;NL;B001;Eenmalig krediet;Artikelgroep - eenmalig krediet
+100;NL;B002;Cloudopbrengst;Artikelgroep - cloudopbrengst
+100;NL;E001;Accommodatie;Goederengroep: accommodatie
+100;NL;E002;Luchtvervoer;Goederengroep: luchtvervoer
+100;NL;E003;Landvervoer;Goederengroep: landvervoer
+100;NL;E004;Reiskosten, diverse;Goederengroep: reiskosten, diverse
+100;NL;L001;Handelsgoederen;Goederengroep: handelsgoederen
+100;NL;L002;Grondstoffen;Artikelgroep grondstoffen
+100;NL;L003;Halffabricaten;Artikelgroep halffabricaten
+100;NL;L004;Gerede goederen;Artikelgroep gerede goederen
+100;NL;L005;Ongewaard. artikelen;Artikelgroep ongewaardeerde artikelen
+100;NL;L006;Retouremballage;Artikelgroep retouremballage
+100;NL;L007;Licenties;Artikelgroepvergunningen
+100;NL;L008;Hardware;Artikelgroep voor hardware
+100;NL;P000;Contractsoort;Goederengroep: contractsoort
+100;NL;P001;Services;Goederengroep: services
+100;NL;P002;Onkosten;Goederengroep: onkosten
+100;NL;P003;Periodieke service;Periodieke service artikelgroep
+100;NL;YBFA01;Onroer. goed (land);Goederengroep - onroerend goed (land)
+100;NL;YBFA02;Gebouwen;Goederengroep - gebouwen
+100;NL;YBFA03;Grondverbeteringen;Goederengroep - grondverbeteringen
+100;NL;YBFA04;Verbet. gehuur. eig.;Goederengroep - verbeteringen gehuurde eigendommen
+100;NL;YBFA05;Techn.Install. mach.;Goederengroep - technische installaties en machines
+100;NL;YBFA06;Bedrijfsuitrustingen;Goederengroep - bedrijfsuitrustingen
+100;NL;YBFA07;Voertuigen;Goederengroep - voertuigen
+100;NL;YBFA08;Computerhardware;Goederengroep - computerhardware
+100;NL;YBFA09;Computersoftware;Goederengroep - computersoftware
+100;NL;YBFA10;Kleine investeringen;Goederengroep - kleine investeringen
+100;NL;YBFA11;Andere imm. v. act.;Goederengroep - andere immateriële vaste activa
+100;NL;YBFA12;Kantooruitrusting;Kantooruitrusting goederengroep
+100;NL;YBMM00;N-VrrdArt zonder ID;Niet-voorraadartikelen zonder ID
+100;NL;YBMM01;N-VrrdArt met ID;Niet-voorraadartikelen met ID
+100;NL;YBPM01;Reserveonderdelen;Artikelgroep voor reserveonderdelen
+100;NL;YBPM02;Reserveonderd.serv.;Artikelgroep voor reserveonderdeelservices
+100;NO;01;Varegruppe 1;
+100;NO;02;Varegruppe 2;
+100;NO;A001;Akonto fakturert;Varegruppe - til fakturering - akonto
+100;NO;A002;Akonto - brukt;Varegruppe - til bruk - akonto
+100;NO;B001;Engangskreditt;Materialgruppe engangskreditt
+100;NO;B002;Sky-inntekt;Materialgruppe sky-inntekt
+100;NO;E001;Losji;Varegruppe - losji
+100;NO;E002;Flypris;Varegruppe - flypris
+100;NO;E003;Bakketransport;Varegruppe - bakketransport
+100;NO;E004;Diverse reiseutg.;Varegruppe - diverse reiseutgifter
+100;NO;L001;Handelsvarer;Varegruppe - handelsvarer
+100;NO;L002;Råvarer;Materialgruppe råstoffer
+100;NO;L003;Halvfabrikater;Materialgruppe halvfabrikater
+100;NO;L004;Ferdigvarer;Materialgruppe ferdigvarer
+100;NO;L005;Ikke vurderte mat.;Materialgruppe ikke vurderte materialer
+100;NO;L006;Returemballasje;Materialgruppe returemballasje
+100;NO;L007;Lisenser;Materialgruppe lisenser
+100;NO;L008;Maskinvare;Materialgruppe for maskinvare
+100;NO;P000;Kontrakttype;Varegruppe - kontrakttype
+100;NO;P001;Tjenester;Varegruppe - tjenester
+100;NO;P002;Utgifter;Varegruppe - utgifter
+100;NO;P003;Periodisk tjeneste;Materialgruppe periodisk tjeneste
+100;NO;YBFA01;Fast eiendom (tomt);Varegruppe - fast eiendom (tomt)
+100;NO;YBFA02;Bygninger;Varegruppe - bygninger
+100;NO;YBFA03;Tomteforbedringer;Varegruppe - tomteutvikling
+100;NO;YBFA04;Oppgr. av leide lok.;Vargeruppe - oppgradering av leide lokaler
+100;NO;YBFA05;Tekn. anl. og mask.;Varegruppe - tekniske anlegg og maskiner
+100;NO;YBFA06;Utstyr og innredning;Varegruppe - utstyr og innredning
+100;NO;YBFA07;Kjøretøyer;Varegruppe - kjøretøyer
+100;NO;YBFA08;Maskinvare;Varegruppe - maskinvare
+100;NO;YBFA09;Programvare;Varegruppe - programvare
+100;NO;YBFA10;Anl.midl. lav verdi;Varegruppe - anleggsmidler med lav verdi
+100;NO;YBFA11;Andre immat. eiend.;Varegruppe - andre immaterielle eiendeler
+100;NO;YBFA12;Kontorutstyr;Materialgruppe kontorutstyr
+100;NO;YBMM00;Ik. lgr.f. mat. u/ID;Ikke lagerførte materialer uten ID
+100;NO;YBMM01;Ik. lgr.f. mat. m/ID;Ikke lagerførte materialer med ID
+100;NO;YBPM01;Reservedeler;Materialgruppe for reservedeler
+100;NO;YBPM02;Reservedelstjeneste;Materialgruppe for reservedelstjeneste
+100;PT;01;Grp.mercadorias 1;
+100;PT;02;Grp.mercadorias 2;
+100;PT;A001;Faturado por conta;Grupo de mercadorias por conta a ser faturado
+100;PT;A002;Utilizado por conta;Grupo de mercadorias por conta a ser utilizado
+100;PT;B001;Crédito único;Grupo de mercadorias crédito único
+100;PT;B002;Receitas da nuvem;Grupo de mercadorias receitas da nuvem
+100;PT;E001;Alojamento;Grupo de mercadorias alojamento
+100;PT;E002;Preço do voo;Grupo de mercadorias preço do voo
+100;PT;E003;Custos de viagem;Grupo de mercadorias transporte terrestre
+100;PT;E004;Desps.viagem divs.;Grupo de mercadorias despesas de viagem diversos
+100;PT;L001;Mats.comercializávs.;Grupo de mercadorias materiais comercializáveis
+100;PT;L002;Matérias-primas;Grupo de mercadorias matérias-primas
+100;PT;L003;Prods.semiacabados;Grupo de mercadorias produtos semiacabados
+100;PT;L004;Produtos acabados;Grupo de mercadorias produtos acabados
+100;PT;L005;Materiais não avals.;Grupo de mercadorias materiais não avaliados
+100;PT;L006;Embalagem retornável;Grupo de mercadorias materiais de embalagem retornável
+100;PT;L007;Licenças;Licença de grupo de materiais
+100;PT;L008;Hardware;Grupo de materiais para hardware
+100;PT;P000;Tipo de contrato;Grupo de materiais tipo de contrato
+100;PT;P001;Serviços;Grupo de mercadorias serviços
+100;PT;P002;Despesas;Grupo de mercadorias despesas
+100;PT;P003;Serviço periódico;Serviço periódico de grupo de materiais
+100;PT;YBFA01;Bem imóvel (terreno);Grupo de mercadorias bem imóvel (terreno)
+100;PT;YBFA02;Edifícios;Grupo de mercadorias edifícios
+100;PT;YBFA03;Melhorias terreno;Grupo de mercadorias melhorias de terreno
+100;PT;YBFA04;Melhorias de locação;Grupo de mercadorias melhorias de locação
+100;PT;YBFA05;Máqs.equipamentos;Grupo de mercadorias máquinas equipamentos
+100;PT;YBFA06;Insts.equipamentos;Grupo de mercadorias instalações equipamento
+100;PT;YBFA07;Veículos;Grupo de mercadorias veículos
+100;PT;YBFA08;Hardware computador;Grupo de mercadorias hardware de computador
+100;PT;YBFA09;Software computador;Grupo de mercadorias software de computador
+100;PT;YBFA10;Bens de baixo valor;Grupo de mercadorias bens de baixo valor
+100;PT;YBFA11;Outros bens intangs.;Grupo de mercadorias outros bens intangíveis
+100;PT;YBFA12;Equipamto.escritório;Equipamento de escritório de grupo de mercadorias
+100;PT;YBMM00;Mat.não estocáv.s/ID;Materiais não estocáveis sem ID
+100;PT;YBMM01;Mat.não estocáv.c/ID;Materiais não estocáveis com ID
+100;PT;YBPM01;Peças de reposição;Grupo de mercadorias para peças de reposição
+100;PT;YBPM02;Servs.peças repos.;Grupo de mercadorias para serviços de peças de reposição
+100;SK;01;Skupina materiálu 1;
+100;SK;02;Skupina materiálu 2;
+100;SK;A001;Na účet pre faktur.;Skupina materiálu na účet pre fakturáciu
+100;SK;A002;Na účet pre využitie;Skupina materiálu na účet pre využitie
+100;SK;B001;Jednorazový úver;Skupina materiálu - jednorazový úver
+100;SK;B002;Cloudový výnos;Skupina materiálu - cloudový výnos
+100;SK;E001;Ubytovanie;Skupina materiálu - ubytovanie
+100;SK;E002;Cena letu;Skupina materiálu - cena letu
+100;SK;E003;Pozemná doprava;Skupina materiálu - pozemná doprava
+100;SK;E004;Cestovné výdavky rôz;Skup.materiálu - cestovné výdavky - rôzne
+100;SK;L001;Obchodný materiál;Skupina materiálu - obchodné materiály
+100;SK;L002;Suroviny;Skupina materiálov: Suroviny
+100;SK;L003;Polotovary;Skupina materiálov: Polotovary
+100;SK;L004;Hotové výrobky;Skupina materiálov: Hotové výrobky
+100;SK;L005;Neocenené materiály;Skupina materiálov: Neocenené materiály
+100;SK;L006;Vratné obaly;Skupina materiálov: Vratné obaly
+100;SK;L007;Licencie;Skupina materiálu - licencia
+100;SK;L008;Hardvér;Skupina materiálu pre hardvér
+100;SK;P000;Typ zmluvy;Skupina materiálu - typ zmluvy
+100;SK;P001;Služby;Skupina materiálu - služby
+100;SK;P002;Výdavky;Skupina materiálu - výdavky
+100;SK;P003;Periodická služba;Skupina materiálu - periodická služba
+100;SK;YBFA01;Nehnuteľn.(pozemky);Skupina materiálov - nehnuteľnosti (pozemky)
+100;SK;YBFA02;Stavby;Skupina materiálov - budovy
+100;SK;YBFA03;Zúrodňovanie pôdy;Skupina materiálov - úprava pozemku
+100;SK;YBFA04;Vylepšov.prenaj.neh.;Skupina materiálov - vylepšovanie prenatej nehnuteľnosti
+100;SK;YBFA05;Tech.zariad.,stroje;Skupina materiálov - strojné vybavenie
+100;SK;YBFA06;Prevádz.,kanc.vybav.;Skupina materiálov - kancelárske vybavenie
+100;SK;YBFA07;Vozový park;Skupina materiálov - vozidlá
+100;SK;YBFA08;Počítačový hardvér;Skupina materiálov - počítačový hardvér
+100;SK;YBFA09;Počítačový softvér;Skupina materiálov - počítačový softvér
+100;SK;YBFA10;Drobný dlhodobý maj.;Skupina materiálov - ostatný dlhodobý majetok
+100;SK;YBFA11;Ost.dlhod.nehm.maj.;Skupina materiálov - iný DNM
+100;SK;YBFA12;Kancelárske vybav.;Skupina materiálu: Kancelárske vybav.
+100;SK;YBMM00;Nesklad.mat.bez ID;Neskladové materiály bez ID
+100;SK;YBMM01;Nesklad.mat.s ID;Neskladové materiály s ID
+100;SK;YBPM01;Náhradné diely;Skupina materiálov pre náhradné diely
+100;SK;YBPM02;Služ.náhrad.dielov;Skupina materiálov pre služby náhradných dielov
+100;RU;01;Группа материалов 1;
+100;RU;02;Группа материалов 2;
+100;RU;A001;В счет/фактурир.;Группа материалов в счет для фактурирования
+100;RU;A002;В счет/использ.;Группа материалов в счет для использования
+100;RU;B001;Разовый кредит;Группа материалов Разовый кредит
+100;RU;B002;Облако - выручка;Группа материалов Облако - выручка
+100;RU;E001;Проживание;Группа материалов: проживание
+100;RU;E002;Авиабилеты;Группа материалов: авиабилеты
+100;RU;E003;Транспортные расходы;Группа материалов: транспортные расходы
+100;RU;E004;Ком. расходы - разн.;Группа материалов: командировочные расходы - разное
+100;RU;L001;Торговые материалы;Группа материалов: торговые материалы
+100;RU;L002;Сырье;Группа материалов Сырье
+100;RU;L003;Полуфабрикаты;Группа материалов Полуфабрикаты
+100;RU;L004;Готовая продукция;Группа материалов Готовая продукция
+100;RU;L005;Неоцен. материалы;Группа материалов Неоцененные материалы
+100;RU;L006;Возвратная тара;Группа материалов Возвратная тара
+100;RU;L007;Лицензии;Группа материалов - лицензии
+100;RU;L008;Аппаратные средства;Группа материалов для аппаратных средств
+100;RU;P000;Вид договора;Группа материалов: вид договора
+100;RU;P001;Услуги;Группа материалов: услуги
+100;RU;P002;Расходы;Группа материалов: расходы
+100;RU;P003;Периодическая услуга;Группа материалов - периодическая услуга
+100;RU;YBFA01;Недвижимость (земля);Группа материалов - недвижимость (земля)
+100;RU;YBFA02;Здания;Группа материалов - здания
+100;RU;YBFA03;Благоустр. террит.;Группа материалов - благоустройство территрии
+100;RU;YBFA04;БлагоустрАрендСобств;Группа материалов - благоустройство арендованной собственн.
+100;RU;YBFA05;Машины и оборуд.;Группа материалов - машины и оборудование
+100;RU;YBFA06;Произв./офис.оборуд.;Группа материалов - производственное/офисное оборудование
+100;RU;YBFA07;Трансп. средства;Группа материалов - транспортные средства
+100;RU;YBFA08;Комп. аппарат. ср-ва;Группа материалов - компьютерные аппаратные средства
+100;RU;YBFA09;Компьютерное ПО;Группа материалов - компьютерное ПО
+100;RU;YBFA10;МБП;Группа материалов - МБП
+100;RU;YBFA11;Проч. немат. ценн.;Группа материалов - прочие нематериальные ценности
+100;RU;YBFA12;Оборуд. для офиса;Группа материалов - оборудование для офиса
+100;RU;YBMM00;Нескл. мат. без ид.;Нескладируемые материалы без ид.
+100;RU;YBMM01;Несклад. мат. с ид.;Нескладируемые материалы с ид.
+100;RU;YBPM01;Запасные части;Группа материалов для запасных частей
+100;RU;YBPM02;Сервисы запчастей;Группа материалов для сервисов запасных частей
+100;ES;01;Grupo de artículos 1;
+100;ES;02;Grupo de artículos 2;
+100;ES;A001;En cuenta facturada;Grupo de material en cuenta a facturar
+100;ES;A002;En cuenta utilizada;Grupo de material en cuenta a utilizar
+100;ES;B001;Crédito único;Grupo de materiales crédito único
+100;ES;B002;Ingresos nube;Grupo de materiales de ingresos de nube
+100;ES;E001;Alojamiento;Grupo de artículos alojamiento
+100;ES;E002;Precio del vuelo;Grupo de artículos precio del vuelo
+100;ES;E003;Transporte terrestre;Grupo de artículos transporte terrestre
+100;ES;E004;Otros gastos despl.;Grupo de artículos otros gastos de desplazamiento
+100;ES;L001;Mercadería;Grupo de artículos mercadería
+100;ES;L002;Materias primas;Grupo de materiales de materia prima
+100;ES;L003;Prod.semielaborados;Grupo de materiales de productos semielaborados
+100;ES;L004;Productos terminados;Grupo de materiales de productos terminados
+100;ES;L005;Materiales no valor.;Grupo de materiales de materiales no valorados
+100;ES;L006;Embalaje en préstamo;Grupo de materiales de materiales con embalaje en préstamo
+100;ES;L007;Licencias;Licencias de grupo de materiales
+100;ES;L008;Hardware;Grupo de materiales para hardware
+100;ES;P000;Tipo de contrato;Grupo de artículos tipo de contrato
+100;ES;P001;Servicios;Grupo de artículos servicios
+100;ES;P002;Gastos;Grupo de artículos gastos
+100;ES;P003;Servicio periódico;Servicio periódico de grupo de materiales
+100;ES;YBFA01;Bienes inmueb.(ter.);Grupo de artículos Bienes inmuebles (terreno)
+100;ES;YBFA02;Construcción;Grupo de artículos Construcción
+100;ES;YBFA03;Mejoras de terreno;Grupo de artículos Mejoras de terreno
+100;ES;YBFA04;Mejora contr.leasing;Grupo de artículos Mejora de contratos de leasing
+100;ES;YBFA05;Maquinaria y equipo;Grupo de artículos Maquinaria y equipo
+100;ES;YBFA06;Equipamiento;Grupo de artículos Equipamiento
+100;ES;YBFA07;Parque de vehículos;Grupo de artículos Parque de vehículos
+100;ES;YBFA08;Hardware informático;Grupo de artículos Hardware informático
+100;ES;YBFA09;Software informático;Grupo de artículos Software informático
+100;ES;YBFA10;Bienes de poco valor;Grupo de artículos Bienes económicos de poco valor
+100;ES;YBFA11;Otros intangibles;Grupo de artículos Otros intangibles
+100;ES;YBFA12;Equipo de oficina;Equipo de oficina de grupo de artículos
+100;ES;YBMM00;Mat.no almac.sin ID;Materiales no de almacén sin ID
+100;ES;YBMM01;Mat.no almac.con ID;Materiales no de almacén con ID
+100;ES;YBPM01;Piezas de recambio;Grupo de materiales para piezas de recambio
+100;ES;YBPM02;Serv.piezas recambio;Grupo de materiales para servicios de piezas de recambio
+100;TR;01;Mal grubu 1;
+100;TR;02;Mal grubu 2;
+100;TR;A001;Hsp.mahsuben ftrlnd.;Faturalanacak hesaptaki malzeme grubu
+100;TR;A002;Hsp.mahsuben klnl.;Kullanılacak hesaptaki malzeme grubu
+100;TR;B001;Bir defalık alacak;Malzeme grubu - bir defalık alacak
+100;TR;B002;Cloud - gelir;Malzeme grubu - Cloud geliri
+100;TR;E001;Konaklama;Malzeme grubu - konaklama
+100;TR;E002;Uçuş;Malzeme grubu - uçuş
+100;TR;E003;Karayolu tşmc.;Malzeme grubu - karayolu taşımacılığı
+100;TR;E004;Diğer syht.giderleri;Malzeme grubu - diğer seyahat giderleri
+100;TR;L001;Ticari malzemeler;Malzeme grubu - ticari malzemeler
+100;TR;L002;Hammaddeler;Malzeme grubu - hammaddeler
+100;TR;L003;Yarı mamuller;Malzemeler grubu - yarı mamuller
+100;TR;L004;Mamuller;Malzeme grubu - mamuller
+100;TR;L005;Değerlenmemiş mlz.;Malzeme grubu - değerlenmemiş malzemeler
+100;TR;L006;İade edlbr.ambalaj;Malzeme grubu - iade edilebilir ambalaj malzemeleri
+100;TR;L007;Lisanslar;Malzeme grubu - lisanslar
+100;TR;L008;Donanım;Donanım için malzeme grubu
+100;TR;P000;Sözleşme türü;Malzeme grubu - sözleşme türü
+100;TR;P001;Hizmetler;Malzeme grubu - hizmetler
+100;TR;P002;Giderler;Malzeme grubu - giderler
+100;TR;P003;Dönemsel hizmet;Malzeme grubu - dönemler hizmet
+100;TR;YBFA01;Gayrimenkul (arazi);Malzeme grubu - gayrimenkul (arazi)
+100;TR;YBFA02;Binalar;Malzeme grubu - binalar
+100;TR;YBFA03;Arazi ıslah;Malzeme grubu - arazi ıslah
+100;TR;YBFA04;Özel maliyetler;Malzeme grubu - özel maliyetler
+100;TR;YBFA05;Teknik DV ve mak.;Malzeme grubu - teknik duran varlık ve makine
+100;TR;YBFA06;Donanım;Malzeme grubu - donanım
+100;TR;YBFA07;Taşıtlar;Malzeme grubu - taşıtlar
+100;TR;YBFA08;Bilgisayar donanımı;Malzeme grubu - bilgisayar donanımı
+100;TR;YBFA09;Bilgisayar yazılımı;Malzeme grubu - bilgisayar yazılımı
+100;TR;YBFA10;Düşük değerli DV;Malzeme grubu - düşük değerli duran varlıklar
+100;TR;YBFA11;Diğer maddi olm.;Malzeme grubu - diğer maddi olmayanlar
+100;TR;YBFA12;Ofis ekipmanı;Malzeme grubu - ofis ekipmanı
+100;TR;YBMM00;Tn.ile dplnmyn.mlz.;Tanıtıcı olmadan depolanmayan malzemeler
+100;TR;YBMM01;Tn.ile dplnmyn.mlz.;Tanıtıcı ile depolanmayan malzemeler
+100;TR;YBPM01;Yedek parçalar;Yedek parçalar için malzeme grubu
+100;TR;YBPM02;Yedek parça srv.;Yedek parça servisleri için malzeme grubu
+100;FI;01;Tavararyhmä 1;
+100;FI;02;Tavararyhmä 2;
+100;FI;A001;Tilillä - laskutettu;Nimikeryhmä - tilillä - laskutettava
+100;FI;A002;Tilillä - käytetty;Nimikeryhmä - tilillä - käytettävä
+100;FI;B001;Kertaluotto;Nimikeryhmä kertaluotto
+100;FI;B002;Pilvituotto;Nimikeryhmä pilvituotto
+100;FI;E001;Majoitus;Nimikeryhmä - majoitus
+100;FI;E002;Lennon hinta;Nimikeryhmä - lennon hinta
+100;FI;E003;Maakuljetus;Nimikeryhmä - maakuljetus
+100;FI;E004;Muut matkakulut;Nimikeryhmä - muut matkakulut
+100;FI;L001;Kauppatavarat;Nimikeryhmä - kauppatavarat
+100;FI;L002;Raaka-aineet;Nimikeryhmä raaka-aineet
+100;FI;L003;Puolivalmisteet;Nimikeryhmä puolivalmisteet
+100;FI;L004;Valmistuotteet;Nimikeryhmä valmistuotteet
+100;FI;L005;Arvostamattomat nim.;Nimikeryhmä arvostamattomat nimikkeet
+100;FI;L006;Vaihtopakkaus;Nimikeryhmä vaihtopakkausmateriaalit
+100;FI;L007;Lisenssit;Nimikeryhmä lisenssit
+100;FI;L008;Laitteistot;Laitteistojen nimikeryhmä
+100;FI;P000;Sopimustyyppi;Nimikeryhmä - sopimustyyppi
+100;FI;P001;Palvelut;Nimikeryhmä - palvelut
+100;FI;P002;Kulut;Nimikeryhmä - kulut
+100;FI;P003;Kausittainen palvelu;Nimikeryhmä kausittainen palvelu
+100;FI;YBFA01;Kiinteist. (maa-al.);Tavararyhmä - kiinteistö (maa)
+100;FI;YBFA02;Rakennukset;Tavararyhmä - rakennukset
+100;FI;YBFA03;Maanparannukset;Tavararyhmä - maanparannukset
+100;FI;YBFA04;Maan vuokr. parannus;Tavararyhmä - maan vuokrauksen parannus
+100;FI;YBFA05;Koneet ja laitteet;Tavararyhmä - koneet ja laitteet
+100;FI;YBFA06;Kalusteet;Tavararyhmä - kalusteet
+100;FI;YBFA07;Ajoneuvot;Tavararyhmä - ajoneuvot
+100;FI;YBFA08;Tietokonelaitteistot;Tavararyhmä - tietokonelaitteistot
+100;FI;YBFA09;Tietokoneohjelmistot;Tavararyhmä - tietokoneohjelmistot
+100;FI;YBFA10;Pienhyödykkeet;Tavararyhmä - pienhyödykkeet
+100;FI;YBFA11;Muut aineettomat;Tavararyhmä - muut aineettomat
+100;FI;YBFA12;Toimistolaitteet;Nimikeryhmä toimistolaitteet
+100;FI;YBMM00;E-var. nim. ilman Ts;Ei-varastoitavat nimikkeet ilman tunnusta
+100;FI;YBMM01;Ei-var. nim. ml. Ts;Ei-varastoitavat nimikkeet tunnuksen kanssa
+100;FI;YBPM01;Varaosat;Varaosien tavararyhmä
+100;FI;YBPM02;Varaosapalvelut;Varaosapalvelujen tavararyhmä
+100;SV;01;Varugrupp 1;
+100;SV;02;Varugrupp 2;
+100;SV;A001;På konto fakturerad;Materialgrupp på konto som ska faktureras
+100;SV;A002;På konto nyttjas;Materialgrupp på konto som ska nyttjas
+100;SV;B001;Engångskredit;Materialgrupp engångskredit
+100;SV;B002;Molnintäkt;Materialgrupp molnintäkt
+100;SV;E001;Logi;Materialgrupp logi
+100;SV;E002;Flygpris;Materialgrupp flygpris
+100;SV;E003;Landtransport;Materialgrupp landtransport
+100;SV;E004;Resekostnader övrigt;Materialgrupp resekostnader övrigt
+100;SV;L001;Handelsmaterial;Materialgrupp handelsmaterial
+100;SV;L002;Råmaterial;Materialgrupp råmaterial
+100;SV;L003;Halvfabrikat;Materialgrupp halvfabrikat
+100;SV;L004;Slutprodukt;Materialgrupp slutprodukt
+100;SV;L005;Ej värderade mtrl;Materialgrupp ej värderade material
+100;SV;L006;Låneemballage;Materialgrupp låneemballage
+100;SV;L007;Licenser;Materialgrupp Licenser
+100;SV;L008;Hårdvara;Materialgrupp för hårdvara
+100;SV;P000;Kontraktstyp;Materialgrupp kontraktstyp
+100;SV;P001;Tjänster;Materialgrupp tjänster
+100;SV;P002;Utgifter;Materialgrupp utgifter
+100;SV;P003;Periodisk tjänst;Materialgrupp Periodisk tjänst
+100;SV;YBFA01;Fastighet (mark);Materialgrupp - fastighet (mark)
+100;SV;YBFA02;Byggnader;Materialgrupp - byggnader
+100;SV;YBFA03;Markförbättringar;Materialgrupp - markförbättringar
+100;SV;YBFA04;Arrendeförbättring;Materialgrupp - arrendeförbättring
+100;SV;YBFA05;Maskinutrustning;Materialgrupp - maskinutrustning
+100;SV;YBFA06;Inventarier;Materialgrupp - inventarier
+100;SV;YBFA07;Fordon;Materialgrupp - fordon
+100;SV;YBFA08;Datorhårdvara;Materialgrupp - datorhårdvara
+100;SV;YBFA09;Datormjukvara;Materialgrupp - datormjukvara
+100;SV;YBFA10;Lågvärdeinventarier;Materialgrupp - lågvärdeinventarier
+100;SV;YBFA11;Andra immateriella;Materialgrupp - andra immateriella
+100;SV;YBFA12;Kontorsutrustning;Materialgrupp kontorsutrustning
+100;SV;YBMM00;Ej LagerfMater u. ID;Ej lagerförda material utan ID
+100;SV;YBMM01;Ej LagerfMater m. ID;Ej lagerförda material med ID
+100;SV;YBPM01;Reservdelar;Materialgrupp för reservdelar
+100;SV;YBPM02;Reservdelstjänster;Materialgrupp för reservdelstjänster
+100;BG;01;Група материал 1;
+100;BG;02;Група материал 2;
+100;BG;A001;По с/ка с изг.сметка;Група материали по сметка, подлеж.на изготвяне на сметка
+100;BG;A002;По използв.сметка;Група материали по сметка за използване
+100;BG;B001;Еднократен кредит;Група материали - еднократен кредит
+100;BG;B002;Облак - приход;Група материали, облак - приход
+100;BG;E001;Настаняване;Група материали - настаняване
+100;BG;E002;Цена самолетен билет;Група материали - цена на самолетен билет
+100;BG;E003;Наземен транспорт;Група материали - наземен транспорт
+100;BG;E004;Командир.разх.-разни;Група материали: командировъчни разходи - разни
+100;BG;L001;Търговски материали;Група материали - търговски материали
+100;BG;L002;Суровини;Суровини за група материали
+100;BG;L003;Полуфабрикати;Полуфабрикати за група материали
+100;BG;L004;Готови изделия;Готови изделия за група материали
+100;BG;L005;Неоценени материали;Неоценени материали за група материали
+100;BG;L006;Оборотен амбалаж;Материали за оборотен амбалаж за група материали
+100;BG;L007;Лицензи;Група материали - лицензи
+100;BG;L008;Хардуер;Група материали за хардуер
+100;BG;P000;Вид договор;Група материали - вид договор
+100;BG;P001;Услуги;Група материали - услуги
+100;BG;P002;Разходи;Група материали - разходи
+100;BG;P003;Периодична услуга;Група материали - периодична услуга
+100;BG;YBFA01;Недв.имущество(Земя);Група материали - недвижимо имущество (земя)
+100;BG;YBFA02;Сгради;Група материали - сгради
+100;BG;YBFA03;Подобр.върху земята;Група материали - подобрения върху земята
+100;BG;YBFA04;Подобр.имущ.под наем;Група материали - подобрения на имущество под наем
+100;BG;YBFA05;Машини и съоръжения;Група материали - машини и съоръжения
+100;BG;YBFA06;Произв. и офис обор.;Група материали - производствено и офис оборудване
+100;BG;YBFA07;Превозни средства;Група материали - превозни средства
+100;BG;YBFA08;Компютърен хардуер;Група материали - компютърен хардуер
+100;BG;YBFA09;Компютърен софтуер;Група материали - компютърен софтуер
+100;BG;YBFA10;Малоценни активи;Група материали - малоценни активи
+100;BG;YBFA11;Други нематер.активи;Група материали - други нематериални активи
+100;BG;YBFA12;Офисно оборудване;Офис оборудване - група материали
+100;BG;YBMM00;Несклад.матер.без ИД;Нескладови материали без ИД
+100;BG;YBMM01;Нескладов матер.с ИД;Нескладови материали с ИД
+100;BG;YBPM01;Резервни части;Група материали за резервни части
+100;BG;YBPM02;Услуги рез. части;Група материали за услуги резервни части
+100;LT;01;1 medžiagų grupė;
+100;LT;02;2 medžiagų grupė;
+100;LT;A001;Sąskaitoje, išrašyta;Medžiagų grupė išrašytinoje sąskaitoje
+100;LT;A002;Sąskaitoje, panaud.;Medžiagų grupė sąskaitoje, panaudotina
+100;LT;B001;Vienkartinis kredit.;Medžiagų grupė „Vienkartinis kreditas“
+100;LT;B002;Debesies pajamos;Medžiagų grupė „Debesies pajamos“
+100;LT;E001;Apgyvendinimas;Medžiagų grupė – apgyvendinimas
+100;LT;E002;Lėktuvo bilieto kn.;Medžiagų grupė – lėktuvo bilieto kaina
+100;LT;E003;Antžeminis transp.;Medžiagų grupė – antžeminis transportavimas
+100;LT;E004;Įv. komand. išlaidos;Medžiagų grupė – įvairios komandiruočių išlaidos
+100;LT;L001;Prekybos medžiagos;Medžiagų grupė – prekybos medžiagos
+100;LT;L002;Žaliavos;Medžiagų grupė – žaliavos
+100;LT;L003;Pusgaminiai;Medžiagų grupė – pusgaminiai
+100;LT;L004;Galutinės prekės;Medžiagų grupė – gatavos prekės
+100;LT;L005;Neįvertintos medž.;Medžiagų grupė – neįvertintos medžiagos
+100;LT;L006;Grąžinama pakuotė;Medžiagų grupė – grąžinamos pakavimo medžiagos
+100;LT;L007;Licencijos;Medžiagų grupės licencijos
+100;LT;L008;Aparatūra;Aparatinės įrangos medžiagų grupė
+100;LT;P000;Sutarties tipas;Medžiagų grupė – sutarties tipas
+100;LT;P001;Paslaugos;Medžiagų grupė – paslaugos
+100;LT;P002;Išlaidos;Medžiagų grupė – išlaidos
+100;LT;P003;Periodinė paslauga;Medžiagų grupės periodinė paslauga
+100;LT;YBFA01;Nekiln. t. (žemė);Medžiagų grupės nekilnojamasis turtas (žemė)
+100;LT;YBFA02;Pastatai;Medžiagų grupės pastatai
+100;LT;YBFA03;Žemės gerinimas;Medžiagų grupės žemės patobulinimai
+100;LT;YBFA04;Nuomos patobulinimas;Medžiagų grupės nuomos patobulinimas
+100;LT;YBFA05;Mechaniz. ir įranga;Medžiagų grupės įranga
+100;LT;YBFA06;Įranga;Medžiagų grupės fiksavimo detalės
+100;LT;YBFA07;Transporto priemonės;Medžiagų grupės transporto priemonės
+100;LT;YBFA08;Apar. kom. įranga;Medžiagų grupės kompiuterių aparatūra
+100;LT;YBFA09;Komp. programinė įr.;Medžiagų grupės kompiuterių programinė įranga
+100;LT;YBFA10;Mažavertis turtas;Medžiagų grupės žemos vertės turtas
+100;LT;YBFA11;Kitas nematerialusis;Medžiagų grupės kitas nematerialus turtas
+100;LT;YBFA12;Biuro įranga;Medžiagų grupės biuro įranga
+100;LT;YBMM00;Nesand. medž. be ID;Nesandėliuojamos medžiagos be ID
+100;LT;YBMM01;Nesand. medž. su ID;Nesandėliuojamos medžiagos su ID
+100;LT;YBPM01;Atsarginės dalys;Atsarginių dalių medžiagų grupė
+100;LT;YBPM02;Ats. dalių pasl.;Atsarginių dalių paslaugų medžiagų grupė
+100;LV;01;1. materiālu grupa;
+100;LV;02;2. materiālu grupa;
+100;LV;A001;Apmaksājamais konts;Materiālu grupa, apmaksājamais konts
+100;LV;A002;Izmantojamais konts;Materiālu grupa, izmantojamais konts
+100;LV;B001;Vienreiz. kredīts;Materiālu grupa Vienreizējs kredīts
+100;LV;B002;Mākoņieņēmums;Materiālu grupa Mākoņieņēmums
+100;LV;E001;Naktsmājas;Materiālu grupa, naktsmājas
+100;LV;E002;Aviobiļetes cena;Materiālu grupa, aviobiļetes cena
+100;LV;E003;Sauszemes transports;Materiālu grupa, sauszemes transports
+100;LV;E004;Dažādi ceļ. izdevumi;Materiālu grupa, dažādi ceļojuma izdevumi
+100;LV;L001;Tirdzn. materiāli;Materiālu grupa, tirdzniecības materiāli
+100;LV;L002;Izejmateriāli;Materiālu grupa Izejmateriāli
+100;LV;L003;Pusfabrikāti;Materiālu grupa Pusfabrikāti
+100;LV;L004;Gatavās preces;Materiālu grupa Gatavās preces
+100;LV;L005;Nenovēr. materiāli;Materiālu grupa Nenovērtētie materiāli
+100;LV;L006;Iepak.vairākr.liet.;Materiālu grupa Iepakojuma vairākr. lietošanai materiāli
+100;LV;L007;Licences;Materiālu grupa: licences
+100;LV;L008;Aparatūra;Materiālu grupa aparatūrai
+100;LV;P000;Līguma veids;Materiālu grupa, līguma veids
+100;LV;P001;Pakalpojumi;Materiālu grupa, pakalpojumi
+100;LV;P002;Izdevumi;Materiālu grupa, izdevumi
+100;LV;P003;Period. pakalpojums;Materiālu grupa: periodisks pakalpojums
+100;LV;YBFA01;NĪ (gruntsgabals);Materiālu grupa: nekustamais īpašums (gruntsgabals)
+100;LV;YBFA02;Ēkas;Materiālu grupa: ēkas
+100;LV;YBFA03;Gruntsgab. uzlab.;Materiālu grupa: gruntsgabala uzlabojumi
+100;LV;YBFA04;Nomas uzlabojumi;Materiālu grupa: nomas uzlabojumi
+100;LV;YBFA05;Mašīnas un iekārtas;Materiālu grupa: mašīnas un iekārtas
+100;LV;YBFA06;Aprīkojums;Materiālu grupa: aprīkojums
+100;LV;YBFA07;Transportlīdzekļi;Materiālu grupa: transportlīdzekļi
+100;LV;YBFA08;Datoru aparatūra;Materiālu grupa: datoru aparatūra
+100;LV;YBFA09;Datoru programmatūra;Materiālu grupa: datoru programmatūra
+100;LV;YBFA10;Mazvērtīgi īpašumi;Materiālu grupa: mazvērtīgi īpašumi
+100;LV;YBFA11;Citi nemateriālie;Materiālu grupa: citi nemateriālie
+100;LV;YBFA12;Biroja aprīkojums;Materiālu grupas biroja aprīkojums
+100;LV;YBMM00;Krāj.neuzsk.mat.b.ID;Krājumos neuzskaitīti materiāli bez ID
+100;LV;YBMM01;Krāj.neuzsk.mat.a.ID;Krājumos neuzskaitīti materiāli ar ID
+100;LV;YBPM01;Rezerves daļas;Rezerves daļu materiālu grupa
+100;LV;YBPM02;Rezerves daļu pak.;Rezerves daļu pakalpojumu materiālu grupa
+100;CA;01;Grup mercaderies 1;
+100;CA;02;Grup mercaderies 2;
+100;CA;A001;En compte facturat;Grup de material En compte a facturar
+100;CA;A002;En compte utilitzat;Grup de material En compte a utilitzar
+100;CA;B001;Crèdit únic;Grup de materials: Crèdit únic
+100;CA;B002;Ingrés de núvol;Grup de materials: Ingrés de núvol
+100;CA;E001;Allotjament;Grup de material Allotjament
+100;CA;E002;Preu del vol;Grup de material Preu del vol
+100;CA;E003;Transport terrestre;Grup de material Transport terrestre
+100;CA;E004;Var.despeses viatge;Grup de material Varies despeses del viatge
+100;CA;L001;Materials comercials;Grup de material Materials comercials
+100;CA;L002;Primeres matèries;Grup de materials Matèries primeres
+100;CA;L003;Productes semielab.;Grup de materials Productes semielaborats
+100;CA;L004;Productes elaborats;Grup de materials Productes elaborats
+100;CA;L005;Materials no valor.;Grup de materials Materials no valorats
+100;CA;L006;Embalatge retornable;Grup de materials Materials d'embalatge retornable
+100;CA;L007;Llicències;Llicències de grup de materials
+100;CA;L008;Maquinari;Grup de materials per a hardware
+100;CA;P000;Tipus de contracte;Grup de material Tipus de contracte
+100;CA;P001;Serveis;Grup de material Serveis
+100;CA;P002;Despeses;Grup de material Despeses
+100;CA;P003;Servei periòdic;Servei periòdic de grup de materials
+100;CA;YBFA01;Béns imm.(terreny);Grup de materials Béns immobles (terreny)
+100;CA;YBFA02;Edificis;Grup de materials Edificis
+100;CA;YBFA03;Millores en terreny;Grup de materials Millores del terreny
+100;CA;YBFA04;Millores propietat;Grup de materials Millores de la propietat
+100;CA;YBFA05;Maquinària equipam.;Grup de materials Maquinària equipaments
+100;CA;YBFA06;Mobiliari equip.of.;Grup de materials Mobiliari equip.oficina
+100;CA;YBFA07;Vehicles;Grup de materials Vehicles
+100;CA;YBFA08;Hardware informàtic;Grup de materials Maquinari informàtic
+100;CA;YBFA09;Software informàtic;Grup de materials Software informàtic
+100;CA;YBFA10;Actius fixos BaixVal;Grup de materials Actius fixos de baix valor
+100;CA;YBFA11;Altres inmaterials;Grup de materials Altres intangibles
+100;CA;YBFA12;Equipament d'oficina;Equipament d'oficina: Grup de materials
+100;CA;YBMM00;Mat.no emmag.sens.ID;Materail no d'estoc sense ID
+100;CA;YBMM01;Mat.no emmag.amb ID;Materail no d'estoc amb ID
+100;CA;YBPM01;Peces de recanvi;Grup de materials per a peces de recanvi
+100;CA;YBPM02;Serv.peces recanvi;Grup de materials per a serveis de peces de recanvi
+100;SH;01;Grupa materijala 1;
+100;SH;02;Grupa materijala 2;
+100;SH;A001;Fakturisano na račun;Grupa materijala na računu za fakturisanje
+100;SH;A002;Korišteno na račun;Grupa materijala na računu za upotrebu
+100;SH;B001;Jednokratni kredit;Grupa materijala - jednokratni kredit
+100;SH;B002;Oblak - prihod;Grupa materijala - oblak - prihod
+100;SH;E001;Smeštaj;Grupa materijala - smeštaj
+100;SH;E002;Cena leta;Grupa materijala - cena leta
+100;SH;E003;Putni troškovi;Grupa materijala - putni troškovi
+100;SH;E004;Drugi putni troškovi;Grupa materijala - drugi putni troškovi
+100;SH;L001;Trgovačka roba;Grupa materijala - trgovačka roba
+100;SH;L002;Sirovine;Grupa materijala - sirovine
+100;SH;L003;Polugotovi proizvodi;Grupa materijala - polugotovi proizvodi
+100;SH;L004;Gotovi proizvodi;Grupa materijala - gotovi proizvodi
+100;SH;L005;Nevrednovani mat.;Grupa materijala - nevrednovani materijali
+100;SH;L006;Povratna ambalaža;Grupa materijala - materijali povratne ambalaže
+100;SH;L007;Licence;Grupa materijala - licence
+100;SH;L008;Hardver;Grupa materijala za hardver
+100;SH;P000;Tip ugovora;Grupa materijala - tip ugovora
+100;SH;P001;Usluge;Grupa materijala - usluge
+100;SH;P002;Troškovi;Grupa materijala - troškovi
+100;SH;P003;Periodična usluga;Grupa materijala - periodične usluge
+100;SH;YBFA01;Nekretnine (zemlj.);Grupa materijala - nekretnine (zemljište)
+100;SH;YBFA02;Zgrade;Grupa materijala - zgrade
+100;SH;YBFA03;Poboljš.zemljišta;Grupa materijala - poboljšanja zemljišta
+100;SH;YBFA04;Poboljšanje zakupa;Grupa materijala - poboljšanje zakupa
+100;SH;YBFA05;Tehn.oprema i mašine;Grupa materijala - mašine i oprema
+100;SH;YBFA06;Oprema;Grupa materijala - instalacije
+100;SH;YBFA07;Vozila;Grupa materijala - vozila
+100;SH;YBFA08;Kompjuterski hardver;Grupa materijala - kompjuterski hardever
+100;SH;YBFA09;Kompjuterski softver;Grupa materijala - kompjuterski softver
+100;SH;YBFA10;Sred.niske vred.;Grupa materijala - sredstva niske vrednosti
+100;SH;YBFA11;Druga nemat.sredstva;Grupa materijala - druga nematerijalna sredstva
+100;SH;YBFA12;Kancelarijska oprema;Grupa materijala - kancelarijska oprema
+100;SH;YBMM00;Nesklad.mat.bez ID-a;Neskladišteni materijali bez ID-a
+100;SH;YBMM01;Nesklad.mat.sa ID-om;Neskladišteni materijali sa ID-om
+100;SH;YBPM01;Rezervni delovi;Grupa materijala za rezervne delove
+100;SH;YBPM02;Usluge rezer.delova;Grupa materijala za usluge rezervnih delova
+100;HI;01;सामग्री समूह 1;
+100;HI;02;सामग्री समूह 2;
+100;HI;A001;बिल होनेवाले खाते पर;बिल किए जाने वाले खाते पर सामग्री समूह
+100;HI;A002;उपयोग किए गए खाते पर;बिल किए जाने वाले खाते पर सामग्री समूह
+100;HI;B001;एक बार क्रेडिट;सामग्री समूह एक बार क्रेडिट
+100;HI;B002;क्लाउड आय;सामग्री समूह क्लाउड आय
+100;HI;E001;आवास;सामग्री समूह आवास
+100;HI;E002;विमान किराया;सामग्री समूह विमान किराया
+100;HI;E003;भूमि परिवहन;सामग्री समूह भूमि परिवहन
+100;HI;E004;यात्रा व्यय विविध;सामग्री समूह यात्रा व्यय विविध
+100;HI;L001;व्यापार सामग्री;सामग्री समूह व्यापार सामग्री
+100;HI;L002;कच्‍चे माल;सामग्री समूह कच्चा माल
+100;HI;L003;अर्ध-पूर्ण सामान;सामग्री समूह अर्ध-निर्मित वस्तुएं
+100;HI;L004;तैयार सामान;सामग्री समूह तैयार माल
+100;HI;L005;गैर-मूल्यांकित सामग.;सामग्री समूह गैर-मूल्यांकित सामग्री
+100;HI;L006;वापस कर.योग्य पैकिंग;सामग्री समूह वापस करने योग्य पैकिंग सामग्री
+100;HI;L007;लाइसेंस;सामग्री समूह का लाइसेंस
+100;HI;L008;हार्डवेयर;हार्डवेयर के लिए सामग्री समूह
+100;HI;P000;संविदा प्रकार;सामग्री समूह संविदा प्रकार
+100;HI;P001;सेवाएं;सामग्री समूह सेवाएं
+100;HI;P002;व्यय;सामग्री समूह व्यय
+100;HI;P003;आवधिक सेवा;सामग्री समूह आवधिक सेवा
+100;HI;YBFA01;अचल संपत्ति (भूमि);सामग्री समूह अचल संपत्ति (भूमि)
+100;HI;YBFA02;भवन;सामग्री समूह भवन
+100;HI;YBFA03;भूमि सुधार;सामग्री समूह भूमि सुधार
+100;HI;YBFA04;लीज़होल्ड सुधार;सामग्री समूह लीज़होल्ड सुधार
+100;HI;YBFA05;मशीनरी उपकरण;सामग्री समूह मशीनरी उपकरण
+100;HI;YBFA06;फ़िक्सचर फ़िटिंग;सामग्री समूह फ़िक्सचर फ़िटिंग
+100;HI;YBFA07;वाहन;सामग्री समूह वाहन
+100;HI;YBFA08;कंप्यूटर हार्डवेयर;सामग्री समूह कंप्यूटर हार्डवेयर
+100;HI;YBFA09;कंप्यूटर सॉफ्टवेयर;सामग्री समूह कंप्यूटर सॉफ्टवेयर
+100;HI;YBFA10;कम मू.वाली संपत्ति.;सामग्री समूह कम मान वाली संपत्ति
+100;HI;YBFA11;अन्य अमूर्त;सामग्री समूह अन्य अमूर्त
+100;HI;YBFA12;ऑफ़िस उपकरण;सामग्री समूह ऑफ़िस उपकरण
+100;HI;YBMM00;ID के बी.गैर-स्टॉ.सा;ID के बीना गैर-स्टॉक सामग्रियां
+100;HI;YBMM01;ID के बी.गै-स्टॉ.सा.;ID के साथ गैर-स्टॉक सामग्रियां
+100;HI;YBPM01;अतिरिक्त पूर्ज़ें;अतिरिक्त पुर्जा के लिए सामग्री समूह
+100;HI;YBPM02;अतिरिक्त पुर्जा सेव.;अतिरिक्त पुर्जा सेवाओं के लिए सामग्री समूह
+100;KK;A001;Ұсынылған шот б-ша;Ұсынылатын шоттағы материалдар тобы
+100;KK;A002;Пайд. шот бойынша;Пайдаланылатын шоттағы материалдар тобы
+100;KK;B001;Бір реттік кредит;Материалдар тобы: бір реттік кредит
+100;KK;B002;Бұлт түсімі;Материалдар тобы: бұлт түсімі
+100;KK;E001;Тұру шығыны;Материалдар тобы: тұру шығыны
+100;KK;E002;Әуе билетінің бағасы;Материалдар тобы: әуе билетінің бағасы
+100;KK;E003;Тасымалдау шығындары;Материалдар тобы: тасымалдау шығындары
+100;KK;E004;Іссапар шығ.- басқа;Материалдар тобы: іссапар шығындары - басқа
+100;KK;L001;Сауда материалдары;Материалдар тобы: сауда материалдары
+100;KK;L002;Шикізаттар;Материалдар тобы: шикізаттар
+100;KK;L003;Жартылай фабрикаттар;Материалдар тобы: жартылай фабрикаттар
+100;KK;L004;Дайын өнімдер;Материалдар тобы: дайын өнімдер
+100;KK;L005;Бағаланбаған матер-р;Материалдар тобы: бағаланбаған материалдар
+100;KK;L006;Қайтарылатын қаптама;Материалдар тобы: қайтарылатын қаптама материалдары
+100;KK;L007;Лицензиялар;Материалдар тобының лицензиялары
+100;KK;L008;Жабдық;Жабдық үшін материалдар тобы
+100;KK;P000;Келісімшарт түрі;Материалдар тобы: келісімшарт түрі
+100;KK;P001;Қызметтер;Материалдар тобы: қызметтер
+100;KK;P002;Шығындар;Материалдар тобы: шығындар
+100;KK;P003;Жүйелі қызмет;Материалдар тобының жүйелі қызметі
+100;KK;YBFA01;Жылжым.мүлік (жер);Материалдар тобы - жылжымайтын мүлік (жер)
+100;KK;YBFA02;Ғимараттар;Материалдар тобы - ғимараттар
+100;KK;YBFA03;Жерді көркейту;Материалдар тобы - жерді көркейту
+100;KK;YBFA04;Жалға алын.мүл.көрк.;Материалдар тобы - жалға алынған мүлікті көркейту
+100;KK;YBFA05;Машиналар/жабдықтар;Материалдар тобы - машина жабдығы
+100;KK;YBFA06;Өнд./кеңсе жабдықт.;Материалдар тобы - өндірістік/кеңсе жабдықтары
+100;KK;YBFA07;Көліктер;Материалдар тобы - көліктер
+100;KK;YBFA08;Компьютер жабдығы;Материалдар тобы - компьютер жабдығы
+100;KK;YBFA09;Компьютер бағд.;Материалдар тобы - компьютердің бағдарламалық жасақтамасы
+100;KK;YBFA10;Құны төмен активтер;Материалдар тобы - құны төмен активтер
+100;KK;YBFA11;Басқа беймат.акт.;Материалдар тобы - басқа бейматериалдық активтер
+100;KK;YBFA12;Кеңсе жабдығы;Материалдар тобы: кеңсе жабдығы
+100;KK;YBMM00;Ид-з қойм. тыс мат.;Ид-сыз сақталмайтын материалдар
+100;KK;YBMM01;Ид-н қойм.тыс мат.;Ид-мен сақталмайтын материалдар
+100;KK;YBPM01;Қосалқы бөлшектер;Қосалқы бөлшектерге арналған материал топтары
+100;KK;YBPM02;Қос.бөлш.б-ша қызм-р;Қосалқы бөлшектер бойынша қызметтерге арн. материалдар тобы
+100;VI;01;Nhóm vật tư 1;
+100;VI;02;Nhóm vật tư 2;
+100;VI;A001;Trên TK lập h.đơn;Nhóm vật tư trên tài khoản cần lập hóa đơn
+100;VI;A002;Trên TK cần s.dụng;Nhóm vật tư trên tài khoản cần sử dụng
+100;VI;B001;Tín dụng một lần;Tín dụng một lần của nhóm vật tư
+100;VI;B002;Doanh thu đám mây;Doanh thu đám mây của nhóm vật tư
+100;VI;E001;Nhà ở;Nhóm vật tư Nhà ở
+100;VI;E002;Phí không phận;Nhóm vật tư Phí không phận
+100;VI;E003;Vận tải mặt đất;Nhóm vật tư Vận tải mặt đất
+100;VI;E004;H.hợp C.tác phí;Hỗn hợp Công tác phí Nhóm vật tư
+100;VI;L001;Vật tư thương mại;Nhóm vật tư Vật tư thương mại
+100;VI;L002;Vật liệu thô;Nhóm vật tư Nguyên liệu thô
+100;VI;L003;Bán thành phẩm;Nhóm vật tư Bán thành phẩm
+100;VI;L004;Thành phẩm;Nhóm vật tư Thành phẩm
+100;VI;L005;Ng.liệu chưa đ.giá;Nhóm vật tư Nguyên liệu chưa định giá
+100;VI;L006;B.bì c.thể tr.lại;Nhóm vật tư Nguyên liệu bao bì có thể trả lại
+100;VI;L007;Giấy phép;Nhóm vật tư - Giấy phép
+100;VI;L008;Phần cứng;Nhóm vật tư cho phần cứng
+100;VI;P000;Loại hợp đồng;Nhóm vật tư Loại hợp đồng
+100;VI;P001;Dịch vụ;Nhóm vật tư Dịch vụ
+100;VI;P002;Chi phí;Nhóm vật tư Chi phí
+100;VI;P003;Bảo dưỡng đ.kỳ;Nhóm vật tư - Bảo dưỡng định kỳ
+100;VI;YBFA01;BĐS (Đất);Nhóm vật tư: Bất động sản (Đất)
+100;VI;YBFA02;Tòa nhà;Nhóm vật tư: Tòa nhà
+100;VI;YBFA03;Cải tạo đất;Nhóm vật tư: Cải tạo đất
+100;VI;YBFA04;Cải tạo cho thuê;Nhóm vật tư: Nâng cấp cho thuê
+100;VI;YBFA05;Máy móc thiết bị;Nhóm vật tư: Máy móc thiết bị
+100;VI;YBFA06;Tài sản cố định;Nhóm vật tư: Tài sản cố định
+100;VI;YBFA07;Phương tiện đi lại;Nhóm vật tư: Phương tiện
+100;VI;YBFA08;Phần cứng m.tính;Nhóm vật tư: Phần cứng máy tính
+100;VI;YBFA09;Phần mềm m.tính;Nhóm vật tư: Phần mềm máy tính
+100;VI;YBFA10;Tài sản GT thấp;Nhóm vật tư: Tài sản giá trị thấp
+100;VI;YBFA11;TS vô hình khác;Nhóm vật tư: Tài sản vô hình khác
+100;VI;YBFA12;Thiết bị v.phòng;Thiết bị văn phòng nhóm vật tư
+100;VI;YBMM00;V.t kh.t.k kh.có ID;Vật tư không tồn kho không có ID
+100;VI;YBMM01;V.tư kh.t.kho có ID;Vật tư không tồn kho có ID
+100;VI;YBPM01;Linh kiện thay thế;Nhóm vật tư cho phụ tùng
+100;VI;YBPM02;Dịch vụ phụ tùng;Nhóm vật tư cho dịch vụ phụ tùng

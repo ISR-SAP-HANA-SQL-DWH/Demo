@@ -1,0 +1,196 @@
+﻿MANDT;SPRAS;KUKLA;VTEXT
+100;ZH;01;A-客户
+100;ZH;02;B-客户
+100;ZH;A;A 客户
+100;ZH;B;B 客户
+100;ZH;C;C 客户
+100;TH;01;ลูกค้า A
+100;TH;02;ลูกค้า B
+100;TH;A;ลูกค้า A
+100;TH;B;ลูกค้า B
+100;TH;C;ลูกค้า C
+100;KO;01;A 고객
+100;KO;02;B 고객
+100;KO;A;A 고객
+100;KO;B;B 고객
+100;KO;C;C 고객
+100;RO;01;Client - A
+100;RO;02;Client - B
+100;RO;A;Client A
+100;RO;B;Client B
+100;RO;C;Client C
+100;SL;01;A-stranka
+100;SL;02;B-stranka
+100;SL;A;A-stranka
+100;SL;B;B-stranka
+100;SL;C;C-stranka
+100;HR;01;A-kupac
+100;HR;02;B-kupac
+100;HR;A;A-kupac
+100;HR;B;B-kupac
+100;HR;C;C-kupac
+100;MS;01;A-pelanggan
+100;MS;02;B-pelanggan
+100;MS;A;A-Pelanggan
+100;MS;B;B-Pelanggan
+100;MS;C;C-Pelanggan
+100;UK;01;A-клієнт
+100;UK;02;B-клієнт
+100;UK;A;A-клієнт
+100;UK;B;B-клієнт
+100;UK;C;C-клієнт
+100;ET;01;A-klient
+100;ET;02;B-klient
+100;ET;A;A-klient
+100;ET;B;B-klient
+100;ET;C;C-klient
+100;AR;01;عميل-A
+100;AR;02;عميل-B
+100;AR;A;عميل A
+100;AR;B;عميل B
+100;AR;C;عميل C
+100;HE;01;לקוח-A
+100;HE;02;לקוח-B
+100;HE;A;לקוח-A
+100;HE;B;לקוח-B
+100;HE;C;לקוח-C
+100;CS;01;Zákaz.A
+100;CS;02;Zákaz.B
+100;CS;A;Zákazník A
+100;CS;B;Zákazník B
+100;CS;C;Zákazník C
+100;DE;01;A-Kunde
+100;DE;02;B-Kunde
+100;DE;A;A-Kunde
+100;DE;B;B-Kunde
+100;DE;C;C-Kunde
+100;EN;01;A-customer
+100;EN;02;B-customer
+100;EN;A;A-Customer
+100;EN;B;B-Customer
+100;EN;C;C-Customer
+100;FR;01;Client A
+100;FR;02;Client B
+100;FR;A;Client A
+100;FR;B;Client B
+100;FR;C;Client C
+100;EL;01;Α-πελάτης
+100;EL;02;Β-πελάτης
+100;EL;A;Α-πελάτης
+100;EL;B;Β-πελάτης
+100;EL;C;C-Πελάτης
+100;HU;01;A-Vevő
+100;HU;02;B-Vevő
+100;HU;A;„A” vevő
+100;HU;B;„B” vevő
+100;HU;C;„C” vevő
+100;IT;01;Cl. A
+100;IT;02;Cl. B
+100;IT;A;Cliente A
+100;IT;B;Cliente B
+100;IT;C;Cliente C
+100;JA;01;A-得意先
+100;JA;02;B-得意先
+100;JA;A;A 得意先
+100;JA;B;B 得意先
+100;JA;C;C 得意先
+100;DA;01;A-kunde
+100;DA;02;B-kunde
+100;DA;A;A-kunde
+100;DA;B;B-kunde
+100;DA;C;C-kunde
+100;PL;01;Klient-A
+100;PL;02;Klient-B
+100;PL;A;Klient A
+100;PL;B;Klient B
+100;PL;C;Klient C
+100;ZF;01;A- 客戶
+100;ZF;02;B- 客戶
+100;ZF;A;A - 客戶
+100;ZF;B;B - 客戶
+100;ZF;C;C - 客戶
+100;NL;01;A-klant
+100;NL;02;B-klant
+100;NL;A;A-klant
+100;NL;B;B-klant
+100;NL;C;C-klant
+100;NO;01;A-kunde
+100;NO;02;B-kunde
+100;NO;A;A-kunde
+100;NO;B;B-kunde
+100;NO;C;C-kunde
+100;PT;01;Cliente A
+100;PT;02;Cliente B
+100;PT;A;Cliente A
+100;PT;B;Cliente B
+100;PT;C;Cliente C
+100;SK;01;Zákaz.A
+100;SK;02;Zákaz.B
+100;SK;A;Zákazník A
+100;SK;B;Zákazník B
+100;SK;C;Zákazník C
+100;RU;01;А-клиент
+100;RU;02;B-клиент
+100;RU;A;Клиент А
+100;RU;B;Клиент В
+100;RU;C;Клиент С
+100;ES;01;Cliente A
+100;ES;02;Cliente B
+100;ES;A;Cliente A
+100;ES;B;Cliente B
+100;ES;C;Cliente C
+100;TR;01;A-müşterisi
+100;TR;02;B-müşterisi
+100;TR;A;A müşterisi
+100;TR;B;B müşterisi
+100;TR;C;C müşterisi
+100;FI;01;A-asiakas
+100;FI;02;B-asiakas
+100;FI;A;A-asiakas
+100;FI;B;B-asiakas
+100;FI;C;C-asiakas
+100;SV;01;A-kund
+100;SV;02;B-kund
+100;SV;A;A-kund
+100;SV;B;B-kund
+100;SV;C;C-kund
+100;BG;01;А-клиент
+100;BG;02;В-клиент
+100;BG;A;Клиент А
+100;BG;B;Клиент В
+100;BG;C;Клиент С
+100;LT;01;A-klientas
+100;LT;02;B-klientas
+100;LT;A;A-klientas
+100;LT;B;B-klientas
+100;LT;C;C-klientas
+100;LV;01;A-klients
+100;LV;02;B-klients
+100;LV;A;A-klients
+100;LV;B;B-klients
+100;LV;C;C-klients
+100;CA;01;Client A
+100;CA;02;Client B
+100;CA;A;Client A
+100;CA;B;Client B
+100;CA;C;Client C
+100;SH;01;A-kupac
+100;SH;02;B-kupac
+100;SH;A;Kupac A
+100;SH;B;Kupac B
+100;SH;C;Kupac C
+100;HI;01;A-ग्राहक
+100;HI;02;B-ग्राहक
+100;HI;A;A-ग्राहक
+100;HI;B;B-ग्राहक
+100;HI;C;C-ग्राहक
+100;KK;01;A-клиент
+100;KK;02;B-клиент
+100;KK;A;A клиенті
+100;KK;B;B клиенті
+100;KK;C;C клиенті
+100;VI;01;Khách hàng-A
+100;VI;02;Khách hàng-B
+100;VI;A;Khách hàng-A
+100;VI;B;Khách hàng-B
+100;VI;C;Khách hàng-C

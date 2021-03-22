@@ -1,0 +1,20 @@
+{ 
+  "role": { 
+    "name": "DW_CORE_WOG", 
+    "schema_privileges": [ 
+      { 
+        "privileges": ["ALTER",
+                       "SELECT METADATA", 
+                       "SELECT CDS METADATA", 
+                       "SELECT", 
+                       "INSERT", 
+                       "EXECUTE", 
+                       "DELETE", 
+                       "UPDATE", 
+                       "CREATE TEMPORARY TABLE",
+                       "CREATE ANY"
+                       ] 
+      } 
+    ]
+  } 
+} 

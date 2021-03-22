@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Privilege:analyticPrivilege xmlns:Privilege="http://www.sap.com/ndb/BiModelPrivilege.ecore" id="AP_CV_DM_SALES_ORDER" privilegeType="SQL_ANALYTIC_PRIVILEGE" schemaVersion="1.1">
+<descriptions defaultDescription="AP_CV_DM_SALES_ORDER"/>
+<securedModels>
+  <modelUri>CV_DM_SALES_ORDER</modelUri>
+</securedModels>
+<whereSql>((&quot;CUSTOMER_COUNTRY&quot; = 'US')) AND (CURRENT_DATE &gt; '2021-01-01 23:59:59.999') </whereSql>
+</Privilege:analyticPrivilege>

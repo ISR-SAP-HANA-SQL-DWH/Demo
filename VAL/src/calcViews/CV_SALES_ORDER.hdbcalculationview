@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_SALES_ORDER" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_SALES_ORDER"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SY_S_R_VBAK">
+    <resourceUri>SY_S_R_VBAK</resourceUri>
+  </DataSource>
+  <DataSource id="SY_L_R_SALES_DOCUMENT_ITEM">
+    <resourceUri>SY_L_R_SALES_DOCUMENT_ITEM</resourceUri>
+  </DataSource>
+  <DataSource id="SY_L_R_SALES_DOCUMENT_HEAD">
+    <resourceUri>SY_L_R_SALES_DOCUMENT_HEAD</resourceUri>
+  </DataSource>
+  <DataSource id="S_R_VBAK$$$$SY_S_R_VBAK$$">
+    <resourceUri>SY_S_R_VBAK</resourceUri>
+  </DataSource>
+  <DataSource id="L_R_SALES_DOCUMENT_HEAD$$$$SY_L_R_SALES_DOCUMENT_HEAD$$">
+    <resourceUri>SY_L_R_SALES_DOCUMENT_HEAD</resourceUri>
+  </DataSource>
+  <DataSource id="L_R_SALES_DOCUMENT_ITEM$$$$SY_L_R_SALES_DOCUMENT_ITEM$$">
+    <resourceUri>SY_L_R_SALES_DOCUMENT_ITEM</resourceUri>
+  </DataSource>
+  <DataSource id="SY_S_R_VBAP">
+    <resourceUri>SY_S_R_VBAP</resourceUri>
+  </DataSource>
+  <DataSource id="S_R_VBAP$$$$SY_S_R_VBAP$$">
+    <resourceUri>SY_S_R_VBAP</resourceUri>
+  </DataSource>
+  <DataSource id="SY_S_B_SALES_FACTS">
+    <resourceUri>SY_S_B_SALES_FACTS</resourceUri>
+  </DataSource>
+  <DataSource id="S_B_SALES_FACTS$$$$SY_S_B_SALES_FACTS$$">
+    <resourceUri>SY_S_B_SALES_FACTS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_SSDHE_LD">
+    <viewAttributes>
+      <viewAttribute id="LSDHE_HK"/>
+      <viewAttribute id="SSDHE_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_S_R_VBAK"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_LSDIT_LD">
+    <viewAttributes>
+      <viewAttribute id="LSDIT_HK"/>
+      <viewAttribute id="LSDIT_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_L_R_SALES_DOCUMENT_ITEM"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_LSDHE_LD">
+    <viewAttributes>
+      <viewAttribute id="LSDHE_HK"/>
+      <viewAttribute id="LSDHE_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_L_R_SALES_DOCUMENT_HEAD"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="S_R_VBAK" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="LSDHE_HK"/>
+      <viewAttribute id="SSDHE_LD" aggregationType="min"/>
+      <viewAttribute id="SSDHE_SRC"/>
+      <viewAttribute id="SSDHE_HD"/>
+      <viewAttribute id="VBELN"/>
+      <viewAttribute id="ERDAT"/>
+      <viewAttribute id="VDATU"/>
+      <viewAttribute hidden="true" id="JOIN$SSDHE_LD$SSDHE_LD"/>
+      <viewAttribute hidden="true" id="JOIN$LSDHE_HK$LSDHE_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Max_SSDHE_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SSDHE_LD$SSDHE_LD" source="SSDHE_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDHE_HK$LSDHE_HK" source="LSDHE_HK"/>
+    </input>
+    <input node="S_R_VBAK$$$$SY_S_R_VBAK$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDHE_HK" source="LSDHE_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDHE_LD" source="SSDHE_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDHE_SRC" source="SSDHE_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDHE_HD" source="SSDHE_HD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VBELN" source="VBELN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="ERDAT" source="ERDAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VDATU" source="VDATU"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SSDHE_LD$SSDHE_LD" source="SSDHE_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDHE_HK$LSDHE_HK" source="LSDHE_HK"/>
+    </input>
+    <joinAttribute name="JOIN$SSDHE_LD$SSDHE_LD"/>
+    <joinAttribute name="JOIN$LSDHE_HK$LSDHE_HK"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="L_R_SALES_DOCUMENT_HEAD" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="LSDHE_HK"/>
+      <viewAttribute id="HCUSO_HK"/>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="HCUST_HK"/>
+      <viewAttribute id="LSDHE_LD" aggregationType="min"/>
+      <viewAttribute id="LSDHE_SRC"/>
+      <viewAttribute hidden="true" id="JOIN$LSDHE_HK$LSDHE_HK"/>
+      <viewAttribute hidden="true" id="JOIN$LSDHE_LD$LSDHE_LD"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Max_LSDHE_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDHE_HK$LSDHE_HK" source="LSDHE_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDHE_LD$LSDHE_LD" source="LSDHE_LD"/>
+    </input>
+    <input node="L_R_SALES_DOCUMENT_HEAD$$$$SY_L_R_SALES_DOCUMENT_HEAD$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDHE_HK" source="LSDHE_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUSO_HK" source="HCUSO_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUST_HK" source="HCUST_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDHE_LD" source="LSDHE_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDHE_SRC" source="LSDHE_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDHE_HK$LSDHE_HK" source="LSDHE_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDHE_LD$LSDHE_LD" source="LSDHE_LD"/>
+    </input>
+    <joinAttribute name="JOIN$LSDHE_HK$LSDHE_HK"/>
+    <joinAttribute name="JOIN$LSDHE_LD$LSDHE_LD"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="L_R_SALES_DOCUMENT_ITEM" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="LSDIT_HK"/>
+      <viewAttribute id="HCUSO_HK"/>
+      <viewAttribute id="HPROD_HK"/>
+      <viewAttribute id="POSNR"/>
+      <viewAttribute id="LSDIT_LD" aggregationType="min"/>
+      <viewAttribute id="LSDIT_SRC"/>
+      <viewAttribute hidden="true" id="JOIN$LSDIT_HK$LSDIT_HK"/>
+      <viewAttribute hidden="true" id="JOIN$LSDIT_LD$LSDIT_LD"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Max_LSDIT_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDIT_HK$LSDIT_HK" source="LSDIT_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDIT_LD$LSDIT_LD" source="LSDIT_LD"/>
+    </input>
+    <input node="L_R_SALES_DOCUMENT_ITEM$$$$SY_L_R_SALES_DOCUMENT_ITEM$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUSO_HK" source="HCUSO_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPROD_HK" source="HPROD_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="POSNR" source="POSNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_LD" source="LSDIT_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_SRC" source="LSDIT_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDIT_HK$LSDIT_HK" source="LSDIT_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDIT_LD$LSDIT_LD" source="LSDIT_LD"/>
+    </input>
+    <joinAttribute name="JOIN$LSDIT_HK$LSDIT_HK"/>
+    <joinAttribute name="JOIN$LSDIT_LD$LSDIT_LD"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_SSDIT_LD_1">
+    <viewAttributes>
+      <viewAttribute id="LSDIT_HK"/>
+      <viewAttribute id="SSDIT_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_S_R_VBAP"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="S_R_VBAP" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="VBELN"/>
+      <viewAttribute id="POSNR"/>
+      <viewAttribute id="MATNR"/>
+      <viewAttribute id="LSDIT_HK"/>
+      <viewAttribute id="SSDIT_LD" aggregationType="min"/>
+      <viewAttribute id="SSDIT_SRC"/>
+      <viewAttribute id="SSDIT_HD"/>
+      <viewAttribute hidden="true" id="JOIN$LSDIT_HK$LSDIT_HK"/>
+      <viewAttribute hidden="true" id="JOIN$SSDIT_LD$SSDIT_LD"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Max_SSDIT_LD_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDIT_HK$LSDIT_HK" source="LSDIT_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SSDIT_LD$SSDIT_LD" source="SSDIT_LD"/>
+    </input>
+    <input node="S_R_VBAP$$$$SY_S_R_VBAP$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VBELN" source="VBELN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="POSNR" source="POSNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDIT_LD" source="SSDIT_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDIT_SRC" source="SSDIT_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDIT_HD" source="SSDIT_HD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDIT_HK$LSDIT_HK" source="LSDIT_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SSDIT_LD$SSDIT_LD" source="SSDIT_LD"/>
+    </input>
+    <joinAttribute name="JOIN$LSDIT_HK$LSDIT_HK"/>
+    <joinAttribute name="JOIN$SSDIT_LD$SSDIT_LD"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_SSDIT_LD">
+    <viewAttributes>
+      <viewAttribute id="LSDIT_HK"/>
+      <viewAttribute id="SSDIT_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_S_B_SALES_FACTS"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="S_B_SALES_FACTS" cardinality="C1_1" joinType="referential">
+    <viewAttributes>
+      <viewAttribute id="LSDIT_HK"/>
+      <viewAttribute id="SSDIT_LD" aggregationType="min"/>
+      <viewAttribute id="SSDIT_HD"/>
+      <viewAttribute id="SSDIT_SRC"/>
+      <viewAttribute id="AMOUNT" aggregationType="sum"/>
+      <viewAttribute id="REVENUE" aggregationType="sum"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="S_B_SALES_FACTS$$$$SY_S_B_SALES_FACTS$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDIT_LD" source="SSDIT_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDIT_HD" source="SSDIT_HD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDIT_SRC" source="SSDIT_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AMOUNT" source="AMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REVENUE" source="REVENUE"/>
+    </input>
+    <input node="Max_SSDIT_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="SSDIT_LD" source="SSDIT_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+    </input>
+    <joinAttribute name="SSDIT_LD"/>
+    <joinAttribute name="LSDIT_HK"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_1" cardinality="C1_1" joinType="inner" multiJoinNode="Join_1" multiJoinCentralTable="S_R_VBAP" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="ERDAT"/>
+      <viewAttribute id="VDATU"/>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="HCUST_HK"/>
+      <viewAttribute id="HCUSO_HK"/>
+      <viewAttribute hidden="true" id="JOIN$LSDHE_HK$LSDHE_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="S_R_VBAK">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ERDAT" source="ERDAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VDATU" source="VDATU"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDHE_HK$LSDHE_HK" source="LSDHE_HK"/>
+    </input>
+    <input node="L_R_SALES_DOCUMENT_HEAD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUST_HK" source="HCUST_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUSO_HK" source="HCUSO_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$LSDHE_HK$LSDHE_HK" source="LSDHE_HK"/>
+    </input>
+    <joinAttribute name="JOIN$LSDHE_HK$LSDHE_HK"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_2" cardinality="CN_1" joinType="inner" multiJoinNode="Join_1" multiJoinCentralTable="S_R_VBAP" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="ERDAT"/>
+      <viewAttribute id="VDATU"/>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="HCUST_HK"/>
+      <viewAttribute id="HCUSO_HK"/>
+      <viewAttribute id="HPROD_HK"/>
+      <viewAttribute id="LSDIT_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="L_R_SALES_DOCUMENT_ITEM">
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPROD_HK" source="HPROD_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUSO_HK" source="HCUSO_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+    </input>
+    <input node="Join_1_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ERDAT" source="ERDAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VDATU" source="VDATU"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUST_HK" source="HCUST_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUSO_HK" source="HCUSO_HK"/>
+    </input>
+    <joinAttribute name="HCUSO_HK"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_3" cardinality="CN_1" joinType="inner" multiJoinNode="Join_1" multiJoinCentralTable="S_R_VBAP" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="ERDAT"/>
+      <viewAttribute id="VDATU"/>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="HCUST_HK"/>
+      <viewAttribute id="HCUSO_HK"/>
+      <viewAttribute id="HPROD_HK"/>
+      <viewAttribute id="AMOUNT" aggregationType="sum"/>
+      <viewAttribute id="REVENUE" aggregationType="sum"/>
+      <viewAttribute id="LSDIT_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Join_1_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ERDAT" source="ERDAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VDATU" source="VDATU"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUST_HK" source="HCUST_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUSO_HK" source="HCUSO_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPROD_HK" source="HPROD_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+    </input>
+    <input node="S_B_SALES_FACTS">
+      <mapping xsi:type="Calculation:AttributeMapping" target="AMOUNT" source="AMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REVENUE" source="REVENUE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+    </input>
+    <joinAttribute name="LSDIT_HK"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1_4" cardinality="C1_1" joinType="inner" multiJoinNode="Join_1" multiJoinCentralTable="S_R_VBAP" multiJoinOrder="Outside In">
+    <viewAttributes>
+      <viewAttribute id="ERDAT"/>
+      <viewAttribute id="VDATU"/>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="HCUST_HK"/>
+      <viewAttribute id="HCUSO_HK"/>
+      <viewAttribute id="HPROD_HK"/>
+      <viewAttribute id="AMOUNT" aggregationType="sum"/>
+      <viewAttribute id="REVENUE" aggregationType="sum"/>
+      <viewAttribute id="LSDIT_HK"/>
+      <viewAttribute id="VBELN"/>
+      <viewAttribute id="POSNR"/>
+      <viewAttribute id="MATNR"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="S_R_VBAP">
+      <mapping xsi:type="Calculation:AttributeMapping" target="VBELN" source="VBELN"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="POSNR" source="POSNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MATNR" source="MATNR"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+    </input>
+    <input node="Join_1_3">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ERDAT" source="ERDAT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="VDATU" source="VDATU"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPLAN_HK" source="HPLAN_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUST_HK" source="HCUST_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCUSO_HK" source="HCUSO_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="HPROD_HK" source="HPROD_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AMOUNT" source="AMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="REVENUE" source="REVENUE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LSDIT_HK" source="LSDIT_HK"/>
+    </input>
+    <joinAttribute name="LSDIT_HK"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1_4">
+  <attributes>
+    <attribute id="SALES_ORDER_NUMBER" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VBELN"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="VBELN"/>
+    </attribute>
+    <attribute id="SALES_ORDER_DATE" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ERDAT"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="ERDAT"/>
+    </attribute>
+    <attribute id="SALES_ORDER_REQUESTED_DELIVERY_DATE" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VDATU"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="VDATU"/>
+    </attribute>
+    <attribute id="POSNR" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="POSNR"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="POSNR"/>
+    </attribute>
+    <attribute id="HPLAN_HK" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HPLAN_HK"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="HPLAN_HK"/>
+    </attribute>
+    <attribute id="HCUST_HK" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HCUST_HK"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="HCUST_HK"/>
+    </attribute>
+    <attribute id="HPROD_HK" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HPROD_HK"/>
+      <keyMapping columnObjectName="Join_1_4" columnName="HPROD_HK"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="SALES_ORDER_AMOUNT" order="4" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="AMOUNT"/>
+      <measureMapping columnObjectName="Join_1_4" columnName="AMOUNT"/>
+    </measure>
+    <measure id="SALES_ORDER_REVENUE" order="5" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="REVENUE"/>
+      <measureMapping columnObjectName="Join_1_4" columnName="REVENUE"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="676.7212458971433" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Max_SSDHE_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="353.0000000000001" y="601.9999964237213"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Max_LSDIT_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="608.0000000000003" y="601.9999964237213"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Max_LSDHE_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="1113.5754868837164" y="601.9999964237213"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="S_R_VBAK" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="353.0000000000001" y="441.9999976158142"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Max_SSDHE_LD" modelObjectNameSpace="S_R_VBAK" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="SY_S_R_VBAK" modelObjectNameSpace="S_R_VBAK" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="148"/>
+    </shape>
+    <shape expanded="true" modelObjectName="L_R_SALES_DOCUMENT_HEAD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="1073.0000000000005" y="441.9999976158142"/>
+      <rectangleSize height="30" width="248"/>
+    </shape>
+    <shape modelObjectName="Max_LSDHE_LD" modelObjectNameSpace="L_R_SALES_DOCUMENT_HEAD" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="SY_L_R_SALES_DOCUMENT_HEAD" modelObjectNameSpace="L_R_SALES_DOCUMENT_HEAD" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="263"/>
+    </shape>
+    <shape expanded="true" modelObjectName="L_R_SALES_DOCUMENT_ITEM" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="563.0000000000003" y="441.9999976158142"/>
+      <rectangleSize height="30" width="250"/>
+    </shape>
+    <shape modelObjectName="Max_LSDIT_LD" modelObjectNameSpace="L_R_SALES_DOCUMENT_ITEM" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="250"/>
+    </shape>
+    <shape modelObjectName="SY_L_R_SALES_DOCUMENT_ITEM" modelObjectNameSpace="L_R_SALES_DOCUMENT_ITEM" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="259"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Max_SSDIT_LD_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="863.0000000000003" y="601.9999964237213"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="S_R_VBAP" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="863.0000000000003" y="441.9999976158142"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Max_SSDIT_LD_1" modelObjectNameSpace="S_R_VBAP" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="147"/>
+    </shape>
+    <shape modelObjectName="SY_S_R_VBAP" modelObjectNameSpace="S_R_VBAP" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="148"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Max_SSDIT_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="117.50000000000009" y="601.9999964237213"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="S_B_SALES_FACTS" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92.00000000000009" y="441.9999976158142"/>
+      <rectangleSize height="30" width="211"/>
+    </shape>
+    <shape modelObjectName="SY_S_B_SALES_FACTS" modelObjectNameSpace="S_B_SALES_FACTS" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="197"/>
+    </shape>
+    <shape modelObjectName="Max_SSDIT_LD" modelObjectNameSpace="S_B_SALES_FACTS" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="147"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="529.5000000000003" y="236.9999988079071"/>
+      <rectangleSize height="30" width="317"/>
+    </shape>
+    <shape modelObjectName="S_R_VBAP" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="-141" y="276"/>
+      <rectangleSize width="142"/>
+    </shape>
+    <shape modelObjectName="L_R_SALES_DOCUMENT_ITEM" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="64" y="276"/>
+      <rectangleSize width="237"/>
+    </shape>
+    <shape modelObjectName="S_B_SALES_FACTS" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="69" y="86"/>
+      <rectangleSize width="175"/>
+    </shape>
+    <shape modelObjectName="S_R_VBAK" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="458" y="86"/>
+      <rectangleSize width="147"/>
+    </shape>
+    <shape modelObjectName="L_R_SALES_DOCUMENT_HEAD" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput" multiJoinViewNodeName="Join_1">
+      <upperLeftCorner x="371" y="276"/>
+      <rectangleSize width="241"/>
+    </shape></shapes>
+</layout>
+</Calculation:scenario> 

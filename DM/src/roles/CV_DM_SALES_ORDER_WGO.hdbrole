@@ -1,0 +1,12 @@
+{
+  "role": {
+    "name": "CV_DM_SALES_ORDER_WGO", 
+    "schema_analytic_privileges": [
+      {
+        "privileges": [
+          "AP_CV_DM_SALES_ORDER"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_DM_SALES_ORDER" applyPrivilegeType="SQL_ANALYTIC_PRIVILEGE" dataCategory="CUBE" schemaVersion="3.0" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_DM_SALES_ORDER"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SY_CV_SALES_ORDER">
+    <resourceUri>SY_CV_SALES_ORDER</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="CV_SALES_ORDER">
+    <viewAttributes>
+      <viewAttribute id="SALES_ORDER_NUMBER"/>
+      <viewAttribute id="SALES_ORDER_DATE"/>
+      <viewAttribute id="SALES_ORDER_REQUESTED_DELIVERY_DATE"/>
+      <viewAttribute id="SALES_ORDER_AMOUNT"/>
+      <viewAttribute id="SALES_ORDER_REVENUE"/>
+      <viewAttribute id="POSNR"/>
+      <viewAttribute id="HPLAN_HK"/>
+      <viewAttribute id="HCUST_HK"/>
+      <viewAttribute id="HPROD_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="SY_CV_SALES_ORDER"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="CV_SALES_ORDER">
+  <attributes>
+    <attribute id="SALES_ORDER_NUMBER" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VBELN"/>
+      <keyMapping columnObjectName="CV_SALES_ORDER" columnName="SALES_ORDER_NUMBER"/>
+    </attribute>
+    <attribute id="SALES_ORDER_DATE" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ERDAT"/>
+      <keyMapping columnObjectName="CV_SALES_ORDER" columnName="SALES_ORDER_DATE"/>
+    </attribute>
+    <attribute id="SALES_ORDER_REQUESTED_DELIVERY_DATE" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VDATU"/>
+      <keyMapping columnObjectName="CV_SALES_ORDER" columnName="SALES_ORDER_REQUESTED_DELIVERY_DATE"/>
+    </attribute>
+    <attribute id="HCUST_HK$local">
+      <descriptions defaultDescription="HCUST_HK"/>
+      <keyMapping columnObjectName="CV_SALES_ORDER" columnName="HCUST_HK"/>
+    </attribute>
+    <attribute id="HPLAN_HK$local">
+      <descriptions defaultDescription="HPLAN_HK"/>
+      <keyMapping columnObjectName="CV_SALES_ORDER" columnName="HPLAN_HK"/>
+    </attribute>
+    <attribute id="HPROD_HK$local">
+      <descriptions defaultDescription="HPROD_HK"/>
+      <keyMapping columnObjectName="CV_SALES_ORDER" columnName="HPROD_HK"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="SALES_ORDER_AMOUNT" order="4" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="AMOUNT"/>
+      <measureMapping columnObjectName="CV_SALES_ORDER" columnName="SALES_ORDER_AMOUNT"/>
+    </measure>
+    <measure id="SALES_ORDER_REVENUE" order="5" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="REVENUE"/>
+      <measureMapping columnObjectName="CV_SALES_ORDER" columnName="SALES_ORDER_REVENUE"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+  <sharedDimensions>
+    <logicalJoin associatedObjectUri="SY_CV_CUSTOMER">
+      <attributes>
+        <attributeRef>HCUST_HK$local</attributeRef>
+      </attributes>
+      <associatedAttributeNames>
+        <attributeName>HCUST_HK</attributeName>
+      </associatedAttributeNames>
+      <properties cardinality="CN_1" joinType="referential" joinOperator="Equal"/>
+      <associatedAttributeFeatures>
+        <attributeReference attributeName="HCUST_HK" hidden="true"/>
+        <attributeReference attributeName="HREGN_HK" hidden="true"/>
+        <attributeReference attributeName="HCUGR_HK" hidden="true"/>
+        <attributeReference attributeName="HIDST_HK" hidden="true"/>
+      </associatedAttributeFeatures>
+    </logicalJoin>
+    <logicalJoin associatedObjectUri="SY_CV_PLANT">
+      <attributes>
+        <attributeRef>HPLAN_HK$local</attributeRef>
+      </attributes>
+      <associatedAttributeNames>
+        <attributeName>HPLAN_HK</attributeName>
+      </associatedAttributeNames>
+      <properties cardinality="CN_1" joinType="referential" joinOperator="Equal"/>
+      <associatedAttributeFeatures>
+        <attributeReference alias="HREGN_HK_1" attributeName="HREGN_HK" hidden="true"/>
+        <attributeReference attributeName="HPLAN_HK" hidden="true"/>
+      </associatedAttributeFeatures>
+    </logicalJoin>
+    <logicalJoin associatedObjectUri="SY_CV_PRODUCT">
+      <attributes>
+        <attributeRef>HPROD_HK$local</attributeRef>
+      </attributes>
+      <associatedAttributeNames>
+        <attributeName>HPROD_HK</attributeName>
+      </associatedAttributeNames>
+      <properties cardinality="CN_1" joinType="referential" joinOperator="Equal"/>
+      <associatedAttributeFeatures>
+        <attributeReference attributeName="HPROD_HK" hidden="true"/>
+        <attributeReference attributeName="HPRCT_HK" hidden="true"/>
+        <attributeReference attributeName="HPRGR_HK" hidden="true"/>
+      </associatedAttributeFeatures>
+    </logicalJoin>
+  </sharedDimensions>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="108" y="112"/>
+    
+      <rectangleSize width="191"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="CV_SALES_ORDER" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="262"/>
+      <rectangleSize height="30" width="223"/>
+    </shape>
+    <shape modelObjectName="CV_SALES_ORDER" modelObjectNameSpace="StarJoinViewNodeInput" modelObjectType="repository">
+      <upperLeftCorner x="295" y="-32"/>
+      <rectangleSize width="315"/>
+    </shape>
+    <shape modelObjectName="SY_CV_CUSTOMER" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
+      <upperLeftCorner x="45" y="183"/>
+      <rectangleSize width="230"/>
+    </shape>
+    <shape modelObjectName="SY_CV_PLANT" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
+      <upperLeftCorner x="45" y="-35"/>
+      <rectangleSize width="180"/>
+    </shape>
+    <shape modelObjectName="SY_CV_PRODUCT" modelObjectNameSpace="StarJoinViewNodeSharedCV" modelObjectType="repository">
+      <upperLeftCorner x="648" y="11"/>
+      <rectangleSize width="227"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

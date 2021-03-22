@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_COUNTRY" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_COUNTRY"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SY_S_R_T005T">
+    <resourceUri>SY_S_R_T005T</resourceUri>
+  </DataSource>
+  <DataSource id="Join_1$$$$SY_S_R_T005T$$">
+    <resourceUri>SY_S_R_T005T</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:AggregationView" id="Max_SCNTR_LD">
+    <viewAttributes>
+      <viewAttribute id="HCNTR_HK"/>
+      <viewAttribute id="SCNTR_LD" aggregationType="max"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <restrictedViewAttributes/>
+    <input node="SY_S_R_T005T"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" cardinality="C1_1" joinType="referential" filterExpressionLanguage="SQL">
+    <viewAttributes>
+      <viewAttribute id="HCNTR_HK"/>
+      <viewAttribute id="SCNTR_LD"/>
+      <viewAttribute id="SCNTR_SRC"/>
+      <viewAttribute id="SCNTR_HD"/>
+      <viewAttribute id="MANDT"/>
+      <viewAttribute id="SPRAS"/>
+      <viewAttribute id="LAND1"/>
+      <viewAttribute id="LANDX"/>
+      <viewAttribute id="LANDX50"/>
+      <viewAttribute id="NATIO"/>
+      <viewAttribute id="NATIO50"/>
+      <viewAttribute id="PRQ_SPREGT"/>
+      <viewAttribute hidden="true" id="JOIN$SCNTR_LD$SCNTR_LD"/>
+      <viewAttribute hidden="true" id="JOIN$HCNTR_HK$HCNTR_HK"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Max_SCNTR_LD">
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SCNTR_LD$SCNTR_LD" source="SCNTR_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$HCNTR_HK$HCNTR_HK" source="HCNTR_HK"/>
+    </input>
+    <input node="Join_1$$$$SY_S_R_T005T$$">
+      <mapping xsi:type="Calculation:AttributeMapping" target="HCNTR_HK" source="HCNTR_HK"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SCNTR_LD" source="SCNTR_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SCNTR_SRC" source="SCNTR_SRC"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SCNTR_HD" source="SCNTR_HD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="MANDT" source="MANDT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="SPRAS" source="SPRAS"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LAND1" source="LAND1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LANDX" source="LANDX"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="LANDX50" source="LANDX50"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NATIO" source="NATIO"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="NATIO50" source="NATIO50"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRQ_SPREGT" source="PRQ_SPREGT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$SCNTR_LD$SCNTR_LD" source="SCNTR_LD"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="JOIN$HCNTR_HK$HCNTR_HK" source="HCNTR_HK"/>
+    </input>
+    <filter>&quot;SPRAS&quot; = 'EN'</filter>
+    <joinAttribute name="JOIN$SCNTR_LD$SCNTR_LD"/>
+    <joinAttribute name="JOIN$HCNTR_HK$HCNTR_HK"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="COUNTRY_CODE" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LAND1"/>
+      <keyMapping columnObjectName="Join_1" columnName="LAND1"/>
+    </attribute>
+    <attribute id="COUNTRY_NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LANDX"/>
+      <keyMapping columnObjectName="Join_1" columnName="LANDX"/>
+    </attribute>
+    <attribute id="HCNTR_HK" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HCNTR_HK"/>
+      <keyMapping columnObjectName="Join_1" columnName="HCNTR_HK"/>
+    </attribute></attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  
+    <shape expanded="false" modelObjectName="Max_SCNTR_LD" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="291"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="100" y="186"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Max_SCNTR_LD" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="156"/>
+    </shape>
+    <shape modelObjectName="SY_S_R_T005T" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="153"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

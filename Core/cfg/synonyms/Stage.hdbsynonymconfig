@@ -1,0 +1,92 @@
+{
+  "SY_KNA1": {
+    "target": {
+      "object": "Stage.ST_KNA1",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_LFA1": {
+    "target": {
+      "object": "Stage.ST_LFA1",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_MAKT": {
+    "target": {
+      "object": "Stage.ST_MAKT",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_MARA": {
+    "target": {
+      "object": "Stage.ST_MARA",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_T001W": {
+    "target": {
+      "object": "Stage.ST_T001W",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_T005F": {
+    "target": {
+      "object": "Stage.ST_T005F",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_T005T": {
+    "target": {
+      "object": "Stage.ST_T005T",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_T005U": {
+    "target": {
+      "object": "Stage.ST_T005U",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_T016": {
+    "target": {
+      "object": "Stage.ST_T016",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_T016T": {
+    "target": {
+      "object": "Stage.ST_T016T",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_T023T": {
+    "target": {
+      "object": "Stage.ST_T023T",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_T179": {
+    "target": {
+      "object": "Stage.ST_T179",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_TKUKT": {
+    "target": {
+      "object": "Stage.ST_TKUKT",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_VBAK": {
+    "target": {
+      "object": "Stage.ST_VBAK",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  },
+  "SY_VBAP": {
+    "target": {
+      "object": "Stage.ST_VBAP",
+      "schema.configure": "dw_stage-service/schema"
+    }
+  }
+}

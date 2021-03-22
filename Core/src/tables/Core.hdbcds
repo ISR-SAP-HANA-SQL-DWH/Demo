@@ -1,0 +1,6161 @@
+context "Core" {
+   // Constants
+
+   // Types
+
+   // Structured Types
+
+   // Entities
+   entity "L_R_SALES_DOCUMENT_HEAD" {
+      key "LSDHE_HK": Binary(32);
+      "HCUSO_HK": Binary(32);
+      "HPLAN_HK": Binary(32);
+      "HCUST_HK": Binary(32);
+      "LSDHE_LD": UTCTimestamp;
+      "LSDHE_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_CUST_IDST" {
+      key "LCUID_HK": Binary(32);
+      "HIDST_HK": Binary(32);
+      "HCUST_HK": Binary(32);
+      "LCUID_LD": UTCTimestamp;
+      "LCUID_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Industry Names
+   */
+   entity "S_R_T016T" {
+      key "HIDST_HK": Binary(32);
+      key "SINTT_LD": UTCTimestamp;
+      "SINTT_SRC": String(100);
+      "SINTT_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Language Key
+      */
+      key "SPRAS": String(2);
+      /**
+      *Industry
+      */
+      "BRSCH": String(4) not null;
+      /**
+      *Industry Key
+      */
+      "BRTXT": String(20);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Industries
+   */
+   entity "S_R_T016" {
+      key "HIDST_HK": Binary(32);
+      key "SINDT_LD": UTCTimestamp;
+      "SINDT_SRC": String(100);
+      "SINDT_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Industry
+      */
+      "BRSCH": String(4) not null;
+      /**
+      *Industry Key
+      */
+      "BRTXT": String(20);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_VENDOR" {
+      key "HVNDR_HK": Binary(32);
+      "HVNDR_LD": UTCTimestamp;
+      "HVNDR_SRC": String(100);
+      /**
+      *Vendor
+      */
+      "LIFNR": String(10) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *County: Texts
+   */
+   entity "S_R_T005F" {
+      key "HREGN_HK": Binary(32);
+      key "SRGTF_LD": UTCTimestamp;
+      "SRGTF_SRC": String(100);
+      "SRGTF_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Language Key
+      */
+      key "SPRAS": String(2);
+      /**
+      *Country Key
+      */
+      "LAND1": String(3) not null;
+      /**
+      *Region
+      */
+      "REGIO": String(3) not null;
+      /**
+      *County Code
+      */
+      key "COUNC": String(3);
+      /**
+      *Description
+      */
+      "BEZEI": String(20) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_CUST_CUGR" {
+      key "LCTCG_HK": Binary(32);
+      "HCUST_HK": Binary(32);
+      "HCUGR_HK": Binary(32);
+      "LCTCG_LD": UTCTimestamp;
+      "LCTCG_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_VNDR_REGN" {
+      key "LVDRG_HK": Binary(32);
+      "HREGN_HK": Binary(32);
+      "HVNDR_HK": Binary(32);
+      "LVDRG_LD": UTCTimestamp;
+      "LVDRG_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_CNTR_REGN" {
+      key "LCTRE_HK": Binary(32);
+      "HCNTR_HK": Binary(32);
+      "HREGN_HK": Binary(32);
+      "LCTRE_LD": UTCTimestamp;
+      "LCTRE_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_SALES_DOCUMENT" {
+      key "HCUSO_HK": Binary(32);
+      "HCUSO_LD": UTCTimestamp;
+      "HCUSO_SRC": String(100);
+      "VBELN": String(10);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_PRODUCT" {
+      key "HPROD_HK": Binary(32);
+      "HPROD_LD": UTCTimestamp;
+      "HPROD_SRC": String(100);
+      /**
+      *Material
+      */
+      "MATNR": String(40) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_PLANT" {
+      key "HPLAN_HK": Binary(32);
+      "HPLAN_LD": UTCTimestamp;
+      "HPLAN_SRC": String(100);
+      /**
+      *Plant
+      */
+      "WERKS": String(4) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Vendor Master (General Section)
+   */
+   entity "S_R_LFA1" {
+      key "HVNDR_HK": Binary(32);
+      key "SVNDR_LD": UTCTimestamp;
+      "SVNDR_SRC": String(100);
+      "SVNDR_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Vendor
+      */
+      "LIFNR": String(10) not null;
+      /**
+      *Country
+      */
+      "LAND1": String(3);
+      /**
+      *Name 1
+      */
+      "NAME1": String(35);
+      /**
+      *Name 2
+      */
+      "NAME2": String(35);
+      /**
+      *Name 3
+      */
+      "NAME3": String(35);
+      /**
+      *Name 4
+      */
+      "NAME4": String(35);
+      /**
+      *City
+      */
+      "ORT01": String(35);
+      /**
+      *District
+      */
+      "ORT02": String(35);
+      /**
+      *PO Box
+      */
+      "PFACH": String(10);
+      /**
+      *P.O. Box Postal Code
+      */
+      "PSTL2": String(10);
+      /**
+      *Postal Code
+      */
+      "PSTLZ": String(10);
+      /**
+      *Region
+      */
+      "REGIO": String(3);
+      /**
+      *Search term
+      */
+      "SORTL": String(10);
+      /**
+      *Street
+      */
+      "STRAS": String(35);
+      /**
+      *Address
+      */
+      "ADRNR": String(10);
+      /**
+      *Name 1
+      */
+      "MCOD1": String(25);
+      /**
+      *Name 2
+      */
+      "MCOD2": String(25);
+      /**
+      *City
+      */
+      "MCOD3": String(25);
+      /**
+      *Title
+      */
+      "ANRED": String(15);
+      /**
+      *Train station
+      */
+      "BAHNS": String(25);
+      /**
+      *Int. location no. 1
+      */
+      "BBBNR": String(7);
+      /**
+      *Int. location no. 2
+      */
+      "BBSNR": String(5);
+      /**
+      *Authorization Group
+      */
+      "BEGRU": String(4);
+      /**
+      *Industry
+      */
+      "BRSCH": String(4);
+      /**
+      *Check digit
+      */
+      "BUBKZ": String(1);
+      /**
+      *Data line
+      */
+      "DATLT": String(14);
+      /**
+      *DME indicator
+      */
+      "DTAMS": String(1);
+      /**
+      *Instruction key
+      */
+      "DTAWS": String(2);
+      /**
+      *Created on
+      */
+      "ERDAT": LocalDate;
+      /**
+      *Created by
+      */
+      "ERNAM": String(12);
+      /**
+      *PBC/ISR number
+      */
+      "ESRNR": String(11);
+      /**
+      *Group key
+      */
+      "KONZS": String(10);
+      /**
+      *Account group
+      */
+      "KTOKK": String(4);
+      /**
+      *Customer
+      */
+      "KUNNR": String(10);
+      /**
+      *Alternative Payee
+      */
+      "LNRZA": String(10);
+      /**
+      *Central deletion flag
+      */
+      "LOEVM": String(1);
+      /**
+      *Central posting block
+      */
+      "SPERR": String(1);
+      /**
+      *Central purchasing block
+      */
+      "SPERM": String(1);
+      /**
+      *Language Key
+      */
+      "SPRAS": String(2);
+      /**
+      *Tax Number 1
+      */
+      "STCD1": String(16);
+      /**
+      *Tax Number 2
+      */
+      "STCD2": String(11);
+      /**
+      *Sales equalizatn tax
+      */
+      "STKZA": String(1);
+      /**
+      *Liable for VAT
+      */
+      "STKZU": String(1);
+      /**
+      *Telebox number
+      */
+      "TELBX": String(15);
+      /**
+      *Telephone 1
+      */
+      "TELF1": String(16);
+      /**
+      *Telephone 2
+      */
+      "TELF2": String(16);
+      /**
+      *Fax Number
+      */
+      "TELFX": String(31);
+      /**
+      *Teletex number
+      */
+      "TELTX": String(30);
+      /**
+      *Telex number
+      */
+      "TELX1": String(30);
+      /**
+      *One-time account
+      */
+      "XCPDK": String(1);
+      /**
+      *Payee in Document
+      */
+      "XZEMP": String(1);
+      /**
+      *Trading Partner No.
+      */
+      "VBUND": String(6);
+      /**
+      *Fiscal address
+      */
+      "FISKN": String(10);
+      /**
+      *VAT Registration No.
+      */
+      "STCEG": String(20);
+      /**
+      *Natural Person
+      */
+      "STKZN": String(1);
+      /**
+      *Block Function
+      */
+      "SPERQ": String(2);
+      /**
+      *Place of birth
+      */
+      "GBORT": String(25);
+      /**
+      *Date of Birth
+      */
+      "GBDAT": LocalDate;
+      /**
+      *Sex
+      */
+      "SEXKZ": String(1);
+      /**
+      *Credit Information Number
+      */
+      "KRAUS": String(11);
+      /**
+      *Last External Review
+      */
+      "REVDB": LocalDate;
+      /**
+      *Actual QM System
+      */
+      "QSSYS": String(4);
+      /**
+      *Reference Acct Group
+      */
+      "KTOCK": String(4);
+      /**
+      *P.O. Box city
+      */
+      "PFORT": String(35);
+      /**
+      *Plant
+      */
+      "WERKS": String(4);
+      /**
+      *Vendor sub-range relevant
+      */
+      "LTSNA": String(1);
+      /**
+      *Plant level relevant
+      */
+      "WERKR": String(1);
+      /**
+      *Factory Calendar
+      */
+      "PLKAL": String(2);
+      /**
+      *Status of Data Transfer to Next Release
+      */
+      "DUEFL": String(1);
+      /**
+      *Tax Jurisdiction
+      */
+      "TXJCD": String(15);
+      /**
+      *Payment block
+      */
+      "SPERZ": String(1);
+      /**
+      *SCAC
+      */
+      "SCACD": String(4);
+      /**
+      *Carrier freight grp
+      */
+      "SFRGR": String(4);
+      /**
+      *Transportation Zone
+      */
+      "LZONE": String(10);
+      /**
+      *Accts for Alt. Payee
+      */
+      "XLFZA": String(1);
+      /**
+      *ServAgntProcGrp
+      */
+      "DLGRP": String(4);
+      /**
+      *Tax type
+      */
+      "FITYP": String(2);
+      /**
+      *Tax number type
+      */
+      "STCDT": String(2);
+      /**
+      *Social Insurance
+      */
+      "REGSS": String(1);
+      /**
+      *Social Ins. Code
+      */
+      "ACTSS": String(3);
+      /**
+      *Tax Number 3
+      */
+      "STCD3": String(18);
+      /**
+      *Tax Number 4
+      */
+      "STCD4": String(18);
+      /**
+      *Tax Number 5
+      */
+      "STCD5": String(60);
+      /**
+      *Tax split
+      */
+      "IPISP": String(1);
+      /**
+      *Tax Base
+      */
+      "TAXBS": String(1);
+      /**
+      *Profession
+      */
+      "PROFS": String(30);
+      /**
+      *Stat. grp, service agent
+      */
+      "STGDL": String(2);
+      /**
+      *Ext. manufacturer
+      */
+      "EMNFR": String(10);
+      /**
+      *URL
+      */
+      "LFURL": String(132);
+      /**
+      *Name of Representative
+      */
+      "J_1KFREPRE": String(10);
+      /**
+      *Type of Business
+      */
+      "J_1KFTBUS": String(30);
+      /**
+      *Type of Industry
+      */
+      "J_1KFTIND": String(30);
+      /**
+      *Confirmation status
+      */
+      "CONFS": String(1);
+      /**
+      *Confirmation date
+      */
+      "UPDAT": LocalDate;
+      /**
+      *Confirmation time
+      */
+      "UPTIM": String(8);
+      /**
+      *Central del.block
+      */
+      "NODEL": String(1);
+      /**
+      *QM System Valid To
+      */
+      "QSSYSDAT": LocalDate;
+      /**
+      *Relevant for POD
+      */
+      "PODKZB": String(1);
+      /**
+      *Tax Office Responsible
+      */
+      "FISKU": String(10);
+      /**
+      *Tax Number at Responsible Tax Authority
+      */
+      "STENR": String(18);
+      /**
+      *Carrier confirmation expected
+      */
+      "CARRIER_CONF": String(1);
+      /**
+      *Micro Company
+      */
+      "MIN_COMP": String(1);
+      /**
+      *Terms of Liability
+      */
+      "TERM_LI": String(1);
+      /**
+      *CRC number
+      */
+      "CRC_NUM": String(25);
+      /**
+      *Business Purpose Completed Flag
+      */
+      "CVP_XBLCK": String(1);
+      /**
+      *RG Number
+      */
+      "RG": String(11);
+      /**
+      *Issued by
+      */
+      "EXP": String(3);
+      /**
+      *State
+      */
+      "UF": String(2);
+      /**
+      *RG Issuing Date
+      */
+      "RGDATE": LocalDate;
+      /**
+      *RIC Number
+      */
+      "RIC": String(11);
+      /**
+      *Foreign National Registration
+      */
+      "RNE": String(10);
+      /**
+      *RNE Issuing Date
+      */
+      "RNEDATE": LocalDate;
+      /**
+      *CNAE
+      */
+      "CNAE": String(7);
+      /**
+      *Legal Nature
+      */
+      "LEGALNAT": String(4);
+      /**
+      *CRT Number
+      */
+      "CRTN": String(1);
+      /**
+      *ICMS Taxpayer
+      */
+      "ICMSTAXPAY": String(2);
+      /**
+      *Industry Main Type
+      */
+      "INDTYP": String(2);
+      /**
+      *Tax Declaration Type
+      */
+      "TDT": String(2);
+      /**
+      *Company Size
+      */
+      "COMSIZE": String(2);
+      /**
+      *Declaration Regimen for PIS/COFINS
+      */
+      "DECREGPC": String(2);
+      /**
+      *Dataelement Exstensibility for Supplier
+      */
+      "LFA1_EEW_SUPP": String(1);
+      /**
+      *Capital Amount
+      */
+      "J_SC_CAPITAL": Decimal(15,2);
+      /**
+      *Currency
+      */
+      "J_SC_CURRENCY": String(5);
+      /**
+      *Agency Location Code
+      */
+      "ALC": String(8);
+      /**
+      *Payment Office
+      */
+      "PMT_OFFICE": String(5);
+      /**
+      *PPA Relevant
+      */
+      "PPA_RELEVANT": String(1);
+      /**
+      *Processor group
+      */
+      "PSOFG": String(10);
+      /**
+      *SLAPrepr.Proced
+      */
+      "PSOIS": String(20);
+      /**
+      *Name 1
+      */
+      "PSON1": String(35);
+      /**
+      *Name 2
+      */
+      "PSON2": String(35);
+      /**
+      *Name 3
+      */
+      "PSON3": String(35);
+      /**
+      *First Name
+      */
+      "PSOVN": String(35);
+      /**
+      *Title
+      */
+      "PSOTL": String(20);
+      /**
+      *House number
+      */
+      "PSOHS": String(6);
+      /**
+      *Street
+      */
+      "PSOST": String(28);
+      /**
+      *Date limit: Ext. ID
+      */
+      "BORGR_DATUN": LocalDate;
+      /**
+      *Annual repetition
+      */
+      "BORGR_YEAUN": String(1);
+      /**
+      *Street
+      */
+      "ADDR2_STREET": String(60);
+      /**
+      *House Number
+      */
+      "ADDR2_HOUSE_NUM": String(10);
+      /**
+      *Postal Code
+      */
+      "ADDR2_POST": String(10);
+      /**
+      *City
+      */
+      "ADDR2_CITY": String(40);
+      /**
+      *Country Key
+      */
+      "ADDR2_COUNTRY": String(3);
+      /**
+      *Business Type
+      */
+      "CATEG": String(12);
+      /**
+      *Prtnr's Trading Name
+      */
+      "PARTNER_NAME": String(30);
+      /**
+      *Partner's UTR
+      */
+      "PARTNER_UTR": String(20);
+      /**
+      *Verification Status
+      */
+      "STATUS": String(3);
+      /**
+      *Verification Number
+      */
+      "VFNUM": String(20);
+      /**
+      *Tax Status
+      */
+      "VFNID": String(1);
+      /**
+      *Companies House Registration Number
+      */
+      "CRN": String(8);
+      /**
+      *ECC No.
+      */
+      "J_1IEXCD": String(40);
+      /**
+      *Excise Registration No.
+      */
+      "J_1IEXRN": String(40);
+      /**
+      *Excise Range
+      */
+      "J_1IEXRG": String(60);
+      /**
+      *Excise Division
+      */
+      "J_1IEXDI": String(60);
+      /**
+      *Excise Commissionerate
+      */
+      "J_1IEXCO": String(60);
+      /**
+      *CST number
+      */
+      "J_1ICSTNO": String(40);
+      /**
+      *LST number
+      */
+      "J_1ILSTNO": String(40);
+      /**
+      *Permanent account number
+      */
+      "J_1IPANNO": String(40);
+      /**
+      *Exc.Tax Ind. Vendor
+      */
+      "J_1IEXCIVE": String(1);
+      /**
+      *SSI status
+      */
+      "J_1ISSIST": String(1);
+      /**
+      *Type of Vendor
+      */
+      "J_1IVTYP": String(2);
+      /**
+      *CENVAT Scheme Participant
+      */
+      "J_1IVENCRE": String(1);
+      /**
+      *(Obsolete) Last Changed On – do not use
+      */
+      "AEDAT": LocalDate;
+      /**
+      *(Obsolete) Changed by the user
+      */
+      "USNAM": String(12);
+      /**
+      *Service Tax Registration Number
+      */
+      "J_1ISERN": String(40);
+      /**
+      *PAN Reference Number
+      */
+      "J_1IPANREF": String(40);
+      /**
+      *PAN Valid From Date
+      */
+      "J_1IPANVALDT": LocalDate;
+      /**
+      *Vendor for customs
+      */
+      "J_1I_CUSTOMS": String(1);
+      /**
+      *Deductee Reference Number
+      */
+      "J_1IDEDREF": String(10);
+      /**
+      *GST Vendor Classification
+      */
+      "VEN_CLASS": String(1);
+      /**
+      *Public entity
+      */
+      "ENTPUB": String(1);
+      /**
+      *Deed public use
+      */
+      "ESCRIT": String(80);
+      /**
+      *Social Sec.certificate valid.
+      */
+      "DVALSS": LocalDate;
+      /**
+      *Social Sec.certif.submission
+      */
+      "FRMCSS": String(50);
+      /**
+      *CAE code
+      */
+      "CODCAE": String(5);
+      /**
+      *Absence of debt
+      */
+      "AUSDIV": String(1);
+      /**
+      *Transportation Chain
+      */
+      "TRANSPORT_CHAIN": String(10);
+      /**
+      *Staging Time
+      */
+      "STAGING_TIME": Decimal(3,0);
+      /**
+      *Scheduling Procedure
+      */
+      "SCHEDULING_TYPE": String(1);
+      /**
+      *CD: Relevant for Collective Numbering
+      */
+      "SUBMI_RELEVANT": String(1);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Taxes: Region Key: Texts
+   */
+   entity "S_R_T005U" {
+      key "HREGN_HK": Binary(32);
+      key "SRGTU_LD": UTCTimestamp;
+      "SRGTU_SRC": String(100);
+      "SRGTU_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Language Key
+      */
+      key "SPRAS": String(2);
+      /**
+      *Country Key
+      */
+      "LAND1": String(3) not null;
+      /**
+      *Region
+      */
+      "BLAND": String(3) not null;
+      /**
+      *Description
+      */
+      "BEZEI": String(20);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Material Group Descriptions
+   */
+   entity "S_R_T023T" {
+      key "HPRGR_HK": Binary(32);
+      key "SPRGR_LD": UTCTimestamp;
+      "SPRGR_SRC": String(100);
+      "SPRGR_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Language Key
+      */
+      key "SPRAS": String(2);
+      /**
+      *Material Group
+      */
+      "MATKL": String(9) not null;
+      /**
+      *Material Group Desc.
+      */
+      "WGBEZ": String(20) not null;
+      /**
+      *Description 2 for the Material Group
+      */
+      "WGBEZ60": String(60);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *General Material Data
+   */
+   entity "S_R_MARA" {
+      key "HPROD_HK": Binary(32);
+      key "SPDMR_LD": UTCTimestamp;
+      "SPDMR_SRC": String(100);
+      "SPDMR_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Material
+      */
+      "MATNR": String(40) not null;
+      /**
+      *Created On
+      */
+      "ERSDA": LocalDate;
+      /**
+      *Created At Time
+      */
+      "CREATED_AT_TIME": String(8);
+      /**
+      *Created by
+      */
+      "ERNAM": String(12);
+      /**
+      *Last Change
+      */
+      "LAEDA": LocalDate;
+      /**
+      *Changed by
+      */
+      "AENAM": String(12);
+      /**
+      *Compl. maint. status
+      */
+      "VPSTA": String(15);
+      /**
+      *Maintenance status
+      */
+      "PSTAT": String(15);
+      /**
+      *DF at client level
+      */
+      "LVORM": String(1);
+      /**
+      *Material type
+      */
+      "MTART": String(4);
+      /**
+      *Industry Sector
+      */
+      "MBRSH": String(1);
+      /**
+      *Material Group
+      */
+      "MATKL": String(9);
+      /**
+      *Old material number
+      */
+      "BISMT": String(40);
+      /**
+      *Base Unit of Measure
+      */
+      "MEINS": String(3);
+      /**
+      *Order Unit
+      */
+      "BSTME": String(3);
+      /**
+      *Document
+      */
+      "ZEINR": String(22);
+      /**
+      *Document type
+      */
+      "ZEIAR": String(3);
+      /**
+      *Doc. Version
+      */
+      "ZEIVR": String(2);
+      /**
+      *Page format
+      */
+      "ZEIFO": String(4);
+      /**
+      *Document change no.
+      */
+      "AESZN": String(6);
+      /**
+      *Page number
+      */
+      "BLATT": String(3);
+      /**
+      *Number of sheets
+      */
+      "BLANZ": String(3);
+      /**
+      *Prod./insp. memo
+      */
+      "FERTH": String(18);
+      /**
+      *Page format
+      */
+      "FORMT": String(4);
+      /**
+      *Size/dimensions
+      */
+      "GROES": String(32);
+      /**
+      *Basic material
+      */
+      "WRKST": String(48);
+      /**
+      *Industry Std Desc.
+      */
+      "NORMT": String(18);
+      /**
+      *Lab/Office
+      */
+      "LABOR": String(3);
+      /**
+      *Purchasing value key
+      */
+      "EKWSL": String(4);
+      /**
+      *Gross weight
+      */
+      "BRGEW": Decimal(13,3);
+      /**
+      *Net weight
+      */
+      "NTGEW": Decimal(13,3);
+      /**
+      *Weight unit
+      */
+      "GEWEI": String(3);
+      /**
+      *Volume
+      */
+      "VOLUM": Decimal(13,3);
+      /**
+      *Volume unit
+      */
+      "VOLEH": String(3);
+      /**
+      *Container reqmts
+      */
+      "BEHVO": String(2);
+      /**
+      *Storage conditions
+      */
+      "RAUBE": String(2);
+      /**
+      *Temp. conditions
+      */
+      "TEMPB": String(2);
+      /**
+      *Low-Level Code
+      */
+      "DISST": String(3);
+      /**
+      *Transportation Group
+      */
+      "TRAGR": String(4);
+      /**
+      *Haz. material number
+      */
+      "STOFF": String(40);
+      /**
+      *Division
+      */
+      "SPART": String(2);
+      /**
+      *Competitor
+      */
+      "KUNNR": String(10);
+      /**
+      *EAN Number
+      */
+      "EANNR": String(13);
+      /**
+      *Number of GR slips
+      */
+      "WESCH": Decimal(13,3);
+      /**
+      *Procurement rule
+      */
+      "BWVOR": String(1);
+      /**
+      *Source of supply
+      */
+      "BWSCL": String(1);
+      /**
+      *Season
+      */
+      "SAISO": String(4);
+      /**
+      *Label type
+      */
+      "ETIAR": String(2);
+      /**
+      *Label form
+      */
+      "ETIFO": String(2);
+      /**
+      *Field deactivated
+      */
+      "ENTAR": String(1);
+      /**
+      *EAN/UPC
+      */
+      "EAN11": String(18);
+      /**
+      *EAN category
+      */
+      "NUMTP": String(2);
+      /**
+      *Length
+      */
+      "LAENG": Decimal(13,3);
+      /**
+      *Width
+      */
+      "BREIT": Decimal(13,3);
+      /**
+      *Height
+      */
+      "HOEHE": Decimal(13,3);
+      /**
+      *Unit of Dimension
+      */
+      "MEABM": String(3);
+      /**
+      *Product hierarchy
+      */
+      "PRDHA": String(18);
+      /**
+      *Stock Transfer Net Change Costing
+      */
+      "AEKLK": String(1);
+      /**
+      *CAD Indicator
+      */
+      "CADKZ": String(1);
+      /**
+      *QM in Procur. Active
+      */
+      "QMPUR": String(1);
+      /**
+      *Allowed pkg weight
+      */
+      "ERGEW": Decimal(13,3);
+      /**
+      *Unit of weight
+      */
+      "ERGEI": String(3);
+      /**
+      *Allowed pkg volume
+      */
+      "ERVOL": Decimal(13,3);
+      /**
+      *Volume unit
+      */
+      "ERVOE": String(3);
+      /**
+      *Excess wt tolerance
+      */
+      "GEWTO": Decimal(3,1);
+      /**
+      *Excess volume tol.
+      */
+      "VOLTO": Decimal(3,1);
+      /**
+      *Variable Purchase Order Unit
+      */
+      "VABME": String(1);
+      /**
+      *Revision Level Assgd
+      */
+      "KZREV": String(1);
+      /**
+      *Material is configurable
+      */
+      "KZKFG": String(1);
+      /**
+      *Batch management
+      */
+      "XCHPF": String(1);
+      /**
+      *Packaging Mat. Type
+      */
+      "VHART": String(4);
+      /**
+      *Maximum level
+      */
+      "FUELG": Decimal(3,0);
+      /**
+      *Stackability factor
+      */
+      "STFAK": Integer;
+      /**
+      *Matl Grp Pack.Matls
+      */
+      "MAGRV": String(4);
+      /**
+      *Authorization Group
+      */
+      "BEGRU": String(4);
+      /**
+      *Valid From
+      */
+      "DATAB": LocalDate;
+      /**
+      *Valid to
+      */
+      "LIQDT": LocalDate;
+      /**
+      *Season Year
+      */
+      "SAISJ": String(4);
+      /**
+      *Price Band Category
+      */
+      "PLGTP": String(2);
+      /**
+      *With empties BOM
+      */
+      "MLGUT": String(1);
+      /**
+      *Ext. Material Group
+      */
+      "EXTWG": String(18);
+      /**
+      *Cross-plant CM
+      */
+      "SATNR": String(40);
+      /**
+      *Material Category
+      */
+      "ATTYP": String(2);
+      /**
+      *Co-product
+      */
+      "KZKUP": String(1);
+      /**
+      *Follow-up material
+      */
+      "KZNFM": String(1);
+      /**
+      *Pricing Ref. Matl
+      */
+      "PMATA": String(40);
+      /**
+      *X-Plant Material Status
+      */
+      "MSTAE": String(2);
+      /**
+      *X-distr.chain status
+      */
+      "MSTAV": String(2);
+      /**
+      *Valid from
+      */
+      "MSTDE": LocalDate;
+      /**
+      *Valid from
+      */
+      "MSTDV": LocalDate;
+      /**
+      *Tax classification
+      */
+      "TAKLV": String(1);
+      /**
+      *Catalog Profile
+      */
+      "RBNRM": String(9);
+      /**
+      *Min. Rem. Shelf Life
+      */
+      "MHDRZ": Decimal(4,0);
+      /**
+      *Total shelf life
+      */
+      "MHDHB": Decimal(4,0);
+      /**
+      *Storage percentage
+      */
+      "MHDLP": Decimal(3,0);
+      /**
+      *Content unit
+      */
+      "INHME": String(3);
+      /**
+      *Net contents
+      */
+      "INHAL": Decimal(13,3);
+      /**
+      *ComparisonPriceUnit
+      */
+      "VPREH": String(10);
+      /**
+      *Labeling matl grpg
+      */
+      "ETIAG": String(18);
+      /**
+      *Gross contents
+      */
+      "INHBR": Decimal(13,3);
+      /**
+      *Conversion Method
+      */
+      "CMETH": String(1);
+      /**
+      *Internal object no.
+      */
+      "CUOBF": String(18);
+      /**
+      *Environmentally rlvt
+      */
+      "KZUMW": String(1);
+      /**
+      *Product allocation
+      */
+      "KOSCH": String(18);
+      /**
+      *Pricing profile
+      */
+      "SPROF": String(1);
+      /**
+      *Qual.f.FreeGoodsDis.
+      */
+      "NRFHG": String(1);
+      /**
+      *Manufacturer Part No.
+      */
+      "MFRPN": String(40);
+      /**
+      *Manufacturer
+      */
+      "MFRNR": String(10);
+      /**
+      *Int. material number
+      */
+      "BMATN": String(40);
+      /**
+      *Mfr part profile
+      */
+      "MPROF": String(4);
+      /**
+      *Units of meas. usage
+      */
+      "KZWSM": String(1);
+      /**
+      *Rollout
+      */
+      "SAITY": String(2);
+      /**
+      *DG indicator profile
+      */
+      "PROFL": String(3);
+      /**
+      *Highly viscous
+      */
+      "IHIVI": String(1);
+      /**
+      *In bulk/liquid
+      */
+      "ILOOS": String(1);
+      /**
+      *Serialization level
+      */
+      "SERLV": String(1);
+      /**
+      *Closed
+      */
+      "KZGVH": String(1);
+      /**
+      *Appr.Batch Recd Req.
+      */
+      "XGCHP": String(1);
+      /**
+      *Assign effect. vals
+      */
+      "KZEFF": String(1);
+      /**
+      *Material completion level
+      */
+      "COMPL": String(2);
+      /**
+      *Period Ind. for SLED
+      */
+      "IPRKZ": String(1);
+      /**
+      *Rounding rule SLED
+      */
+      "RDMHD": String(1);
+      /**
+      *Product Composition
+      */
+      "PRZUS": String(1);
+      /**
+      *Gen. item cat. grp
+      */
+      "MTPOS_MARA": String(4);
+      /**
+      *Logistical variants
+      */
+      "BFLME": String(1);
+      /**
+      *Material is locked
+      */
+      "MATFI": String(1);
+      /**
+      *Indicator for relevance in CM
+      */
+      "CMREL": String(1);
+      /**
+      *Assortment List Type
+      */
+      "BBTYP": String(1);
+      /**
+      *Expiration Date
+      */
+      "SLED_BBD": String(1);
+      /**
+      *EAN Variant
+      */
+      "GTIN_VARIANT": String(2);
+      /**
+      *Generic Material
+      */
+      "GENNR": String(40);
+      /**
+      *Reference matl for packing
+      */
+      "RMATP": String(40);
+      /**
+      *GDS-Relevant
+      */
+      "GDS_RELEVANT": String(1);
+      /**
+      *Origin Acceptance
+      */
+      "WEORA": String(1);
+      /**
+      *Standard HU Type
+      */
+      "HUTYP_DFLT": String(4);
+      /**
+      *Pilferable
+      */
+      "PILFERABLE": String(1);
+      /**
+      *WH Storage Condition
+      */
+      "WHSTC": String(2);
+      /**
+      *WH Material Group
+      */
+      "WHMATGR": String(4);
+      /**
+      *Handling Indicator
+      */
+      "HNDLCODE": String(4);
+      /**
+      *Relevant for HS
+      */
+      "HAZMAT": String(1);
+      /**
+      *Handling Unit Type
+      */
+      "HUTYP": String(4);
+      /**
+      *Varb. Tare Weight
+      */
+      "TARE_VAR": String(1);
+      /**
+      *Maximum Capacity
+      */
+      "MAXC": Decimal(15,3);
+      /**
+      *Overcapacity Toler.
+      */
+      "MAXC_TOL": Decimal(3,1);
+      /**
+      *Max. Pack. Length
+      */
+      "MAXL": Decimal(15,3);
+      /**
+      *Max. Pack. Width
+      */
+      "MAXB": Decimal(15,3);
+      /**
+      *Max. Pack. Height
+      */
+      "MAXH": Decimal(15,3);
+      /**
+      *Unit of Measurement
+      */
+      "MAXDIM_UOM": String(3);
+      /**
+      *Country of origin
+      */
+      "HERKL": String(3);
+      /**
+      *Material freight grp
+      */
+      "MFRGR": String(8);
+      /**
+      *Quarant. Per.
+      */
+      "QQTIME": Decimal(3,0);
+      /**
+      *Quarantine Time Unit
+      */
+      "QQTIMEUOM": String(3);
+      /**
+      *Quality Inspection Group
+      */
+      "QGRP": String(4);
+      /**
+      *Serial No. Profile
+      */
+      "SERIAL": String(4);
+      /**
+      *Form Name
+      */
+      "PS_SMARTFORM": String(30);
+      /**
+      *Logistics Unit of Measure
+      */
+      "LOGUNIT": String(3);
+      /**
+      *Material Is a CW Material
+      */
+      "CWQREL": String(1);
+      /**
+      *CW Profile for CW Quantity
+      */
+      "CWQPROC": String(2);
+      /**
+      *Catch Weight Tolerance Group
+      */
+      "CWQTOLGR": String(9);
+      /**
+      *Adjustment Profile (Merchandise Distr.)
+      */
+      "ADPROF": String(3);
+      /**
+      *Intellectual Property
+      */
+      "IPMIPPRODUCT": String(40);
+      /**
+      *Variant Price Allowed
+      */
+      "ALLOW_PMAT_IGNO": String(1);
+      /**
+      *Medium
+      */
+      "MEDIUM": String(6);
+      /**
+      *Commodity
+      */
+      "COMMODITY": String(18);
+      /**
+      *Cont. Non-Textile Parts of Animal Origin
+      */
+      "ANIMAL_ORIGIN": String(1);
+      /**
+      *Textile Composition Maintenance Active
+      */
+      "TEXTILE_COMP_IND": String(1);
+      /**
+      *Last Changed Time
+      */
+      "LAST_CHANGED_TIME": String(8);
+      /**
+      *Material
+      */
+      "MATNR_EXTERNAL": String(40);
+      /**
+      *Chemical Compliance Relevance Indicator
+      */
+      "CHML_CMPLNC_RLVNCE_IND": String(40);
+      /**
+      *Category of a Logistical Material
+      */
+      "LOGISTICAL_MAT_CATEGORY": String(1);
+      /**
+      *Material Number of Sales Material
+      */
+      "SALES_MATERIAL": String(40);
+      /**
+      *Identification Tag Type
+      */
+      "IDENTIFICATION_TAG_TYPE": String(2);
+      /**
+      *Segmentation Structure
+      */
+      "SGT_CSGR": String(4);
+      /**
+      *Segmentation Strategy
+      */
+      "SGT_COVSA": String(8);
+      /**
+      *Segmentation Status
+      */
+      "SGT_STAT": String(1);
+      /**
+      *Segmentation Strategy Scope
+      */
+      "SGT_SCOPE": String(1);
+      /**
+      *Segmentation Relevant
+      */
+      "SGT_REL": String(1);
+      /**
+      *ANP Code
+      */
+      "ANP": String(9);
+      /**
+      *Protected Species Management Code
+      */
+      "PSM_CODE": String(2);
+      /**
+      *Fashion Attribute 1
+      */
+      "FSH_MG_AT1": String(10);
+      /**
+      *Fashion Attribute 2
+      */
+      "FSH_MG_AT2": String(10);
+      /**
+      *Fashion Attribute 3
+      */
+      "FSH_MG_AT3": String(6);
+      /**
+      *Season Usage
+      */
+      "FSH_SEALV": String(1);
+      /**
+      *Season Active in Inventory Management
+      */
+      "FSH_SEAIM": String(1);
+      /**
+      *Material Conv. ID
+      */
+      "FSH_SC_MID": String(2);
+      /**
+      *Dummy Field
+      */
+      "DUMMY_PRD_INCL_EEW_PS": String(1);
+      /**
+      *Custom Field: High Risk ?
+      */
+      "ZZ1_CUSTOMFIELDHIGHRIS_PRD": String(1);
+      /**
+      *Custom Field: Risk Mitigation
+      */
+      "ZZ1_CUSTOMFIELDRISKMIT_PRD": String(80);
+      /**
+      *Custom Field: Risk Reason
+      */
+      "ZZ1_CUSTOMFIELDRISKREA_PRD": String(80);
+      /**
+      *Product
+      */
+      "SCM_MATID_GUID16": String(32);
+      /**
+      *Product ID
+      */
+      "SCM_MATID_GUID22": String(22);
+      /**
+      *Maturation Time
+      */
+      "SCM_MATURITY_DUR": Decimal(11,0);
+      /**
+      *Reqd Min. Shelf Life
+      */
+      "SCM_SHLF_LFE_REQ_MIN": Decimal(11,0);
+      /**
+      *Reqd Max. Shelf Life
+      */
+      "SCM_SHLF_LFE_REQ_MAX": Decimal(11,0);
+      /**
+      *Preferred Unit of Measure
+      */
+      "SCM_PUOM": String(3);
+      /**
+      *Reference Product for Package Building
+      */
+      "RMATP_PB": String(40);
+      /**
+      *Product Shape
+      */
+      "PROD_SHAPE": String(2);
+      /**
+      *Product Orientation Profile
+      */
+      "MO_PROFILE_ID": String(20);
+      /**
+      *Overhang Threshold [%]
+      */
+      "OVERHANG_TRESH": Decimal(5,2);
+      /**
+      *Bridge Threshold [%]
+      */
+      "BRIDGE_TRESH": Decimal(5,2);
+      /**
+      *Maximum Slope for Bridges [°]
+      */
+      "BRIDGE_MAX_SLOPE": Decimal(5,2);
+      /**
+      *Absolute Height Threshold
+      */
+      "HEIGHT_NONFLAT": Decimal(13,3);
+      /**
+      *UoM of Absolute Height Threshold
+      */
+      "HEIGHT_NONFLAT_UOM": String(3);
+      /**
+      *Product for Kit-to-Order
+      */
+      "SCM_KITCOMP": String(1);
+      /**
+      *Procure to Order
+      */
+      "SCM_PROD_PAOOPT": String(1);
+      /**
+      *Push Deployment from Supplier
+      */
+      "SCM_BOD_DEPLVL": String(1);
+      /**
+      *Inventory Balancing Not Allowed
+      */
+      "SCM_RESTRICT_INVBAL": String(1);
+      /**
+      *DRP: Global Stock on Entry Location
+      */
+      "SCM_DRP_GL_STOCK": String(1);
+      /**
+      *Excl. from Express Shipm.
+      */
+      "SCM_EXCL_EXPEDITE": String(1);
+      /**
+      *Material Is Activated for CW
+      */
+      "_CWM_XCWMAT": String(1);
+      /**
+      *Valuation UoM
+      */
+      "_CWM_VALUM": String(3);
+      /**
+      *CW Tolerance Group
+      */
+      "_CWM_TOLGR": String(9);
+      /**
+      *Fixed Tare
+      */
+      "_CWM_TARA": String(1);
+      /**
+      *Ref.Unit of Measure TARE Calculation
+      */
+      "_CWM_TARUM": String(3);
+      /**
+      *Loading Units
+      */
+      "_BEV1_LULEINH": String(8);
+      /**
+      *Loading Unit Group
+      */
+      "_BEV1_LULDEGRP": String(3);
+      /**
+      *Structure Category
+      */
+      "_BEV1_NESTRUCCAT": String(1);
+      /**
+      *Tolerance Type ID
+      */
+      "_DSD_SL_TOLTYP": String(4);
+      /**
+      *Counting Group
+      */
+      "_DSD_SV_CNT_GRP": String(10);
+      /**
+      *DSD Grouping
+      */
+      "_DSD_VC_GROUP": String(6);
+      /**
+      *Cable Diameter
+      */
+      "_SAPMP_KADU": Decimal(7,2);
+      /**
+      *Unit for Dimensions
+      */
+      "_SAPMP_ABMEIN": String(3);
+      /**
+      *Cable Diameter Allowance in Percent
+      */
+      "_SAPMP_KADP": Decimal(5,2);
+      /**
+      *Bending Factor
+      */
+      "_SAPMP_BRAD": Decimal(4,0);
+      /**
+      *Inner Width
+      */
+      "_SAPMP_SPBI": Decimal(7,2);
+      /**
+      *Outer Diameter
+      */
+      "_SAPMP_TRAD": Decimal(7,2);
+      /**
+      *Core Diameter
+      */
+      "_SAPMP_KEDU": Decimal(7,2);
+      /**
+      *Load Capacity
+      */
+      "_SAPMP_SPTR": Decimal(13,3);
+      /**
+      *R-O Flange Thick.
+      */
+      "_SAPMP_FBDK": Decimal(7,2);
+      /**
+      *R-O Flange Height
+      */
+      "_SAPMP_FBHK": Decimal(7,2);
+      /**
+      *Coil Delivery
+      */
+      "_SAPMP_RILI": String(1);
+      /**
+      *Run-Out Flange
+      */
+      "_SAPMP_FBAK": String(1);
+      /**
+      *No. Vertical Layers
+      */
+      "_SAPMP_AHO": String(3);
+      /**
+      *Smallest Permitted Clearance
+      */
+      "_SAPMP_MIFRR": Decimal(7,2);
+      /**
+      *Serialization Type
+      */
+      "_STTPEC_SERTYPE": Integer;
+      /**
+      *Synchronization Active
+      */
+      "_STTPEC_SYNCACT": String(1);
+      /**
+      *Last Synchronization Time
+      */
+      "_STTPEC_SYNCTIME": Decimal(15,0);
+      /**
+      *Indicator Changed Since Integration
+      */
+      "_STTPEC_SYNCCHG": String(1);
+      /**
+      *Profile Relevant Country
+      */
+      "_STTPEC_COUNTRY_REF": String(3);
+      /**
+      *Product Category
+      */
+      "_STTPEC_PRDCAT": String(10);
+      /**
+      *Tilting Allowed
+      */
+      "_VSO_R_TILT_IND": String(1);
+      /**
+      *No Stacking
+      */
+      "_VSO_R_STACK_IND": String(1);
+      /**
+      *Only Bottom Layer
+      */
+      "_VSO_R_BOT_IND": String(1);
+      /**
+      *Only Top Layer
+      */
+      "_VSO_R_TOP_IND": String(1);
+      /**
+      *Stacking Factor
+      */
+      "_VSO_R_STACK_NO": String(3);
+      /**
+      *Load without PKM
+      */
+      "_VSO_R_PAL_IND": String(1);
+      /**
+      *PKM Overhang Depth
+      */
+      "_VSO_R_PAL_OVR_D": Decimal(13,3);
+      /**
+      *PKM Overhang Width
+      */
+      "_VSO_R_PAL_OVR_W": Decimal(13,3);
+      /**
+      *Max. Stacking Height
+      */
+      "_VSO_R_PAL_B_HT": Decimal(13,3);
+      /**
+      *Min. Stacking Height
+      */
+      "_VSO_R_PAL_MIN_H": Decimal(13,3);
+      /**
+      *Max.StackH Tolerance
+      */
+      "_VSO_R_TOL_B_HT": Decimal(13,3);
+      /**
+      *No. Mat / Closed PKM
+      */
+      "_VSO_R_NO_P_GVH": String(2);
+      /**
+      *VSO Unit of Measure
+      */
+      "_VSO_R_QUAN_UNIT": String(3);
+      /**
+      *Closed PKM Required
+      */
+      "_VSO_R_KZGVH_IND": String(1);
+      /**
+      *Packaging Code
+      */
+      "PACKCODE": String(10);
+      /**
+      *DG Packaging Status
+      */
+      "DG_PACK_STATUS": String(10);
+      /**
+      *Duration of Work
+      */
+      "SRV_DURA": Decimal(13,3);
+      /**
+      *Unit
+      */
+      "SRV_DURA_UOM": String(3);
+      /**
+      *Service Profile
+      */
+      "SRV_SERWI": String(10);
+      /**
+      *Response Prof.
+      */
+      "SRV_ESCAL": String(10);
+      /**
+      *Billing Cycle
+      */
+      "SOM_CYCLE": String(4);
+      /**
+      *Billing Cycle Determination Rule ID
+      */
+      "SOM_CYCLE_RULE": String(4);
+      /**
+      *Assignment Schema
+      */
+      "SOM_TC_SCHEMA": String(2);
+      /**
+      *Material Condition Mgmt
+      */
+      "MCOND": String(1);
+      /**
+      *Return Code
+      */
+      "RETDELC": String(1);
+      /**
+      *Return to Logistics Level
+      */
+      "LOGLEV_RETO": String(1);
+      /**
+      *NATO Stock Number
+      */
+      "NSNID": String(9);
+      /**
+      *Interchangeability Code for Ammunition
+      */
+      "ICFA": String(8);
+      /**
+      *RIC ID
+      */
+      "RIC_ID": Integer64;
+      /**
+      *Overlength Part Number
+      */
+      "OVLPN": String(32);
+      /**
+      *Spare Part Class Code
+      */
+      "ADSPC_SPC": String(1);
+      /**
+      *Variable ObjectID
+      */
+      "VARID": String(32);
+      /**
+      *MS Book Part Number
+      */
+      "MSBOOKPARTNO": String(40);
+      /**
+      *SU Batch Default Value
+      */
+      "DPCBT": String(1);
+      /**
+      *Goods Rcpt to Posted Single-Unit Bch
+      */
+      "XGRDT": String(1);
+      /**
+      *Form-Fit-Function class
+      */
+      "IMATN": String(40);
+      /**
+      *Supersession chain number
+      */
+      "PICNUM": String(40);
+      /**
+      *Creation Status
+      */
+      "BSTAT": String(2);
+      /**
+      *Int. Char. Number
+      */
+      "COLOR_ATINN": String(10);
+      /**
+      *Int. Char. Number
+      */
+      "SIZE1_ATINN": String(10);
+      /**
+      *Int. Char. Number
+      */
+      "SIZE2_ATINN": String(10);
+      /**
+      *Color
+      */
+      "COLOR": String(18);
+      /**
+      *Main Size
+      */
+      "SIZE1": String(18);
+      /**
+      *Second Size
+      */
+      "SIZE2": String(18);
+      /**
+      *Free Charact. Value
+      */
+      "FREE_CHAR": String(18);
+      /**
+      *Care Code
+      */
+      "CARE_CODE": String(16);
+      /**
+      *Brand
+      */
+      "BRAND_ID": String(4);
+      /**
+      *Component 1
+      */
+      "FIBER_CODE1": String(3);
+      /**
+      *Percentage Share 1
+      */
+      "FIBER_PART1": String(3);
+      /**
+      *Component 2
+      */
+      "FIBER_CODE2": String(3);
+      /**
+      *Percentage Share 2
+      */
+      "FIBER_PART2": String(3);
+      /**
+      *Component 3
+      */
+      "FIBER_CODE3": String(3);
+      /**
+      *Percentage Share 3
+      */
+      "FIBER_PART3": String(3);
+      /**
+      *Component 4
+      */
+      "FIBER_CODE4": String(3);
+      /**
+      *Percentage Share 4
+      */
+      "FIBER_PART4": String(3);
+      /**
+      *Component 5
+      */
+      "FIBER_CODE5": String(3);
+      /**
+      *Percentage Share 5
+      */
+      "FIBER_PART5": String(3);
+      /**
+      *Fashion Grade
+      */
+      "FASHGRD": String(4);
+      /**
+      *Material description
+      */
+      "MATERIALKURZTEXT": String(40);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Plants/Branches
+   */
+   entity "S_R_T001W" {
+      key "HPLAN_HK": Binary(32);
+      key "SPLAN_LD": UTCTimestamp;
+      "SPLAN_SRC": String(100);
+      "SPLAN_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Plant
+      */
+      "WERKS": String(4) not null;
+      /**
+      *Name 1
+      */
+      "NAME1": String(30) not null;
+      /**
+      *Valuation area
+      */
+      "BWKEY": String(4) not null;
+      /**
+      *Customer No. Plant
+      */
+      "KUNNR": String(10);
+      /**
+      *Supplier Number Plant
+      */
+      "LIFNR": String(10);
+      /**
+      *Factory Calendar
+      */
+      "FABKL": String(2);
+      /**
+      *Name 2
+      */
+      "NAME2": String(30);
+      /**
+      *Street and House Number
+      */
+      "STRAS": String(30);
+      /**
+      *PO Box
+      */
+      "PFACH": String(10);
+      /**
+      *Postal Code
+      */
+      "PSTLZ": String(10);
+      /**
+      *City
+      */
+      "ORT01": String(25);
+      /**
+      *Purch. organization
+      */
+      "EKORG": String(4);
+      /**
+      *Sales Organization
+      */
+      "VKORG": String(4);
+      /**
+      *Batch status mgmt
+      */
+      "CHAZV": String(1);
+      /**
+      *Conds. at plant level
+      */
+      "KKOWK": String(1);
+      /**
+      *Source list
+      */
+      "KORDB": String(1);
+      /**
+      *Reqmts planning
+      */
+      "BEDPL": String(1);
+      /**
+      *Country Key
+      */
+      "LAND1": String(3);
+      /**
+      *Region
+      */
+      "REGIO": String(3);
+      /**
+      *County Code
+      */
+      "COUNC": String(3);
+      /**
+      *City code
+      */
+      "CITYC": String(4);
+      /**
+      *Address
+      */
+      "ADRNR": String(10);
+      /**
+      *Planning Plant
+      */
+      "IWERK": String(4);
+      /**
+      *Tax Jurisdiction
+      */
+      "TXJCD": String(15);
+      /**
+      *Distrib.channel
+      */
+      "VTWEG": String(2);
+      /**
+      *Int.co billing div.
+      */
+      "SPART": String(2);
+      /**
+      *Language Key
+      */
+      "SPRAS": String(2);
+      /**
+      *SOP plant
+      */
+      "WKSOP": String(1);
+      /**
+      *Variance Key
+      */
+      "AWSLS": String(6);
+      /**
+      *Batch status mgmt
+      */
+      "CHAZV_OLD": String(1);
+      /**
+      *Plant cat.
+      */
+      "VLFKZ": String(1);
+      /**
+      *Sales District
+      */
+      "BZIRK": String(6);
+      /**
+      *Supply region
+      */
+      "ZONE1": String(10);
+      /**
+      *Tax Indicator: Plant
+      */
+      "TAXIW": String(1);
+      /**
+      *Regular Supplier
+      */
+      "BZQHL": String(1);
+      /**
+      *1st Reminder/Exped.
+      */
+      "LET01": Decimal(3,0);
+      /**
+      *2nd Reminder/Exped.
+      */
+      "LET02": Decimal(3,0);
+      /**
+      *3rd Reminder/Exped.
+      */
+      "LET03": Decimal(3,0);
+      /**
+      *Text 1st dunning
+      */
+      "TXNAM_MA1": String(16);
+      /**
+      *Text 2nd dunning
+      */
+      "TXNAM_MA2": String(16);
+      /**
+      *Text 3rd dunning
+      */
+      "TXNAM_MA3": String(16);
+      /**
+      *PO tolerance
+      */
+      "BETOL": String(3);
+      /**
+      *Business Place
+      */
+      "J_1BBRANCH": String(4);
+      /**
+      *Sales area detrm.
+      */
+      "VTBFI": String(2);
+      /**
+      *Distrib. profile of plant
+      */
+      "FPRFW": String(3);
+      /**
+      *Archiving marker
+      */
+      "ACHVM": String(1);
+      /**
+      *Batch rec. DMS type
+      */
+      "DVSART": String(1);
+      /**
+      *Node type:supply chain
+      */
+      "NODETYPE": String(3);
+      /**
+      *Naming Structure
+      */
+      "NSCHEMA": String(4);
+      /**
+      *Cost Obj.Controlling
+      */
+      "PKOSA": Boolean;
+      /**
+      *Mixed Costing
+      */
+      "MISCH": Boolean;
+      /**
+      *Actual Costing
+      */
+      "MGVUPD": Boolean;
+      /**
+      *Shipping Point/Receiving Pt
+      */
+      "VSTEL": String(4);
+      /**
+      *Actual Activities Updated
+      */
+      "MGVLAUPD": String(1);
+      /**
+      *Control of Credit of Cost Centers
+      */
+      "MGVLAREVAL": String(1);
+      /**
+      *AF srce det. via ATP
+      */
+      "SOURCING": String(1);
+      /**
+      *Batch Management Not Active by Default
+      */
+      "NO_DEFAULT_BATCH_MANAGEMENT": String(1);
+      /**
+      *Supply Assignment (ARun)
+      */
+      "FSH_MG_ARUN_REQ": String(1);
+      /**
+      *Season Active in Inventory Management
+      */
+      "FSH_SEAIM": String(1);
+      /**
+      *Control Data for BOM
+      */
+      "FSH_BOM_MAINTENANCE": String(1);
+      /**
+      *Activate Variant Grouping
+      */
+      "FSH_GROUP_PR": String(1);
+      /**
+      *Assign Batches in ARun
+      */
+      "ARUN_FIX_BATCH": String(1);
+      /**
+      *Exchange valuation
+      */
+      "OILIVAL": String(1);
+      /**
+      *Vendor type
+      */
+      "OIHVTYPE": String(1);
+      /**
+      *Cred IPI?
+      */
+      "OIHCREDIPI": String(1);
+      /**
+      *Store Cat
+      */
+      "STORETYPE": String(1);
+      /**
+      *Superior Dept. Store
+      */
+      "DEP_STORE": String(4);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_CNTR_REGN" {
+      key "LCTRE_HK": Binary(32);
+      key "LCTRE_LD": UTCTimestamp;
+      "LCTRE_SRC": String(100);
+      "HCNTR_HK": Binary(32);
+      "HREGN_HK": Binary(32);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_CUST_CUGR" {
+      key "LCTCG_HK": Binary(32);
+      key "LCTCG_LD": UTCTimestamp;
+      "LCTCG_SRC": String(100);
+      "HCUST_HK": Binary(32);
+      "HCUGR_HK": Binary(32);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_CUST_IDST" {
+      key "LCUID_HK": Binary(32);
+      key "LCUID_LD": UTCTimestamp;
+      "LCUID_SRC": String(100);
+      "HCUST_HK": Binary(32);
+      "HIDST_HK": Binary(32);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_CUST_REGN" {
+      key "LCSRN_HK": Binary(32);
+      key "LCSRN_LD": UTCTimestamp;
+      "LCSRN_SRC": String(100);
+      "HCUST_HK": Binary(32);
+      "HREGN_HK": Binary(32);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_PLAN_REGN" {
+      key "LPLRE_HK": Binary(32);
+      key "LPLRE_LD": UTCTimestamp;
+      "HPLAN_HK": Binary(32);
+      "HREGN_HK": Binary(32);
+      "LPLRE_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_PROD_PRCT" {
+      key "LPDPC_HK": Binary(32);
+      key "LPDPC_LD": UTCTimestamp;
+      "LPDPC_SRC": String(100);
+      "HPROD_HK": Binary(32);
+      "HPRCT_HK": Binary(32);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_PROD_PRGR" {
+      key "LPRPG_HK": Binary(32);
+      key "LPRPG_LD": UTCTimestamp;
+      "LPRPG_SRC": String(100);
+      "HPROD_HK": Binary(32);
+      "HPRGR_HK": Binary(32);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_VNDR_IDST" {
+      key "LVNID_HK": Binary(32);
+      key "LHVID_LD": UTCTimestamp;
+      "LHVID_SRC": String(100);
+      "HVNDR_HK": Binary(32);
+      "HIDST_HK": Binary(32);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_L_R_VNDR_REGN" {
+      key "LVDRG_HK": Binary(32);
+      key "LVDRG_LD": UTCTimestamp;
+      "LVDRG_SRC": String(100);
+      "HVNDR_HK": Binary(32);
+      "HREGN_HK": Binary(32) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_CUST_REGN" {
+      key "LCSRN_HK": Binary(32);
+      "HCUST_HK": Binary(32);
+      "HREGN_HK": Binary(32);
+      "LCSRN_LD": UTCTimestamp;
+      "LCSRN_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_SALES_DOCUMENT_ITEM" {
+      /**
+      *VBELN
+      */
+      key "LSDIT_HK": Binary(32);
+      "HCUSO_HK": Binary(32);
+      "HPROD_HK": Binary(32);
+      "POSNR": String(6);
+      "LSDIT_LD": UTCTimestamp;
+      "LSDIT_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_PROD_PRCT" {
+      key "LPDPC_HK": Binary(32);
+      "HPROD_HK": Binary(32);
+      "HPRCT_HK": Binary(32);
+      "LPDPC_LD": UTCTimestamp;
+      "LPDPC_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Sales Document: Item Data
+   */
+   entity "S_R_VBAP" {
+      /**
+      *VBELN
+      */
+      key "LSDIT_HK": Binary(32);
+      key "SSDIT_LD": UTCTimestamp;
+      "SSDIT_SRC": String(100);
+      "SSDIT_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Sales document
+      */
+      "VBELN": String(10) not null;
+      /**
+      *Sales Document Item
+      */
+      key "POSNR": String(6);
+      /**
+      *Material
+      */
+      "MATNR": String(40);
+      /**
+      *Material Entered
+      */
+      "MATWA": String(40);
+      /**
+      *Pricing Ref. Matl
+      */
+      "PMATN": String(40);
+      /**
+      *Batch
+      */
+      "CHARG": String(10);
+      /**
+      *Material Group
+      */
+      "MATKL": String(9);
+      /**
+      *Item Description
+      */
+      "ARKTX": String(40);
+      /**
+      *Item category
+      */
+      "PSTYV": String(4);
+      /**
+      *Item Type
+      */
+      "POSAR": String(1);
+      /**
+      *Itm Relev.for Deliv.
+      */
+      "LFREL": String(1);
+      /**
+      *Relevant for Billing
+      */
+      "FKREL": String(1);
+      /**
+      *Higher-Level Item
+      */
+      "UEPOS": String(6);
+      /**
+      *Alternative to Item
+      */
+      "GRPOS": String(6);
+      /**
+      *Reason for Rejection
+      */
+      "ABGRU": String(2);
+      /**
+      *Product hierarchy
+      */
+      "PRODH": String(18);
+      /**
+      *Node ID
+      */
+      "PRODH_UNIV_SALES_PARNT_NODID": String(40);
+      /**
+      *Origin of Product Hierarchy
+      */
+      "PRODH_UNIV_SALES_DET_ORIGIN": String(2);
+      /**
+      *Node ID
+      */
+      "PRODH_UNIV_BATDET_PARNT_NODID": String(40);
+      /**
+      *Origin of Product Hierarchy
+      */
+      "PRODH_UNIV_BATDET_DET_ORIGIN": String(2);
+      /**
+      *OA Target Value
+      */
+      "ZWERT": Decimal(13,2);
+      /**
+      *Target Quantity
+      */
+      "ZMENG": Decimal(13,3);
+      /**
+      *Target Quantity UoM
+      */
+      "ZIEME": String(3);
+      /**
+      *Conversion Factor
+      */
+      "UMZIZ": Decimal(5,0);
+      /**
+      *Conversion Factor
+      */
+      "UMZIN": Decimal(5,0);
+      /**
+      *Base Unit of Measure
+      */
+      "MEINS": String(3);
+      /**
+      *Scale Quantity
+      */
+      "SMENG": Decimal(13,3);
+      /**
+      *Rounding qty
+      */
+      "ABLFZ": Decimal(13,3);
+      /**
+      *Reconciliation date
+      */
+      "ABDAT": LocalDate;
+      /**
+      *Absolute deviation
+      */
+      "ABSFZ": Decimal(13,3);
+      /**
+      *Purchase order item
+      */
+      "POSEX": String(6);
+      /**
+      *Customer Material Number
+      */
+      "KDMAT": String(35);
+      /**
+      *Deviation in percent
+      */
+      "KBVER": Decimal(3,0);
+      /**
+      *Deviation days
+      */
+      "KEVER": Decimal(3,0);
+      /**
+      *Repair: Classification of Items
+      */
+      "VKGRU": String(3);
+      /**
+      *Usage
+      */
+      "VKAUS": String(3);
+      /**
+      *Delivery Group
+      */
+      "GRKOR": String(3);
+      /**
+      *Quantity is fixed
+      */
+      "FMENG": String(1);
+      /**
+      *Unlimited Tolerance
+      */
+      "UEBTK": String(1);
+      /**
+      *Overdeliv. Tolerance
+      */
+      "UEBTO": Decimal(3,1);
+      /**
+      *Underdel. Tolerance
+      */
+      "UNTTO": Decimal(3,1);
+      /**
+      *Billing Block
+      */
+      "FAKSP": String(2);
+      /**
+      *Replacement Part
+      */
+      "ATPKZ": String(1);
+      /**
+      *Billing meth. CO/PPC
+      */
+      "RKFKF": String(1);
+      /**
+      *Division
+      */
+      "SPART": String(2);
+      /**
+      *Business Area
+      */
+      "GSBER": String(4);
+      /**
+      *Net Value
+      */
+      "NETWR": Decimal(15,2);
+      /**
+      *Document Currency
+      */
+      "WAERK": String(5);
+      /**
+      *Max.Part.Deliveries
+      */
+      "ANTLF": Decimal(1,0);
+      /**
+      *Part.dlv./item
+      */
+      "KZTLF": String(1);
+      /**
+      *Batch split allowed
+      */
+      "CHSPL": String(1);
+      /**
+      *Order Quantity
+      */
+      "KWMENG": Decimal(15,3);
+      /**
+      *Required Deliv. Qty
+      */
+      "LSMENG": Decimal(15,3);
+      /**
+      *Cumltv Confd Qty(SU)
+      */
+      "KBMENG": Decimal(15,3);
+      /**
+      *Cumltv Confd Qty(BU)
+      */
+      "KLMENG": Decimal(15,3);
+      /**
+      *Sales unit
+      */
+      "VRKME": String(3);
+      /**
+      *Numerator
+      */
+      "UMVKZ": Decimal(5,0);
+      /**
+      *Denominator
+      */
+      "UMVKN": Decimal(5,0);
+      /**
+      *Gross Weight
+      */
+      "BRGEW": Decimal(15,3);
+      /**
+      *Net Weight
+      */
+      "NTGEW": Decimal(15,3);
+      /**
+      *Weight unit
+      */
+      "GEWEI": String(3);
+      /**
+      *Volume
+      */
+      "VOLUM": Decimal(15,3);
+      /**
+      *Volume unit
+      */
+      "VOLEH": String(3);
+      /**
+      *Originating document
+      */
+      "VBELV": String(10);
+      /**
+      *Item
+      */
+      "POSNV": String(6);
+      /**
+      *Reference document
+      */
+      "VGBEL": String(10);
+      /**
+      *Reference Item
+      */
+      "VGPOS": String(6);
+      /**
+      *Complete Reference
+      */
+      "VOREF": String(1);
+      /**
+      *Update Document Flow
+      */
+      "UPFLU": String(1);
+      /**
+      *Completion Rule
+      */
+      "ERLRE": String(1);
+      /**
+      *Delivery Priority
+      */
+      "LPRIO": String(2);
+      /**
+      *Plant
+      */
+      "WERKS": String(4);
+      /**
+      *Storage location
+      */
+      "LGORT": String(4);
+      /**
+      *Shipping Point/Receiving Pt
+      */
+      "VSTEL": String(4);
+      /**
+      *Route
+      */
+      "ROUTE": String(6);
+      /**
+      *BOM origin
+      */
+      "STKEY": String(1);
+      /**
+      *BOM key date
+      */
+      "STDAT": LocalDate;
+      /**
+      *Bill of Material
+      */
+      "STLNR": String(8);
+      /**
+      *Bill of material item number
+      */
+      "STPOS": Decimal(5,0);
+      /**
+      *Order Probability
+      */
+      "AWAHR": String(3);
+      /**
+      *Created on
+      */
+      "ERDAT": LocalDate;
+      /**
+      *Created by
+      */
+      "ERNAM": String(12);
+      /**
+      *Time
+      */
+      "ERZET": String(8);
+      /**
+      *Tax classification
+      */
+      "TAXM1": String(1);
+      /**
+      *Tax classification
+      */
+      "TAXM2": String(1);
+      /**
+      *Tax classification
+      */
+      "TAXM3": String(1);
+      /**
+      *Tax classification
+      */
+      "TAXM4": String(1);
+      /**
+      *Tax classification
+      */
+      "TAXM5": String(1);
+      /**
+      *Tax classification
+      */
+      "TAXM6": String(1);
+      /**
+      *Tax classification
+      */
+      "TAXM7": String(1);
+      /**
+      *Tax classification
+      */
+      "TAXM8": String(1);
+      /**
+      *Tax classification
+      */
+      "TAXM9": String(1);
+      /**
+      *Fixed process. time
+      */
+      "VBEAF": Decimal(5,2);
+      /**
+      *Var. processing time
+      */
+      "VBEAV": Decimal(5,2);
+      /**
+      *Preceding document resulted from ref.
+      */
+      "VGREF": String(1);
+      /**
+      *Net Price
+      */
+      "NETPR": Decimal(11,2);
+      /**
+      *Pricing Unit
+      */
+      "KPEIN": Decimal(5,0);
+      /**
+      *Unit of Measure
+      */
+      "KMEIN": String(3);
+      /**
+      *Returns
+      */
+      "SHKZG": String(1);
+      /**
+      *Cash Discount
+      */
+      "SKTOF": String(1);
+      /**
+      *Availability check
+      */
+      "MTVFP": String(2);
+      /**
+      *Requirements totals
+      */
+      "SUMBD": String(1);
+      /**
+      *Material Price Grp
+      */
+      "KONDM": String(2);
+      /**
+      *Acct Assmt Grp Mat.
+      */
+      "KTGRM": String(2);
+      /**
+      *Volume Rebate Group
+      */
+      "BONUS": String(2);
+      /**
+      *Commission Group
+      */
+      "PROVG": String(2);
+      /**
+      *EAN Number
+      */
+      "EANNR": String(13);
+      /**
+      *Pricing
+      */
+      "PRSOK": String(1);
+      /**
+      *Valuation Type
+      */
+      "BWTAR": String(10);
+      /**
+      *Separate valuation
+      */
+      "BWTEX": String(1);
+      /**
+      *Batch management
+      */
+      "XCHPF": String(1);
+      /**
+      *Batch Management
+      */
+      "XCHAR": String(1);
+      /**
+      *Minimum Delivery Qty
+      */
+      "LFMNG": Decimal(13,3);
+      /**
+      *Update Group (stats)
+      */
+      "STAFO": String(6);
+      /**
+      *Cost
+      */
+      "WAVWR": Decimal(13,2);
+      /**
+      *Subtotal 1
+      */
+      "KZWI1": Decimal(13,2);
+      /**
+      *Subtotal 2
+      */
+      "KZWI2": Decimal(13,2);
+      /**
+      *Subtotal 3
+      */
+      "KZWI3": Decimal(13,2);
+      /**
+      *Subtotal 4
+      */
+      "KZWI4": Decimal(13,2);
+      /**
+      *Subtotal 5
+      */
+      "KZWI5": Decimal(13,2);
+      /**
+      *Subtotal 6
+      */
+      "KZWI6": Decimal(13,2);
+      /**
+      *Exchange Rate Stats.
+      */
+      "STCUR": Decimal(9,5);
+      /**
+      *Changed On
+      */
+      "AEDAT": LocalDate;
+      /**
+      *EAN/UPC
+      */
+      "EAN11": String(18);
+      /**
+      *Fixed Date and Qty
+      */
+      "FIXMG": String(1);
+      /**
+      *Profit Center
+      */
+      "PRCTR": String(10);
+      /**
+      *Material Group 1
+      */
+      "MVGR1": String(3);
+      /**
+      *Material Group 2
+      */
+      "MVGR2": String(3);
+      /**
+      *Material Group 3
+      */
+      "MVGR3": String(3);
+      /**
+      *Material Group 4
+      */
+      "MVGR4": String(3);
+      /**
+      *Material Group 5
+      */
+      "MVGR5": String(3);
+      /**
+      *Component Quantity
+      */
+      "KMPMG": Decimal(13,3);
+      /**
+      *Substitution Reason
+      */
+      "SUGRD": String(4);
+      /**
+      *Special Stock
+      */
+      "SOBKZ": String(1);
+      /**
+      *Allocation indicat.
+      */
+      "VPZUO": String(1);
+      /**
+      *Profitab. Segmt No.
+      */
+      "PAOBJNR": String(10);
+      /**
+      *WBS Element
+      */
+      "PS_PSP_PNR": String(8);
+      /**
+      *Order
+      */
+      "AUFNR": String(12);
+      /**
+      *Planning material
+      */
+      "VPMAT": String(40);
+      /**
+      *Planning plant
+      */
+      "VPWRK": String(4);
+      /**
+      *Product group unit
+      */
+      "PRBME": String(3);
+      /**
+      *Conversion
+      */
+      "UMREF": Decimal(16,16);
+      /**
+      *Acct Assignment Cat.
+      */
+      "KNTTP": String(1);
+      /**
+      *Consumption
+      */
+      "KZVBR": String(1);
+      /**
+      *BOM explosion number
+      */
+      "SERNR": String(8);
+      /**
+      *Object No.Item
+      */
+      "OBJNR": String(22);
+      /**
+      *Results analysis key
+      */
+      "ABGRS": String(6);
+      /**
+      *Requirements type
+      */
+      "BEDAE": String(4);
+      /**
+      *Credit Price
+      */
+      "CMPRE": Decimal(11,2);
+      /**
+      *Partial release
+      */
+      "CMTFG": String(1);
+      /**
+      *Credit Funct. Active
+      */
+      "CMPNT": String(1);
+      /**
+      *Cred.data exch.rate
+      */
+      "CMKUA": Decimal(9,5);
+      /**
+      *Configuration
+      */
+      "CUOBJ": String(18);
+      /**
+      *Internal object no.
+      */
+      "CUOBJ_CH": String(18);
+      /**
+      *Expected price
+      */
+      "CEPOK": String(1);
+      /**
+      *Condition Update
+      */
+      "KOUPD": String(1);
+      /**
+      *Serial No. Profile
+      */
+      "SERAIL": String(4);
+      /**
+      *No.serial numbers
+      */
+      "ANZSN": Integer;
+      /**
+      *No GR posted by cst.
+      */
+      "NACHL": String(1);
+      /**
+      *Matl Grp Pack.Matls
+      */
+      "MAGRV": String(4);
+      /**
+      *Manual Price
+      */
+      "MPROK": String(1);
+      /**
+      *Preceding Doc.Categ.
+      */
+      "VGTYP": String(4);
+      /**
+      *Mat.Determ.Active
+      */
+      "PROSA": String(1);
+      /**
+      *Usage of HL Item
+      */
+      "UEPVW": String(1);
+      /**
+      *Cost Estimate Number
+      */
+      "KALNR": String(12);
+      /**
+      *Costing Variant
+      */
+      "KLVAR": String(4);
+      /**
+      *Item Number
+      */
+      "SPOSN": String(4);
+      /**
+      *Statistical Value
+      */
+      "KOWRR": String(1);
+      /**
+      *Statistics Date
+      */
+      "STADAT": LocalDate;
+      /**
+      *Business Trans. Type
+      */
+      "EXART": String(2);
+      /**
+      *Customs Preference
+      */
+      "PREFE": String(1);
+      /**
+      *No.cond.rec. batch
+      */
+      "KNUMH": String(10);
+      /**
+      *Internal class no.
+      */
+      "CLINT": String(10);
+      /**
+      *Quantity proposal
+      */
+      "CHMVS": String(3);
+      /**
+      *BOM category
+      */
+      "STLTY": String(1);
+      /**
+      *Item node
+      */
+      "STLKN": String(8);
+      /**
+      *Counter
+      */
+      "STPOZ": String(8);
+      /**
+      *Inconsistent confign
+      */
+      "STMAN": String(1);
+      /**
+      *Overhead key
+      */
+      "ZSCHL_K": String(6);
+      /**
+      *Costing Sheet
+      */
+      "KALSM_K": String(6);
+      /**
+      *Costing Variant
+      */
+      "KALVAR": String(4);
+      /**
+      *Product allocation
+      */
+      "KOSCH": String(18);
+      /**
+      *MnItm PrcRefMatl
+      */
+      "UPMAT": String(40);
+      /**
+      *MnItem MatPricingGrp
+      */
+      "UKONM": String(2);
+      /**
+      *Material freight grp
+      */
+      "MFRGR": String(8);
+      /**
+      *PlanDelSchedInstruct
+      */
+      "PLAVO": String(4);
+      /**
+      *Sequence Number
+      */
+      "KANNR": String(35);
+      /**
+      *Credit Price
+      */
+      "CMPRE_FLT": Decimal(16,12);
+      /**
+      *Paymt guarantee form
+      */
+      "ABFOR": String(2);
+      /**
+      *Guaranteed
+      */
+      "ABGES": Decimal(16,16);
+      /**
+      *CFOP
+      */
+      "J_1BCFOP": String(10);
+      /**
+      *ICMS text
+      */
+      "J_1BTAXLW1": String(3);
+      /**
+      *IPI text
+      */
+      "J_1BTAXLW2": String(3);
+      /**
+      *Tax Code
+      */
+      "J_1BTXSDC": String(2);
+      /**
+      *Value Contract No.
+      */
+      "WKTNR": String(10);
+      /**
+      *Value Contract Item
+      */
+      "WKTPS": String(6);
+      /**
+      *Module
+      */
+      "SKOPF": String(18);
+      /**
+      *Spec. stk valuation
+      */
+      "KZBWS": String(1);
+      /**
+      *Material group 1
+      */
+      "WGRU1": String(18);
+      /**
+      *Material group 2
+      */
+      "WGRU2": String(18);
+      /**
+      *Sales Promotion
+      */
+      "KNUMA_PI": String(10);
+      /**
+      *Sales Deal
+      */
+      "KNUMA_AG": String(10);
+      /**
+      *Leading UoM
+      */
+      "KZFME": String(1);
+      /**
+      *Free goods delivery control
+      */
+      "LSTANR": String(1);
+      /**
+      *Standard Variant
+      */
+      "TECHS": String(12);
+      /**
+      *Tax Amount
+      */
+      "MWSBP": Decimal(13,2);
+      /**
+      *MRP Area
+      */
+      "BERID": String(10);
+      /**
+      *Profit Center Billing
+      */
+      "PCTRF": String(10);
+      /**
+      *Logical system
+      */
+      "LOGSYS_EXT": String(10);
+      /**
+      *ISS Law
+      */
+      "J_1BTAXLW3": String(3);
+      /**
+      *COFINS Law
+      */
+      "J_1BTAXLW4": String(3);
+      /**
+      *PIS Law
+      */
+      "J_1BTAXLW5": String(3);
+      /**
+      *1st Invent.Manag.Loc.
+      */
+      "STOCKLOC": String(20);
+      /**
+      *Location Type
+      */
+      "SLOCTYPE": String(4);
+      /**
+      *Return Reason
+      */
+      "MSR_RET_REASON": String(3);
+      /**
+      *Refund Code
+      */
+      "MSR_REFUND_CODE": String(3);
+      /**
+      *Approval
+      */
+      "MSR_APPROV_BLOCK": String(1);
+      /**
+      *Condition Record No.
+      */
+      "NRAB_KNUMH": String(10);
+      /**
+      *Risk Relevancy
+      */
+      "TRMRISK_RELEVANT": String(2);
+      /**
+      *Requirement Segment
+      */
+      "SGT_RCAT": String(40);
+      /**
+      *Sales Document Item
+      */
+      "VBKD_POSNR": String(6);
+      /**
+      *Sales Document Item
+      */
+      "VEDA_POSNR": String(6);
+      /**
+      *Handover Location
+      */
+      "HANDOVERLOC": String(10);
+      /**
+      *External Item Identifier
+      */
+      "EXT_REF_ITEM_ID": String(40);
+      /**
+      *Handover Date
+      */
+      "HANDOVERDATE": LocalDate;
+      /**
+      *Handover Time
+      */
+      "HANDOVERTIME": String(8);
+      /**
+      *Tax Code Automatically Determined
+      */
+      "TC_AUT_DET": String(2);
+      /**
+      *Manual Tax Code Reason
+      */
+      "MANUAL_TC_REASON": String(2);
+      /**
+      *Tax Incentive Type
+      */
+      "FISCAL_INCENTIVE": String(4);
+      /**
+      *Tax Subject to Substituição Tributária
+      */
+      "TAX_SUBJECT_ST": String(1);
+      /**
+      *Incentive ID
+      */
+      "FISCAL_INCENTIVE_ID": String(4);
+      /**
+      *NF CFOP Special Case
+      */
+      "SPCSTO": String(2);
+      /**
+      *Rev.Acc. Reference ID
+      */
+      "REVACC_REFID": String(30);
+      /**
+      *Rev.Acc. Reference Type
+      */
+      "REVACC_REFTYPE": String(3);
+      /**
+      *Data Filter Value for Data Aging
+      */
+      "_DATAAGING": LocalDate;
+      /**
+      *Rejection Status
+      */
+      "ABSTA": String(1);
+      /**
+      *Confirmation Status
+      */
+      "BESTA": String(1);
+      /**
+      *Financial Document
+      */
+      "CMPPI": String(1);
+      /**
+      *Expt Cred. Insurance
+      */
+      "CMPPJ": String(1);
+      /**
+      *Confirmation Status
+      */
+      "COSTA": String(1);
+      /**
+      *Delay Status
+      */
+      "DCSTA": String(1);
+      /**
+      *Billing Status
+      */
+      "FKSAA": String(1);
+      /**
+      *Billing Block Status
+      */
+      "FSSTA": String(1);
+      /**
+      *Overall Status
+      */
+      "GBSTA": String(1);
+      /**
+      *Ovrl Delivery Status
+      */
+      "LFGSA": String(1);
+      /**
+      *Delivery Status
+      */
+      "LFSTA": String(1);
+      /**
+      *Deliv. Block Itm Sts
+      */
+      "LSSTA": String(1);
+      /**
+      *Manual Completion of Contract
+      */
+      "MANEK": String(1);
+      /**
+      *Reference Status
+      */
+      "RFGSA": String(1);
+      /**
+      *Reference Status
+      */
+      "RFSTA": String(1);
+      /**
+      *IncmpltnSt
+      */
+      "UVALL": String(1);
+      /**
+      *Item Billing Data...
+      */
+      "UVFAK": String(1);
+      /**
+      *PrcgIncmpl
+      */
+      "UVPRS": String(1);
+      /**
+      *Item Data for Deliv.
+      */
+      "UVVLK": String(1);
+      /**
+      *Item reserves 1
+      */
+      "UVP01": String(1);
+      /**
+      *Item reserves 2
+      */
+      "UVP02": String(1);
+      /**
+      *Item reserves 3
+      */
+      "UVP03": String(1);
+      /**
+      *Item reserves 4
+      */
+      "UVP04": String(1);
+      /**
+      *Item reserves 5
+      */
+      "UVP05": String(1);
+      /**
+      *Goods Movement Sts
+      */
+      "WBSTA": String(1);
+      /**
+      *Embargo Status
+      */
+      "EMCST": String(1);
+      /**
+      *Watch List Screening Status
+      */
+      "SLCST": String(1);
+      /**
+      *Total Legal Control Status
+      */
+      "TOTAL_LCCST": String(1);
+      /**
+      *Product Marketability Status
+      */
+      "PCSTA": String(1);
+      /**
+      *Dangerous Goods Status
+      */
+      "DGSTA": String(1);
+      /**
+      *Safety Data Sheet Status
+      */
+      "SDSSTA": String(1);
+      /**
+      *Down Payment Status
+      */
+      "DP_CLEAR_STA_ITM": String(1);
+      /**
+      *Committed Delivery Date
+      */
+      "CMTD_DELIV_DATE": LocalDate;
+      /**
+      *Committed Delivery Creation Date
+      */
+      "CMTD_DELIV_CREADATE": LocalDate;
+      /**
+      *Committed Deliv. Quantity in Sales Unit
+      */
+      "CMTD_DELIV_QTY_SU": Decimal(15,3);
+      /**
+      *Requested Sales Order Quantity
+      */
+      "REQQTY_BU": Decimal(15,3);
+      /**
+      *GUID 16
+      */
+      "HANDLE": String(32);
+      /**
+      *PBS State
+      */
+      "PBS_STATE": String(1);
+      /**
+      *Relevant for IFRS 15
+      */
+      "IFRS15_RELEVANCE": String(1);
+      /**
+      *Standalone Selling Price
+      */
+      "IFRS15_TOTAL_SSP": Decimal(15,2);
+      /**
+      *Avail.check rule
+      */
+      "REVFP": String(1);
+      /**
+      *Net Amount Cap
+      */
+      "CAPPED_NET_AMOUNT": Decimal(15,2);
+      /**
+      *Cap Notification Threshold
+      */
+      "CAPPED_NET_AMOUNT_ALERT_THLD": String(3);
+      /**
+      *Overtime Category
+      */
+      "CATS_OVERTIME_CATEGORY": String(4);
+      /**
+      *Session Created On
+      */
+      "SESSION_CREATION_DATE": LocalDate;
+      /**
+      *Session Created At
+      */
+      "SESSION_CREATION_TIME": String(8);
+      /**
+      *Original Plant
+      */
+      "ORIGINAL_PLANT": String(4);
+      /**
+      *Substitution Status
+      */
+      "ATP_ABC_SUBSTITUTION_STATUS": String(1);
+      /**
+      *Dummy function in length 1
+      */
+      "DUMMY_SLSDOCITEM_INCL_EEW_PS": String(1);
+      /**
+      *Order Quantity
+      */
+      "PO_QUAN": Decimal(13,3);
+      /**
+      *Order Unit
+      */
+      "PO_UNIT": String(3);
+      /**
+      *Global Item
+      */
+      "MILL_SE_GPOSN": String(6);
+      /**
+      *Control of Batch Selection
+      */
+      "MILL_BATCH_SEL_F": String(1);
+      /**
+      *Time Stamp
+      */
+      "CPD_UPDAT": String(20);
+      /**
+      *Annexing Package key
+      */
+      "ZAPCGKI": String(4);
+      /**
+      *Annexing Package Extend
+      */
+      "APCGK_EXTENDI": String(10);
+      /**
+      *Annexing base date
+      */
+      "ZABDATI": LocalDate;
+      /**
+      *Routing number for operations
+      */
+      "AUFPL_OLC": String(10);
+      /**
+      *Counter
+      */
+      "APLZL_OLC": String(8);
+      /**
+      *DIP Profile
+      */
+      "AD01PROFNR": String(8);
+      /**
+      *Model ID Code
+      */
+      "ADMOI": String(4);
+      /**
+      *Interchangeability Code
+      */
+      "ADICC": String(2);
+      /**
+      *Order Priority
+      */
+      "ADPRI": String(3);
+      /**
+      *DoNotSubstitute
+      */
+      "ADDNS": String(1);
+      /**
+      *Aircraft registration number
+      */
+      "ADACN": String(10);
+      /**
+      *Forecast DelSched. EDI Stop/Info Ind.
+      */
+      "LABSG": String(1);
+      /**
+      *JIT DelSched EDI Stop/Info Indicator
+      */
+      "FABSG": String(1);
+      /**
+      *Comp. FrcstDelSched-FrcstDelSched
+      */
+      "PR_L_L": String(10);
+      /**
+      *Comp. JIT DelSched.-JIT DelSched.
+      */
+      "PR_F_F": String(10);
+      /**
+      *Comp. JITDelSched-Frcst DelSched
+      */
+      "PR_F_L": String(10);
+      /**
+      *Regulatory indicator
+      */
+      "FERC_IND": String(4);
+      /**
+      *Season Year
+      */
+      "FSH_SEASON_YEAR": String(4);
+      /**
+      *Season
+      */
+      "FSH_SEASON": String(10);
+      /**
+      *Collection
+      */
+      "FSH_COLLECTION": String(10);
+      /**
+      *Theme
+      */
+      "FSH_THEME": String(10);
+      /**
+      *Condition Record No.
+      */
+      "FSH_CRSD": String(10);
+      /**
+      *Copied Season Data
+      */
+      "FSH_SEAREF": String(1);
+      /**
+      *Cancellation Date
+      */
+      "FSH_CANDATE": LocalDate;
+      /**
+      *PFM Split ID
+      */
+      "FSH_PSM_PFM_SPLIT": String(15);
+      /**
+      *VAS Relevant
+      */
+      "FSH_VAS_REL": String(1);
+      /**
+      *Item (SD)
+      */
+      "FSH_VAS_PRNT_ID": String(6);
+      /**
+      *Transaction Number
+      */
+      "FSH_TRANSACTION": String(10);
+      /**
+      *Item Group
+      */
+      "FSH_ITEM_GROUP": String(5);
+      /**
+      *Item Number
+      */
+      "FSH_ITEM": String(5);
+      /**
+      *Copied VAS Data
+      */
+      "FSH_VASREF": String(1);
+      /**
+      *Grids Condition Record Number
+      */
+      "FSH_GRID_COND_REC": String(32);
+      /**
+      *Higher-lev.item Partial Quantity Rej.
+      */
+      "FSH_PQR_UEPOS": String(6);
+      /**
+      *Season Completeness Indicator
+      */
+      "RFM_SCC_INDICATOR": String(1);
+      /**
+      *Cost Center
+      */
+      "KOSTL": String(10);
+      /**
+      *Fund
+      */
+      "FONDS": String(10);
+      /**
+      *Funds center
+      */
+      "FISTL": String(16);
+      /**
+      *Functional Area
+      */
+      "FKBER": String(16);
+      /**
+      *Grant
+      */
+      "GRANT_NBR": String(20);
+      /**
+      *Budget Period
+      */
+      "BUDGET_PD": String(10);
+      /**
+      *IUID Customer Relevant
+      */
+      "IUID_RELEVANT": String(1);
+      /**
+      *Equipment
+      */
+      "EQUNR": String(18);
+      /**
+      *Object Type
+      */
+      "EQART": String(10);
+      /**
+      *Activity type
+      */
+      "J_3GLVART": String(4);
+      /**
+      *From date
+      */
+      "J_3GDATVO": LocalDate;
+      /**
+      *To date
+      */
+      "J_3GDATBI": LocalDate;
+      /**
+      *Document number
+      */
+      "J_3GBELNRI": String(10);
+      /**
+      *Item number
+      */
+      "J_3GPOSNRI": String(5);
+      /**
+      *Engagement Mgmt: Object Number
+      */
+      "PRS_OBJNR": String(22);
+      /**
+      *Standard WBS Element
+      */
+      "PRS_SD_SPSNR": String(8);
+      /**
+      *Work Period
+      */
+      "PRS_WORK_PERIOD": String(7);
+      /**
+      *Treasury Account Symbol
+      */
+      "TAS": String(30);
+      /**
+      *Business Event Type Code
+      */
+      "BETC": String(10);
+      /**
+      *Modification Allowed
+      */
+      "MOD_ALLOW": String(1);
+      /**
+      *Cancellation Allowed
+      */
+      "CANCEL_ALLOW": String(1);
+      /**
+      *Payment Methods
+      */
+      "PAY_METHOD": String(10);
+      /**
+      *Business Partner Number
+      */
+      "BPN": String(6);
+      /**
+      *Reporting Frequency
+      */
+      "REP_FREQ": String(3);
+      /**
+      *US Government Fields
+      */
+      "FMFGUS_KEY": String(22);
+      /**
+      *PSST Grouping Rule
+      */
+      "RFM_PSST_RULE": String(4);
+      /**
+      *PSST Group
+      */
+      "RFM_PSST_GROUP": String(10);
+      /**
+      *Trading Part.BA
+      */
+      "PARGB": String(4);
+      /**
+      *Routing number for operations
+      */
+      "AUFPL_OAA": String(10);
+      /**
+      *Counter
+      */
+      "APLZL_OAA": String(8);
+      /**
+      *End Customer
+      */
+      "VLCENDCU": String(10);
+      /**
+      *Characteristic Value 1
+      */
+      "WRF_CHARSTC1": String(18);
+      /**
+      *Characteristic Value 2
+      */
+      "WRF_CHARSTC2": String(18);
+      /**
+      *Characteristic Value 3
+      */
+      "WRF_CHARSTC3": String(18);
+      /**
+      *Reservation
+      */
+      "ARSNUM": String(10);
+      /**
+      *Item Number of Reservation
+      */
+      "ARSPOS": String(4);
+      /**
+      *Claim Item Number
+      */
+      "WTYSC_CLMITEM": String(16);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_PRODUCT_GROUP" {
+      key "HPRGR_HK": Binary(32);
+      "HPRGR_LD": UTCTimestamp;
+      "HPRGR_SRC": String(100);
+      /**
+      *Material Group
+      */
+      "MATKL": String(9) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *General Data in Customer Master
+   */
+   entity "S_R_KNA1" {
+      key "HCUST_HK": Binary(32);
+      key "SCUST_LD": UTCTimestamp;
+      "SCUST_SRC": String(100);
+      "SCUST_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Customer
+      */
+      "KUNNR": String(10);
+      /**
+      *Country
+      */
+      "LAND1": String(3);
+      /**
+      *Name 1
+      */
+      "NAME1": String(35);
+      /**
+      *Name 2
+      */
+      "NAME2": String(35);
+      /**
+      *City
+      */
+      "ORT01": String(35);
+      /**
+      *Postal Code
+      */
+      "PSTLZ": String(10);
+      /**
+      *Region
+      */
+      "REGIO": String(3);
+      /**
+      *Search term
+      */
+      "SORTL": String(10);
+      /**
+      *Street
+      */
+      "STRAS": String(35);
+      /**
+      *Telephone 1
+      */
+      "TELF1": String(16);
+      /**
+      *Fax Number
+      */
+      "TELFX": String(31);
+      /**
+      *One-time account
+      */
+      "XCPDK": String(1);
+      /**
+      *Address
+      */
+      "ADRNR": String(10);
+      /**
+      *Name 1
+      */
+      "MCOD1": String(25);
+      /**
+      *Name 2
+      */
+      "MCOD2": String(25);
+      /**
+      *City
+      */
+      "MCOD3": String(25);
+      /**
+      *Title
+      */
+      "ANRED": String(15);
+      /**
+      *Central order block
+      */
+      "AUFSD": String(2);
+      /**
+      *Express station
+      */
+      "BAHNE": String(25);
+      /**
+      *Train station
+      */
+      "BAHNS": String(25);
+      /**
+      *Int. location no. 1
+      */
+      "BBBNR": String(7);
+      /**
+      *Int. location no. 2
+      */
+      "BBSNR": String(5);
+      /**
+      *Authorization Group
+      */
+      "BEGRU": String(4);
+      /**
+      *Industry
+      */
+      "BRSCH": String(4);
+      /**
+      *Check digit
+      */
+      "BUBKZ": String(1);
+      /**
+      *Data line
+      */
+      "DATLT": String(14);
+      /**
+      *Created on
+      */
+      "ERDAT": LocalDate;
+      /**
+      *Created by
+      */
+      "ERNAM": String(12);
+      /**
+      *Unloading points
+      */
+      "EXABL": String(1);
+      /**
+      *Central billing block
+      */
+      "FAKSD": String(2);
+      /**
+      *Fiscal address
+      */
+      "FISKN": String(10);
+      /**
+      *Working time calendar
+      */
+      "KNAZK": String(2);
+      /**
+      *Alternative payer
+      */
+      "KNRZA": String(10);
+      /**
+      *Group key
+      */
+      "KONZS": String(10);
+      /**
+      *Account group
+      */
+      "KTOKD": String(4);
+      /**
+      *Customer classific.
+      */
+      "KUKLA": String(2);
+      /**
+      *Vendor
+      */
+      "LIFNR": String(10);
+      /**
+      *Central delivery block
+      */
+      "LIFSD": String(2);
+      /**
+      *Location code
+      */
+      "LOCCO": String(10);
+      /**
+      *Central deletion flag
+      */
+      "LOEVM": String(1);
+      /**
+      *Name 3
+      */
+      "NAME3": String(35);
+      /**
+      *Name 4
+      */
+      "NAME4": String(35);
+      /**
+      *Nielsen indicator
+      */
+      "NIELS": String(2);
+      /**
+      *District
+      */
+      "ORT02": String(35);
+      /**
+      *PO Box
+      */
+      "PFACH": String(10);
+      /**
+      *P.O. Box Postal Code
+      */
+      "PSTL2": String(10);
+      /**
+      *County Code
+      */
+      "COUNC": String(3);
+      /**
+      *City code
+      */
+      "CITYC": String(4);
+      /**
+      *Regional market
+      */
+      "RPMKR": String(5);
+      /**
+      *Central posting block
+      */
+      "SPERR": String(1);
+      /**
+      *Language Key
+      */
+      "SPRAS": String(2);
+      /**
+      *Tax Number 1
+      */
+      "STCD1": String(16);
+      /**
+      *Tax Number 2
+      */
+      "STCD2": String(11);
+      /**
+      *Sales equalizatn tax
+      */
+      "STKZA": String(1);
+      /**
+      *Liable for VAT
+      */
+      "STKZU": String(1);
+      /**
+      *Telebox number
+      */
+      "TELBX": String(15);
+      /**
+      *Telephone 2
+      */
+      "TELF2": String(16);
+      /**
+      *Teletex number
+      */
+      "TELTX": String(30);
+      /**
+      *Telex number
+      */
+      "TELX1": String(30);
+      /**
+      *Transportation Zone
+      */
+      "LZONE": String(10);
+      /**
+      *Alt.payer in doc?
+      */
+      "XZEMP": String(1);
+      /**
+      *Trading Partner No.
+      */
+      "VBUND": String(6);
+      /**
+      *VAT Registration No.
+      */
+      "STCEG": String(20);
+      /**
+      *Competitors
+      */
+      "DEAR1": String(1);
+      /**
+      *Sales partners
+      */
+      "DEAR2": String(1);
+      /**
+      *Prospect
+      */
+      "DEAR3": String(1);
+      /**
+      *Customer type 4
+      */
+      "DEAR4": String(1);
+      /**
+      *Default sold-to pty
+      */
+      "DEAR5": String(1);
+      /**
+      *Legal status
+      */
+      "GFORM": String(2);
+      /**
+      *Industry code 1
+      */
+      "BRAN1": String(10);
+      /**
+      *Industry code 2
+      */
+      "BRAN2": String(10);
+      /**
+      *Industry code 3
+      */
+      "BRAN3": String(10);
+      /**
+      *Industry code 4
+      */
+      "BRAN4": String(10);
+      /**
+      *Industry code 5
+      */
+      "BRAN5": String(10);
+      /**
+      *Initial contact
+      */
+      "EKONT": String(10);
+      /**
+      *Annual sales
+      */
+      "UMSAT": Decimal(8,2);
+      /**
+      *Sales year
+      */
+      "UMJAH": String(4);
+      /**
+      *Currency of sales
+      */
+      "UWAER": String(5);
+      /**
+      *Employees
+      */
+      "JMZAH": String(6);
+      /**
+      *Year no. given for
+      */
+      "JMJAH": String(4);
+      /**
+      *Attribute 1
+      */
+      "KATR1": String(2);
+      /**
+      *Attribute 2
+      */
+      "KATR2": String(2);
+      /**
+      *Attribute 3
+      */
+      "KATR3": String(2);
+      /**
+      *Attribute 4
+      */
+      "KATR4": String(2);
+      /**
+      *Attribute 5
+      */
+      "KATR5": String(2);
+      /**
+      *Attribute 6
+      */
+      "KATR6": String(3);
+      /**
+      *Attribute 7
+      */
+      "KATR7": String(3);
+      /**
+      *Attribute 8
+      */
+      "KATR8": String(3);
+      /**
+      *Attribute 9
+      */
+      "KATR9": String(3);
+      /**
+      *Attribute 10
+      */
+      "KATR10": String(3);
+      /**
+      *Natural Person
+      */
+      "STKZN": String(1);
+      /**
+      *Annual sales
+      */
+      "UMSA1": Decimal(15,2);
+      /**
+      *Tax Jurisdiction
+      */
+      "TXJCD": String(15);
+      /**
+      *Fiscal Year Variant
+      */
+      "PERIV": String(2);
+      /**
+      *Usage
+      */
+      "ABRVW": String(3);
+      /**
+      *By customer
+      */
+      "INSPBYDEBI": String(1);
+      /**
+      *After delivery
+      */
+      "INSPATDEBI": String(1);
+      /**
+      *Reference acct group
+      */
+      "KTOCD": String(4);
+      /**
+      *P.O. Box city
+      */
+      "PFORT": String(35);
+      /**
+      *Plant
+      */
+      "WERKS": String(4);
+      /**
+      *DME indicator
+      */
+      "DTAMS": String(1);
+      /**
+      *Instruction key
+      */
+      "DTAWS": String(2);
+      /**
+      *Status of Data Transfer to Next Release
+      */
+      "DUEFL": String(1);
+      /**
+      *Hierarchy assignment
+      */
+      "HZUOR": String(2);
+      /**
+      *Payment block
+      */
+      "SPERZ": String(1);
+      /**
+      *Lab.customer group
+      */
+      "ETIKG": String(10);
+      /**
+      *Non-milit. use
+      */
+      "CIVVE": String(1);
+      /**
+      *Military use
+      */
+      "MILVE": String(1);
+      /**
+      *Condition group 1
+      */
+      "KDKG1": String(2);
+      /**
+      *Condition group 2
+      */
+      "KDKG2": String(2);
+      /**
+      *Condition group 3
+      */
+      "KDKG3": String(2);
+      /**
+      *Condition group 4
+      */
+      "KDKG4": String(2);
+      /**
+      *Condition group 5
+      */
+      "KDKG5": String(2);
+      /**
+      *Accts for alt. payer
+      */
+      "XKNZA": String(1);
+      /**
+      *Tax type
+      */
+      "FITYP": String(2);
+      /**
+      *Tax number type
+      */
+      "STCDT": String(2);
+      /**
+      *Tax Number 3
+      */
+      "STCD3": String(18);
+      /**
+      *Tax Number 4
+      */
+      "STCD4": String(18);
+      /**
+      *Tax Number 5
+      */
+      "STCD5": String(60);
+      /**
+      *ICMS-exempt
+      */
+      "XICMS": String(1);
+      /**
+      *IPI-exempt
+      */
+      "XXIPI": String(1);
+      /**
+      *SubTrib group
+      */
+      "XSUBT": String(3);
+      /**
+      *Cust. CFOP category
+      */
+      "CFOPC": String(2);
+      /**
+      *ICMS text
+      */
+      "TXLW1": String(3);
+      /**
+      *IPI text
+      */
+      "TXLW2": String(3);
+      /**
+      *Biochemical warfare
+      */
+      "CCC01": String(1);
+      /**
+      *Nuclear nonproliferation
+      */
+      "CCC02": String(1);
+      /**
+      *National security
+      */
+      "CCC03": String(1);
+      /**
+      *Missile technology
+      */
+      "CCC04": String(1);
+      /**
+      *Bonded Area Confirm
+      */
+      "BONDED_AREA_CONFIRM": String(1);
+      /**
+      *Donate Mark
+      */
+      "DONATE_MARK": String(1);
+      /**
+      *Central sales block
+      */
+      "CASSD": String(2);
+      /**
+      *URL
+      */
+      "KNURL": String(132);
+      /**
+      *Name of Representative
+      */
+      "J_1KFREPRE": String(10);
+      /**
+      *Type of Business
+      */
+      "J_1KFTBUS": String(30);
+      /**
+      *Type of Industry
+      */
+      "J_1KFTIND": String(30);
+      /**
+      *Confirmation status
+      */
+      "CONFS": String(1);
+      /**
+      *Confirmation date
+      */
+      "UPDAT": LocalDate;
+      /**
+      *Confirmation time
+      */
+      "UPTIM": String(8);
+      /**
+      *Central del.block
+      */
+      "NODEL": String(1);
+      /**
+      *Consumer
+      */
+      "DEAR6": String(1);
+      /**
+      *Business Purpose Completed Flag
+      */
+      "CVP_XBLCK": String(1);
+      /**
+      *Suframa Code
+      */
+      "SUFRAMA": String(9);
+      /**
+      *RG Number
+      */
+      "RG": String(11);
+      /**
+      *Issued by
+      */
+      "EXP": String(3);
+      /**
+      *State
+      */
+      "UF": String(2);
+      /**
+      *RG Issuing Date
+      */
+      "RGDATE": LocalDate;
+      /**
+      *RIC Number
+      */
+      "RIC": String(11);
+      /**
+      *Foreign National Registration
+      */
+      "RNE": String(10);
+      /**
+      *RNE Issuing Date
+      */
+      "RNEDATE": LocalDate;
+      /**
+      *CNAE
+      */
+      "CNAE": String(7);
+      /**
+      *Legal Nature
+      */
+      "LEGALNAT": String(4);
+      /**
+      *CRT Number
+      */
+      "CRTN": String(1);
+      /**
+      *ICMS Taxpayer
+      */
+      "ICMSTAXPAY": String(2);
+      /**
+      *Industry Main Type
+      */
+      "INDTYP": String(2);
+      /**
+      *Tax Declaration Type
+      */
+      "TDT": String(2);
+      /**
+      *Company Size
+      */
+      "COMSIZE": String(2);
+      /**
+      *Declaration Regimen for PIS/COFINS
+      */
+      "DECREGPC": String(2);
+      /**
+      *data element for customer
+      */
+      "KNA1_EEW_CUST": String(1);
+      /**
+      *Excluded from Rule-Based Assignment
+      */
+      "RULE_EXCLUSION": String(1);
+      /**
+      *Max. Stacking Height
+      */
+      "_VSO_R_PALHGT": Decimal(13,3);
+      /**
+      *PKM Length Unit
+      */
+      "_VSO_R_PAL_UL": String(3);
+      /**
+      *Pack CustomerRelated
+      */
+      "_VSO_R_PK_MAT": String(1);
+      /**
+      *PackMat.Customer
+      */
+      "_VSO_R_MATPAL": String(40);
+      /**
+      *No.Layers Int.Pallet
+      */
+      "_VSO_R_I_NO_LYR": String(2);
+      /**
+      *Material-Spec. Pack.
+      */
+      "_VSO_R_ONE_MAT": String(1);
+      /**
+      *Pack PckType Packing
+      */
+      "_VSO_R_ONE_SORT": String(1);
+      /**
+      *Side Preference
+      */
+      "_VSO_R_ULD_SIDE": String(1);
+      /**
+      *F/B Preference
+      */
+      "_VSO_R_LOAD_PREF": String(1);
+      /**
+      *Coll. Unload. Point
+      */
+      "_VSO_R_DPOINT": String(10);
+      /**
+      *Agency Location Code
+      */
+      "ALC": String(8);
+      /**
+      *Payment Office
+      */
+      "PMT_OFFICE": String(5);
+      /**
+      *Fee Schedule
+      */
+      "FEE_SCHEDULE": String(4);
+      /**
+      *DUNS Number
+      */
+      "DUNS": String(9);
+      /**
+      *DUNS+4
+      */
+      "DUNS4": String(4);
+      /**
+      *Processor group
+      */
+      "PSOFG": String(10);
+      /**
+      *SLAPrepr.Proced
+      */
+      "PSOIS": String(20);
+      /**
+      *Name 1
+      */
+      "PSON1": String(35);
+      /**
+      *Name 2
+      */
+      "PSON2": String(35);
+      /**
+      *Name 3
+      */
+      "PSON3": String(35);
+      /**
+      *First Name
+      */
+      "PSOVN": String(35);
+      /**
+      *Title
+      */
+      "PSOTL": String(20);
+      /**
+      *House number
+      */
+      "PSOHS": String(6);
+      /**
+      *Street
+      */
+      "PSOST": String(28);
+      /**
+      *Description
+      */
+      "PSOO1": String(50);
+      /**
+      *Description
+      */
+      "PSOO2": String(50);
+      /**
+      *Description
+      */
+      "PSOO3": String(50);
+      /**
+      *Description
+      */
+      "PSOO4": String(50);
+      /**
+      *Description
+      */
+      "PSOO5": String(50);
+      /**
+      *ECC No.
+      */
+      "J_1IEXCD": String(40);
+      /**
+      *Excise Registration No.
+      */
+      "J_1IEXRN": String(40);
+      /**
+      *Excise Range
+      */
+      "J_1IEXRG": String(60);
+      /**
+      *Excise Division
+      */
+      "J_1IEXDI": String(60);
+      /**
+      *Excise Commissionerate
+      */
+      "J_1IEXCO": String(60);
+      /**
+      *CST number
+      */
+      "J_1ICSTNO": String(40);
+      /**
+      *LST number
+      */
+      "J_1ILSTNO": String(40);
+      /**
+      *Permanent account number
+      */
+      "J_1IPANNO": String(40);
+      /**
+      *Exc.Tax Ind. Custom.
+      */
+      "J_1IEXCICU": String(1);
+      /**
+      *(Obsolete) Last Changed On – do not use
+      */
+      "AEDAT": LocalDate;
+      /**
+      *(Obsolete) Changed by the user
+      */
+      "USNAM": String(12);
+      /**
+      *Service Tax Registration Number
+      */
+      "J_1ISERN": String(40);
+      /**
+      *PAN Reference Number
+      */
+      "J_1IPANREF": String(40);
+      /**
+      *Recipient type
+      */
+      "J_3GETYP": String(2);
+      /**
+      *Reference type
+      */
+      "J_3GREFTYP": String(2);
+      /**
+      *WBS Element
+      */
+      "PSPNR": String(8);
+      /**
+      *Order
+      */
+      "COAUFNR": String(12);
+      /**
+      *Ext. sold-to party
+      */
+      "J_3GAGEXT": String(10);
+      /**
+      *Cust. int. settlmnt
+      */
+      "J_3GAGINT": String(10);
+      /**
+      *Dummy recipient
+      */
+      "J_3GAGDUMI": String(10);
+      /**
+      *Standard recipient
+      */
+      "J_3GAGSTDI": String(10);
+      /**
+      *Storage location
+      */
+      "LGORT": String(4);
+      /**
+      *Controlling Area
+      */
+      "KOKRS": String(4);
+      /**
+      *Cost Center
+      */
+      "KOSTL": String(10);
+      /**
+      *RetireDate/Perf.BsdEqui.
+      */
+      "J_3GABGLG": String(1);
+      /**
+      *RetireDate/TimeBsdEqui.
+      */
+      "J_3GABGVG": String(1);
+      /**
+      *Settlement type
+      */
+      "J_3GABRART": String(1);
+      /**
+      *Hours per month
+      */
+      "J_3GSTDMON": Decimal(5,2);
+      /**
+      *Hours/days
+      */
+      "J_3GSTDTAG": Decimal(5,2);
+      /**
+      *Number of days/month
+      */
+      "J_3GTAGMON": Decimal(5,2);
+      /**
+      *AcqDate/PBE
+      */
+      "J_3GZUGTAG": String(1);
+      /**
+      *Fill PBE document
+      */
+      "J_3GMASCHB": String(1);
+      /**
+      *Multiple usage periods
+      */
+      "J_3GMEINSA": String(1);
+      /**
+      *Short op.
+      */
+      "J_3GKEINSA": String(1);
+      /**
+      *BlockInd. doc. entry
+      */
+      "J_3GBLSPER": String(1);
+      /**
+      *Calculate PBE as TBE
+      */
+      "J_3GKLEIVO": String(1);
+      /**
+      *Calendar ID
+      */
+      "J_3GCALID": String(2);
+      /**
+      *Complete month
+      */
+      "J_3GVMONAT": String(1);
+      /**
+      *Settlement indicator
+      */
+      "J_3GABRKEN": String(1);
+      /**
+      *Last settlement
+      */
+      "J_3GLABRECH": LocalDate;
+      /**
+      *Current settlement
+      */
+      "J_3GAABRECH": LocalDate;
+      /**
+      *With acq. date
+      */
+      "J_3GZUTVHLG": String(1);
+      /**
+      *Neg. qty allowed
+      */
+      "J_3GNEGMEN": String(1);
+      /**
+      *Deadline logic
+      */
+      "J_3GFRISTLO": String(1);
+      /**
+      *MinUsPeriod - rsctd
+      */
+      "J_3GEMINBE": String(5);
+      /**
+      *RelNotifAllowUnrUsge
+      */
+      "J_3GFMGUE": String(5);
+      /**
+      *SrchrgeUnrstrctdUse
+      */
+      "J_3GZUSCHUE": String(5);
+      /**
+      *Shift price
+      */
+      "J_3GSCHPRS": String(1);
+      /**
+      *Inv. status CS
+      */
+      "J_3GINVSTA": String(1);
+      /**
+      *Planning area
+      */
+      "_SAPCEM_DBER": String(8);
+      /**
+      *SettlQtyEquiRel.
+      */
+      "_SAPCEM_KVMEQ": String(1);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Country Names
+   */
+   entity "S_R_T005T" {
+      key "HCNTR_HK": Binary(32);
+      key "SCNTR_LD": UTCTimestamp;
+      "SCNTR_SRC": String(100);
+      "SCNTR_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Language Key
+      */
+      key "SPRAS": String(2);
+      /**
+      *Country Key
+      */
+      "LAND1": String(3) not null;
+      /**
+      *Name
+      */
+      "LANDX": String(15) not null;
+      /**
+      *Country Name
+      */
+      "LANDX50": String(50);
+      /**
+      *Nationality
+      */
+      "NATIO": String(15) not null;
+      /**
+      *Nationality (Long)
+      */
+      "NATIO50": String(50);
+      /**
+      *Name of super region
+      */
+      "PRQ_SPREGT": String(30);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Materials: Product Hierarchies
+   */
+   entity "S_R_T179" {
+      key "HPRCT_HK": Binary(32);
+      key "SPRCT_LD": UTCTimestamp;
+      "SPRCT_SRC": String(100);
+      "SPRCT_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Product hierarchy
+      */
+      "PRODH": String(18) not null;
+      /**
+      *Level number
+      */
+      "STUFE": String(1);
+      /**
+      *Description
+      */
+      "VTEXT": String(40);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Sales Document: Header Data
+   */
+   entity "S_R_VBAK" {
+      key "LSDHE_HK": Binary(32);
+      key "SSDHE_LD": UTCTimestamp;
+      "SSDHE_SRC": String(100);
+      "SSDHE_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Sales document
+      */
+      "VBELN": String(10) not null;
+      /**
+      *Created on
+      */
+      "ERDAT": LocalDate;
+      /**
+      *Time
+      */
+      "ERZET": String(8);
+      /**
+      *Created by
+      */
+      "ERNAM": String(12);
+      /**
+      *Quotation Valid From
+      */
+      "ANGDT": LocalDate;
+      /**
+      *Quotation Valid To
+      */
+      "BNDDT": LocalDate;
+      /**
+      *Document Date
+      */
+      "AUDAT": LocalDate;
+      /**
+      *SD Document Category
+      */
+      "VBTYP": String(4);
+      /**
+      *Transaction Group
+      */
+      "TRVOG": String(1);
+      /**
+      *Sales Document Type
+      */
+      "AUART": String(4);
+      /**
+      *Order Reason
+      */
+      "AUGRU": String(3);
+      /**
+      *Begin guarantee
+      */
+      "GWLDT": LocalDate;
+      /**
+      *Collective Number
+      */
+      "SUBMI": String(10);
+      /**
+      *Delivery Block
+      */
+      "LIFSK": String(2);
+      /**
+      *Billing Block
+      */
+      "FAKSK": String(2);
+      /**
+      *Net Value
+      */
+      "NETWR": Decimal(15,2);
+      /**
+      *Document Currency
+      */
+      "WAERK": String(5);
+      /**
+      *Sales Organization
+      */
+      "VKORG": String(4);
+      /**
+      *Distribution Channel
+      */
+      "VTWEG": String(2);
+      /**
+      *Division
+      */
+      "SPART": String(2);
+      /**
+      *Sales group
+      */
+      "VKGRP": String(3);
+      /**
+      *Sales office
+      */
+      "VKBUR": String(4);
+      /**
+      *Business Area
+      */
+      "GSBER": String(4);
+      /**
+      *Business Area
+      */
+      "GSKST": String(4);
+      /**
+      *Valid-From Date
+      */
+      "GUEBG": LocalDate;
+      /**
+      *Valid-To Date
+      */
+      "GUEEN": LocalDate;
+      /**
+      *Doc. Condition No.
+      */
+      "KNUMV": String(10);
+      /**
+      *Requested Deliv.Date
+      */
+      "VDATU": LocalDate;
+      /**
+      *Prop.date type
+      */
+      "VPRGR": String(1);
+      /**
+      *Complete Delivery
+      */
+      "AUTLF": String(1);
+      /**
+      *Original system
+      */
+      "VBKLA": String(9);
+      /**
+      *Indicator
+      */
+      "VBKLT": String(1);
+      /**
+      *Pricing Procedure
+      */
+      "KALSM": String(6);
+      /**
+      *Shipping Conditions
+      */
+      "VSBED": String(2);
+      /**
+      *Order-Rel. Bill.Type
+      */
+      "FKARA": String(4);
+      /**
+      *Probability
+      */
+      "AWAHR": String(3);
+      /**
+      *Description
+      */
+      "KTEXT": String(40);
+      /**
+      *Customer Reference
+      */
+      "BSTNK": String(20);
+      /**
+      *Purchase Order Type
+      */
+      "BSARK": String(4);
+      /**
+      *Customer Ref. Date
+      */
+      "BSTDK": LocalDate;
+      /**
+      *Supplement
+      */
+      "BSTZD": String(4);
+      /**
+      *Your Reference
+      */
+      "IHREZ": String(12);
+      /**
+      *Name of the orderer
+      */
+      "BNAME": String(35);
+      /**
+      *Telephone
+      */
+      "TELF1": String(16);
+      /**
+      *Number of Contacts
+      */
+      "MAHZA": Decimal(3,0);
+      /**
+      *Last Contact Date
+      */
+      "MAHDT": LocalDate;
+      /**
+      *Sold-To Party
+      */
+      "KUNNR": String(10);
+      /**
+      *Cost Center
+      */
+      "KOSTL": String(10);
+      /**
+      *Update Group (stats)
+      */
+      "STAFO": String(6);
+      /**
+      *Statistics Currency
+      */
+      "STWAE": String(5);
+      /**
+      *Changed On
+      */
+      "AEDAT": LocalDate;
+      /**
+      *Customer Group 1
+      */
+      "KVGR1": String(3);
+      /**
+      *Customer Group 2
+      */
+      "KVGR2": String(3);
+      /**
+      *Customer Group 3
+      */
+      "KVGR3": String(3);
+      /**
+      *Customer Group 4
+      */
+      "KVGR4": String(3);
+      /**
+      *Customer Group 5
+      */
+      "KVGR5": String(3);
+      /**
+      *Agreement
+      */
+      "KNUMA": String(10);
+      /**
+      *Controlling Area
+      */
+      "KOKRS": String(4);
+      /**
+      *WBS Element
+      */
+      "PS_PSP_PNR": String(8);
+      /**
+      *Exchange Rate Type
+      */
+      "KURST": String(4);
+      /**
+      *Credit control area
+      */
+      "KKBER": String(4);
+      /**
+      *Credit Account
+      */
+      "KNKLI": String(10);
+      /**
+      *Cust.Credit Group
+      */
+      "GRUPP": String(4);
+      /**
+      *Credit Rep.Group
+      */
+      "SBGRP": String(3);
+      /**
+      *Risk Category
+      */
+      "CTLPC": String(3);
+      /**
+      *Currency
+      */
+      "CMWAE": String(5);
+      /**
+      *Release date
+      */
+      "CMFRE": LocalDate;
+      /**
+      *Next Credit Check
+      */
+      "CMNUP": LocalDate;
+      /**
+      *Next date
+      */
+      "CMNGV": LocalDate;
+      /**
+      *Released credit value
+      */
+      "AMTBL": Decimal(15,2);
+      /**
+      *HierarchyTypePricing
+      */
+      "HITYP_PR": String(1);
+      /**
+      *Usage
+      */
+      "ABRVW": String(3);
+      /**
+      *MRP for DlvSchType
+      */
+      "ABDIS": String(1);
+      /**
+      *Reference document
+      */
+      "VGBEL": String(10);
+      /**
+      *Object No. Header
+      */
+      "OBJNR": String(22);
+      /**
+      *CCode to Be Billed
+      */
+      "BUKRS_VF": String(4);
+      /**
+      *Alt.Tax Classific.
+      */
+      "TAXK1": String(1);
+      /**
+      *TaxClass2-Cust.
+      */
+      "TAXK2": String(1);
+      /**
+      *TaxClass3-Cust.
+      */
+      "TAXK3": String(1);
+      /**
+      *TaxClass4-Cust.
+      */
+      "TAXK4": String(1);
+      /**
+      *TaxClass5-Cust.
+      */
+      "TAXK5": String(1);
+      /**
+      *TaxClass6-Cust.
+      */
+      "TAXK6": String(1);
+      /**
+      *TaxClass7-Cust.
+      */
+      "TAXK7": String(1);
+      /**
+      *TaxClass8-Cust.
+      */
+      "TAXK8": String(1);
+      /**
+      *TaxClass9-Cust.
+      */
+      "TAXK9": String(1);
+      /**
+      *Reference
+      */
+      "XBLNR": String(16);
+      /**
+      *Assignment
+      */
+      "ZUONR": String(18);
+      /**
+      *Preceding Doc.Categ.
+      */
+      "VGTYP": String(4);
+      /**
+      *Search procedure
+      */
+      "KALSM_CH": String(6);
+      /**
+      *Accrual period
+      */
+      "AGRZR": String(2);
+      /**
+      *Order
+      */
+      "AUFNR": String(12);
+      /**
+      *Notification
+      */
+      "QMNUM": String(12);
+      /**
+      *Master Contract
+      */
+      "VBELN_GRP": String(10);
+      /**
+      *Group Ref. Procedure
+      */
+      "SCHEME_GRP": String(4);
+      /**
+      *Check partner auth.
+      */
+      "ABRUF_PART": String(1);
+      /**
+      *Pick-Up Date
+      */
+      "ABHOD": LocalDate;
+      /**
+      *Pick-Up Time
+      */
+      "ABHOV": String(8);
+      /**
+      *Pick-Up Time
+      */
+      "ABHOB": String(8);
+      /**
+      *Paym. Card Plan No.
+      */
+      "RPLNR": String(10);
+      /**
+      *Requested dely time
+      */
+      "VZEIT": String(8);
+      /**
+      *Tax Dest. Country
+      */
+      "STCEG_L": String(3);
+      /**
+      *Tax Depart. Country
+      */
+      "LANDTX": String(3);
+      /**
+      *EU Triangular Deal
+      */
+      "XEGDR": String(1);
+      /**
+      *Block master contr. until all lower leve
+      */
+      "ENQUEUE_GRP": String(1);
+      /**
+      *CmlQtyDate
+      */
+      "DAT_FZAU": LocalDate;
+      /**
+      *Material Avail. Date
+      */
+      "FMBDAT": LocalDate;
+      /**
+      *Version
+      */
+      "VSNMR_V": String(12);
+      /**
+      *Int.ID
+      */
+      "HANDLE": String(22);
+      /**
+      *DG Mgmt Profile
+      */
+      "PROLI": String(3);
+      /**
+      *Contains DG
+      */
+      "CONT_DG": String(1);
+      /**
+      *Char 70
+      */
+      "CRM_GUID": String(70);
+      /**
+      *Time Stamp
+      */
+      "UPD_TMSTMP": String(20);
+      /**
+      *Process ID No.
+      */
+      "MSR_ID": String(10);
+      /**
+      *Control Key
+      */
+      "TM_CTRL_KEY": String(4);
+      /**
+      *Business location ID
+      */
+      "OIPBL": String(10);
+      /**
+      *Last Changed By
+      */
+      "LAST_CHANGED_BY_USER": String(12);
+      /**
+      *Handover Location
+      */
+      "HANDOVERLOC": String(10);
+      /**
+      *External Business System ID
+      */
+      "EXT_BUS_SYST_ID": String(60);
+      /**
+      *External Document Identifier
+      */
+      "EXT_REF_DOC_ID": String(40);
+      /**
+      *Timestamp of External Revision
+      */
+      "EXT_REV_TMSTMP": String(20);
+      /**
+      *Approval Status
+      */
+      "APM_APPROVAL_STATUS": String(1);
+      /**
+      *Approval Request Reason ID
+      */
+      "APM_APPROVAL_REASON": String(4);
+      /**
+      *Approval Request Rejection Reason ID
+      */
+      "APM_REJECTION_REASON": String(4);
+      /**
+      *Data Filter Value for Data Aging
+      */
+      "_DATAAGING": LocalDate;
+      /**
+      *Rejection Status
+      */
+      "ABSTK": String(1);
+      /**
+      *Confirmed
+      */
+      "BESTK": String(1);
+      /**
+      *Maximum Value
+      */
+      "CMPSC": String(1);
+      /**
+      *Terms of Payment
+      */
+      "CMPSD": String(1);
+      /**
+      *Financial Document
+      */
+      "CMPSI": String(1);
+      /**
+      *Expt Cred. Insurance
+      */
+      "CMPSJ": String(1);
+      /**
+      *Payment Card Status
+      */
+      "CMPSK": String(1);
+      /**
+      *SAP Credit Management
+      */
+      "CMPS_CM": String(1);
+      /**
+      *Credit Mgmt TE Status
+      */
+      "CMPS_TE": String(1);
+      /**
+      *OverallCredStat
+      */
+      "CMGST": String(1);
+      /**
+      *Confirmation Status
+      */
+      "COSTA": String(1);
+      /**
+      *Delay Status
+      */
+      "DCSTK": String(1);
+      /**
+      *Bill.Stat.Order-Rel.
+      */
+      "FKSAK": String(1);
+      /**
+      *Status Funds Management
+      */
+      "FMSTK": String(1);
+      /**
+      *Overall Block Status
+      */
+      "FSSTK": String(1);
+      /**
+      *Overall Status
+      */
+      "GBSTK": String(1);
+      /**
+      *Ovrl Delivery Status
+      */
+      "LFGSK": String(1);
+      /**
+      *Delivery Status
+      */
+      "LFSTK": String(1);
+      /**
+      *Over. Dlv. Blk Stat.
+      */
+      "LSSTK": String(1);
+      /**
+      *Manual Completion of Contract
+      */
+      "MANEK": String(1);
+      /**
+      *Total Reference Stat
+      */
+      "RFGSK": String(1);
+      /**
+      *Reference Status
+      */
+      "RFSTK": String(1);
+      /**
+      *Overall Blkd Status
+      */
+      "SPSTG": String(1);
+      /**
+      *Trns.Plan.Status
+      */
+      "TRSTA": String(1);
+      /**
+      *Header Data
+      */
+      "UVALL": String(1);
+      /**
+      *Item Data
+      */
+      "UVALS": String(1);
+      /**
+      *Header Billing Data
+      */
+      "UVFAK": String(1);
+      /**
+      *Item Billing Data
+      */
+      "UVFAS": String(1);
+      /**
+      *PrcgIncmpl
+      */
+      "UVPRS": String(1);
+      /**
+      *Header Delivery Data
+      */
+      "UVVLK": String(1);
+      /**
+      *Item Delivery Data
+      */
+      "UVVLS": String(1);
+      /**
+      *Header reserves 1
+      */
+      "UVK01": String(1);
+      /**
+      *Header reserves 2
+      */
+      "UVK02": String(1);
+      /**
+      *Header reserves 3
+      */
+      "UVK03": String(1);
+      /**
+      *Header reserves 4
+      */
+      "UVK04": String(1);
+      /**
+      *Header reserves 5
+      */
+      "UVK05": String(1);
+      /**
+      *Total reserves 1
+      */
+      "UVS01": String(1);
+      /**
+      *Total reserves 2
+      */
+      "UVS02": String(1);
+      /**
+      *Total reserves 3
+      */
+      "UVS03": String(1);
+      /**
+      *Total reserves 4
+      */
+      "UVS04": String(1);
+      /**
+      *Total reserves 5
+      */
+      "UVS05": String(1);
+      /**
+      *Ovrl Goods Mvt Sts
+      */
+      "WBSTK": String(1);
+      /**
+      *Total Embargo Status
+      */
+      "TOTAL_EMCST": String(1);
+      /**
+      *Tot. Watch List Screening Sts
+      */
+      "TOTAL_SLCST": String(1);
+      /**
+      *Total Legal Control Status
+      */
+      "TOTAL_LCCST": String(1);
+      /**
+      *Product Marketability Status
+      */
+      "TOTAL_PCSTA": String(1);
+      /**
+      *Dangerous Goods Status
+      */
+      "TOTAL_DGSTA": String(1);
+      /**
+      *Safety Data Sheet Status
+      */
+      "TOTAL_SDSSTA": String(1);
+      /**
+      *Down Payment Status
+      */
+      "DP_CLEAR_STA_HDR": String(1);
+      /**
+      *Dummy function in length 1
+      */
+      "DUMMY_SALESDOC_INCL_EEW_PS": String(1);
+      /**
+      *Annexing Package key
+      */
+      "ZAPCGKH": String(4);
+      /**
+      *Annexing Package Extend
+      */
+      "APCGK_EXTENDH": String(10);
+      /**
+      *Annexing base date
+      */
+      "ZABDATH": LocalDate;
+      /**
+      *A&D Billing Rule
+      */
+      "AD01FAREG": String(1);
+      /**
+      *Initial Document
+      */
+      "AD01BASDOC": String(10);
+      /**
+      *Last voucher
+      */
+      "LASTVCHR": String(8);
+      /**
+      *Posting Date
+      */
+      "PSM_BUDAT": LocalDate;
+      /**
+      *Customer Group 6
+      */
+      "FSH_KVGR6": String(3);
+      /**
+      *Customer Group 7
+      */
+      "FSH_KVGR7": String(3);
+      /**
+      *Customer Group 8
+      */
+      "FSH_KVGR8": String(3);
+      /**
+      *Customer Group 5
+      */
+      "FSH_KVGR9": String(3);
+      /**
+      *Customer Group 10
+      */
+      "FSH_KVGR10": String(3);
+      /**
+      *Release Rule
+      */
+      "FSH_REREG": String(4);
+      /**
+      *Requirement Relevant
+      */
+      "FSH_CQ_CHECK": String(1);
+      /**
+      *Snapshot Status
+      */
+      "FSH_VRSN_STATUS": String(2);
+      /**
+      *Transaction Number
+      */
+      "FSH_TRANSACTION": String(10);
+      /**
+      *VAS Customer Group
+      */
+      "FSH_VAS_CG": String(3);
+      /**
+      *Cancellation Date
+      */
+      "FSH_CANDATE": LocalDate;
+      /**
+      *Order Scheduling Strategy
+      */
+      "FSH_SS": String(3);
+      /**
+      *Ord. Sch. Fields Changed Manually
+      */
+      "FSH_OS_STG_CHANGE": String(1);
+      /**
+      *ETM-Relevant Ind.
+      */
+      "J_3GKBAUL": String(1);
+      /**
+      *Application ID
+      */
+      "MILL_APPL_ID": String(2);
+      /**
+      *Treasury Account Symbol
+      */
+      "TAS": String(30);
+      /**
+      *Business Event Type Code
+      */
+      "BETC": String(10);
+      /**
+      *Modification Allowed
+      */
+      "MOD_ALLOW": String(1);
+      /**
+      *Cancellation Allowed
+      */
+      "CANCEL_ALLOW": String(1);
+      /**
+      *Payment Methods
+      */
+      "PAY_METHOD": String(10);
+      /**
+      *Business Partner Number
+      */
+      "BPN": String(6);
+      /**
+      *Reporting Frequency
+      */
+      "REP_FREQ": String(3);
+      /**
+      *Logical system
+      */
+      "LOGSYSB": String(10);
+      /**
+      *Proc. Camp.Determin.
+      */
+      "KALCD": String(6);
+      /**
+      *Multiple Promotions
+      */
+      "MULTI": String(1);
+      /**
+      *Spec. Payment Method
+      */
+      "SPPAYM": String(2);
+      /**
+      *Claim Header
+      */
+      "WTYSC_CLM_HDR": String(16);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_VNDR_IDST" {
+      key "LVNID_HK": Binary(32);
+      "HIDST_HK": Binary(32);
+      "HVNDR_HK": Binary(32);
+      "LVNID_LD": UTCTimestamp;
+      "LVNID_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_PROD_PRGR" {
+      key "LPRPG_HK": Binary(32);
+      "HPRGR_HK": Binary(32);
+      "HPROD_HK": Binary(32);
+      "LPRPG_LD": UTCTimestamp;
+      "LPRPG_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_COUNTRY" {
+      key "HCNTR_HK": Binary(32);
+      "HCNTR_LD": UTCTimestamp;
+      "HCNTR_SRC": String(100);
+      /**
+      *Country Key
+      */
+      "LAND1": String(3) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_CUSTOMER" {
+      key "HCUST_HK": Binary(32);
+      "HCUST_LD": UTCTimestamp;
+      "HCUST_SRC": String(100);
+      /**
+      *Customer
+      */
+      "KUNNR": String(10);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_CUSTOMER_GROUP" {
+      key "HCUGR_HK": Binary(32);
+      "HCUGR_LD": UTCTimestamp;
+      "HCUGR_SRC": String(100);
+      /**
+      *Customer classific.
+      */
+      "KUKLA": String(2) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_INDUSTRY" {
+      key "HIDST_HK": Binary(32);
+      "HIDST_LD": UTCTimestamp;
+      "HIDST_SRC": String(100);
+      /**
+      *Industry
+      */
+      "BRSCH": String(4) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_PRODUCT_CATEGORY" {
+      key "HPRCT_HK": Binary(32);
+      "HPRCT_LD": UTCTimestamp;
+      "HPRCT_SRC": String(100);
+      /**
+      *Product hierarchy
+      */
+      "PRODH": String(18) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   entity "H_R_REGION" {
+      key "HREGN_HK": Binary(32);
+      "HREGN_LD": UTCTimestamp;
+      "HREGN_SRC": String(100);
+      /**
+      *Country Key
+      */
+      "LAND1": String(3) not null;
+      /**
+      *Region
+      */
+      "REGIO": String(3) not null;
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Customers: Customer classification: Texts
+   */
+   entity "S_R_TKUKT" {
+      key "HCUGR_HK": Binary(32);
+      key "SCUGR_LD": UTCTimestamp;
+      "SCUGR_SRC": String(100);
+      "SCUGR_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(3);
+      /**
+      *Language Key
+      */
+      key "SPRAS": String(2);
+      /**
+      *Customer classific.
+      */
+      "KUKLA": String(2) not null;
+      /**
+      *Description
+      */
+      "VTEXT": String(20);
+   } technical configuration {
+      column store;
+   };
+   
+   /**
+   *Material Descriptions
+   */
+   entity "S_R_MAKT" {
+      key "HPROD_HK": Binary(32);
+      key "SPDMT_LD": UTCTimestamp;
+      "SPDMT_SRC": String(100);
+      "SPDMT_HD": Binary(32);
+      /**
+      *Client
+      */
+      key "MANDT": String(40);
+      /**
+      *Material
+      */
+      "MATNR": String(40) not null;
+      /**
+      *Language Key
+      */
+      key "SPRAS": String(2);
+      /**
+      *Material description
+      */
+      "MAKTX": String(40);
+      /**
+      *Material description
+      */
+      "MAKTG": String(40);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "L_R_PLAN_REGN" {
+      key "LPLRE_HK": Binary(32);
+      "HPLAN_HK": Binary(32);
+      "HREGN_HK": Binary(32);
+      "LPLRE_LD": UTCTimestamp;
+      "LPLRE_SRC": String(100);
+   } technical configuration {
+      column store;
+   };
+   
+   entity "S_B_SALES_FACTS" {
+      /**
+      *VBELN
+      */
+      key "LSDIT_HK": Binary(32);
+      key "SSDIT_LD": UTCTimestamp;
+      "SSDIT_HD": Binary(32);
+      "SSDIT_SRC": String(100);
+      "AMOUNT": Decimal(15,2);
+      "REVENUE": Decimal(15,2);
+   } technical configuration {
+      column store;
+   };
+
+
+   // Views
+
+   // Inner Contexts
+
+};

@@ -1,0 +1,248 @@
+{
+  "SY_S_R_VBAP": {
+    "target": {
+      "object": "Core.S_R_VBAP",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_VBAK": {
+    "target": {
+      "object": "Core.S_R_VBAK",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_KNA1": {
+    "target": {
+      "object": "Core.S_R_KNA1",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_MAKT": {
+    "target": {
+      "object": "Core.S_R_MAKT",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_MARA": {
+    "target": {
+      "object": "Core.S_R_MARA",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_H_R_SALES_DOCUMENT": {
+    "target": {
+      "object": "Core.H_R_SALES_DOCUMENT",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_SALES_DOCUMENT_HEAD": {
+    "target": {
+      "object": "Core.L_R_SALES_DOCUMENT_HEAD",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_SALES_DOCUMENT_ITEM": {
+    "target": {
+      "object": "Core.L_R_SALES_DOCUMENT_ITEM",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_H_R_COUNTRY": {
+    "target": {
+      "object": "Core.H_R_COUNTRY",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_H_R_CUSTOMER": {
+    "target": {
+      "object": "Core.H_R_CUSTOMER",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_H_R_CUSTOMER_GROUP": {
+    "target": {
+      "object": "Core.H_R_CUSTOMER_GROUP",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_H_R_REGION": {
+    "target": {
+      "object": "Core.H_R_REGION",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_H_R_PRODUCT": {
+    "target": {
+      "object": "Core.H_R_PRODUCT",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_CNTR_REGN": {
+    "target": {
+      "object": "Core.L_R_CNTR_REGN",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_CUST_CUGR": {
+    "target": {
+      "object": "Core.L_R_CUST_CUGR",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_CUST_IDST": {
+    "target": {
+      "object": "Core.L_R_CUST_IDST",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_CUST_REGN": {
+    "target": {
+      "object": "Core.L_R_CUST_REGN",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_L_R_CNTR_REGN": {
+    "target": {
+      "object": "Core.S_L_R_CNTR_REGN",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_L_R_CUST_CUGR": {
+    "target": {
+      "object": "Core.S_L_R_CUST_CUGR",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_L_R_CUST_IDST": {
+    "target": {
+      "object": "Core.S_L_R_CUST_IDST",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_L_R_CUST_REGN": {
+    "target": {
+      "object": "Core.S_L_R_CUST_REGN",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_T005U": {
+    "target": {
+      "object": "Core.S_R_T005U",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_TKUKT": {
+    "target": {
+      "object": "Core.S_R_TKUKT",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_H_R_VENDOR": {
+    "target": {
+      "object": "Core.H_R_VENDOR",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_VNDR_IDST": {
+    "target": {
+      "object": "Core.L_R_VNDR_IDST",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_VNDR_REGN": {
+    "target": {
+      "object": "Core.L_R_VNDR_REGN",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_L_R_VNDR_REGN": {
+    "target": {
+      "object": "Core.S_L_R_VNDR_REGN",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_LFA1": {
+    "target": {
+      "object": "Core.S_R_LFA1",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_T005F": {
+    "target": {
+      "object": "Core.S_R_T005F",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_B_SALES_FACTS": {
+    "target": {
+      "object": "Core.S_B_SALES_FACTS",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_PROD_PRCT": {
+    "target": {
+      "object": "Core.L_R_PROD_PRCT",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_PROD_PRGR": {
+    "target": {
+      "object": "Core.L_R_PROD_PRGR",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_T005T": {
+    "target": {
+      "object": "Core.S_R_T005T",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_T001W": {
+    "target": {
+      "object": "Core.S_R_T001W",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_T023T": {
+    "target": {
+      "object": "Core.S_R_T023T",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_T179": {
+    "target": {
+      "object": "Core.S_R_T179",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_T016": {
+    "target": {
+      "object": "Core.S_R_T016",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_R_T016T": {
+    "target": {
+      "object": "Core.S_R_T016T",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_L_R_PLAN_REGN": {
+    "target": {
+      "object": "Core.L_R_PLAN_REGN",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_S_L_R_PLAN_REGN": {
+    "target": {
+      "object": "Core.S_L_R_PLAN_REGN",
+      "schema.configure":"dw_core-service/schema"
+    }
+  },
+  "SY_H_R_INDUSTRY": {
+    "target": {
+      "object": "Core.H_R_INDUSTRY",
+      "schema.configure":"dw_core-service/schema"
+    }
+  }
+}

@@ -1,0 +1,1795 @@
+﻿MANDT;SPRAS;BRSCH;BRTXT
+100;ZH;0001;标准行业
+100;ZH;0002;行业 0002
+100;ZH;0003;行业 0003
+100;ZH;01;多元化控股公司
+100;ZH;02;金融服务
+100;ZH;03;不动产
+100;ZH;10;能源供应/分配
+100;ZH;11;石油、天然气
+100;ZH;12;原材料
+100;ZH;13;贵金属
+100;ZH;21;化工行业
+100;ZH;22;健康
+100;ZH;23;玻璃
+100;ZH;24;建造业
+100;ZH;25;建筑供应商
+100;ZH;26;纸和纸浆
+100;ZH;27;木材及基础设施
+100;ZH;31;纺织厂、织造厂
+100;ZH;32;服装
+100;ZH;41;钢铁
+100;ZH;42;车辆
+100;ZH;43;车辆供应商
+100;ZH;44;机械工程
+100;ZH;45;专业技师
+100;ZH;46;机床工程
+100;ZH;47;飞机构造
+100;ZH;51;啤酒、饮料
+100;ZH;52;营养品
+100;ZH;61;电气电子
+100;ZH;62;计算机及数据处理
+100;ZH;63;软件
+100;ZH;64;电信
+100;ZH;71;消费品
+100;ZH;72;交通运输
+100;ZH;73;休闲产业及酒店
+100;ZH;81;商业银行
+100;ZH;82;抵押银行
+100;ZH;83;人寿保险
+100;ZH;84;非人寿保险
+100;ZH;85;再保险
+100;ZH;86;保险控股
+100;ZH;91;贸易
+100;ZH;92;医药贸易
+100;ZH;93;出版和传媒
+100;ZH;94;环境
+100;ZH;99;杂项
+100;TH;0001;อุตสาหกรรมมาตรฐาน
+100;TH;0002;อุตสาหกรรม 0002
+100;TH;0003;อุตสาหกรรม 0003
+100;TH;01;การถือหุ้นหลายกิจการ
+100;TH;02;การบริการทางการเงิน
+100;TH;03;อสังหาริมทรัพย์
+100;TH;10;Energy Supply / Dist
+100;TH;11;น้ำมัน, ก๊าซ
+100;TH;12;วัตถุดิบ
+100;TH;13;โลหะมีค่า
+100;TH;21;อุตสาหกรรมเคมี
+100;TH;22;สุขภาพ
+100;TH;23;กระจก
+100;TH;24;อุตสาหกรรมก่อสร้าง
+100;TH;25;ผู้จัดหาอาคาร
+100;TH;26;กระดาษและเยื่อกระดาษ
+100;TH;27;Timber and Infrastru
+100;TH;31;โรงปั่นด้าย,โรงทอผ้า
+100;TH;32;เครื่องแต่งกาย
+100;TH;41;เหล็กและเหล็กกล้า
+100;TH;42;ยานพาหนะ
+100;TH;43;ผู้จัดหายานพาหนะ
+100;TH;44;วิศวกรรมเครื่องกล
+100;TH;45;ช่างผู้ชำนาญ
+100;TH;46;วิศวกรรมเครื่องมือกล
+100;TH;47;โครงสร้างอากาศยาน
+100;TH;51;โรงกลั่น,เครื่องดื่ม
+100;TH;52;โภชนาการ
+100;TH;61;ไฟฟ้า/อิเล็กทรอนิกส์
+100;TH;62;Computers and Data P
+100;TH;63;ซอฟต์แวร์
+100;TH;64;โทรคมนาคม
+100;TH;71;สินค้าอุปโภคบริโภค
+100;TH;72;การจราจรและการขนส่ง
+100;TH;73;สันทนาการและโรงแรม
+100;TH;81;ธนาคารพาณิชย์
+100;TH;82;ธนาคารรับจำนอง
+100;TH;83;การประกันชีวิต
+100;TH;84;การประกันวินาศภัย
+100;TH;85;การประกันภัยต่อ
+100;TH;86;การถือหุ้นประกันภัย
+100;TH;91;การซื้อขาย
+100;TH;92;การค้าด้านเภสัชภัณฑ์
+100;TH;93;สิ่งพิมพ์และสื่อ
+100;TH;94;สภาพแวดล้อม
+100;TH;99;เบ็ดเตล็ด
+100;KO;0001;표준 산업
+100;KO;0002;산업 0002
+100;KO;0003;산업 0003
+100;KO;01;분산 주식 보유
+100;KO;02;금융 서비스
+100;KO;03;부동산
+100;KO;10;에너지 공급/유통
+100;KO;11;석유, 가스
+100;KO;12;원자재
+100;KO;13;귀금속
+100;KO;21;화학 산업
+100;KO;22;건강
+100;KO;23;유리
+100;KO;24;건설업
+100;KO;25;건축업자
+100;KO;26;종이 및 펄프
+100;KO;27;목재 및 인프라
+100;KO;31;방적 공장, 양모 공장
+100;KO;32;의류
+100;KO;41;철강
+100;KO;42;차량
+100;KO;43;차량 공급업체
+100;KO;44;기계 공학
+100;KO;45;전문 기계 공학
+100;KO;46;공작 기계 공학
+100;KO;47;항공기 제조
+100;KO;51;양조장, 음료
+100;KO;52;영양소
+100;KO;61;전기/전기 공학
+100;KO;62;컴퓨터/데이터 처리
+100;KO;63;소프트웨어
+100;KO;64;통신
+100;KO;71;소비재
+100;KO;72;교통 및 운송
+100;KO;73;레저 및 호텔
+100;KO;81;시중 은행
+100;KO;82;모기지 은행
+100;KO;83;생명 보험
+100;KO;84;손해 보험
+100;KO;85;재보험
+100;KO;86;보험 지주
+100;KO;91;거래
+100;KO;92;의약품 판매
+100;KO;93;출판 및 미디어
+100;KO;94;환경
+100;KO;99;기타
+100;RO;0001;Sect.indust.standard
+100;RO;0002;Industrie 0002
+100;RO;0003;Industrie 0003
+100;RO;01;Holding diversif.
+100;RO;02;Servicii financiare
+100;RO;03;Imobiliare
+100;RO;10;Furniz./distr.ener.
+100;RO;11;Petrol, gaze nat.
+100;RO;12;Materii prime
+100;RO;13;Metale preţioase
+100;RO;21;Industria chimică
+100;RO;22;Sănătate
+100;RO;23;Sticlă
+100;RO;24;Industrie constr.
+100;RO;25;Subcontr.construcţii
+100;RO;26;Celuloză şi hârtie
+100;RO;27;Cherest.şi infrastr.
+100;RO;31;Ţesăt., prel.textile
+100;RO;32;Confecţii
+100;RO;41;Fier şi oţel
+100;RO;42;Vehicule
+100;RO;43;Furnizor vehicule
+100;RO;44;Construcţii maşini
+100;RO;45;Constr.maş.speciale
+100;RO;46;Constr.maş.unelte
+100;RO;47;Construcţii avioane
+100;RO;51;Berării, băuturi
+100;RO;52;Nutriţie
+100;RO;61;Electric./eletroteh.
+100;RO;62;ComputereŞiPrelDate
+100;RO;63;Software
+100;RO;64;Telecomunicaţii
+100;RO;71;Produse de consum
+100;RO;72;Circul.şi transport
+100;RO;73;Timp liber şi hotel
+100;RO;81;Bănci comerciale
+100;RO;82;Bănci ipotecare
+100;RO;83;Asigurări de viaţă
+100;RO;84;Asigurări de bunuri
+100;RO;85;Reasigurări
+100;RO;86;Holdinguri asigurări
+100;RO;91;Comerţ
+100;RO;92;ComerţCuProdFarmac
+100;RO;93;Editură şi media
+100;RO;94;Mediu
+100;RO;99;Diverse
+100;SL;0001;Standardne panoge
+100;SL;0002;Panoga 0002
+100;SL;0003;Panoga 0003
+100;SL;01;Hold. z raznovr.dej.
+100;SL;02;Finančne storitve
+100;SL;03;Nepremičnine
+100;SL;10;Oskrba z energ./dis.
+100;SL;11;Nafta, plin
+100;SL;12;Surovine
+100;SL;13;Žlahtne kovine
+100;SL;21;Kemična industrija
+100;SL;22;Zdravje
+100;SL;23;Steklo
+100;SL;24;Gradbeništvo
+100;SL;25;Dobav. gradb. mater.
+100;SL;26;Papir in papir. kaša
+100;SL;27;Les in infrastrukt.
+100;SL;31;Predilnica, tkalnica
+100;SL;32;Oblačila
+100;SL;41;Železo in jeklo
+100;SL;42;Vozila
+100;SL;43;Dobavitelj vozil
+100;SL;44;Strojništvo
+100;SL;45;Specialno strojniš.
+100;SL;46;Gradnja stroj.orodja
+100;SL;47;Konstrukcija letala
+100;SL;51;Pivovarne, pijače
+100;SL;52;Prehrana
+100;SL;61;El.naprave/elektrot.
+100;SL;62;Račun. in obdel.pod.
+100;SL;63;Programska oprema
+100;SL;64;Telekomunikacije
+100;SL;71;Potrošne dobrine
+100;SL;72;Promet in transport
+100;SL;73;Prosti čas in hotel
+100;SL;81;Poslovne banke
+100;SL;82;Hipotekarne banke
+100;SL;83;Življenjska zavarov.
+100;SL;84;Druga zav.,raz.živl.
+100;SL;85;Pozavarovanja
+100;SL;86;Zavarovalni holdingi
+100;SL;91;Trgovanje
+100;SL;92;Trgov.s farm.izdelki
+100;SL;93;Založniš. in mediji
+100;SL;94;Okolje
+100;SL;99;Razno
+100;HR;0001;Standardna IndGrana
+100;HR;0002;Industrija 0002
+100;HR;0003;Industrija 0003
+100;HR;01;Raznovrsni holding
+100;HR;02;Financijske usluge
+100;HR;03;Nekretnine
+100;HR;10;Opskrba/distribEnerg
+100;HR;11;Nafta, plin
+100;HR;12;Sirovine
+100;HR;13;Plemeniti metali
+100;HR;21;Kemijska industrija
+100;HR;22;Zdravlje
+100;HR;23;Staklo
+100;HR;24;Građevinarstvo
+100;HR;25;Građevinski mater.
+100;HR;26;Papir i celuloza
+100;HR;27;DrvGrađa i infrastr.
+100;HR;31;Predionica, tkaonica
+100;HR;32;Odjeća
+100;HR;41;Željezo i čelik
+100;HR;42;Vozila
+100;HR;43;Dobavljač vozila
+100;HR;44;Strojarstvo
+100;HR;45;SpecijalizirMehanika
+100;HR;46;IndustrAlatnihStroj
+100;HR;47;Avioindustrija
+100;HR;51;Pivovare, pića
+100;HR;52;Prehrana
+100;HR;61;Elektrika/elektron.
+100;HR;62;Računala i ObradaPod
+100;HR;63;Softver
+100;HR;64;Telekomunikacije
+100;HR;71;Roba široke potroš.
+100;HR;72;Promet i transport
+100;HR;73;Odmor i hotel
+100;HR;81;Komercijalne banke
+100;HR;82;Hipotekarne banke
+100;HR;83;Životna osiguranja
+100;HR;84;Neživotna osiguranja
+100;HR;85;Reosiguranja
+100;HR;86;Holdinzi osiguranja
+100;HR;91;Trgovanje
+100;HR;92;Farmaceutika
+100;HR;93;Nakladn. i mediji
+100;HR;94;Okolina
+100;HR;99;Razno
+100;MS;0001;Industri Piawai
+100;MS;0002;Industri 0002
+100;MS;0003;Industri 0003
+100;MS;01;Kplbagaian Pegangan
+100;MS;02;Perkhidmatan Kwngan
+100;MS;03;Harta Tanah
+100;MS;10;Bkln Teng / Pengaghn
+100;MS;11;Minyak, Gas
+100;MS;12;Bahan Mentah
+100;MS;13;Logam Berharga
+100;MS;21;Industri Kimia
+100;MS;22;Kesihatan
+100;MS;23;Kaca
+100;MS;24;Industri Pembinaan
+100;MS;25;Pembekal Bangunan
+100;MS;26;Kertas dan Pulpa
+100;MS;27;Kayu dan Infrastrukt
+100;MS;31;Klg Pemintaln, Tnuna
+100;MS;32;Pakaian
+100;MS;41;Besi dan Keluli
+100;MS;42;Kenderaan
+100;MS;43;Pembekal Kenderaan
+100;MS;44;Kjurutraan Mekanikal
+100;MS;45;Mekanik Khusus
+100;MS;46;Enjin Alat Mesin
+100;MS;47;Pembinaan Pesawat
+100;MS;51;Kilang Bir, Minuman
+100;MS;52;Nutrisi
+100;MS;61;Elektrik / Elektronk
+100;MS;62;Komp dn Pmprssn Dta
+100;MS;63;Perisian
+100;MS;64;Telekomunikasi
+100;MS;71;Produk Pengguna
+100;MS;72;Trafik dn Pengangktn
+100;MS;73;Senggang dan Hotel
+100;MS;81;Bank Komersial
+100;MS;82;Bank Gadai Janji
+100;MS;83;Insurans Nyawa
+100;MS;84;Bukan Insurns Nyawa
+100;MS;85;Insurans semula
+100;MS;86;Pegangan Insurans
+100;MS;91;Perdagangan
+100;MS;92;Prdgn Farmaseutikal
+100;MS;93;Penerbitan dan Media
+100;MS;94;Persekitaran
+100;MS;99;Pelbagai
+100;UK;0001;Стандартна галузь
+100;UK;0002;Галузь 0002
+100;UK;0003;Галузь 0003
+100;UK;01;Диверсифік.портфель
+100;UK;02;Фінансові послуги
+100;UK;03;Нерухомість
+100;UK;10;Енергопостачання
+100;UK;11;Нафта, газ
+100;UK;12;Сировина
+100;UK;13;Дорогоцінні метали
+100;UK;21;Хімічна промислов.
+100;UK;22;Здоров'я
+100;UK;23;Скло
+100;UK;24;Будів.промисловість
+100;UK;25;Постач.буд.матер.
+100;UK;26;Папір і целюлоза
+100;UK;27;Ліс і інфраструктура
+100;UK;31;Прядіння, ткацтво
+100;UK;32;Одяг
+100;UK;41;Чорна металургія
+100;UK;42;Транспортні засоби
+100;UK;43;Постач.трансп.зас.
+100;UK;44;Машинобудування
+100;UK;45;Спеціалізов.машин.
+100;UK;46;Верстатобудування
+100;UK;47;Авіабудування
+100;UK;51;Пивоварні, напої
+100;UK;52;Харчування
+100;UK;61;Електрика / елект.
+100;UK;62;Комп'ютери та обр.д.
+100;UK;63;Програм.забезпечення
+100;UK;64;Телекомунікації
+100;UK;71;Споживчі товари
+100;UK;72;Дорож.рух і трансп.
+100;UK;73;Дозвілля та гот.спр.
+100;UK;81;Комерційні банки
+100;UK;82;Іпотечні банки
+100;UK;83;Страхування життя
+100;UK;84;Страхування майна
+100;UK;85;Перестрахування
+100;UK;86;Страхові холдинги
+100;UK;91;Торгівля
+100;UK;92;Торг.фарм.товарами
+100;UK;93;Видав.справа і ЗМІ
+100;UK;94;Навколишнє середов.
+100;UK;99;Різне
+100;ET;0001;Standardtööstus
+100;ET;0002;Tegevusala 0002
+100;ET;0003;Tegevusala 0003
+100;ET;01;Mitmesug. valdusett.
+100;ET;02;Finantsteenused
+100;ET;03;Kinnisvara
+100;ET;10;Energiavarust./-võr.
+100;ET;11;Nafta- ja gaasitöös.
+100;ET;12;Toorained
+100;ET;13;Väärismetallid
+100;ET;21;Keemiatööstus
+100;ET;22;Tervishoid
+100;ET;23;Klaasitööstus
+100;ET;24;Ehitustööstus
+100;ET;25;Ehitustarbed
+100;ET;26;Paberi- ja ts-tööst.
+100;ET;27;Puidutöös. ja taris.
+100;ET;31;Ketrustööstus
+100;ET;32;Laevaehitus
+100;ET;41;Raud ja teras
+100;ET;42;Sõidukid
+100;ET;43;Sõidukitarnija
+100;ET;44;Masinaehitus
+100;ET;45;Erimehhaanika
+100;ET;46;Tööp. ja seadm. eh.
+100;ET;47;Õhusõidukite ehitus
+100;ET;51;Alk. ja mittealk.j-d
+100;ET;52;Toidukaubad
+100;ET;61;Elektri- ja el-kaub.
+100;ET;62;Arvutid ja andmepak.
+100;ET;63;Tarkvara
+100;ET;64;Sidevaldkond
+100;ET;71;Tarbekaubad
+100;ET;72;Liiklus ja transport
+100;ET;73;Meelelah. ja hotell
+100;ET;81;Kommertspangad
+100;ET;82;Hüpoteegipangad
+100;ET;83;Elukindlustus
+100;ET;84;Mitteelukindlustus
+100;ET;85;Edasikindlustus
+100;ET;86;Kindlustusosakud
+100;ET;91;Kaubandus
+100;ET;92;Farmaatsiatööstus
+100;ET;93;Publits. ja ajakirj.
+100;ET;94;Keskkond
+100;ET;99;Muu
+100;AR;0001;الصناعة القياسية
+100;AR;0002;الصناعة 0002
+100;AR;0003;الصناعة 00003
+100;AR;01;شركةقابضةمتنوعةنشاط
+100;AR;02;خدمات مالية
+100;AR;03;العقارات
+100;AR;10;توزيع/إمداد الطاقة
+100;AR;11;البترول والغاز
+100;AR;12;مواد خام
+100;AR;13;المعادن النفيسة
+100;AR;21;صناعة الكيماويات
+100;AR;22;الصحة
+100;AR;23;الزجاج
+100;AR;24;صناعة الإنشاء
+100;AR;25;مورِّد البناء
+100;AR;26;الورق وعجينة الورق
+100;AR;27;خشب وبنية تحتية
+100;AR;31;الغزل والنسيج
+100;AR;32;ملابس
+100;AR;41;الحديد والصلب
+100;AR;42;مركبات
+100;AR;43;مورِّد مركبات
+100;AR;44;هندسة ميكانيكية
+100;AR;45;ميكانيكية متخصصة
+100;AR;46;هندسة أدوات الآلات
+100;AR;47;إنشاء الطائرات
+100;AR;51;معامل تخمير، مشروبات
+100;AR;52;التغذية
+100;AR;61;كهربائية/إلكترونية
+100;AR;62;أ.كمبيوتر - م.بيانات
+100;AR;63;البرامج
+100;AR;64;الاتصالات عن بُعد
+100;AR;71;المنتجات الاستهلاكية
+100;AR;72;الحركة والنقل
+100;AR;73;الترفيه والفنادق
+100;AR;81;البنوك التجارية
+100;AR;82;بنوك الرهونات
+100;AR;83;التأمين على الحياة
+100;AR;84;تأمين على غير الحياة
+100;AR;85;إعادة التأمين
+100;AR;86;شركات التأمين
+100;AR;91;متاجرة
+100;AR;92;التجارة الدوائية
+100;AR;93;النشر ووسائل الإعلام
+100;AR;94;البيئة
+100;AR;99;متنوع
+100;HE;0001;תעשייה תקנית
+100;HE;0002;תעשיה 0002
+100;HE;0003;תעשיה 0003
+100;HE;01;החזקה מגוונת
+100;HE;02;שירותים פיננסיים
+100;HE;03;"נדל""ן"
+100;HE;10;אספקת אנרגיה / הפצה
+100;HE;11;נפט, גז
+100;HE;12;חומרי גלם
+100;HE;13;מתכות יקרות
+100;HE;21;תעשייה כימית
+100;HE;22;בריאות
+100;HE;23;זכוכית
+100;HE;24;תעשיית בנייה
+100;HE;25;ספק בנייה
+100;HE;26;נייר ועיסה
+100;HE;27;עץ ותשתית
+100;HE;31;מטויה, אריגה
+100;HE;32;לבוש
+100;HE;41;ברזל ופלדה
+100;HE;42;כלי רכב
+100;HE;43;ספק כלי רכב
+100;HE;44;הנדסת מכונות
+100;HE;45;מכונאי מומחה
+100;HE;46;ייצור מכונות
+100;HE;47;בניית כלי טייס
+100;HE;51;מבשלות, משקאות
+100;HE;52;תזונה
+100;HE;61;מוצרי חשמל / חשמל
+100;HE;62;מחשבים ועיבוד נתונים
+100;HE;63;תוכנה
+100;HE;64;טלקומוניקציה
+100;HE;71;מוצרי צריכה
+100;HE;72;תנועה ותחבורה
+100;HE;73;פנאי ומלון
+100;HE;81;בנקים מסחריים
+100;HE;82;בנקים למשכנתאות
+100;HE;83;ביטוחי חיים
+100;HE;84;לא ביטוחי חיים
+100;HE;85;ביטוחי משנה
+100;HE;86;החזקות ביטוח
+100;HE;91;סחר
+100;HE;92;מסחר בתרופות
+100;HE;93;פרסום ואמצעי תקשורת
+100;HE;94;סביבה
+100;HE;99;שונות
+100;CS;0001;Standardní odvětví
+100;CS;0002;Odvětví 0002
+100;CS;0003;Odvětví 0003
+100;CS;01;Diverzifik. holding
+100;CS;02;Finanční služby
+100;CS;03;Nemovitosti
+100;CS;10;Dodáv./rozvod energ.
+100;CS;11;Ropa, plyn
+100;CS;12;Suroviny
+100;CS;13;Drahé kovy
+100;CS;21;Chemický průmysl
+100;CS;22;Zdravotnictví
+100;CS;23;Sklářství
+100;CS;24;Stavebnictví
+100;CS;25;Stavební dodavatel
+100;CS;26;Papír a celulóza
+100;CS;27;Dřevo a infrastrukt.
+100;CS;31;Přádelny, tkalcovny
+100;CS;32;Oděvnictví
+100;CS;41;Železo a ocel
+100;CS;42;Vozidla
+100;CS;43;Prodejce vozidel
+100;CS;44;Strojírenství
+100;CS;45;Spec. strojírenství
+100;CS;46;Výroba obráb. strojů
+100;CS;47;Výroba letadel
+100;CS;51;Pivovary, nápoje
+100;CS;52;Výživa
+100;CS;61;Elekt.zař./elektron.
+100;CS;62;Počítače a zprac.dat
+100;CS;63;Software
+100;CS;64;Telekomunikace
+100;CS;71;Spotřebitel.produkty
+100;CS;72;Doprava a transport
+100;CS;73;Volný čas a hotel
+100;CS;81;Komerční banky
+100;CS;82;Hypoteční banky
+100;CS;83;Životní pojištění
+100;CS;84;Majetkové pojištění
+100;CS;85;Zajištění
+100;CS;86;Pojišťovací holdingy
+100;CS;91;Obchod
+100;CS;92;Farmaceutický obchod
+100;CS;93;Publikování a média
+100;CS;94;Prostředí
+100;CS;99;Ostatní
+100;DE;0001;Standardbranche
+100;DE;0002;Branche 0002
+100;DE;0003;Branche 0003
+100;DE;01;Diversifiz. Holdings
+100;DE;02;Finanzdienstleist.
+100;DE;03;Immobilien
+100;DE;10;EnergVers./-verteil.
+100;DE;11;Öl und Gas
+100;DE;12;Rohstoffe
+100;DE;13;Edelmetalle
+100;DE;21;Chemie
+100;DE;22;Gesundheitswesen
+100;DE;23;Glas
+100;DE;24;Bauindustrie
+100;DE;25;Bauzulieferer
+100;DE;26;Papier/Zellstoff
+100;DE;27;Holz/Infrastruktur
+100;DE;31;Spinnerei, Weberei
+100;DE;32;Bekleidung
+100;DE;41;Eisen und Stahl
+100;DE;42;Fahrzeuge
+100;DE;43;Fahrzeuglieferant
+100;DE;44;Maschinenbau
+100;DE;45;Spezialmaschinenbau
+100;DE;46;Werkzeugmaschinenbau
+100;DE;47;Flugzeugbau
+100;DE;51;Brauereien, Getränke
+100;DE;52;Ernährung
+100;DE;61;ElekGer/ElekTechnik
+100;DE;62;Comp./Datenverarb.
+100;DE;63;Software
+100;DE;64;Telekommunikation
+100;DE;71;Konsumgüterindustrie
+100;DE;72;Verkehr und Transp.
+100;DE;73;Freizeit und Hotel
+100;DE;81;Geschäftsbanken
+100;DE;82;Hypothekenbanken
+100;DE;83;Lebensversicherungen
+100;DE;84;Sachversicherungen
+100;DE;85;Rückversicherungen
+100;DE;86;Versicherungshold.
+100;DE;91;Handel
+100;DE;92;Pharmahandel
+100;DE;93;Verlag und Medien
+100;DE;94;Umgebung
+100;DE;99;Sonstiges
+100;EN;0001;Standard Industry
+100;EN;0002;Industry 0002
+100;EN;0003;Industry 0003
+100;EN;01;Diversified Holding
+100;EN;02;Financial Services
+100;EN;03;Real Estate
+100;EN;10;Energy Supply / Dist
+100;EN;11;Oil, Gas
+100;EN;12;Raw Materials
+100;EN;13;Precious Metals
+100;EN;21;Chemical Industry
+100;EN;22;Health
+100;EN;23;Glass
+100;EN;24;Construction Industr
+100;EN;25;Building Supplier
+100;EN;26;Paper and Pulp
+100;EN;27;Timber and Infrastru
+100;EN;31;Spinning Mill, Weavi
+100;EN;32;Apparel
+100;EN;41;Iron and Steel
+100;EN;42;Vehicles
+100;EN;43;Vehicle Supplier
+100;EN;44;Mechanical Engineeri
+100;EN;45;Specialized Mechanic
+100;EN;46;Machine Tool Enginee
+100;EN;47;Aircraft Constructio
+100;EN;51;Breweries, Beverages
+100;EN;52;Nutrition
+100;EN;61;Electricals / Electr
+100;EN;62;Computers and Data P
+100;EN;63;Software
+100;EN;64;Telecommunications
+100;EN;71;Consumer Products
+100;EN;72;Traffic and Transpor
+100;EN;73;Leisure and Hotel
+100;EN;81;Commercial Banks
+100;EN;82;Mortgage Banks
+100;EN;83;Life Insurances
+100;EN;84;Non-Life Insurances
+100;EN;85;Reinsurances
+100;EN;86;Insurance Holdings
+100;EN;91;Trading
+100;EN;92;Pharmaceutical Trade
+100;EN;93;Publishing and Media
+100;EN;94;Environment
+100;EN;99;Miscellaneous
+100;FR;0001;Branche standard
+100;FR;0002;Branche 0002
+100;FR;0003;Branche 0003
+100;FR;01;Holding divers
+100;FR;02;Services financiers
+100;FR;03;Biens immobiliers
+100;FR;10;Fournis. énergies
+100;FR;11;Hydrocarbures
+100;FR;12;Matières premières
+100;FR;13;Métaux précieux
+100;FR;21;Industrie chimique
+100;FR;22;Santé
+100;FR;23;Verre
+100;FR;24;Construction
+100;FR;25;Construction fourn.
+100;FR;26;Papier et Pâte
+100;FR;27;Bois et infrastruct.
+100;FR;31;Textile
+100;FR;32;Habillement
+100;FR;41;Fer et acier
+100;FR;42;Véhicules
+100;FR;43;Véhicule fournisseur
+100;FR;44;Génie mécanique
+100;FR;45;Mécanique spé.
+100;FR;46;Machines-outils
+100;FR;47;Construction aéron.
+100;FR;51;Boissons, liquides
+100;FR;52;Alimentation
+100;FR;61;Électronique
+100;FR;62;Informatique
+100;FR;63;Logiciels
+100;FR;64;Télécommunications
+100;FR;71;Biens consommation
+100;FR;72;Transports
+100;FR;73;Hôtellerie/Loisirs
+100;FR;81;Banques commerciales
+100;FR;82;Prêt hypothécaire
+100;FR;83;Assurance vie
+100;FR;84;Assurance non-vie
+100;FR;85;Réassurance
+100;FR;86;Holding d'assurance
+100;FR;91;Commerce
+100;FR;92;Pharmaceutique
+100;FR;93;Édition et médias
+100;FR;94;Environnement
+100;FR;99;Divers
+100;EL;0001;Τυπική Βιομηχανία
+100;EL;0002;Βιομηχανία 0002
+100;EL;0003;Βιομηχανία 0003
+100;EL;01;Διαφοροπ.Ετ.Χαρτοφ.
+100;EL;02;Οικονομικ.Υπηρεσίες
+100;EL;03;Ακίνητη Περιουσία
+100;EL;10;Παροχή Ενέργ./Διαν.
+100;EL;11;Πετρέλαιο, Αέριο
+100;EL;12;Πρώτες Υλες
+100;EL;13;Πολύτιμα Μέταλλα
+100;EL;21;Χημική Βιομηχανία
+100;EL;22;Υγεία
+100;EL;23;Γυαλί
+100;EL;24;Οικοδομ.Δραστηριότ.
+100;EL;25;Προμηθευτής Κτηρίων
+100;EL;26;Χαρτί και Χαρτοπολτ.
+100;EL;27;Ξυλεία και Υποδομή
+100;EL;31;Νηματουργία, Υφαντ.
+100;EL;32;Συσκευή
+100;EL;41;Σίδερο και Ατσάλι
+100;EL;42;Οχήματα
+100;EL;43;Προμηθευτής Οχημάτων
+100;EL;44;Μηχανολογία
+100;EL;45;Εξειδικ.Μηχανολογία
+100;EL;46;Εργ.Μηχαν.Μηχανικής
+100;EL;47;Κατασκευή Αεροσκαφών
+100;EL;51;Ζυθοποιία, Ποτά
+100;EL;52;Διατροφή
+100;EL;61;Ηλεκτρ.Είδη/Ηλεκτρ.
+100;EL;62;Υπολ.και Επεξ.Δεδ.
+100;EL;63;Λογισμικό
+100;EL;64;Τηλεπικοινωνίες
+100;EL;71;ΚαταναλωτικάΠροϊόντα
+100;EL;72;Κυκλοφορ.και Μεταφ.
+100;EL;73;Αναψυχή και Διαμονή
+100;EL;81;Εμπορικές Τράπεζες
+100;EL;82;Tράπεζες Υποθηκών
+100;EL;83;Ασφάλειες Ζωής
+100;EL;84;Γενικές Ασφάλειες
+100;EL;85;Αντασφαλίσεις
+100;EL;86;Ασφαλ.Εταιρ.Χαρτοφ.
+100;EL;91;Εμπόριο
+100;EL;92;Εμπόριο Φαρμ.Προϊόντ
+100;EL;93;Εκδοση και Μέσα
+100;EL;94;Περιβάλλον
+100;EL;99;Διάφορα
+100;HU;0001;Standard ágazat
+100;HU;0002;Iparág  0002
+100;HU;0003;Iparág  0003
+100;HU;01;Diverzif. holding
+100;HU;02;Pü. szolgáltatások
+100;HU;03;Ingatlan
+100;HU;10;Energiaellátás/-elo.
+100;HU;11;Olaj, gáz
+100;HU;12;Nyersanyagok
+100;HU;13;Nemesfémek
+100;HU;21;Vegyipar
+100;HU;22;Egészség
+100;HU;23;Üveg
+100;HU;24;Építőipar
+100;HU;25;Építési vállalkozó
+100;HU;26;Papír és rostanyag
+100;HU;27;Faipar és infrastr.
+100;HU;31;Fonoda, szövőgyár
+100;HU;32;Ruházat
+100;HU;41;Vas és acél
+100;HU;42;Járművek
+100;HU;43;Gépjármű szállítója
+100;HU;44;Gépgyártás
+100;HU;45;Spec. gépgyártás
+100;HU;46;Szerszámgépgyártás
+100;HU;47;Repülőgépgyártás
+100;HU;51;Sörfőzdék, italok
+100;HU;52;Táplálkozás
+100;HU;61;Elektromos berend.
+100;HU;62;Szám.gépek és adatf.
+100;HU;63;Szoftver
+100;HU;64;Telekommunikáció
+100;HU;71;Fogyasztói termékek
+100;HU;72;Közlekedés és száll.
+100;HU;73;Szabadidő és hotel
+100;HU;81;Kereskedelmi bankok
+100;HU;82;Jelzáloghitelbankok
+100;HU;83;Életbiztosítások
+100;HU;84;Nem életbiztosítások
+100;HU;85;Viszontbiztosítások
+100;HU;86;Biztosítási holdingk
+100;HU;91;Kereskedelem
+100;HU;92;Gyógyszerkeresked.
+100;HU;93;Kiadás és média
+100;HU;94;Környezet
+100;HU;99;Vegyes
+100;IT;0001;Settore standard
+100;IT;0002;Settore 0002
+100;IT;0003;Settore 0003
+100;IT;01;Holding divers.
+100;IT;02;Servizi finanziari
+100;IT;03;Beni immobiliari
+100;IT;10;Forn./distr. energia
+100;IT;11;Petrolio, gas
+100;IT;12;Materie prime
+100;IT;13;Metalli preziosi
+100;IT;21;Industria chimica
+100;IT;22;Sanità
+100;IT;23;Vetro
+100;IT;24;Industria edilizia
+100;IT;25;Fornitore edile
+100;IT;26;Carta e cellulosa
+100;IT;27;Legno e infrastr.
+100;IT;31;Filatura e tessitura
+100;IT;32;Abbigliamento
+100;IT;41;Ferro e acciaio
+100;IT;42;Veicoli
+100;IT;43;Fornitore veicoli
+100;IT;44;Ingegneria meccanica
+100;IT;45;Meccanica special.
+100;IT;46;Macchine utensili
+100;IT;47;Costr. velivoli
+100;IT;51;Birrifici, bevande
+100;IT;52;Alimentazione
+100;IT;61;App. elett/elettrot.
+100;IT;62;Computer/elab. dati
+100;IT;63;Software
+100;IT;64;Telecomunicazioni
+100;IT;71;Beni di consumo
+100;IT;72;Traffico e trasporti
+100;IT;73;Tempo libero e hotel
+100;IT;81;Banche commerciali
+100;IT;82;Banche ipotecarie
+100;IT;83;Assicurazioni vita
+100;IT;84;Ass. beni materiali
+100;IT;85;Riassicurazioni
+100;IT;86;Holding assicurativa
+100;IT;91;Commercio
+100;IT;92;Commercio farmac.
+100;IT;93;Editoria e media
+100;IT;94;Ambiente
+100;IT;99;Varie
+100;JA;0001;標準産業
+100;JA;0002;産業 0002
+100;JA;0003;産業 0003
+100;JA;01;総合持株会社
+100;JA;02;金融サービス
+100;JA;03;不動産
+100;JA;10;エネルギー供給
+100;JA;11;石油/ガス
+100;JA;12;原材料
+100;JA;13;貴金属
+100;JA;21;化学工業
+100;JA;22;健康
+100;JA;23;ガラス
+100;JA;24;建設業
+100;JA;25;建築業者
+100;JA;26;紙/パルプ
+100;JA;27;木材/インフラ
+100;JA;31;紡績工場、織布工場
+100;JA;32;アパレル
+100;JA;41;鉄鋼
+100;JA;42;自動車
+100;JA;43;自動車メーカー
+100;JA;44;機械設計
+100;JA;45;特殊機械
+100;JA;46;工作機械設計
+100;JA;47;航空機製造
+100;JA;51;醸造所、飲料
+100;JA;52;栄養
+100;JA;61;電気製品/電気工学
+100;JA;62;Computer/データ処理
+100;JA;63;ソフトウェア
+100;JA;64;通信
+100;JA;71;消費財
+100;JA;72;交通/輸送
+100;JA;73;レジャー/ホテル
+100;JA;81;市中銀行
+100;JA;82;抵当銀行
+100;JA;83;生命保険
+100;JA;84;損害保険
+100;JA;85;再保険
+100;JA;86;保険持株
+100;JA;91;貿易
+100;JA;92;医薬品販売
+100;JA;93;出版/マスコミ
+100;JA;94;環境
+100;JA;99;その他
+100;DA;0001;Standardbranche
+100;DA;0002;Branche 0002
+100;DA;0003;Branche 0003
+100;DA;01;Diversificeret hold.
+100;DA;02;Finansielle ydelser
+100;DA;03;Fast ejendom
+100;DA;10;Energifors./-distr.
+100;DA;11;Olie- og gasindustri
+100;DA;12;Råstoffer
+100;DA;13;Ædelmetaller
+100;DA;21;Kemisk industri
+100;DA;22;Sundhed
+100;DA;23;Glas
+100;DA;24;Byggeindustri
+100;DA;25;Byggeleverandør
+100;DA;26;Papir og papirmasse
+100;DA;27;Træ og infrastruktur
+100;DA;31;Spinderi, væveri
+100;DA;32;Beklædning
+100;DA;41;Jern og stål
+100;DA;42;Køretøjer
+100;DA;43;Køretøjsleverandør
+100;DA;44;Maskinindustri
+100;DA;45;Specialmaskinind.
+100;DA;46;Maskinværktøj
+100;DA;47;Flyindustri
+100;DA;51;Bryggerier, drikkev.
+100;DA;52;Ernæring
+100;DA;61;Elektronik
+100;DA;62;Computere og databe.
+100;DA;63;Software
+100;DA;64;Telekommunikation
+100;DA;71;Forbrugsgoder
+100;DA;72;Trafik og transport
+100;DA;73;Fritid og hotel
+100;DA;81;Forretningsbank
+100;DA;82;Kreditbanker
+100;DA;83;Livsforsikringer
+100;DA;84;Tingsforsikringer
+100;DA;85;Genforsikringer
+100;DA;86;Forsikringsholdings
+100;DA;91;Handel
+100;DA;92;Farmaceutisk handel
+100;DA;93;Forlag og medier
+100;DA;94;Miljø
+100;DA;99;Øvrigt
+100;PL;0001;Branża standardowa
+100;PL;0002;Branża 0002
+100;PL;0003;Branża 0003
+100;PL;01;Zdywersyfik. holding
+100;PL;02;Usługi finansowe
+100;PL;03;Nieruchomości
+100;PL;10;Dost./Dystr. energii
+100;PL;11;Paliwa
+100;PL;12;Surowce
+100;PL;13;Metale szlachetne
+100;PL;21;Przemysł chemiczny
+100;PL;22;Zdrowie
+100;PL;23;Szkło
+100;PL;24;Budownictwo
+100;PL;25;Dostawca budowlany
+100;PL;26;Papier i makulatura
+100;PL;27;Drewno i infrastr.
+100;PL;31;Przędzaln., tkactwo
+100;PL;32;Odzież
+100;PL;41;Prz. met. i stal.
+100;PL;42;Pojazdy
+100;PL;43;Dostawca pojazdów
+100;PL;44;Inżynieria mechan.
+100;PL;45;Mechanika specjalis.
+100;PL;46;Inżynieria urządzeń
+100;PL;47;Budowa samolotów
+100;PL;51;Browary, napoje
+100;PL;52;Odżywianie
+100;PL;61;Elektryka/elektron.
+100;PL;62;Komp. i prz. danych
+100;PL;63;Oprogramowanie
+100;PL;64;Telekomunikacja
+100;PL;71;Produkty konsum.
+100;PL;72;Ruch i transport
+100;PL;73;Rekreacja i hotele
+100;PL;81;Banki komercyjne
+100;PL;82;Banki hipoteczne
+100;PL;83;Ubezp. na życie
+100;PL;84;Ubezp. inne niż życ.
+100;PL;85;Reasekuracja
+100;PL;86;Holdingi ubezpiecz.
+100;PL;91;Handel
+100;PL;92;Handel farmaceut.
+100;PL;93;Wydawnictwa i media
+100;PL;94;Środowisko
+100;PL;99;Różne
+100;ZF;0001;標準產業
+100;ZF;0002;產業 0002
+100;ZF;0003;產業 0003
+100;ZF;01;多樣化持股
+100;ZF;02;金融服務
+100;ZF;03;不動產
+100;ZF;10;能源供應/分配
+100;ZF;11;石油、瓦斯
+100;ZF;12;原料
+100;ZF;13;貴金屬
+100;ZF;21;化工業
+100;ZF;22;健康
+100;ZF;23;玻璃
+100;ZF;24;營造業
+100;ZF;25;建材供應商
+100;ZF;26;造紙業
+100;ZF;27;木材和基礎建設
+100;ZF;31;紡織廠
+100;ZF;32;服飾
+100;ZF;41;鐵和鋼
+100;ZF;42;運輸工具
+100;ZF;43;運輸工具供應商
+100;ZF;44;機械工程
+100;ZF;45;專門化機械工程
+100;ZF;46;機械工具工程
+100;ZF;47;飛機建構
+100;ZF;51;啤酒、飲料
+100;ZF;52;營養
+100;ZF;61;電氣/電機工程
+100;ZF;62;電腦和資料處理
+100;ZF;63;軟體
+100;ZF;64;電信
+100;ZF;71;消費性產品
+100;ZF;72;交通和運輸
+100;ZF;73;休閒和旅館
+100;ZF;81;商業銀行
+100;ZF;82;抵押銀行
+100;ZF;83;壽險
+100;ZF;84;非壽險
+100;ZF;85;再保險
+100;ZF;86;保險控股
+100;ZF;91;貿易
+100;ZF;92;製藥業
+100;ZF;93;出版及媒體
+100;ZF;94;環境
+100;ZF;99;雜項
+100;NL;0001;Standaardbranche
+100;NL;0002;Branche 0002
+100;NL;0003;Branche 0003
+100;NL;01;Gedivers. holding
+100;NL;02;Financiële dienstv.
+100;NL;03;Onroerend goed
+100;NL;10;Energievoorz./-dist.
+100;NL;11;Olie en gas
+100;NL;12;Grondstoffen
+100;NL;13;Edelmetalen
+100;NL;21;Chemische industrie
+100;NL;22;Gezondheid
+100;NL;23;Glas
+100;NL;24;Bouwnijverheid
+100;NL;25;Toeleverancier bouw
+100;NL;26;Papier en celstof
+100;NL;27;Hout en woninginr.
+100;NL;31;Spinnen en weven
+100;NL;32;Mode
+100;NL;41;IJzer en staal
+100;NL;42;Voertuigen
+100;NL;43;Toeleveranc. m.voerT
+100;NL;44;Machinebouw
+100;NL;45;Speciale mach.bouw
+100;NL;46;Werktuigmachinebouw
+100;NL;47;Vliegtuigbouw
+100;NL;51;Brouwer., dranken
+100;NL;52;Voeding
+100;NL;61;Elektr. / ElektTechN
+100;NL;62;Computers en EDP
+100;NL;63;Software
+100;NL;64;Telecommunicatie
+100;NL;71;Consumentenproducten
+100;NL;72;Verkeer en transport
+100;NL;73;Vrije tijd en hotel
+100;NL;81;Commerciële banken
+100;NL;82;Hypotheekbanken
+100;NL;83;Levensverzekeringen
+100;NL;84;Schadeverzekeringen
+100;NL;85;Herverzekeringen
+100;NL;86;Verzekeringsholdings
+100;NL;91;Handel
+100;NL;92;Farmaceut. handel
+100;NL;93;Uitgev.- en mediabr.
+100;NL;94;Omgeving
+100;NL;99;Diversen
+100;NO;0001;Standardbransje
+100;NO;0002;Bransje 0002
+100;NO;0003;Bransje 0003
+100;NO;01;Diversif. eierandel.
+100;NO;02;Finansielle tjen.
+100;NO;03;Fast eiendom
+100;NO;10;Energiforsyn./-ford.
+100;NO;11;Olje og gass
+100;NO;12;Råvarer
+100;NO;13;Edelmetaller
+100;NO;21;Kjemi
+100;NO;22;Helse
+100;NO;23;Glass
+100;NO;24;Bygningsindustri
+100;NO;25;Byggleverandør
+100;NO;26;Papir/cellulose
+100;NO;27;Tre og infrastruktur
+100;NO;31;Spinneri, veveri
+100;NO;32;Motevarer
+100;NO;41;Jern og stål
+100;NO;42;Vognpark
+100;NO;43;Kjøretøyleverandør
+100;NO;44;Maskinteknikk
+100;NO;45;Spesialmaskinbygging
+100;NO;46;Verktøymaskinbygging
+100;NO;47;Flyproduksjon
+100;NO;51;Bryggerier, drikkev.
+100;NO;52;Ernæring
+100;NO;61;Elektr. app. / el.
+100;NO;62;PC-er og databeh.
+100;NO;63;Programvare
+100;NO;64;Telekommunikasjon
+100;NO;71;Forbruksvarer
+100;NO;72;Trafikk og transport
+100;NO;73;Fritid og hotell
+100;NO;81;Forretningsbanker
+100;NO;82;Boliglånsbanker
+100;NO;83;Livsforsikringer
+100;NO;84;Skadeforsikringer
+100;NO;85;Gjenforsikringer
+100;NO;86;Fors.investering
+100;NO;91;Handel
+100;NO;92;Farmasøytisk handel
+100;NO;93;Forlag og medier
+100;NO;94;Miljø
+100;NO;99;Diverse
+100;PT;0001;Setor padrão
+100;PT;0002;Setor 0002
+100;PT;0003;Setor 0003
+100;PT;01;Propriedade dispersa
+100;PT;02;Serviços financeiros
+100;PT;03;Terreno
+100;PT;10;Forn./distr.energia
+100;PT;11;Petróleo, gás
+100;PT;12;Matérias-primas
+100;PT;13;Metais preciosos
+100;PT;21;Indústria química
+100;PT;22;Saúde
+100;PT;23;Vidro
+100;PT;24;Indústria construção
+100;PT;25;Fornecedor construç.
+100;PT;26;Papel e papel usado
+100;PT;27;Madeira e infraestr.
+100;PT;31;Fiação, tecelagem
+100;PT;32;Vestimenta
+100;PT;41;Ferro e aço
+100;PT;42;Veículos
+100;PT;43;Fornecedor veículos
+100;PT;44;Engenharia mecânica
+100;PT;45;Mecânica especializ.
+100;PT;46;Engenh.máqs.-ferram.
+100;PT;47;Construção aeronaves
+100;PT;51;Cervejarias, bebidas
+100;PT;52;Nutrição
+100;PT;61;Eq.elétr./eletrônico
+100;PT;62;Computs.e proc.dds.
+100;PT;63;Software
+100;PT;64;Telecomunicações
+100;PT;71;Bens de consumo
+100;PT;72;Tráfego e transporte
+100;PT;73;Lazer e hotel
+100;PT;81;Bancos comerciais
+100;PT;82;Bancos hipotecários
+100;PT;83;Seguros de vida
+100;PT;84;Seguros não-vida
+100;PT;85;Resseguros
+100;PT;86;Holdings de seguros
+100;PT;91;Comércio
+100;PT;92;Comércio farmacêut.
+100;PT;93;Publicação e mídia
+100;PT;94;Ambiente
+100;PT;99;Diversos
+100;SK;0001;Štandardné odvetvie
+100;SK;0002;Odvetvie0002
+100;SK;0003;Odvetvie0003
+100;SK;01;Diverzifik.majetok
+100;SK;02;Finančné služby
+100;SK;03;Pozemky
+100;SK;10;Dod. / distr.energie
+100;SK;11;Ropa, plyn
+100;SK;12;Suroviny
+100;SK;13;Drahé kovy
+100;SK;21;Chemický priemysel
+100;SK;22;Zdravie
+100;SK;23;Sklársky priemysel
+100;SK;24;Stavebný priemysel
+100;SK;25;Stavebný dodávateľ
+100;SK;26;Papier a buničina
+100;SK;27;Drevo a infraštrukt.
+100;SK;31;Pradiarne, tkáčovne
+100;SK;32;Odevy
+100;SK;41;Železo a oceľ
+100;SK;42;Vozový park
+100;SK;43;Dodávateľ vozidiel
+100;SK;44;Strojárstvo
+100;SK;45;Špeciálne strojárs.
+100;SK;46;Výroba obráb.strojov
+100;SK;47;Výroba lietadiel
+100;SK;51;Pivovary, nápoje
+100;SK;52;Výživa
+100;SK;61;Elektr.zar. / elekt.
+100;SK;62;Počítače a sprac.dát
+100;SK;63;Softvér
+100;SK;64;Telekomunikácie
+100;SK;71;Spotrebit.priemysel
+100;SK;72;Doprava a preprava
+100;SK;73;Voľný čas a hotel
+100;SK;81;Komerčné banky
+100;SK;82;Hypotekárne banky
+100;SK;83;Životné poistenie
+100;SK;84;Majetkové poistenie
+100;SK;85;Zaisťovanie
+100;SK;86;Poisťovacie holdingy
+100;SK;91;Obchod
+100;SK;92;Farmaceutický obchod
+100;SK;93;Nakladateľs.a médiá
+100;SK;94;Prostredie
+100;SK;99;Ostatné
+100;RU;0001;Стандартная отрасль
+100;RU;0002;Отрасль 0002
+100;RU;0003;Отрасль 0003
+100;RU;01;Многоотрасл. холдинг
+100;RU;02;Финансовые услуги
+100;RU;03;Земельные участки
+100;RU;10;Пост./Распр. энерг.
+100;RU;11;Нефтегазовая пром-ть
+100;RU;12;Сырье
+100;RU;13;Драгоценные металлы
+100;RU;21;Хим. промышленность
+100;RU;22;Здравоохранение
+100;RU;23;Стекольн. промышл.
+100;RU;24;Строительство
+100;RU;25;Пост.стройматериалов
+100;RU;26;Бумажная промышл-ть
+100;RU;27;Лесн. инфраструктура
+100;RU;31;Прядение и ткачество
+100;RU;32;Одежда
+100;RU;41;Металлургия
+100;RU;42;Трансп. средства
+100;RU;43;Пост. автотранспорта
+100;RU;44;Машиностроение
+100;RU;45;Спец. машиностроение
+100;RU;46;Станкостроение
+100;RU;47;Самолетостроение
+100;RU;51;Пивоварни, напитки
+100;RU;52;Питание
+100;RU;61;Электрооборудование
+100;RU;62;Комп. и обр. данных
+100;RU;63;ПО
+100;RU;64;Телекоммуникации
+100;RU;71;Потреб. товары
+100;RU;72;Перевозки, транспорт
+100;RU;73;Отдых и гостиницы
+100;RU;81;Коммерческие банки
+100;RU;82;Ипотечные банки
+100;RU;83;Страхование жизни
+100;RU;84;Страхование имущ-ва
+100;RU;85;Перестрахование
+100;RU;86;Страховые холдинги
+100;RU;91;Торговля
+100;RU;92;Фармацевт. торговля
+100;RU;93;Издат. деят. и СМИ
+100;RU;94;Окружающая среда
+100;RU;99;Разное
+100;ES;0001;Sector estándar
+100;ES;0002;Rama 0002
+100;ES;0003;Rama 0003
+100;ES;01;Propiedad diversif.
+100;ES;02;Servicios financier.
+100;ES;03;Bienes inmuebles
+100;ES;10;Dist./Prov.energía
+100;ES;11;Petróleo, gas
+100;ES;12;Materias primas
+100;ES;13;Metales preciosos
+100;ES;21;Indústria química
+100;ES;22;Salud
+100;ES;23;Cristal
+100;ES;24;Sector construcción
+100;ES;25;Proveedor constr.
+100;ES;26;Papel y pulpa
+100;ES;27;Madera e infraestr.
+100;ES;31;Hilandería, tejidos
+100;ES;32;Ropa
+100;ES;41;Hierro y acero
+100;ES;42;Vehículos
+100;ES;43;Proveedor vehículos
+100;ES;44;Ingeniería mecánica
+100;ES;45;Mecánica especial.
+100;ES;46;Ingen.herram,máquin.
+100;ES;47;Construcc.aviones
+100;ES;51;Cerveserías, bebidas
+100;ES;52;Nutrición
+100;ES;61;Equip.eléctr./Elec.
+100;ES;62;Ordenad.y prod.datos
+100;ES;63;Software
+100;ES;64;Telecomunicaciones
+100;ES;71;Productos de consum.
+100;ES;72;Tráfico y transporte
+100;ES;73;Ocio y hotel
+100;ES;81;Bancos comerciales
+100;ES;82;Bancos hipotecarios
+100;ES;83;Seguros de vida
+100;ES;84;Seguros de bienes
+100;ES;85;Reaseguros
+100;ES;86;Prop.seguros
+100;ES;91;Comercio
+100;ES;92;Comercio farmacéut.
+100;ES;93;Publicación y medios
+100;ES;94;Entorno
+100;ES;99;Otros
+100;TR;0001;Standart endüstri
+100;TR;0002;Sektör 0002
+100;TR;0003;Sektör 0003
+100;TR;01;Farklı holding
+100;TR;02;Mali hizmetler
+100;TR;03;Gayrimenkuller
+100;TR;10;Enrj.tedariği/dğtm.
+100;TR;11;Yağ, gaz
+100;TR;12;Hammaddeler
+100;TR;13;Kıymetli metaller
+100;TR;21;Kimya endüstrisi
+100;TR;22;Sağlık
+100;TR;23;Cam
+100;TR;24;Yapı endüstrisi
+100;TR;25;Yapı mlz.tedarikçisi
+100;TR;26;Kağıt ve selüloz
+100;TR;27;Kereste ve altyapı
+100;TR;31;İplik, dokuma fab.
+100;TR;32;Kıyafet
+100;TR;41;Demir ve çelik
+100;TR;42;Taşıtlar
+100;TR;43;Taşıt tedarikçisi
+100;TR;44;Makine mühendisliği
+100;TR;45;Uzman makine mühl.
+100;TR;46;İmalat mak.mühl.
+100;TR;47;Uçak inşaatı
+100;TR;51;Bira fab.,içecekler
+100;TR;52;Besin maddesi
+100;TR;61;Elektrikli / elektr.
+100;TR;62;Bilgsyr.ve vr.işleme
+100;TR;63;Yazılım
+100;TR;64;Telekomünikasyon
+100;TR;71;Tüketici ürünleri
+100;TR;72;Trafik ve taşıma
+100;TR;73;Boş vakit ve otel
+100;TR;81;Ticari bankalar
+100;TR;82;İpotek bankaları
+100;TR;83;Hayat sigortaları
+100;TR;84;Hayat dş.sigortalar
+100;TR;85;Reasüranslar
+100;TR;86;Sigorta holdingleri
+100;TR;91;Ticaret
+100;TR;92;İlaç ticareti
+100;TR;93;Yayımlama ve medya
+100;TR;94;Ortam
+100;TR;99;Diğerleri
+100;FI;0001;Vakiotoimiala
+100;FI;0002;Toimiala 0002
+100;FI;0003;Toimiala 0003
+100;FI;01;Vap. vaihd. osakkeet
+100;FI;02;Rahoituspalvelut
+100;FI;03;Kiinteistöt
+100;FI;10;Energian toim./jak.
+100;FI;11;Öljy, kaasu
+100;FI;12;Raaka-aineet
+100;FI;13;Arvometallit
+100;FI;21;Kemianteollisuus
+100;FI;22;Terveys
+100;FI;23;Lasi
+100;FI;24;Rakennusteollisuus
+100;FI;25;Rakennustoimittaja
+100;FI;26;Paperi ja sellu
+100;FI;27;Puu ja infrastrukt.
+100;FI;31;Kehruu/kutominen
+100;FI;32;Vaatteet
+100;FI;41;Rauta ja teräs
+100;FI;42;Ajoneuvot
+100;FI;43;Ajoneuvotoimittaja
+100;FI;44;Koneenrakennus
+100;FI;45;Erityiskoneenrak.
+100;FI;46;Koneenrakennus
+100;FI;47;Lentokonerakennus
+100;FI;51;Panimot, juomat
+100;FI;52;Ravinto
+100;FI;61;Sähkölaitt./s-tekn.
+100;FI;62;Tietok. ja tiet.käs.
+100;FI;63;Ohjelmisto
+100;FI;64;Televiestintä
+100;FI;71;Kulutustavarat
+100;FI;72;Liik. ja kuljetus
+100;FI;73;Vap.aika ja hotelli
+100;FI;81;Liikepankit
+100;FI;82;Hypoteekkipankit
+100;FI;83;Henkivakuutukset
+100;FI;84;Esinevakuutukset
+100;FI;85;Jälleenvakuutukset
+100;FI;86;Vakuutushallinta
+100;FI;91;Kauppa
+100;FI;92;Lääkekauppa
+100;FI;93;Kustannus ja media
+100;FI;94;Ympäristö
+100;FI;99;Muut
+100;SV;0001;Standardbransch
+100;SV;0002;Bransch 0002
+100;SV;0003;Bransch 0003
+100;SV;01;Holdingbol. bl.verk.
+100;SV;02;Finansiella tjänster
+100;SV;03;Fastigheter
+100;SV;10;Energiförs./distr.
+100;SV;11;Olja, gas
+100;SV;12;Råmaterial
+100;SV;13;Ädla metaller
+100;SV;21;Kemiindustri
+100;SV;22;Hälsa
+100;SV;23;Glas
+100;SV;24;Byggindustri
+100;SV;25;Byggnadsleverantör
+100;SV;26;Papper/pappersmassa
+100;SV;27;Trä/infrastruktur
+100;SV;31;Spinneri, väveri
+100;SV;32;Mode
+100;SV;41;Järn och stål
+100;SV;42;Fordon
+100;SV;43;Fordonsleverantör
+100;SV;44;Maskinteknik
+100;SV;45;Spec. maskinteknik
+100;SV;46;Verkt.maskinkonstr.
+100;SV;47;Flygplanskonstr.
+100;SV;51;Bryggerier, drycker
+100;SV;52;Hälsokost
+100;SV;61;Elappar./elektr.tekn
+100;SV;62;Datorer/databehandl.
+100;SV;63;Programvara
+100;SV;64;Telekommunikationer
+100;SV;71;Konsumentprodukter
+100;SV;72;Trafik och transport
+100;SV;73;Fritid och hotell
+100;SV;81;Affärsbanker
+100;SV;82;Hypoteksbanker
+100;SV;83;Livförsäkringar
+100;SV;84;Sakförsäkringar
+100;SV;85;Återförsäkringar
+100;SV;86;Försäkringsinnehav
+100;SV;91;Handel
+100;SV;92;Läkemedelshandel
+100;SV;93;Förlagsverks./media
+100;SV;94;Miljö
+100;SV;99;Diverse
+100;BG;0001;Стандартна индустрия
+100;BG;0002;Промишленост 0002
+100;BG;0003;Промишленост 0003
+100;BG;01;Многоотрасл. холдинг
+100;BG;02;Финансови услуги
+100;BG;03;Недвижимо имущество
+100;BG;10;Енергоснабд./разпр.
+100;BG;11;Нефт, газ
+100;BG;12;Суровини
+100;BG;13;Ценни метали
+100;BG;21;Химическа индустрия
+100;BG;22;Здраве
+100;BG;23;Стъкло
+100;BG;24;Строителна индустрия
+100;BG;25;Строителен доставчик
+100;BG;26;Хартия и пулп
+100;BG;27;Дървен мат.и инфраст
+100;BG;31;Предене, тъкачество
+100;BG;32;Облекло
+100;BG;41;Желязо и стомана
+100;BG;42;Превозни средства
+100;BG;43;Доставчик прев.сред.
+100;BG;44;Машиностроене
+100;BG;45;Специализ. механика
+100;BG;46;Инжен. металооб.маш.
+100;BG;47;Самолетостроене
+100;BG;51;Пивоварни, напитки
+100;BG;52;Хранене
+100;BG;61;Електр./електрон.об.
+100;BG;62;Компютри и ОбрабДанн
+100;BG;63;Софтуер
+100;BG;64;Телекомуникации
+100;BG;71;Потребителски стоки
+100;BG;72;Трафик и транспорт
+100;BG;73;Отдих и хотел
+100;BG;81;Търговски банки
+100;BG;82;Ипотечни банки
+100;BG;83;Животозастраховане
+100;BG;84;Застрах. имущества
+100;BG;85;Презастраховане
+100;BG;86;Застрахов. холдинги
+100;BG;91;Търговия
+100;BG;92;Фармацевт. търговия
+100;BG;93;Издат. дейн. и медии
+100;BG;94;Околна среда
+100;BG;99;Други
+100;LT;0001;Standartinė pramonė
+100;LT;0002;Pramonės šaka 0002
+100;LT;0003;Pramonės šaka 0003
+100;LT;01;Diversifik. kontrol.
+100;LT;02;Finansų paslaugos
+100;LT;03;Nekiln. t.
+100;LT;10;Energ. tiek./pask.
+100;LT;11;Nafta, dujos
+100;LT;12;Žaliavos
+100;LT;13;Taurieji metalai
+100;LT;21;Chemijos pramonė
+100;LT;22;Sveikata
+100;LT;23;Stiklas
+100;LT;24;Statybos pramonė
+100;LT;25;Pastato tiekėjas
+100;LT;26;Popierius ir masė
+100;LT;27;Mediena ir infrastr.
+100;LT;31;Verpimo fab., audim.
+100;LT;32;Drabužiai
+100;LT;41;Geležis ir plienas
+100;LT;42;Transporto priemonės
+100;LT;43;Transp. priem. tiek.
+100;LT;44;Mašinų gamyba
+100;LT;45;Specializuotų mašinų
+100;LT;46;Įrenginių gamyba
+100;LT;47;Lėktuvų statyba
+100;LT;51;Alaus dar., gėrimai
+100;LT;52;Mityba
+100;LT;61;Elektrotechnika
+100;LT;62;Komp. ir duom. apd.
+100;LT;63;Programinė įranga
+100;LT;64;Telekomunikacijos
+100;LT;71;Vartojimo produktai
+100;LT;72;Eismas ir transport.
+100;LT;73;Laisval. ir viešbuč.
+100;LT;81;Komerciniai bankai
+100;LT;82;Hipotekos bankai
+100;LT;83;Gyvybės draudimas
+100;LT;84;Ne gyvybės draudimas
+100;LT;85;Perdraudimas
+100;LT;86;Draudimo kontr.bend.
+100;LT;91;Prekyba
+100;LT;92;Farmacija – prekyba
+100;LT;93;Leidyba ir žiniaskl.
+100;LT;94;Aplinka
+100;LT;99;Įvairūs
+100;LV;0001;Standarta nozare
+100;LV;0002;Nozare 0002
+100;LV;0003;Nozare 0003
+100;LV;01;Daudznozaru uzņēmums
+100;LV;02;Finanšu pakalpojumi
+100;LV;03;Nekustamais īpašums
+100;LV;10;Energoapgāde/sadale
+100;LV;11;Nafta, gāze
+100;LV;12;Izejmateriāli
+100;LV;13;Dārgmetāli
+100;LV;21;Ķīmijas rūpniecība
+100;LV;22;Veselība
+100;LV;23;Stikls
+100;LV;24;Celtniecības nozare
+100;LV;25;Ēku apgādes uzņēmums
+100;LV;26;Papīrs un celuloze
+100;LV;27;Kokmat. un infrastr.
+100;LV;31;Vērpšana, aušana
+100;LV;32;Apģērbs
+100;LV;41;Dzelzs un tērauds
+100;LV;42;Transportlīdzekļi
+100;LV;43;Transportlīdz. pieg.
+100;LV;44;Tehniskā inženierija
+100;LV;45;Special. mašīnbūve
+100;LV;46;Darbgaldu inženier.
+100;LV;47;Lidm. konstruēšana
+100;LV;51;Alus dar., dzērieni
+100;LV;52;Barības vielas
+100;LV;61;Elektroiek./el-tehn.
+100;LV;62;Datori un datu apst.
+100;LV;63;Programmatūra
+100;LV;64;Telekomunikācijas
+100;LV;71;Patērētāju produkti
+100;LV;72;Satiksme un transp.
+100;LV;73;Izklaide un viesnīca
+100;LV;81;Komercbankas
+100;LV;82;Hipotēku bankas
+100;LV;83;Dzīvības apdrošin.
+100;LV;84;Apdr., kas nav dzīv.
+100;LV;85;Pārapdrošināšana
+100;LV;86;Apdroš. holdingi
+100;LV;91;Tirdzniecība
+100;LV;92;Farmācijas tirdzn.
+100;LV;93;Izdevn. un mediji
+100;LV;94;Vide
+100;LV;99;Dažādi
+100;CA;0001;Indústria estàndard
+100;CA;0002;Ram 0002
+100;CA;0003;Ram 0003
+100;CA;01;Propietat diversif.
+100;CA;02;Serveis financers
+100;CA;03;Bé immoble
+100;CA;10;Subm./distr.energia
+100;CA;11;Petroli, gas
+100;CA;12;Primeres matèries
+100;CA;13;Metalls preciosos
+100;CA;21;Indústria química
+100;CA;22;Salut
+100;CA;23;Vidre
+100;CA;24;Ind.construcció
+100;CA;25;Proveïdor construcc.
+100;CA;26;Paper i pasta paper
+100;CA;27;Fusta i infraestr.
+100;CA;31;Filatures i teixits
+100;CA;32;Confecció
+100;CA;41;Ferro i acer
+100;CA;42;Vehicles
+100;CA;43;Proveïdor vehicles
+100;CA;44;Enginyeria mecànica
+100;CA;45;Mecànica especialit.
+100;CA;46;Enginyeria màq.eines
+100;CA;47;Construcció avions
+100;CA;51;Cerveseries, begudes
+100;CA;52;Nutrició
+100;CA;61;Equip.elèctr./Electr
+100;CA;62;Ordin.i proc.dades
+100;CA;63;Programari
+100;CA;64;Telecomunicacions
+100;CA;71;Productes de consum
+100;CA;72;Trànsit i transport
+100;CA;73;Oci i hotel
+100;CA;81;Bancs comercials
+100;CA;82;Bancs hipotecaris
+100;CA;83;Assegurances de vida
+100;CA;84;Assegur.no de vida
+100;CA;85;Reassegurances
+100;CA;86;Cartera assegurances
+100;CA;91;Comerç
+100;CA;92;Comerç farmacèutic
+100;CA;93;Publicació i mitjans
+100;CA;94;Medi ambient
+100;CA;99;Altres
+100;SH;0001;Standard.industrija
+100;SH;0002;Grana industrije0002
+100;SH;0003;Grana industrije0003
+100;SH;01;Raznovrsni holding
+100;SH;02;Finansijske usluge
+100;SH;03;Nekretnine
+100;SH;10;Ispor./ distr.energ.
+100;SH;11;Nafta, gas
+100;SH;12;Sirovine
+100;SH;13;Plemeniti metali
+100;SH;21;Hemijska industrija
+100;SH;22;Zdravlje
+100;SH;23;Staklo
+100;SH;24;Građevinska industr.
+100;SH;25;Dobav.građevin.mat.
+100;SH;26;Papir i celuloza
+100;SH;27;Drvo i infrastrukt.
+100;SH;31;Predionica, tkanje
+100;SH;32;Odeća
+100;SH;41;Gvožđe i čelik
+100;SH;42;Vozila
+100;SH;43;Dobavljač vozila
+100;SH;44;Mašinstvo
+100;SH;45;Specijaliz.mehaničar
+100;SH;46;Ind.alatnih mašina
+100;SH;47;Konstrukc.letelica
+100;SH;51;Pivare, pića
+100;SH;52;Ishrana
+100;SH;61;Elekt.uređ./ elektr.
+100;SH;62;Komp.i obrada pod.
+100;SH;63;Softver
+100;SH;64;Telekomunikacije
+100;SH;71;Potrošna roba
+100;SH;72;Saobraćaj i transp.
+100;SH;73;Slob.vreme i hotel
+100;SH;81;Komercijalne banke
+100;SH;82;Hipotekarne banke
+100;SH;83;Životno osiguranje
+100;SH;84;Neživotno osiguranje
+100;SH;85;Reosiguranje
+100;SH;86;Osiguravajuća društ.
+100;SH;91;Trgovanje
+100;SH;92;Trg.farmac.proizvod.
+100;SH;93;Izdavaštvo i mediji
+100;SH;94;Okruženje
+100;SH;99;Razno
+100;HI;0001;उद्योग 0001
+100;HI;0002;उद्योग 0002
+100;HI;0003;उद्योग 0003
+100;HI;01;विविध धारण
+100;HI;02;वित्तीय सेवाएं
+100;HI;03;अचल सम्पत्ति
+100;HI;10;ऊर्जा आपूर्ति /वितरण
+100;HI;11;तेल, गैस
+100;HI;12;कच्‍चे माल
+100;HI;13;कीमती धातु
+100;HI;21;रासायनिक उद्योग
+100;HI;22;स्वास्थ्य
+100;HI;23;शीशा
+100;HI;24;निर्माण उद्योग
+100;HI;25;भवन आपूर्तिकर्ता
+100;HI;26;पेपर और पल्प
+100;HI;27;टिंबर और अवसंरचना
+100;HI;31;स्पिनिंग मिल, वीविंग
+100;HI;32;पोशाक
+100;HI;41;आयरन और स्टील
+100;HI;42;वाहन
+100;HI;43;वाहन आपूर्तिकर्ता
+100;HI;44;यांत्रिक अभियांत्रि.
+100;HI;45;विशेष यांत्रिकी
+100;HI;46;मशीन टूल अभियांत्रि.
+100;HI;47;वायुयान निर्माण
+100;HI;51;मद्य, पेय-पदार्थ
+100;HI;52;पोषण
+100;HI;61;इलेक्ट्रिकल / इले.
+100;HI;62;कंप्यूटर और डेटा P
+100;HI;63;सॉफ़्टवेयर
+100;HI;64;दूरसंचार
+100;HI;71;उपभोक्ता उत्पाद
+100;HI;72;ट्रैफ़िक और परिवहन
+100;HI;73;विश्राम और होटेल
+100;HI;81;वाणिज्यिक बैंक
+100;HI;82;बंधक ऋण बैंक
+100;HI;83;जीवन बीमा
+100;HI;84;सर्वसाधारण बीमा
+100;HI;85;पुनःबीमा
+100;HI;86;बीमा धारण
+100;HI;91;व्यापार
+100;HI;92;औषधीय व्यापार
+100;HI;93;प्रकाशन और मीडिया
+100;HI;94;परिवेश
+100;HI;99;विविध
+100;KK;0001;Өнеркәс. саласы 0001
+100;KK;0002;Өнеркәс. саласы 0002
+100;KK;0003;Өнеркәс. саласы 0003
+100;KK;01;Көп салалы холдинг
+100;KK;02;Қаржылық қызметтер
+100;KK;03;Жылжымайтын мүлік
+100;KK;10;Энергия қамту/тарату
+100;KK;11;Мұнай, газ
+100;KK;12;Шикізат
+100;KK;13;Асыл металдар
+100;KK;21;Химия саласы
+100;KK;22;Денсаулық
+100;KK;23;Әйнек
+100;KK;24;Құрылыс
+100;KK;25;Жеткізуші құрылысшы
+100;KK;26;Қағаз және целлюлоза
+100;KK;27;Орман инфрақұрылымы
+100;KK;31;Иіру мен тоқымашылық
+100;KK;32;Киім, сән
+100;KK;41;Темір және болат
+100;KK;42;Көліктер
+100;KK;43;Көлік жеткізушісі
+100;KK;44;Машина құрастыру
+100;KK;45;Арнайы машина құрас.
+100;KK;46;Станок құрастыру
+100;KK;47;Ұшақ құрастыру
+100;KK;51;Сыра қайн.орын,сусын
+100;KK;52;Тамақтану
+100;KK;61;Электрлік жабдық
+100;KK;62;Компьютер мен дер.ө.
+100;KK;63;Бағд. жасақтама
+100;KK;64;Телебайланыс
+100;KK;71;Тұтынушы тауарлары
+100;KK;72;Трафик пен көлік
+100;KK;73;Демалыс және қонақүй
+100;KK;81;Коммерциялық банктер
+100;KK;82;Ипотекалық банктер
+100;KK;83;Өмір сақтандырулары
+100;KK;84;ӨмСақт.өзге сақт-лар
+100;KK;85;Қайталама сақт-лар
+100;KK;86;СақтандырХолдингтері
+100;KK;91;Сауда
+100;KK;92;ФармацевтикалықСауда
+100;KK;93;Баспа әрек. мен БАҚ
+100;KK;94;Орта
+100;KK;99;Әр түрлі
+100;VI;0001;Ngành CN chuẩn
+100;VI;0002;Ngành 0002
+100;VI;0003;Ngành 0003
+100;VI;01;Tài sản đa dạng
+100;VI;02;D.vụ tài chính
+100;VI;03;Bất động sản
+100;VI;10;C.cấp / p.phối NL
+100;VI;11;Dầu, khí
+100;VI;12;Vật liệu thô
+100;VI;13;Kim loại quý hiếm
+100;VI;21;Công nghiệp h.chất
+100;VI;22;Y tế
+100;VI;23;Thủy tinh
+100;VI;24;Công nghiệp x.dựng
+100;VI;25;Nhà c.ứng c.trình
+100;VI;26;Giấy và bột giấy
+100;VI;27;Gỗ và cs hạ tầng
+100;VI;31;Xưởng k.sợi, dệt
+100;VI;32;May mặc
+100;VI;41;Sắt thép
+100;VI;42;Phương tiện đi lại
+100;VI;43;NCC phương tiện
+100;VI;44;Kỹ thuật cơ khí
+100;VI;45;C.khí chuyên ngành
+100;VI;46;T.kế máy công cụ
+100;VI;47;Chế tạo máy bay
+100;VI;51;N.máy bia, đ.uống
+100;VI;52;Dinh dưỡng
+100;VI;61;Điện / Điện tử
+100;VI;62;Máy tính và dl P
+100;VI;63;Phần mềm
+100;VI;64;Viễn thông
+100;VI;71;Hàng tiêu dùng
+100;VI;72;Giao thông vận tải
+100;VI;73;G.trí và k.sạn
+100;VI;81;Ngân hàng th.mại
+100;VI;82;Ngân hàng th.chấp
+100;VI;83;Bảo hiểm nhân thọ
+100;VI;84;BH phi nhân thọ
+100;VI;85;Tái bảo hiểm
+100;VI;86;Tài sản bảo hiểm
+100;VI;91;Thương mại
+100;VI;92;Kinh doanh dược
+100;VI;93;XB và truyền thông
+100;VI;94;Môi trường
+100;VI;99;Khác

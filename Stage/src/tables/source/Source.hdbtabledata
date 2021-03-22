@@ -1,0 +1,184 @@
+{
+	"format_version": 1,
+	"imports": [{
+			"target_table": "Source.VT_KNA1",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "KNA1.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+        	}
+		},
+		{
+			"target_table": "Source.VT_LFA1",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "LFA1.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_MAKT",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "MAKT.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		},
+		{	
+			"target_table": "Source.VT_MARA",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "MARA.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_T001W",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "T001W.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"				
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_T005F",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "T005F.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"				
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_T005T",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "T005T.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"				
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_T005U",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "T005U.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"				
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_T016",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "T016.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_T016T",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "T016T.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"				
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_T023T",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "T023T.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_T179",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "T179.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_TKUKT",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "TKUKT.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_VBAK",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "VBAK.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		},
+		{
+			"target_table": "Source.VT_VBAP",
+			"source_data": {
+				"data_type": "CSV",
+				"file_name": "VBAP.csv",
+				"has_header": true,
+				"dialect": "HANA",
+				"type_config": {
+					"delimiter": ";"
+				}
+			}
+		}
+	]
+}
