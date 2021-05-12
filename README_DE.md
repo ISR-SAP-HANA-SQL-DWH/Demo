@@ -18,12 +18,14 @@ Sie können die Modelle selbstverständlich individuell anpassen und eigene Vari
 Im Buch finden Sie alles Aspekte zur Modellierung in SAP PowerDesigner in den Kapiteln 7 und 8. 
 
 ## Jenkinsfile
-Mit der Jenkinsfile bieten wir Ihnen zudem die Möglichkeit, das Demo SAP SQL DWH über dieses Git-Repository automatisch in einem von Ihnen definierten SAP HANA Space zu deployen. Im Buch haben wir diese Thematik in Kapitel 10 beschriebe. Zur praktischen Umsetzung müssen Sie nur folgende Dinge tun:
+Mit der Jenkinsfile bieten wir Ihnen zudem die Möglichkeit, das Demo SAP SQL DWH über dieses Git-Repository automatisch in einem von Ihnen definierten SAP HANA Space zu deployen. Im Buch haben wir diese Thematik in Kapitel 10 beschrieben. Zur praktischen Umsetzung müssen Sie nur folgende Dinge tun:
 
-### Aufbau eines HANA-Datenbankusers
-Um mit Jenkins eine automatisierte Deployment Pipeline aufzubauen, die den XSA-Client nutzt um die im Git definierte DWH-Applikation in einem SAP HANA Space umzusetzen, brauchen Sie zunächst einen Datenbank- und einen XSA-User, der über die nötigen Berechtigungen verfügt. 
+### Aufbau eines HANA-Datenbankusers und eines XSA-Users
+Um mit Jenkins eine automatisierte Deployment Pipeline aufzubauen, die den XSA-Client nutzt um die im Git definierte DWH-Applikation in einem SAP HANA Space umzusetzen sowie automatische Tests auszuführen, brauchen Sie zunächst einen HANA-Datenbank- und einen XSA-User, die über die nötigen Berechtigungen verfügen. 
 
-Nachfolgend finden Sie ein Skript mit SQL-Befehlen, die den User **TU_CICD** und **XSA_CICD** erstellen. Dieser wird gleichzeitig zum XSA-User und erhält die nötigen XSA-Berechtigungen. Das Skript teilt sich in die Teile vor und nach dem Deployment. Mit den Befehlen nach dem Deplyoment erhalten Sie Zugriff auf alle DWH-Objekte in den verschiedenen Schichten und können den User TU_CICD nicht nur für das automatische Deployment mit Jenkins, sondern auch für Analysen mit SAP Analytics Cloud nutzen. 
+Nachfolgend finden Sie ein Skript mit SQL-Befehlen, die den User **TU_CICD** und **XSA_CICD** erstellen. Dieser wird gleichzeitig zum XSA-User und erhält die nötigen XSA-Berechtigungen. 
+
+Das Skript teilt sich in die Teile **vor** und **nach** dem Deployment. Die Befehle vor dem Deployment sind notwendig, um die User zu erstllen und ihnen die nötigen Berechtigungen zum Deployment über XSA und in der SAP-HANA-Datenbank zu geben. Mit den Befehlen nach dem Deplyoment erhalten Sie Zugriff auf alle DWH-Objekte in den verschiedenen Schichten und können den User TU_CICD nicht nur für das automatische Deployment mit Jenkins, sondern auch für Analysen mit SAP Analytics Cloud nutzen. 
 
 Sie müssen das Skript dazu nur mit einem umfassend berechtigten Datenbankuser, wie **SYSTEM** über die SQL Konsole im SAP HANA Database Explorer oder SAP HANA Studio zu den genanten Zeitpunkten auf dem Tenant, auf dem Sie das Demo-DWH deployen wollen, das Skript ausführen.
 
@@ -41,25 +43,19 @@ SET PARAMETER 'XS_RC_XS_CONTROLLER_USER' = 'XS_CONTROLLER_USER',
     'XS_RC_XS_USER_PUBLIC'='XS_USER_PUBLIC',
     'XS_RC_XS_CONTROLLER_USER'='XS_CONTROLLER_USER'
 
--- create roles
+-- create role
 CREATE ROLE HANA_ACCESS;
 GRANT MODELING TO DWH_ACCESS;
 GRANT MONITORING TO DWH_ACCESS;
 GRANT sap.hana.im.api.roles::Execute TO DWH_ACCESS;
 
-CREATE ROLE SAC_ACCESS;
-GRANT sap.bc.ina.service.v2.userRole::INA_USER TO SAC_ACCESS;
-GRANT sap.hana.im.dp.monitor.roles::Monitoring TO SAC_ACCESS;
-GRANT sap.hana.im.dp.monitor.roles::Operations TO SAC_ACCESS;
-
 -- grant roles to hana-user
 GRANT HANA_ACCESS TO TU_CICD;
-GRANT SAC_ACCESS TO TU_CICD;
 
 
 -- after dwh-deployment
 
--- create role
+-- create roles
 CREATE ROLE DWH_ACCESS;
 GRANT DW_STAGE::access_role TO DWH_ACCESS;
 GRANT DW_CORE::access_role TO DWH_ACCESS;
@@ -67,12 +63,18 @@ GRANT DW_VAL::access_role TO DWH_ACCESS;
 GRANT DW_DM::access_role TO DWH_ACCESS;
 GRANT CV_DM_SALES_ORDER_WGO TO DWH_ACCESS;
 
+CREATE ROLE SAC_ACCESS;
+GRANT sap.bc.ina.service.v2.userRole::INA_USER TO SAC_ACCESS;
+GRANT sap.hana.im.dp.monitor.roles::Monitoring TO SAC_ACCESS;
+GRANT sap.hana.im.dp.monitor.roles::Operations TO SAC_ACCESS;
+
 -- grant roles to hana-user
 GRANT DWH_ACCESS TO TU_CICD;
+GRANT SAC_ACCESS TO TU_CICD;
 ```
 
 ### Jenkins Konfiguration
-Sie müssen in Jenkins die User TU_CICD und XSA_CICD erstellen. Sie müssen eine Multibranch Pipeline erstellen. Für 
+Wenn Sie Jenkins noch nicht installiert haben, laden Sie sich das Programm unter https://www.jenkins.io/download/ herunter und installieren es lokal oder auf einem sonstigen Server, den Sie dafür nutzen können. Nach der Installation hinterlegen Sie in Jenkins im Bereich **Credentials**, den Sie über die Menüpunkte *Jenkins verwalten / Manage Credentials* aufrufen können die User TU_CICD und XSA_CICD mit Passwort. Darüber hinaus legen Sie  eine **Multibranch Pipeline** an und definieren als **Project Repository** https://github.com/ISR-SAP-HANA-SQL-DWH/Demo. 
 
 ### Installation XSA-Client
 Sie können den **XSA-Client** im SAP ONE Support Launchpad unter https://launchpad.support.sap.com/#/softwarecenter/search/xsa%2520client für verschiedene Betriebssysteme herunterladen. Den Client installieren Sie auf dem Server, auf dem Sie auch Jenkins installiert haben. In der Jenkinsfile müssen Sie später Angaben zu dem Verzeichnis machen, in dem der XSA-Client installiert ist. 
