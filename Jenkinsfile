@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        HANA_XSA_CREDS      = credentials('TU_CICD')
+        HANA_XSA_CREDS      = credentials('XSA_CICD')
         XSA_API_ENDPOINT    = <<XSA_API_Endpoint>>
         ORGANIZATION        = <<XSA_Organization>>
         CI_SPACE            = <<XSA_Space>>
