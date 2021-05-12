@@ -1,17 +1,20 @@
 # Herzlich Willkommen im Git Repository zum Buch »SQL Data Warehousing mit SAP HANA«!
 
 ## Demo SAP SQL DWH
-In diesem Git haben wir das im Buch beispielhaft entwickelte SAP SQL DWH voll funktionstüchtig für Sie abgelegt. Mithilfe von SAP Web IDE sind Sie so in der Lage in wenigen Klicks die Beispiel-Anwendung als Klon in Ihren Workspace herunterzuladen und das DWH mit all seinen Schichten auf Ihrer SAP HANA zu bauen und umzusetzen. 
-Ein Grundstock an Beispieldaten ist dazu im Stage-Layer in Form von CSV-Dateien integriert, so dass Sie auf Ebene der Calculation Views unmittelbar Daten visualisieren können. 
+In diesem Git Repository haben wir das im Buch beispielhaft entwickelte SAP SQL DWH voll funktionstüchtig für Sie abgelegt. Mithilfe von SAP Web IDE sind Sie so in der Lage in wenigen Klicks die Beispiel-Anwendung als Klon in Ihren Workspace herunterzuladen und das DWH mit all seinen Schichten auf Ihrer SAP HANA zu bauen und umzusetzen. 
+
+Ein Grundstock an **Beispieldaten** ist dazu im Stage-Layer in Form von CSV-Dateien integriert, so dass Sie auf Ebene der Calculation Views unmittelbar Daten visualisieren können. 
 
 Die Anwendung steht Ihnen zur freien Verfügung. Sie können den Beschreibungen im Buch entsprechend auch eigene Datenquellen anbinden und das SAP SQL DWH nach Ihren Vorstellungen verändern. 
+
+Veränderungen, Verbesserungsvorschläge und ähnliches können Sie gerne auch in einem **Fork** wieder in das Git einbringen und so für eine Weiterentwicklung unseres Ansatzes sorgen. 
 
 Im Buch haben wir die Entwicklung in SAP Web IDE in Kapitel 9 beschrieben. 
 
 ## PowerDesigner-Modelle
-Neben der DWH-Anwendung, in den branches master, release und development, haben wir auch die in SAP PowerDesigner modellierten Datenmodelle für Sie abgelegt. Diese finden Sie im branch PowerDesigner im Ordner Demo. Hier können Sie sich mit der Datei Demo.prj das zusammenhängende PowerDesigner-Projekt in Ihren PowerDesigner-Workspace laden. 
+Neben der DWH-Anwendung, in den branches master, release und development, haben wir auch die in SAP PowerDesigner modellierten Datenmodelle für Sie abgelegt. Diese finden Sie im branch PowerDesigner im Ordner Demo. Hier können Sie sich mit der Datei **Demo.prj** das zusammenhängende PowerDesigner-Projekt in Ihren PowerDesigner-Workspace laden. 
 
-Mit der Datei S4HANA.xlsx, die Sie im branch PowerDesigner finden, stellen wir Ihnen auch die Metadaten der Tabellen des von uns in unserem Beispielfall verwendeten S/4HANA-Systems zur Verfügung. Hierdurch sind Sie in der Lage das beschriebene Reverse Engineering auch selbst nachzuvollziehen. 
+Mit der Datei **S4HANA.xlsx**, die Sie im branch PowerDesigner finden, stellen wir Ihnen auch die Metadaten der Tabellen des von uns in unserem Beispielfall verwendeten S/4HANA-Systems zur Verfügung. Hierdurch sind Sie in der Lage das beschriebene Reverse Engineering auch selbst nachzuvollziehen. 
 
 Sie können die Modelle selbstverständlich individuell anpassen und eigene Varianten exportieren und in SAP Web IDE importieren. 
 
@@ -25,12 +28,12 @@ Um mit Jenkins eine automatisierte Deployment Pipeline aufzubauen, die den XSA-C
 
 Nachfolgend finden Sie ein Skript mit SQL-Befehlen, die den User **TU_CICD** und **XSA_CICD** erstellen. Dieser wird gleichzeitig zum XSA-User und erhält die nötigen XSA-Berechtigungen. 
 
-Das Skript teilt sich in die Teile **vor** und **nach** dem Deployment. Die Befehle vor dem Deployment sind notwendig, um die User zu erstllen und ihnen die nötigen Berechtigungen zum Deployment über XSA und in der SAP-HANA-Datenbank zu geben. Mit den Befehlen nach dem Deplyoment erhalten Sie Zugriff auf alle DWH-Objekte in den verschiedenen Schichten und können den User TU_CICD nicht nur für das automatische Deployment mit Jenkins, sondern auch für Analysen mit SAP Analytics Cloud nutzen. 
+Das Skript teilt sich in die Teile **vor** und **nach** dem DWH-Deployment. Die Befehle vor dem Deployment sind notwendig, um die User zu erstllen und ihnen die nötigen Berechtigungen zum Deployment über XSA und in der SAP-HANA-Datenbank zu geben. Mit den Befehlen nach dem Deplyoment erhalten Sie Zugriff auf alle DWH-Objekte in den verschiedenen Schichten und können den User TU_CICD nicht nur für das automatische Deployment mit Jenkins, sondern auch für Analysen mit SAP Analytics Cloud nutzen. 
 
 Sie müssen das Skript dazu nur mit einem umfassend berechtigten Datenbankuser, wie **SYSTEM** über die SQL Konsole im SAP HANA Database Explorer oder SAP HANA Studio zu den genanten Zeitpunkten auf dem Tenant, auf dem Sie das Demo-DWH deployen wollen, das Skript ausführen.
 
 ```sql
--- before deployment
+-- before dwh deployment
 
 -- create hana-user
 CREATE USER TU_CICD PASSWORD "Password";
@@ -53,7 +56,7 @@ GRANT sap.hana.im.api.roles::Execute TO DWH_ACCESS;
 GRANT HANA_ACCESS TO TU_CICD;
 
 
--- after dwh-deployment
+-- after dwh deployment
 
 -- create roles
 CREATE ROLE DWH_ACCESS;
@@ -74,7 +77,7 @@ GRANT SAC_ACCESS TO TU_CICD;
 ```
 
 ### Jenkins Konfiguration
-Wenn Sie Jenkins noch nicht installiert haben, laden Sie sich das Programm unter https://www.jenkins.io/download/ herunter und installieren es lokal oder auf einem sonstigen Server, den Sie dafür nutzen können. Nach der Installation hinterlegen Sie in Jenkins im Bereich **Credentials**, den Sie über die Menüpunkte *Jenkins verwalten / Manage Credentials* aufrufen können die User TU_CICD und XSA_CICD mit Passwort. Darüber hinaus legen Sie  eine **Multibranch Pipeline** an und definieren als **Project Repository** https://github.com/ISR-SAP-HANA-SQL-DWH/Demo. 
+Wenn Sie Jenkins noch nicht installiert haben, laden Sie sich das Programm unter https://www.jenkins.io/download/ herunter und installieren es lokal oder auf einem sonstigen Server, den Sie dafür nutzen können. Nach der Installation hinterlegen Sie in Jenkins im Bereich **Credentials**, den Sie über die Menüpunkte *Jenkins verwalten / Manage Credentials* aufrufen können die User **TU_CICD** und **XSA_CICD** mit Passwort. Darüber hinaus legen Sie  eine **Multibranch Pipeline** an und definieren als **Project Repository** https://github.com/ISR-SAP-HANA-SQL-DWH/Demo. 
 
 ### Installation XSA-Client
 Sie können den **XSA-Client** im SAP ONE Support Launchpad unter https://launchpad.support.sap.com/#/softwarecenter/search/xsa%2520client für verschiedene Betriebssysteme herunterladen. Den Client installieren Sie auf dem Server, auf dem Sie auch Jenkins installiert haben. In der Jenkinsfile müssen Sie später Angaben zu dem Verzeichnis machen, in dem der XSA-Client installiert ist. 
