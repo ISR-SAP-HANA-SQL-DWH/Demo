@@ -75,7 +75,7 @@ GRANT DWH_ACCESS TO TU_CICD;
 ### Installation XSA-Client
 Sie können den **XSA-Client** im SAP ONE Support Launchpad unter https://launchpad.support.sap.com/#/softwarecenter/search/xsa%2520client für verschiedene Betriebssysteme herunterladen. Den Client installieren Sie auf dem Server, auf dem Sie auch Jenkins installiert haben. In der Jenkinsfile müssen Sie später Angaben zu dem Verzeichnis machen, in dem der XSA-Client installiert ist. 
 
-### Installation mbt
+### Installation MBT
 Sie benötigen das **MTA Build Tool (MBT)**, das Sie unter https://sap.github.io/cloud-mta-build-tool/download/ herunterladen können. Auch das MTB installieren Sie auf dem Jenkins Server und merken sich das Installationsverzeichnis für die Jenkinsfile.
 
 ### Installation nvm
