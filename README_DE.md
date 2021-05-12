@@ -30,11 +30,11 @@ Sie müssen das Skript dazu nur mit einem umfassend berechtigten Datenbankuser, 
 ```sql
 -- before deployment
 
--- create HANA-user
+-- create hana-user
 CREATE USER TU_CICD PASSWORD "Password";
 ALTER USER TU_CICD DISABLE PASSWORD LIFETIME;
 
--- create XSA-user out of HANA-user with required priviliges
+-- create xsa-user out of hana-user with required priviliges
 SET PARAMETER 'XS_RC_XS_CONTROLLER_USER' = 'XS_CONTROLLER_USER',
     'XS_RC_XS_USER_PUBLIC'='XS_USER_PUBLIC',
     'XS_RC_XS_CONTROLLER_USER'='XS_CONTROLLER_USER'
@@ -50,12 +50,12 @@ GRANT sap.bc.ina.service.v2.userRole::INA_USER TO SAC_ACCESS;
 GRANT sap.hana.im.dp.monitor.roles::Monitoring TO SAC_ACCESS;
 GRANT sap.hana.im.dp.monitor.roles::Operations TO SAC_ACCESS;
 
--- grant roles to HANA-user
+-- grant roles to hana-user
 GRANT HANA_ACCESS TO TU_CICD;
 GRANT SAC_ACCESS TO TU_CICD;
 
 
--- after DWH-Deployment
+-- after dwh-deployment
 
 -- create role
 CREATE ROLE DWH_ACCESS;
@@ -65,7 +65,7 @@ GRANT DW_VAL::access_role TO DWH_ACCESS;
 GRANT DW_DM::access_role TO DWH_ACCESS;
 GRANT CV_DM_SALES_ORDER_WGO TO DWH_ACCESS;
 
--- grant roles to HANA-user
+-- grant roles to hana-user
 GRANT DWH_ACCESS TO TU_CICD;
 ```
 
