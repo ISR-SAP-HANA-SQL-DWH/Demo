@@ -1,4 +1,4 @@
-# Herzlich Willkommen im Git Repository zum Buch »SQL Data Warehousing mit SAP HANA«!
+# Herzlich Willkommen im Git Repository zum Buch "SQL Data Warehousing mit SAP HANA"!
 
 ## Demo SAP SQL DWH
 In diesem Git Repository haben wir das im Buch beispielhaft entwickelte SAP SQL DWH voll funktionstüchtig für Sie abgelegt. Mithilfe von SAP Web IDE sind Sie so in der Lage in wenigen Klicks die Beispiel-Anwendung als Klon in Ihren Workspace herunterzuladen und das DWH mit all seinen Schichten auf Ihrer SAP HANA zu bauen und umzusetzen. 
@@ -9,7 +9,7 @@ Die Anwendung steht Ihnen zur freien Verfügung. Sie können den Beschreibungen 
 
 Veränderungen, Verbesserungsvorschläge und ähnliches können Sie gerne auch in einem **Fork** wieder in das Git einbringen und so für eine Weiterentwicklung unseres Ansatzes sorgen. 
 
-Im Buch haben wir die Entwicklung in SAP Web IDE in Kapitel 9 beschrieben. 
+Im Buch beschreiben wir die Entwicklung in SAP Web IDE in Kapitel 9. 
 
 ## PowerDesigner-Modelle
 Neben der DWH-Anwendung, in den branches master, release und development, haben wir auch die in SAP PowerDesigner modellierten Datenmodelle für Sie abgelegt. Diese finden Sie im branch PowerDesigner im Ordner Demo. Hier können Sie sich mit der Datei **Demo.prj** das zusammenhängende PowerDesigner-Projekt in Ihren PowerDesigner-Workspace laden. 
@@ -26,7 +26,7 @@ Mit der Jenkinsfile bieten wir Ihnen zudem die Möglichkeit, das Demo SAP SQL DW
 ### Aufbau eines HANA-Datenbankusers und eines XSA-Users
 Um mit Jenkins eine automatisierte Deployment Pipeline aufzubauen, die den XSA-Client nutzt um die im Git definierte DWH-Applikation in einem SAP HANA Space umzusetzen sowie automatische Tests auszuführen, brauchen Sie zunächst einen HANA-Datenbank- und einen XSA-User, die über die nötigen Berechtigungen verfügen. 
 
-Nachfolgend finden Sie ein Skript mit SQL-Befehlen, die den User **TU_CICD** und **XSA_CICD** erstellen. Dieser wird gleichzeitig zum XSA-User und erhält die nötigen XSA-Berechtigungen. 
+Nachfolgend finden Sie ein Skript mit SQL-Befehlen, die die User **TU_CICD** und **XSA_CICD** erstellen.
 
 Das Skript teilt sich in die Teile **vor** und **nach** dem DWH-Deployment. Die Befehle vor dem Deployment sind notwendig, um die User zu erstllen und ihnen die nötigen Berechtigungen zum Deployment über XSA und in der SAP-HANA-Datenbank zu geben. Mit den Befehlen nach dem Deplyoment erhalten Sie Zugriff auf alle DWH-Objekte in den verschiedenen Schichten und können den User TU_CICD nicht nur für das automatische Deployment mit Jenkins, sondern auch für Analysen mit SAP Analytics Cloud nutzen. 
 
