@@ -23,7 +23,7 @@ Mit der Jenkinsfile bieten wir Ihnen zudem die Möglichkeit, das Demo SAP SQL DW
 ### Aufbau eines HANA-Datenbankusers
 Um mit Jenkins eine automatisierte Deployment Pipeline aufzubauen, die den XSA-Client nutzt um die im Git definierte DWH-Applikation in einem SAP HANA Space umzusetzen, brauchen Sie zunächst einen Datenbank- und einen XSA-User, der über die nötigen Berechtigungen verfügt. 
 
-Nachfolgend finden Sie ein Skript mit SQL-Befehlen, die den User **TU_CICD** erstellen. Dieser wird gleichzeitig zum XSA-User und erhält die nötigen XSA-Berechtigungen. Das Skript teilt sich in die Teile vor und nach dem Deployment. Mit den Befehlen nach dem Deplyoment erhalten Sie Zugriff auf alle DWH-Objekte in den verschiedenen Schichten und können den User TU_CICD nicht nur für das automatische Deployment mit Jenkins, sondern auch für Analysen mit SAP Analytics Cloud nutzen. 
+Nachfolgend finden Sie ein Skript mit SQL-Befehlen, die den User **TU_CICD** und **XSA_CICD** erstellen. Dieser wird gleichzeitig zum XSA-User und erhält die nötigen XSA-Berechtigungen. Das Skript teilt sich in die Teile vor und nach dem Deployment. Mit den Befehlen nach dem Deplyoment erhalten Sie Zugriff auf alle DWH-Objekte in den verschiedenen Schichten und können den User TU_CICD nicht nur für das automatische Deployment mit Jenkins, sondern auch für Analysen mit SAP Analytics Cloud nutzen. 
 
 Sie müssen das Skript dazu nur mit einem umfassend berechtigten Datenbankuser, wie **SYSTEM** über die SQL Konsole im SAP HANA Database Explorer oder SAP HANA Studio zu den genanten Zeitpunkten auf dem Tenant, auf dem Sie das Demo-DWH deployen wollen, das Skript ausführen.
 
@@ -35,6 +35,8 @@ CREATE USER TU_CICD PASSWORD "Password";
 ALTER USER TU_CICD DISABLE PASSWORD LIFETIME;
 
 -- create xsa-user out of hana-user with required priviliges
+CREATE USER XSA_CICD PASSWORD "Password";
+ALTER USER XSA_CICD DISABLE PASSWORD LIFETIME;
 SET PARAMETER 'XS_RC_XS_CONTROLLER_USER' = 'XS_CONTROLLER_USER',
     'XS_RC_XS_USER_PUBLIC'='XS_USER_PUBLIC',
     'XS_RC_XS_CONTROLLER_USER'='XS_CONTROLLER_USER'
@@ -70,7 +72,7 @@ GRANT DWH_ACCESS TO TU_CICD;
 ```
 
 ### Jenkins Konfiguration
-
+Sie müssen in Jenkins die User TU_CICD und XSA_CICD erstellen. Sie müssen eine Multibranch Pipeline erstellen. Für 
 
 ### Installation XSA-Client
 Sie können den **XSA-Client** im SAP ONE Support Launchpad unter https://launchpad.support.sap.com/#/softwarecenter/search/xsa%2520client für verschiedene Betriebssysteme herunterladen. Den Client installieren Sie auf dem Server, auf dem Sie auch Jenkins installiert haben. In der Jenkinsfile müssen Sie später Angaben zu dem Verzeichnis machen, in dem der XSA-Client installiert ist. 
