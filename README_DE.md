@@ -1,5 +1,4 @@
-# Herzlich Willkommen im Git Repository zum Buch 
-# »SQL Data Warehousing mit SAP HANA«!
+# Herzlich Willkommen im Git Repository zum Buch                                                                                                                    »SQL Data Warehousing mit SAP HANA«!
 
 ## Demo SAP SQL DWH
 In diesem Git haben wir das im Buch beispielhaft entwickelte SAP SQL DWH voll funktionstüchtig für Sie abgelegt. Mithilfe von SAP Web IDE sind Sie so in der Lage in wenigen Klicks die Beispiel-Anwendung als Klon in Ihren Workspace herunterzuladen und das DWH mit all seinen Schichten auf Ihrer SAP HANA zu bauen und umzusetzen. 
