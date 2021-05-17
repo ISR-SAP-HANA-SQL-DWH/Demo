@@ -92,5 +92,5 @@ Des Weiteren benötigen Sie noch den Versionsmanager für node.js **nvm**, den S
 In der Jenkinsfile müssen Sie alle durch Guillemets **<<>>** gekennzeichneten Parameter noch einfügen. Der Block zur Testautomation ist bereits enthalten. Wenn Sie also zunächst nur ein Deployment, ohne Test durchführen möchten, müssen Sie diesen Block entfernen. 
 
 ## Testautomation
-In der Jenkinsfile ist bereits ein kleiner Test definiert, der Namenskonventionen des Schemas DW_VAL überprüft. Das entsprechende Testmodul **Demo_TA** liegt in dem separaten Git Repository https://github.com/ISR-SAP-HANA-SQL-DWH/Demo_TA. Um den Test aus dem Repository, so wie wir ihn definiert haben auszuführen, müssen Sie lediglich in der Jenkinsfile im Block **'Test'** die durch Guillemets **<<>>** gekennzeichneten Parameter anpassen. 
+In der Jenkinsfile ist bereits ein kleiner Test definiert, der Namenskonventionen des Schemas DW_VAL überprüft. Das entsprechende Testmodul **Demo_TA** liegt in dem separaten Git Repository https://github.com/ISR-SAP-HANA-SQL-DWH/Demo_TA. Um den Test aus dem Repository, so wie wir ihn definiert haben, auszuführen, müssen Sie lediglich in der Jenkinsfile im Block **'Test'** die durch Guillemets **<<>>** gekennzeichneten Parameter anpassen. 
 
