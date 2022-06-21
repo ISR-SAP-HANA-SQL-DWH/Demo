@@ -1,0 +1,6 @@
+{
+  "sy_DUMMY": {"target": {"object": "DUMMY","schema": "SYS"}},
+  "sy_TASK_EXECUTIONS": {"target": {"object": "TASK_EXECUTIONS","schema": "_SYS_TASK"}},
+  "sy_TASKS": {"target": {"object": "TASKS","schema": "SYS"}},
+  "sy_PROCEDURES": {"target": {"object": "PROCEDURES","schema": "SYS"}}
+}

@@ -1,0 +1,1 @@
+{"type":"mta","builders":{"default":"mtabuilder","configs":{}},"runners":{"configs":{}},"attributes":{"sap.watt.common.setting":["{\"hdbInactiveFiles\":{\"inactiveFileList\":[\"/demo-modell/VAL/src/calcViews/CV_test.hdbcalculationview\"]}}"]},"mixinTypes":[]}

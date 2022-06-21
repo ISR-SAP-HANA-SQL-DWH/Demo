@@ -1,0 +1,20 @@
+{
+   "sy_CONSTRAINTS": {},
+   "sy_DATABASE": {},
+   "sy_DUMMY": {},
+   "sy_FUNCTIONS": {},
+   "sy_OBJECT_DEPENDENCIES": {},
+   "sy_PROCEDURE_PARAMETERS": {},
+   "sy_PROCEDURES": {},
+   "sy_SERIES_GENERATE_INTEGER": {},
+   "sy_SYNONYMS": {},
+   "sy_TABLE_COLUMNS": {},
+   "sy_TABLES": {},
+   "sy_TASKS": {},
+   "sy_TASK_OPERATIONS_EXECUTIONS": {},
+   "sy_TASK_PARTITION_EXECUTIONS": {},
+   "sy_TASK_EXECUTIONS": {},
+   "sy_VIEW_COLUMNS": {},
+   "sy_VIEWS": {},
+   "sy_VIRTUAL_TABLES": {}  
+}

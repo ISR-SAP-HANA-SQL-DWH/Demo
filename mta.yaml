@@ -5,6 +5,8 @@ modules:
   - name: Stage
     type: hdb
     path: Stage
+    parameters:
+      buildpack: nodejs_buildpack
     requires:
       - name: hdi_Stage
         properties:
@@ -12,6 +14,8 @@ modules:
   - name: Core
     type: hdb
     path: Core
+    parameters:
+      buildpack: nodejs_buildpack
     requires:
       - name: hdi_Core
         properties:
@@ -24,6 +28,8 @@ modules:
   - name: VAL
     type: hdb
     path: VAL
+    parameters:
+      buildpack: nodejs_buildpack
     requires:
       - name: hdi_VAL
         properties:
@@ -36,6 +42,8 @@ modules:
   - name: DM
     type: hdb
     path: DM
+    parameters:
+      buildpack: nodejs_buildpack
     requires:
      - name: hdi_DM
        properties:
@@ -53,6 +61,7 @@ resources:
     type: com.sap.xs.hdi-container
     parameters:
       config:
+        database_id: 67456125-096c-44f8-9198-fc881cd932c7
         schema: DW_STAGE
       service-name: hdi_Stage
   - name: hdi_Core
@@ -61,6 +70,7 @@ resources:
     type: com.sap.xs.hdi-container
     parameters:
       config:
+        database_id: 67456125-096c-44f8-9198-fc881cd932c7
         schema: DW_CORE
       service-name: hdi_Core
   - name: hdi_VAL
@@ -69,6 +79,7 @@ resources:
     type: com.sap.xs.hdi-container
     parameters:
       config:
+        database_id: 67456125-096c-44f8-9198-fc881cd932c7
         schema: DW_VAL
       service-name: hdi_VAL
   - name: hdi_DM
@@ -77,6 +88,7 @@ resources:
     type: com.sap.xs.hdi-container
     parameters:
       config:
+        database_id: 67456125-096c-44f8-9198-fc881cd932c7
         schema: DW_DM
       service-name: hdi_DM
   - name: ccs_dw_stage

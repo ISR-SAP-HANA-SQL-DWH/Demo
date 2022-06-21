@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_test" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="test"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="SY_H_R_SALES_DOCUMENT">
+    <resourceUri>SY_H_R_SALES_DOCUMENT</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="SY_H_R_SALES_DOCUMENT">
+  <attributes>
+    <attribute id="HCUSO_HK" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HCUSO_HK"/>
+      <keyMapping columnObjectName="SY_H_R_SALES_DOCUMENT" columnName="HCUSO_HK"/>
+    </attribute>
+    <attribute id="HCUSO_LD" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HCUSO_LD"/>
+      <keyMapping columnObjectName="SY_H_R_SALES_DOCUMENT" columnName="HCUSO_LD"/>
+    </attribute>
+    <attribute id="HCUSO_SRC" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="HCUSO_SRC"/>
+      <keyMapping columnObjectName="SY_H_R_SALES_DOCUMENT" columnName="HCUSO_SRC"/>
+    </attribute>
+    <attribute id="VBELN" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="VBELN"/>
+      <keyMapping columnObjectName="SY_H_R_SALES_DOCUMENT" columnName="VBELN"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

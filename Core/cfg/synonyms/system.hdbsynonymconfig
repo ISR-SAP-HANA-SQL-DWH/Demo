@@ -1,0 +1,20 @@
+{
+	"sy_CONSTRAINTS": { "target": { "object": "CONSTRAINTS", "schema": "SYS" } },
+	"sy_DATABASE": { "target": { "object": "M_DATABASE", "schema": "SYS" } },
+	"sy_DUMMY": { "target": { "object": "DUMMY", "schema": "SYS" } },
+	"sy_FUNCTIONS": { "target": { "object": "FUNCTIONS", "schema": "SYS" } },
+	"sy_OBJECT_DEPENDENCIES" : { "target" : { "schema" : "SYS", "object" : "OBJECT_DEPENDENCIES" } },
+	"sy_PROCEDURE_PARAMETERS" : { "target" : { "schema" : "SYS", "object" : "PROCEDURE_PARAMETERS" } },
+	"sy_PROCEDURES": { "target": { "object": "PROCEDURES", "schema": "SYS" } },
+	"sy_SERIES_GENERATE_INTEGER": { "target": { "object": "SERIES_GENERATE_INTEGER", "schema": "SYS" } },
+	"sy_SYNONYMS": { "target": { "object": "SYNONYMS", "schema": "SYS" } },
+	"sy_TABLE_COLUMNS": { "target": { "object": "TABLE_COLUMNS", "schema": "SYS" } },
+	"sy_TABLES": { "target": { "object": "TABLES", "schema": "SYS" } },
+	"sy_TASK_EXECUTIONS": { "target": { "object": "TASK_EXECUTIONS", "schema": "_SYS_TASK" } },
+	"sy_TASKS": { "target": { "object": "TASKS", "schema": "SYS" } },
+	"sy_TASK_OPERATIONS_EXECUTIONS": { "target": { "object": "TASK_OPERATIONS_EXECUTIONS", "schema": "_SYS_TASK" } },
+	"sy_TASK_PARTITION_EXECUTIONS": { "target": { "object": "TASK_PARTITION_EXECUTIONS", "schema": "_SYS_TASK" } },
+	"sy_VIEW_COLUMNS" : { "target" : { "schema" : "SYS", "object" : "VIEW_COLUMNS" } },
+	"sy_VIEWS" : { "target" : { "schema" : "SYS", "object" : "VIEWS" } },
+	"sy_VIRTUAL_TABLES" : { "target" : { "schema" : "SYS", "object" : "VIRTUAL_TABLES" } }  
+}

@@ -1,7 +1,7 @@
 {
 	"format_version": 1,
 	"imports": [{
-			"target_table": "Source.VT_KNA1",
+			"target_table": "VT_KNA1",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "KNA1.csv",
@@ -13,7 +13,7 @@
         	}
 		},
 		{
-			"target_table": "Source.VT_LFA1",
+			"target_table": "VT_LFA1",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "LFA1.csv",
@@ -25,7 +25,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_MAKT",
+			"target_table": "VT_MAKT",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "MAKT.csv",
@@ -37,7 +37,7 @@
 			}
 		},
 		{	
-			"target_table": "Source.VT_MARA",
+			"target_table": "VT_MARA",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "MARA.csv",
@@ -49,7 +49,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_T001W",
+			"target_table": "VT_T001W",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "T001W.csv",
@@ -61,7 +61,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_T005F",
+			"target_table": "VT_T005F",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "T005F.csv",
@@ -73,7 +73,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_T005T",
+			"target_table": "VT_T005T",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "T005T.csv",
@@ -85,7 +85,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_T005U",
+			"target_table": "VT_T005U",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "T005U.csv",
@@ -97,7 +97,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_T016",
+			"target_table": "VT_T016",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "T016.csv",
@@ -109,7 +109,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_T016T",
+			"target_table": "VT_T016T",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "T016T.csv",
@@ -121,7 +121,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_T023T",
+			"target_table": "VT_T023T",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "T023T.csv",
@@ -133,7 +133,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_T179",
+			"target_table": "VT_T179",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "T179.csv",
@@ -145,7 +145,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_TKUKT",
+			"target_table": "VT_TKUKT",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "TKUKT.csv",
@@ -157,7 +157,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_VBAK",
+			"target_table": "VT_VBAK",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "VBAK.csv",
@@ -169,7 +169,7 @@
 			}
 		},
 		{
-			"target_table": "Source.VT_VBAP",
+			"target_table": "VT_VBAP",
 			"source_data": {
 				"data_type": "CSV",
 				"file_name": "VBAP.csv",

@@ -1,0 +1,52 @@
+procedure "pr_load_stage" ()
+-- 20190220, Eckhard Schulze
+language sqlscript
+as
+
+begin
+
+declare V_FG varchar(50);
+declare V_SP varchar(50);
+declare V_START_FG nclob;
+declare V_TRUNCATE_TABLE nclob;
+declare V_COUNT_TABLE_ROWS nclob;
+declare c_act_schema varchar(50) := current_schema;
+declare truncate_tables integer := 1;
+declare sql_statement varchar(200);
+	
+declare cursor C1 for
+select T.TASK_NAME as FG,
+       P.PROCEDURE_NAME as SP,
+       'call "'||P.SCHEMA_NAME||'"."'||P.PROCEDURE_NAME||'";' as START_FG,
+       --'truncate table "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', 'st_')||'";' as TRUNCATE_TABLE,
+       --'select count(*) from "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', 'st_')||'";' as COUNT_TABLE_ROWS,
+       T.SCHEMA_NAME as SCHEMA
+  from "sy_PROCEDURES" P
+ inner
+  join "sy_TASKS" T on T.SCHEMA_NAME = P.SCHEMA_NAME and T.TASK_NAME = replace(P.PROCEDURE_NAME,'_SP','')
+ where 1=1
+   and T.SCHEMA_NAME = :c_act_schema
+   and T.TASK_NAME like 'FG_ST_%'
+   --and T.TASK_NAME in ('fg_t001w', 'fg_t005t', 'fg_t005u', 'fg_t016t', 'fg_t023t', 'fg_tkukt', 'fg_kna1', 'fg_lfa1', 'fg_mara')
+ order by P.PROCEDURE_NAME;  
+  
+for C as C1 do
+    V_FG = C.FG;
+    V_SP = C.SP;
+    V_START_FG = C.START_FG;
+
+	exec :V_START_FG;
+     --output of the execution runtime of the flowgraphs
+     select top 1 SCHEMA_NAME SCHEMA, TASK_NAME FG, STATUS, TOTAL_PROGRESS_PERCENT PROGRESS, PROCESSED_RECORDS DATENSAETZE, DURATION/1000000 SEKUNDEN, START_TIME BEGINN, END_TIME ENDE 
+       from "sy_TASK_EXECUTIONS" 
+      where 1=1 
+        and SCHEMA_NAME = :c_act_schema 
+        and TASK_NAME = :V_FG 
+      order by START_TIME desc;
+end for;
+
+--delete mara for the next exercise
+--sql_statement := 'truncate table "'||:c_act_schema||'"."st_mara";';
+--exec sql_statement;
+
+end

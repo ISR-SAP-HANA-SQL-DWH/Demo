@@ -12,10 +12,6 @@
   "SY_L_R_CUST_CUGR": {},
   "SY_L_R_CUST_IDST": {},
   "SY_L_R_CUST_REGN": {},
-  "SY_S_L_R_CNTR_REGN": {},
-  "SY_S_L_R_CUST_CUGR": {},
-  "SY_S_L_R_CUST_IDST": {},
-  "SY_S_L_R_CUST_REGN": {},
   "SY_S_R_T005U": {},
   "SY_S_R_TKUKT": {},
   "SY_S_R_VBAK": {},
@@ -23,7 +19,6 @@
   "SY_H_R_VENDOR": {},
   "SY_L_R_VNDR_IDST": {},
   "SY_L_R_VNDR_REGN": {},
-  "SY_S_L_R_VNDR_REGN": {},
   "SY_S_R_LFA1": {},
   "SY_S_R_T005F": {},
   "SY_S_B_SALES_FACTS": {},
@@ -37,7 +32,6 @@
   "SY_S_R_T016": {},
   "SY_S_R_T016T": {},
   "SY_L_R_PLAN_REGN": {},
-  "SY_S_L_R_PLAN_REGN": {},
   "SY_S_R_MARA": {},
   "SY_H_R_INDUSTRY": {}
 }

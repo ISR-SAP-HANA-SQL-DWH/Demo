@@ -1,0 +1,175 @@
+procedure "pr_load_bid" ()
+-- 20190220, Eckhard Schulze
+language sqlscript
+as
+
+begin
+
+declare V_FG varchar(50);
+declare V_SP varchar(50);
+declare V_START_FG nclob;
+declare V_TRUNCATE_TABLE nclob;
+declare V_COUNT_TABLE_ROWS nclob;
+declare c_act_schema varchar(50) := current_schema;
+declare sql_statement varchar(200);
+
+--get HUB-Flowgraphs
+declare cursor CH for
+select T.TASK_NAME as FG,
+       P.PROCEDURE_NAME as SP,
+       'call "'||P.SCHEMA_NAME||'"."'||P.PROCEDURE_NAME||'";' as START_FG,
+       --'truncate table "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as TRUNCATE_TABLE,
+       --'select count(*) from "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as COUNT_TABLE_ROWS,
+       T.SCHEMA_NAME as SCHEMA
+  from "sy_PROCEDURES" P
+ inner
+  join "sy_TASKS" T on T.SCHEMA_NAME = P.SCHEMA_NAME and T.TASK_NAME = replace(P.PROCEDURE_NAME,'_SP','')
+ where 1=1
+   and T.SCHEMA_NAME = :c_act_schema
+   and T.TASK_NAME like 'FG_H_%'
+ order by P.PROCEDURE_NAME;  
+ 
+--get Satellites-Flowgraphs
+declare cursor CS for
+select T.TASK_NAME as FG,
+       P.PROCEDURE_NAME as SP,
+       'call "'||P.SCHEMA_NAME||'"."'||P.PROCEDURE_NAME||'";' as START_FG,
+       --'truncate table "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as TRUNCATE_TABLE,
+       --'select count(*) from "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as COUNT_TABLE_ROWS,
+       T.SCHEMA_NAME as SCHEMA
+  from "sy_PROCEDURES" P
+ inner
+  join "sy_TASKS" T on T.SCHEMA_NAME = P.SCHEMA_NAME and T.TASK_NAME = replace(P.PROCEDURE_NAME,'_SP','')
+ where 1=1
+   and T.SCHEMA_NAME = :c_act_schema
+   and T.TASK_NAME like 'FG_S_R%'
+ order by P.PROCEDURE_NAME;
+ 
+--get Link-Flowgraphs
+declare cursor CL for
+select T.TASK_NAME as FG,
+       P.PROCEDURE_NAME as SP,
+       'call "'||P.SCHEMA_NAME||'"."'||P.PROCEDURE_NAME||'";' as START_FG,
+       --'truncate table "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as TRUNCATE_TABLE,
+       --'select count(*) from "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as COUNT_TABLE_ROWS,
+       T.SCHEMA_NAME as SCHEMA
+  from "sy_PROCEDURES" P
+ inner
+  join "sy_TASKS" T on T.SCHEMA_NAME = P.SCHEMA_NAME and T.TASK_NAME = replace(P.PROCEDURE_NAME,'_SP','')
+ where 1=1
+   and T.SCHEMA_NAME = :c_act_schema
+   and T.TASK_NAME like 'FG_L_%'
+ order by P.PROCEDURE_NAME;   
+ 
+--get Link-Satellites-Flowgraphs
+declare cursor CLS for
+select T.TASK_NAME as FG,
+       P.PROCEDURE_NAME as SP,
+       'call "'||P.SCHEMA_NAME||'"."'||P.PROCEDURE_NAME||'";' as START_FG,
+       --'truncate table "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as TRUNCATE_TABLE,
+       --'select count(*) from "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as COUNT_TABLE_ROWS,
+       T.SCHEMA_NAME as SCHEMA
+  from "sy_PROCEDURES" P
+ inner
+  join "sy_TASKS" T on T.SCHEMA_NAME = P.SCHEMA_NAME and T.TASK_NAME = replace(P.PROCEDURE_NAME,'_SP','')
+ where 1=1
+   and T.SCHEMA_NAME = :c_act_schema
+   and T.TASK_NAME like 'FG_S_L_R%'
+ order by P.PROCEDURE_NAME;  
+
+--get business-vault-Flowgraphs
+declare cursor CB for
+select T.TASK_NAME as FG,
+       P.PROCEDURE_NAME as SP,
+       'call "'||P.SCHEMA_NAME||'"."'||P.PROCEDURE_NAME||'";' as START_FG,
+       --'truncate table "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as TRUNCATE_TABLE,
+       --'select count(*) from "'||P.SCHEMA_NAME||'"."'||replace(T.TASK_NAME, 'fg_', '')||'";' as COUNT_TABLE_ROWS,
+       T.SCHEMA_NAME as SCHEMA
+  from "sy_PROCEDURES" P
+ inner
+  join "sy_TASKS" T on T.SCHEMA_NAME = P.SCHEMA_NAME and T.TASK_NAME = replace(P.PROCEDURE_NAME,'_SP','')
+ where 1=1
+   and T.SCHEMA_NAME = :c_act_schema
+   and T.TASK_NAME like 'FG_S_B%'
+ order by P.PROCEDURE_NAME;    
+
+--load HUBs
+for C2 as CH do
+    V_FG = C2.FG;
+    V_SP = C2.SP;
+    V_START_FG = C2.START_FG;
+    
+	exec :V_START_FG;
+     --output of the execution runtime of the flowgraphs
+     select top 1 SCHEMA_NAME SCHEMA, TASK_NAME FG, STATUS, TOTAL_PROGRESS_PERCENT PROGRESS, PROCESSED_RECORDS DATENSAETZE, DURATION/1000000 SEKUNDEN, START_TIME BEGINN, END_TIME ENDE 
+       from "sy_TASK_EXECUTIONS" 
+      where 1=1 
+        and SCHEMA_NAME = :c_act_schema 
+        and TASK_NAME = :V_FG 
+      order by START_TIME desc;
+end for;
+
+--load Satellites
+for C2 as CS do
+    V_FG = C2.FG;
+    V_SP = C2.SP;
+    V_START_FG = C2.START_FG;
+    
+	exec :V_START_FG;
+     --output of the execution runtime of the flowgraphs
+     select top 1 SCHEMA_NAME SCHEMA, TASK_NAME FG, STATUS, TOTAL_PROGRESS_PERCENT PROGRESS, PROCESSED_RECORDS DATENSAETZE, DURATION/1000000 SEKUNDEN, START_TIME BEGINN, END_TIME ENDE 
+       from "sy_TASK_EXECUTIONS" 
+      where 1=1 
+        and SCHEMA_NAME = :c_act_schema 
+        and TASK_NAME = :V_FG 
+      order by START_TIME desc;
+end for;
+
+--load links
+for C2 as CL do
+    V_FG = C2.FG;
+    V_SP = C2.SP;
+    V_START_FG = C2.START_FG;
+    
+	exec :V_START_FG;
+     --output of the execution runtime of the flowgraphs
+     select top 1 SCHEMA_NAME SCHEMA, TASK_NAME FG, STATUS, TOTAL_PROGRESS_PERCENT PROGRESS, PROCESSED_RECORDS DATENSAETZE, DURATION/1000000 SEKUNDEN, START_TIME BEGINN, END_TIME ENDE 
+       from "sy_TASK_EXECUTIONS" 
+      where 1=1 
+        and SCHEMA_NAME = :c_act_schema 
+        and TASK_NAME = :V_FG 
+      order by START_TIME desc;
+end for;
+
+--load Link-Satellites
+for C2 as CLS do
+    V_FG = C2.FG;
+    V_SP = C2.SP;
+    V_START_FG = C2.START_FG;
+    
+	exec :V_START_FG;
+     --output of the execution runtime of the flowgraphs
+     select top 1 SCHEMA_NAME SCHEMA, TASK_NAME FG, STATUS, TOTAL_PROGRESS_PERCENT PROGRESS, PROCESSED_RECORDS DATENSAETZE, DURATION/1000000 SEKUNDEN, START_TIME BEGINN, END_TIME ENDE 
+       from "sy_TASK_EXECUTIONS" 
+      where 1=1 
+        and SCHEMA_NAME = :c_act_schema 
+        and TASK_NAME = :V_FG 
+      order by START_TIME desc;
+end for;
+
+--load business vault
+for C2 as CB do
+    V_FG = C2.FG;
+    V_SP = C2.SP;
+    V_START_FG = C2.START_FG;
+    
+	exec :V_START_FG;
+     --output of the execution runtime of the flowgraphs
+     select top 1 SCHEMA_NAME SCHEMA, TASK_NAME FG, STATUS, TOTAL_PROGRESS_PERCENT PROGRESS, PROCESSED_RECORDS DATENSAETZE, DURATION/1000000 SEKUNDEN, START_TIME BEGINN, END_TIME ENDE 
+       from "sy_TASK_EXECUTIONS" 
+      where 1=1 
+        and SCHEMA_NAME = :c_act_schema 
+        and TASK_NAME = :V_FG 
+      order by START_TIME desc;
+end for;
+end
